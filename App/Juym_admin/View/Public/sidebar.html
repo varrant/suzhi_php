@@ -1,0 +1,72 @@
+<div class="am-cf admin-main">
+  <!-- sidebar start -->
+  <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
+    <div class="am-offcanvas-bar admin-offcanvas-bar">
+      <ul class="am-list admin-sidebar-list">
+        <li><a href=""><span class="am-icon-home"></span> 首页</a></li>
+
+        
+      <li class="admin-parent">
+        <a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><span class="am-icon-columns"></span> 任务管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+        <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav2">
+          <li><a href="{:U('Poscha/lists_j')}" class="am-cf"><span class="am-icon-slideshare"></span>兼职列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+          <li><a href="{:U('Poscha/lists_s')}" class="am-cf"><span class="am-icon-slideshare"></span>实习列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+          <li><a href="{:U('Poscha/lists_q')}" class="am-cf"><span class="am-icon-slideshare"></span>全职列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+        </ul>
+      </li>
+      
+      <li class="admin-parent">
+        <a class="am-cf" data-am-collapse="{target: '#collapse-nav0'}"><span class="am-icon-columns"></span> 企业管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+        <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav0">
+          <li><a href="{:U('Company/lists')}" class="am-cf"><span class="am-icon-slideshare"></span>企业列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+        </ul>
+      </li>
+
+      <li class="admin-parent">
+        <a class="am-cf" data-am-collapse="{target: '#collapse-nav3'}"><span class="am-icon-columns"></span> 意见反馈<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+        <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav3">
+          <li><a href="{:U('Proposal/lists')}" class="am-cf"><span class="am-icon-slideshare"></span>意见反馈列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+        </ul>
+      </li>
+
+      <li class="admin-parent">
+        <a class="am-cf" data-am-collapse="{target: '#collapse-nav4'}"><span class="am-icon-columns"></span> 订单中心<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+        <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav4">
+          <li><a href="{:U('Proposal/lists')}" class="am-cf"><span class="am-icon-slideshare"></span>全部订单<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+          <li><a href="{:U('Proposal/lists')}" class="am-cf"><span class="am-icon-slideshare"></span>已领取<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+          <li><a href="{:U('Proposal/lists')}" class="am-cf"><span class="am-icon-slideshare"></span>工作报名<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+          <li><a href="{:U('Proposal/lists')}" class="am-cf"><span class="am-icon-slideshare"></span>兼职报名<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+          <li><a href="{:U('Proposal/lists')}" class="am-cf"><span class="am-icon-slideshare"></span>待面试<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+          <li><a href="{:U('Proposal/lists')}" class="am-cf"><span class="am-icon-slideshare"></span>待开工<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+          <li><a href="{:U('Proposal/lists')}" class="am-cf"><span class="am-icon-slideshare"></span>已结束<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+          <li><a href="{:U('Proposal/lists')}" class="am-cf"><span class="am-icon-slideshare"></span>问题订单<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+        </ul>
+      </li>
+
+      <li class="admin-parent">
+        <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-users"></span>管理员管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+        <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav1">
+          <li><a href="{:U('Admin/Index')}" class="am-cf"><span class="am-icon-child"></span>管理员列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+        </ul>
+      </li>
+
+       <li class="admin-parent">
+        <a class="am-cf" data-am-collapse="{target: '#collapse-nav21'}"><span class="am-icon-users"></span>选项管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+        <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav21">
+          <li><a href="{:U('Optiment/tjlist',array('id'=>0))}" class="am-cf"><span class="am-icon-child"></span>兼职类型<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+          <li><a href="{:U('Optiment/sxlist',array('id'=>1))}" class="am-cf"><span class="am-icon-child"></span>实习类型<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+           <li><a href="{:U('Optiment/qzlist',array('id'=>2))}" class="am-cf"><span class="am-icon-child"></span>全职类型<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+             <li><a href="{:U('Optiment/qylist')}" class="am-cf"><span class="am-icon-child"></span>区域类型<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+        </ul>
+      </li>
+	<!-- 轮播图管理 -->
+       <li class="admin-parent">
+        <a class="am-cf" data-am-collapse="{target: '#collapse-nav22'}"><span class="am-icon-columns"></span> 轮播图管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+        <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav22">
+          <li><a href="{:U('Rotmap/lists')}" class="am-cf"><span class="am-icon-slideshare"></span>轮播图列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+        </ul>
+      </li>
+		<!-- 轮播图管理end -->
+      </ul>
+    </div>
+  </div>

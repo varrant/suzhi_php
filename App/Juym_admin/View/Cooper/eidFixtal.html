@@ -1,0 +1,172 @@
+<include file="Public/head" />
+<include file="Public/sidebar"/>
+<style type="text/css">
+</style>
+
+  <!-- content start -->
+    <!-- content start -->
+  <div class="admin-content">
+    <div class="admin-content-body">
+      <div class="am-cf am-padding am-padding-bottom-0">
+        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">定点医院增加</strong> / <small></small></div>
+      </div>
+
+      <hr/>
+
+      <div class="am-g">
+        <div class="am-u-sm-12 am-u-md-4 am-u-md-push-8">
+        </div>
+        <div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
+          <form class="am-form am-form-horizontal" id="form_a" action="{:U('Cooper/doeidFixtal')}" method="post">
+            <div class="am-form-group">
+              <label for="user-name" class="am-u-sm-3 am-form-label">医院名</label>
+              <div class="am-u-sm-9">
+                <input type="text" id="yym" name="yym" value="{$data[0]['hosme']}" placeholder="请输入医院名" required/>
+                <small></small>
+              </div>
+            </div>
+            <div class="am-form-group">
+              <label for="user-phone" class="am-u-sm-3 am-form-label">负责人名字</label>
+              <div class="am-u-sm-9">
+                <input type="tel" id="fzrm" name="fzrm" value="{$data[0]['nperso']}" placeholder="输入负责人名字 " >
+              </div>
+            </div>
+
+             <div class="am-form-group">
+              <label for="user-phone" class="am-u-sm-3 am-form-label">手机号</label>
+              <div class="am-u-sm-9">
+                <input type="text" id="iphone" name="iphone" value="{$data[0]['iphone']}" placeholder="输入你的手机号码 " >
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="user-phone" class="am-u-sm-3 am-form-label">地址</label>
+              <div class="am-u-sm-9">
+                <input  type="text" id='dz'  name="dz" value="{$data[0]['address']}"   placeholder="输入医院地址" >
+                 <input  type="hidden"name="id" value="{$data[0]['id']}">
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="user-phone" class="am-u-sm-3 am-form-label">城市</label>
+              <div class="am-u-sm-9">
+                <input  type="text" id='city'  name="city" value="{$data[0]['city']}"   placeholder="输入城市">
+                 <input  type="hidden"name="id" value="{$data[0]['id']}">
+              </div>
+            </div>
+
+              <div class="am-form-group">
+              <label class="am-u-sm-3 am-form-label">主治病</label>
+              <div class="am-u-sm-9">
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="zzbtype" value="0"  <if condition="$data[0]['zzbtype'] eq 0"> checked <else /> </if> >
+                    1. 内科，外科，骨科，手术，体检
+                  </label>
+                </div>
+
+                <div class="am-radio">
+                  <label>
+                    <input type="radio" name="zzbtype" value="1" <if condition="$data[0]['zzbtype'] eq 1"> checked <else /> </if>>
+                    2.传染病，细小犬瘟，猫瘟，内科，手术
+                  </label>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="am-form-group">
+              <div class="am-u-sm-9 am-u-sm-push-3">
+                <button type="button" id="button_a"  class="am-btn am-btn-primary">点击</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+<include file="Public/footer"/>
+<script type="text/javascript">
+  
+
+$(function() {
+
+
+  $('#button_a').click(function (e) {
+        
+        var error = false;
+        var yym = $('#yym').val();
+        var fzrm=$("#fzrm").val();
+        var dz  =$("#dz").val();
+        var iphone=$("#iphone").val();
+        var city=$("#city").val()
+        
+        if (yym.length == 0) {
+            var error = true;
+            $('#yym').css("border-color", "#D8000C");
+        } else {
+            $('#yym').css("border-color", "#666");
+        }
+
+         if (fzrm.length == 0) {
+            var error = true;
+            $('#fzrm').css("border-color", "#D8000C");
+        } else {
+            $('#fzrm').css("border-color", "#666");
+        }
+
+        if (iphone.length == 0) {
+            var error = true;
+            $('#iphone').css("border-color", "#D8000C");
+        } else {
+            $('#iphone').css("border-color", "#666");
+        }
+        if (dz.length == 0) {
+            var error = true;
+            $('#dz').css("border-color", "#D8000C");
+        } else {
+            $('#dz').css("border-color", "#666");
+        }
+       
+         if (city.length == 0) {
+            var error = true;
+            $('#city').css("border-color", "#D8000C");
+        } else {
+            $('#city').css("border-color", "#666");
+        }
+
+
+
+        //now when the validation is done we check if the error variable is false (no errors)
+        if (error == false) {
+         
+            var url = $("#form_a").attr('action');
+               
+            var data=$("#form_a").serialize();
+               
+          
+            $.ajax({
+                type:"post",
+                url:url,
+                data:data,
+                dataType:"json",
+
+                success:function(data){
+
+
+                    if(data=='ok'){
+
+                        dialog.success("定点医院修改成功","{:U('Cooper/Fixtal')}"); 
+                    }else{
+
+                        dialog.error("定点医院修改失败"); 
+                    }
+                }
+             }); 
+        }
+    })
+ })      
+
+      
+
+  </script>

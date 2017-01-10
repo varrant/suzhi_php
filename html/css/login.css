@@ -1,0 +1,378 @@
+.logo{
+	background-image: url(../images/logo.png);
+	width:128px;
+	height: 41px;
+	margin:0px auto;
+	margin-top: 56px;
+	margin-bottom: 96px;
+
+}
+.ipt_box{
+	width: 90%;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	position: relative;
+}
+.ipt_username{
+	width: 100%;
+	border: 0px;
+	border-bottom: 1px solid #cccccc;
+	outline: none;
+	font-size: 14px;
+	line-height: 30px;
+}
+.ipt_phonecode{
+	width: 100%;
+	border: 0px;
+	border-bottom: 1px solid #cccccc;
+	outline: none;
+	font-size: 14px;
+	line-height: 30px;
+}
+.ipt_sendCode{
+	position: absolute;
+	right: 2px;
+	top: 0px;
+	height: 30px;
+	line-height: 30px;
+	color: #333333;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.btn_box{
+	width: 90%;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	position: relative;
+}
+.btn_login_pay_over{
+	width: 327px;
+	height: 42px;
+	border-radius: 3px;
+	border: 0px;
+	background-color: #6eb41e;
+	color: #ffffff;
+	font-size: 16px;
+	width: 100%;
+	outline: none;
+	cursor: pointer;
+}
+.btn_login_over{
+	width: 327px;
+	height: 42px;
+	border-radius: 3px;
+	border: 0px;
+	background-color: #f0851b;
+	color: #ffffff;
+	font-size: 16px;
+	width: 100%;
+	outline: none;
+	cursor: pointer;
+}
+.btn_login_out{
+	width: 327px;
+	height: 42px;
+	border-radius: 3px;
+	border: 0px;
+	background-color: #cccccc;
+	color: #ffffff;
+	font-size: 16px;
+	width: 100%;
+	outline: none;
+	cursor: pointer;
+}
+.margin_box180{
+	margin-top: 180px;
+}
+.tipsbox{
+	font-size: 12px;
+	width: 90%;
+	margin: 0px auto;
+	color: #9b9b9b;
+}
+.tipsbox .ico{
+	float: left;
+}
+.tipsbox .content{
+	float: left;
+	margin-left: 3px;
+}
+.fa-circle-o:before{
+	font-size: 20px;
+}
+.fa-check-circleover:before{
+	font-size: 20px;
+	color: #ff8903;
+}
+
+.remindbox{
+	display: none;
+	text-align: center;
+	top:50%;
+	margin-top: -45px;
+	left: 50%;
+	margin-left: -115px;
+	position: absolute;
+	width: 230px;
+	height: 99px;
+	opacity: 0.6;
+	border-radius: 8px;
+	-webkit-backdrop-filter: blur(15px);
+	backdrop-filter: blur(15px);
+	background-color: #000000;
+	overflow: hidden;
+}
+.remindbox .icon{
+	margin-top: 16px;
+}
+.remindbox .content{
+	margin-top: 15px;
+	color: #ffffff;
+	font-size: 16px;
+}
+.fa-exclamation-circle:before{
+	font-size: 30px;
+	color: #ffffff;
+}
+.liststep1{
+	display: block;
+}
+.liststep2{
+	display: none;
+}
+.liststep3{
+	display: none;
+}
+.liststep4{
+	display: none;
+}
+.listItem{
+	float: left;
+	margin-right: 54px;
+}
+.listItem .title{
+	font-size: 14px;
+	color: #000000;
+}
+.fa-plus-circle:before{
+	font-size: 30px;
+	color: #999999;
+}
+.listItem .pic{
+	width: 110px;
+	height: 110px;
+	background-color: #eeeeee;
+	text-align: center;
+	line-height: 110px;
+	position: relative;
+}
+.ipt_box3_top{
+	width: 95%;
+	background-color: #ffffff;
+	height: 48px;
+	line-height: 48px;
+	margin-left: 5%;
+}
+.ipt_box3_top .left{
+	font-size: 14px;
+	color: #ff8903;
+}
+.ipt_box3_top .left .fa-question-circle:before{
+	color: #999999;
+	font-size: 18px;
+}
+.ipt_box2_top{
+	width: 95%;
+	background-color: #ffffff;
+	height: 48px;
+	line-height: 48px;
+	margin-left: 5%;
+}
+.ipt_box2_line{
+	height: 10px;
+	background-color: #d8d8d8;
+}
+.ipt_box2_top .left{
+	float: left;
+	font-size: 14px;
+}
+.ipt_box2_top .right{
+	float: right;
+	margin-right: 5%;
+}
+.ipt_box2_top .right input{
+	border:0px;
+	outline: none;
+	font-size: 14px;
+}
+.ipt_box2_top .right .inp_username{
+	width: 112px;
+	text-align: right;
+}
+.ipt_box2{
+	width: 95%;
+	background-color: #ffffff;
+	height: 48px;
+	line-height: 48px;
+	margin-left: 5%;
+	border-bottom: 1px solid #d8d8d8;
+}
+.ipt_box2_bottom{
+	border-bottom: 0px solid #d8d8d8;
+}
+.ipt_box2 .left{
+	float: left;
+	font-size: 14px;
+}
+.ipt_box2 .right{
+	float: right;
+	margin-right: 5%;
+}
+.ipt_box2 .right input{
+	border:0px;
+	outline: none;
+	font-size: 14px;
+}
+.ipt_box2 .right .inp_username{
+	width: 112px;
+	text-align: right;
+}
+.ipt_box2 .right .ipt_value{
+	font-size: 14px;
+	color: #999999;
+}
+.ipt_box2 .right .ipt_value .fa-angle-right:before{
+	font-size: 18px;
+	margin-left: 10px;
+}
+.am-modal{
+	width: 100%;
+	left: 0px;
+	margin-left: 0px;
+}
+.reg_banner{
+	width: 100%;
+	height: 93px;
+	padding-top: 19px;
+	background-color: #6eb41e;
+	text-align: center;
+	color: #ffffff;
+}
+.reg_banner .fa-check-circle-o:before{
+	font-size: 25px;
+}
+.reg_banner span{
+	font-size: 17px;
+	color: #ffffff;
+}
+.reg_banner2{
+	width: 375px;
+	height: 93px;
+	line-height: 93px;
+	background-color: #ffffff;
+	font-size: 14px;
+	color: #ff8903;
+	text-align: center;
+}
+.am-modal-actions-group{
+	margin:0px;
+}
+.am-modal-actions-header{
+	color: #000000;
+	font-size: 15px;
+	height: 43px !important;
+	line-height: 35px !important;
+}
+.am-modal-actions-group .am-list > li{
+	height: 67px;
+	line-height: 67px;
+}
+.am-modal-actions-group .am-list > li > a{
+	padding:0px;
+	padding-left: 16px;
+	text-align: left;
+	font-size: 14px;
+}
+.cashbox{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	display: none;
+}
+
+.cashbox .cashbg{
+	background-color: #000000;
+	filter:alpha(opacity=50); /*IE滤镜，透明度50%*/
+	-moz-opacity:0.5; /*Firefox私有，透明度50%*/
+	opacity:0.5;/*其他，透明度50%*/
+}
+
+.cashbox .contentbox {
+	width: 307px;
+	height: 367px;
+	border-radius: 8px;
+	background-color: #ffffff;
+	position: absolute;
+	top:78px;
+	left: 50%;
+	margin-left: -153px;
+}
+.cashbox .cashbtn{
+	width: 52px;
+	height: 52px;
+	line-height: 43px;
+	text-align: center;
+	border: solid 1.5px #e6e6e6;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	margin-left: -26px;
+	top:466px;
+	color: #ffffff;
+	font-size: 30px;
+}
+.cashbox .contentbox .title{
+	font-size: 17px;
+	color: #ff8903;
+	text-align: center;
+	height: 55px;
+	line-height: 55px;
+	margin-left: 8%;
+	margin-right: 8%;
+	border-bottom: 2px solid #e5e5e5;
+}
+.cashbox .contentbox .word{
+	font-size: 13px;
+	color: #666666;
+	text-align: left;
+	margin-left: 8%;
+	margin-right: 8%;
+}
+.cashbox .contentbox .word span{
+	font-weight: 600;
+}
+
+#answer{
+	margin:0px 0px;
+	padding:0px 0px;
+	list-style: none;
+}
+
+
+#answer li .ipt_box2{
+	width: 95%;
+	background-color: #f8f8f8;
+	height: 48px;
+	line-height: 48px;
+	margin-left: 5%;
+	border-bottom: 1px solid #d8d8d8;
+}
+#answer li .ipt_box2 .left{
+	float: left;
+	font-size: 14px;
+}
+#answer li .ipt_box2 .right{
+	float: right;
+	margin-right: 5%;
+}

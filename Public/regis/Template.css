@@ -1,0 +1,170 @@
+@font-face {
+	font-family: 'FontAwesome';
+  src: url('../font/fontawesome-webfont.eot?v=4.3.0');
+  src: url('../font/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('../font/fontawesome-webfont.woff?v=4.3.0') format('woff2'), url('../font/fontawesome-webfont.woff?v=4.3.0') format('woff'), url('../font/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), url('../font/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* CSS Document */
+body {
+	background-color: #384637 !important;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif;
+}
+
+button {
+	font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif;
+}
+
+.head {
+	height: 50px;
+	width: 100%;
+	background-color: #f4c539;
+}
+
+.head_left {
+	float: left;
+	width: 40px;
+	height: 40px;
+}
+
+.head_left_icon {
+	display: block;
+	color: #FFFFFF;
+	font-size: 35px;
+	text-decoration: none;
+	line-height: 35px;
+	margin-top: 5px;
+}
+
+.head_left_icon:before {
+	content: "\f104";
+	text-decoration: inherit;
+	-webkit-font-smoothing: antialiased;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.head_right {
+	float: right;
+	width: 55px;
+	height: 40px;
+}
+
+.head_right_icon {
+	display: block;
+	color: #FFFFFF;
+	font-size: 30px;
+	text-decoration: none;
+	line-height: 40px;
+	margin-top: 5px;
+}
+
+.head_right_icon:before {
+	content: "\f015";
+	text-decoration: inherit;
+	-webkit-font-smoothing: antialiased;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.head_title {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	color: #FFFFFF;
+}
+
+.logo {
+	float: left;
+	line-height: 60px;
+	height: 60px;
+}
+
+.search {
+	padding-top: 12px;
+	float: right;
+	padding-right: 5px;
+}
+
+.company_top_right_left_search {
+	width: 130px;
+	height: 34px;
+	border-radius: 0px;
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	border: 1px solid #c9c9c9;
+	border-right: 1px solid #757272;
+	outline: none;
+	background-color: #FFFFFF;
+	float: left;
+	color: #e6e6e6;
+	padding-left: 5px;
+}
+
+.company_top_right_left_search_focus {
+	width: 130px;
+	height: 34px;
+	border-radius: 0px;
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	border: 1px solid #c9c9c9;
+	border-right: 1px solid #757272;
+	outline: none;
+	background-color: #FFFFFF;
+	float: left;
+	color: #484747;
+	padding-left: 5px;
+}
+
+.company_top_right_left_btn {
+	width: 50px;
+	height: 34px;
+	background-color: #FFFFFF;
+	border-radius: 0px;
+	-webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	border: 1px solid #c9c9c9;
+	float: left;
+	outline: none;
+	cursor: pointer;
+	font-size: 16px;
+	color: #000000;
+}
+
+.box {
+	min-height: 600px;
+	padding-bottom: 25px;
+}
+
+.bottom {
+	height: 55px;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	color: #2f3533;
+}
+
+.bottom_top {
+	height: 25px;
+	width: 100%;
+	line-height: 25px;
+}
+
+.bottom_down {
+	height: 30px;
+	background-color: #e5cc6f;
+	width: 100%;
+	line-height: 30px;
+}
+
+.clearbox {
+	clear: both;
+}
+

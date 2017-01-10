@@ -1,0 +1,310 @@
+body{
+	background-color: #ffffff;
+}
+.nav_top{
+	padding: 0px 0px;
+	margin:0px 0px;
+	list-style: none;
+	height: 43px;
+	background-color: #ffffff;
+	border-bottom: 1px solid #d8d8d8;
+}
+.nav_top li{
+	width: 33.33%;
+	float: left;
+	height: 43px;
+	line-height: 43px;
+	text-align: center;
+	font-size: 13px;
+	color: #333333;
+}
+.nav_top li div{
+	height: 26px;
+	line-height: 26px;
+	border-right: 1px solid #d8d8d8;
+	margin-top: 9px;
+}
+.nav_top li .last{
+	border-right: 0px solid #d8d8d8 !important;
+}
+
+.orderinfoBox{
+	background-color: #ffffff;
+	margin-bottom: 10px;
+}
+.orderinfoBox .ipt_box2 {
+    width: 95%;
+    background-color: #ffffff;
+    height: 48px;
+    line-height: 48px;
+    margin-left: 5%;
+    border-bottom: 1px solid #d8d8d8;
+}
+.orderinfoBox .ipt_box2 .left{
+	float: left;
+	font-size: 14px;
+	color: #333333;
+}
+.orderinfoBox .ipt_box2 .right{
+	float: right;
+	margin-right: 5%;
+	color: #ff8903;
+	font-size: 14px;
+}
+.orderinfoBox .ipt_box2 .right2{
+	float: right;
+	margin-right: 5%;
+	font-size: 13px;
+	color: #666666;
+}
+.orderinfoBox .ipt_box3 {
+    width: 95%;
+    background-color: #ffffff;
+    line-height: 56px;
+    height: 56px;
+    margin-left: 5%;
+    border-bottom: 1px solid #d8d8d8;
+    position: relative;
+}
+.orderinfoBox .ipt_box3 .left{
+	float: left;
+	font-size: 13px;
+	color: #666666;
+}
+.orderinfoBox .ipt_box3 .mid{
+	float: left;
+}
+.orderinfoBox .ipt_box3 .mid .type{
+	width: 32px;
+	height: 16px;
+	border-radius: 2px;
+	border: solid 1px #ff8903;
+	color: #ff8903;
+	font-size: 11px;
+	line-height: 15px;
+	text-align: center;
+	margin-top: 16px;
+	float:left;
+}
+.orderinfoBox .ipt_box3 .mid .type2{
+	width: 32px;
+	height: 16px;
+	border-radius: 2px;
+	border: solid 1px #4990e2;
+	color: #4990e2;
+	font-size: 11px;
+	line-height: 15px;
+	text-align: center;
+	margin-top: 16px;
+	float:left;
+}
+.orderinfoBox .ipt_box3 .mid .type3{
+	width: 32px;
+	height: 16px;
+	border-radius: 2px;
+	border: solid 1px #6eb31e;
+	color: #6eb31e;
+	font-size: 11px;
+	line-height: 15px;
+	text-align: center;
+	margin-top: 16px;
+	float:left;
+}
+.orderinfoBox .ipt_box3 .mid .title{
+	font-size: 14px;
+	color: #333333;
+	/*width: 160px;*/
+	line-height: 15px;
+	margin-top: 16px;
+	/*margin-left: 5px;*/
+	margin-right: 5px;
+	float: left;
+}
+.orderinfoBox .ipt_box3 .mid .introduce{
+	font-size: 12px;
+	color: #999999;
+	line-height: 15px;
+	margin-top: 5px;
+	width: 160px;
+}
+.orderinfoBox .ipt_box3 .mid .area{
+	font-size: 12px;
+	color: #666666;
+	line-height: 15px;
+	margin-top: 5px;
+	margin-right: 20px;
+	margin-bottom: 17px;
+	float: left;
+}
+.orderinfoBox .ipt_box3 .mid .need{
+	font-size: 12px;
+	color: #666666;
+	line-height: 15px;
+	margin-top: 5px;
+	margin-right: 20px;
+	margin-bottom: 17px;
+	float: left;
+}
+.orderinfoBox .ipt_box3 .minrightbox{
+	margin-top: 5px;
+	line-height: 15px;
+	position: absolute;
+	bottom: 15px;
+	right: 0px;
+}
+.orderinfoBox .ipt_box3 .minrightbox .img{
+	float: right;
+}
+.orderinfoBox .ipt_box3 .minrightbox .num{
+	float: right;
+	margin-right: 10px;
+	margin-left: 2px;
+	color: #666666;
+	font-size: 12px;
+}
+
+.orderinfoBox .ipt_box3 .left .head{
+	width: 55px;
+	height: 55px;
+	background-color: #e8e8e8;
+	margin-top: 16px;
+	margin-right: 21px;
+}
+.orderinfoBox .ipt_box3 .right{
+	float: right;
+	margin-right: 5%;
+	font-size: 14px;
+	height: 55px;
+	line-height: initial;
+	margin-top: 16px;
+	color: #ff8903;
+}
+
+.orderinfoBox .ipt_box4 {
+    width: 95%;
+    background-color: #ffffff;
+    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.listitem{
+	display: none;
+}
+.itemcur{
+	display: block;
+}
+
+.nav_bottom{
+	height: 49px;
+	background-color: #fafafa;
+	border-color: #b2b2b2;
+	color: #999999;
+}
+
+.nav_bottom ul{
+	margin:0px 0px;
+	padding: 0px 0px;
+	list-style: none;
+}
+.nav_bottom ul .left{
+	width: 40%;
+	background-color: #ffffff;
+	line-height: 49px;
+	font-size: 15px;
+}
+.nav_bottom ul .right{
+	width: 60%;
+	background-color: #ff8903;
+	line-height: 49px;
+	font-size: 15px;
+	color: #ffffff;
+	text-align: center;
+}
+.nav_bottom ul li{
+	width: 33.33%;
+	float: left;
+	text-align: center;
+	color: #666666;
+	font-size: 10px;
+}
+.nav_bottom ul li .img{
+	margin-top: 4px;
+	height: 39px;
+	line-height: 39px;
+	position: relative;
+	float: left;
+}
+.nav_bottom ul li .title{
+	float: left;
+	color: #333333;
+	margin-left: 5px;
+}
+
+.cashbox{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	display: block;
+}
+
+.cashbox .cashbg{
+	background-color: #000000;
+	filter:alpha(opacity=50); /*IE滤镜，透明度50%*/
+	-moz-opacity:0.5; /*Firefox私有，透明度50%*/
+	opacity:0.5;/*其他，透明度50%*/
+}
+
+.cashbox .contentbox {
+	width: 307px;
+	border-radius: 3px;
+	background-color: #ff8903;
+	position: absolute;
+	top:78px;
+	left: 50%;
+	margin-left: -153px;
+	overflow: hidden;
+}
+.cashbox .cashbtn{
+	width: 22px;
+	height: 22px;
+	line-height: 19px;
+	text-align: center;
+	border: solid 1.5px #e6e6e6;
+	border-radius: 50%;
+	position: absolute;
+	right: 10%;
+	/*margin-left: -26px;*/
+	top:7%;
+	color: #ffffff;
+	font-size: 18px;
+}
+.cashbox .contentbox .title{
+	font-size: 16px;
+	color: #333333;
+	text-align: center;
+	background-color: #ffffff;
+	height: 46px;
+	line-height: 46px;
+	/*margin-left: 8%;*/
+	/*margin-right: 8%;*/
+	/*border-bottom: 2px solid #e5e5e5;*/
+}
+.cashbox .contentbox .word{
+	font-size: 13px;
+	color: #ffffff;
+	text-align: center;
+	padding-left: 8%;
+	line-height: 80px;
+	padding-right: 8%;
+	height: 80px;
+}
+.cashbox .contentbox .word span{
+	font-weight: 600;
+}
+
+
+

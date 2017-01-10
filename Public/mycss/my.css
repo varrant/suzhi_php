@@ -1,0 +1,166 @@
+/*登入界面*/
+
+#c_img{
+	display:block;
+	margin-top: 10px;
+
+}
+.img1 {
+	 float: left;
+   	left: 10px;
+    width: 120px;
+    height: 80px;
+    margin-left: 10px; 
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+.add{
+	margin-left: 200px;
+}
+.ico {
+    float: left;
+    margin-left: -20px;
+    /*display: none;*/
+
+}
+#am-u-sm-3{
+
+	 float: left !important;
+}
+.logo{
+    float: left;
+    margin-top: 227px;
+    margin-left: -260px;
+    width: 520px;
+    height: 360px;
+    font-family: Arial;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+}
+.logobox{
+    float: left;
+    margin-left: -260px;
+    width: 520px;
+    height: 360px;
+    font-family: Arial;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    z-index: 1000;
+}
+.logobg{
+    float: left;
+
+    margin-left: -260px;
+    width: 520px;
+    height: 360px;
+    background: #fff;
+    font-family: Arial;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    filter:alpha(opacity=20); /*ie透明度20%*/ 
+    -moz-opacity:0.8;        /*Moz + FF 透明度20%*/ 
+    opacity:0.8; /*支持CSS3的浏览器(FF1.5也支持)透明度20%*/ 
+    z-index: 12;
+}
+.logo_title{
+     float: left;
+    margin-top: 40px;
+    margin-left: 120px;
+}
+.logo_title span{
+   /* font-weight:bold;*/
+    font-size: 26px;
+     font-family: "Microsoft YaHei" ! important; 
+}
+.user{
+    float:left ;
+    margin-top:28px;
+    margin-left:120px;
+    border-bottom:1px solid #E1E1E1;
+    width: 299px;       
+
+
+}
+
+
+.i_user{
+    float: left;
+   
+
+}
+.input_user{
+    height: 30px;
+    border-right-width:0px;
+    border-bottom-width:0px; 
+    border-left-width:0px; 
+    border-top-width:0px;
+    background:no-repeat 0 0 scroll ＃EEEEEE;
+    border:none;
+    outline:medium;
+   background:transparent none repeat scroll 0% 0%
+   /* border:0; */
+}
+.lock{
+    float:left ;margin-top:24px;margin-left:120px;
+     border-bottom:1px solid #E1E1E1;
+        width: 298px;
+
+}
+.input_code{
+    height: 30px;
+    border-right-width:0px;
+    border-bottom-width:0px; 
+    border-left-width:0px; 
+    border-top-width:0px;
+    background:no-repeat 0 0 scroll ＃EEEEEE;
+    border:none;
+    outline:medium;
+    width: 90px;
+    background:transparent none repeat scroll 0% 0%
+
+
+}
+.code{
+
+    height: 40px;
+    height:30px;
+}
+.a_code{
+    
+    float: right;
+    font-size: 10px;
+    margin-top: 12px;
+}
+.div_code{
+   
+    float: left;
+    margin-left: 30px;
+
+}
+.jzw{
+    float:left ;
+    /*margin-top:24px;*/
+    margin-left:120px;
+    
+    width: 298px;
+
+}
+#button{
+ outline:none;
+
+
+}
+.div_table table{
+
+
+    border:solid #add9c0; border-width:1px 1px 1px 1px;
+    
+}
+.div_table td{
+
+    border:solid #add9c0 ; border-width:1px 1px 1px 1px ;
+
+}

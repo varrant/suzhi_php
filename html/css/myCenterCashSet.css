@@ -1,0 +1,223 @@
+body{
+	background-color: #ffffff;
+}
+
+.remindbox{
+	display: none;
+	text-align: center;
+	top:50%;
+	margin-top: -45px;
+	left: 50%;
+	margin-left: -115px;
+	position: absolute;
+	width: 230px;
+	height: 99px;
+	opacity: 0.6;
+	border-radius: 8px;
+	-webkit-backdrop-filter: blur(15px);
+	backdrop-filter: blur(15px);
+	background-color: #000000;
+	overflow: hidden;
+}
+.remindbox .icon{
+	margin-top: 16px;
+}
+.remindbox .content{
+	margin-top: 15px;
+	color: #ffffff;
+	font-size: 16px;
+}
+.mytopbannerbox{
+	width: 100%;
+	/*height: 76px;*/
+	background-color: #ffffff;
+	padding-top: 55px;
+}
+.mytopbannerboxline{
+	border-top:1px solid #fd9329;
+	border-bottom:1px solid #fd8e22;
+	width: 100%;
+}
+.mytopbannerbox .info{
+	padding-top: 13px;
+	margin-left: 16px;
+	margin-right: 16px;
+}
+.mytopbannerbox .info .name{
+	font-size: 14px;
+	color: #999999;
+}
+
+.mytopbannerbox .info .ico .fa-angle-right:before{
+	font-size: 20px;
+	line-height: 50px;
+}
+.mytopbannerbox .cash{
+
+}
+.mytopbannerbox .info .cashbox {
+	font-size: 40px;
+	color: #000000;
+	position: relative;
+	border-bottom: 1px solid #e5e5e5;
+}
+.mytopbannerbox .info .cashbox .sign{
+	position: absolute;
+	top: 5px;
+	left: 0px;
+}
+.mytopbannerbox .info .cashbox input{
+	font-size: 40px;
+	color: #000000;
+	outline: none;
+	padding-left: 25px;
+	border: 0px;
+}
+
+.mytopbannerbox .info2{
+	color: #999999;
+	font-size: 14px;
+	margin:10px 16px;
+	padding-bottom: 5px;
+	position: relative;
+}
+
+.mytopbannerbox .info2 .allcash{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	color: #4a90e2;
+	font-size: 14px;
+}
+
+.cashbox2{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	display: none;
+}
+
+.cashbox2 .cashbg{
+	background-color: #000000;
+	filter:alpha(opacity=50); /*IE滤镜，透明度50%*/
+	-moz-opacity:0.5; /*Firefox私有，透明度50%*/
+	opacity:0.5;/*其他，透明度50%*/
+}
+
+.cashbox2 .contentbox {
+	width: 307px;
+	height: 367px;
+	border-radius: 8px;
+	background-color: #ffffff;
+	position: absolute;
+	top:78px;
+	left: 50%;
+	margin-left: -153px;
+}
+.cashbox2 .cashbtn{
+	width: 52px;
+	height: 52px;
+	line-height: 43px;
+	text-align: center;
+	border: solid 1.5px #e6e6e6;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	margin-left: -26px;
+	top:466px;
+	color: #ffffff;
+	font-size: 30px;
+}
+.cashbox2 .contentbox .title{
+	font-size: 17px;
+	color: #ff8903;
+	text-align: center;
+	height: 55px;
+	line-height: 55px;
+	margin-left: 8%;
+	margin-right: 8%;
+	border-bottom: 2px solid #e5e5e5;
+}
+.cashbox2 .contentbox .word{
+	font-size: 13px;
+	color: #666666;
+	text-align: left;
+	margin-left: 8%;
+	margin-right: 8%;
+}
+.cashbox2 .contentbox .word span{
+	font-weight: 600;
+}
+.btn_box{
+	width: 90%;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	position: relative;
+}
+.btn_login_over{
+	height: 42px;
+	border-radius: 3px;
+	border: 0px;
+	background-color: #f0851b;
+	color: #ffffff;
+	font-size: 16px;
+	width: 100%;
+	outline: none;
+	cursor: pointer;
+}
+.btn_login_out{
+	height: 42px;
+	border-radius: 3px;
+	border: 0px;
+	background-color: #cccccc;
+	color: #ffffff;
+	font-size: 16px;
+	width: 100%;
+	outline: none;
+	cursor: pointer;
+}
+.ipt_box{
+	width: 90%;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	position: relative;
+}
+.ipt_username{
+	width: 100%;
+	border: 0px;
+	border-bottom: 1px solid #cccccc;
+	outline: none;
+	font-size: 14px;
+	line-height: 30px;
+}
+.ipt_tips{
+	width: 90%;
+	margin: 0px auto;
+	font-size: 12px;
+	color: #999999;
+}
+.tipsbox{
+	padding: 20px 0px;
+	font-size: 12px;
+	width: 90%;
+	margin: 0px auto;
+	color: #9b9b9b;
+}
+.tipsbox .ico{
+	float: left;
+}
+.tipsbox .content{
+	float: left;
+	margin-left: 3px;
+	font-size: 14px;
+	color: #333333;
+	margin-right: 30px;
+}
+
+.fa-circle-o:before{
+	font-size: 20px;
+}
+.fa-check-circleover:before{
+	font-size: 20px;
+	color: #ff8903;
+}

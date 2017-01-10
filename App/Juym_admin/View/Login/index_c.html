@@ -1,0 +1,335 @@
+<html class="no-js"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>VIPETA宠物健康检测</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <link rel="stylesheet" href="__PUBLIC__/regis/Template.css">
+  <link rel="stylesheet" href="__PUBLIC__/regis/WXactivity.css">
+  <link rel="stylesheet" href="__PUBLIC__/regis/uploadifive.css">
+	<link rel="stylesheet" id="css-front-css" href="__PUBLIC__/regis/pikaday.css" type="text/css" media="all">
+  <link rel="stylesheet" href="__PUBLIC__/regis/bootstrap.min.css">
+  <link rel="stylesheet" href="__PUBLIC__/regis/main.css">
+  <script src="__PUBLIC__/regis/jquery.min.js"></script>
+
+<script src="__PUBLIC__/regis/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/layer/skin/layer.css">
+   <script type="text/javascript" src="__PUBLIC__/layer/layer.js"></script>
+
+
+</head>
+<div class="bmindexbox">
+				<!-- <img src="/Public/strat/bmindex_top.jpg"> -->
+				<img src="/Public/strat/bmindex_top.jpg">
+				<div class="bmindexboxleft" onclick="window.location.href='http://www.vipeta.cn/m/index_vipeta.asp'"></div>
+				<div class="bmindexboxright" onclick="window.location.href='"></div>
+			</div>
+<form id="addform" name="addform" method="post">
+<div class="imglist">
+<!-- <img src="__PUBLIC__/regis/bmIndexbanner2.png"><br> -->
+<img src="/Public/strat/cwjk.jpg"><br>
+</div>
+<body>
+
+
+<div class="box">
+	<div id="step1">
+		<ul class="box_item">
+			<li>
+				<div class="box_item_title">
+				姓&nbsp;&nbsp;&nbsp;&nbsp;名：
+				</div>
+				<div class="box_item_value">
+					<input type="text" name="c_name" id="c_name" placeholder="请用真实姓名注册账号">
+				</div>
+				<div class="clearbox"></div>
+			</li>
+			<li>
+				<div class="box_item_title">
+				手&nbsp;&nbsp;&nbsp;&nbsp;机：
+				</div>
+				<div class="box_item_value">
+					<input type="text" name="c_phone" id="c_phone">
+				</div>
+				<div class="clearbox"></div>
+			</li>
+			<li>
+				<div class="box_item_title">
+				微&nbsp;&nbsp;&nbsp;&nbsp;信：
+				</div>
+				<div class="box_item_value">
+					<input type="text" name="wxNum" id="wxNum" placeholder="请填正确的微信号，方便客服联系">
+				</div>
+				<div class="clearbox"></div>
+			</li>
+
+			<li>
+				<div class="box_item_title">
+				密&nbsp;&nbsp;&nbsp;&nbsp;码：
+				</div>
+				<div class="box_item_value">
+					<input type="password" name="c_password" id="c_password" placeholder="">
+				</div>
+				<div class="clearbox"></div>
+			</li>
+			
+			<li>
+				<div class="box_item_title">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				</div>
+				<div class="box_item_value">
+					<input type="password" name="c_rpassword" id="c_rpassword" placeholder="确认密码">
+				</div>
+				<div class="clearbox"></div>
+			</li>
+
+			<li>
+				<div class="box_item_title">
+				邀请码&nbsp;:
+				</div>
+				<div class="box_item_value">
+					<input type="text" name="yqm" id="yqm" placeholder="输入邀请码">
+				</div>
+				<div class="clearbox"></div>
+			</li>
+			
+		<ul class="box_item">
+			<li>
+				<div class="box_item_title">
+				省&nbsp;&nbsp;&nbsp;&nbsp;份：
+				</div>
+				<div class="box_item_value">
+					<div class="user_login_input_value" id="divProIId">
+						<div class="user_login_input_value_select_value">请选择省份</div>
+						<div class="user_login_input_value_select_arrow"></div>
+						<div class="clearbox"></div>
+						<div style="position:relative;overflow-y:auto;z-index: 1000;">
+						<div class="user_login_input_value_select_list_out">
+						<foreach name="data" item="v" >
+								<div id="{$v.id}">{$v.name}</div>
+						</foreach>
+							
+							
+						</div>
+						</div>
+						<select name="province" id="province" style="display:none;">
+							<option value="0" selected="selected">请选择省份</option>
+							
+							<foreach name="data" item="v" >
+								
+								<option value="{$v.id}">{$v.name}</option>
+							</foreach>
+							
+						</select>
+					</div>
+				</div>
+				<div class="clearbox"></div>
+			</li>
+			<li>
+				<div class="box_item_title">
+				市&nbsp;&nbsp;&nbsp;&nbsp;县：
+				</div>
+				<div class="box_item_value">
+					<div class="user_login_input_value" id="divcityID">
+						<div class="user_login_input_value_select_value">请选择市县</div>
+						<div class="user_login_input_value_select_arrow"></div>
+						<div class="clearbox"></div>
+						<div style="position:relative;overflow-y:auto;z-index: 1000;">
+						<div class="user_login_input_value_select_list_out">
+							<div id="0">请选择市县</div>
+						</div>
+						</div>
+						<select name="city" id="city" style="display:none;">
+							<option value="0" selected="selected">请选择市县</option>
+						</select>
+					</div>
+				</div>
+				<div class="clearbox"></div>
+			</li>
+			
+		</ul>
+		
+		<div class="box_btn" style="margin-top:20px;">
+		
+			<a href="javascript:void(0)" class="box_btn1" onclick="addaction_click2()">提交申请</a>
+		</div>
+	</div>
+</form>
+
+<script>
+
+var dialog = {
+    // 错误弹出
+    error: function(message) {
+
+        layer.open({
+            content: message,
+            icon: 2,
+            title: "错误提示",
+
+        });
+    },
+
+    //成功弹出框
+    success: function(message, url) {
+
+        layer.open({
+            content: message,
+            icon: 1,
+            title: "错误提示",
+            yes: function() {
+                location.href = url;
+            }
+
+        });
+    },
+
+
+
+}
+
+	function addaction_click2(){
+
+		if($("#c_name").val()==""){
+			alert('先填姓名!');
+			$("#c_name").focus();
+			return false;
+		}
+		if($("#c_phone").val()==""){
+			alert('先填写手机号码!');
+			$("#c_phone").focus();
+			return false;
+		}
+		if($("#wxNum").val()==""){
+			alert('先填写微信号!');
+			$("#wxNum").focus();
+			return false;
+		}
+		if($("#c_password").val()==""){
+			alert('先填写密码!');
+			$("#c_password").focus();
+			return false;
+		}
+		if($("#c_rpassword").val()==""){
+			alert('先填写确认密码!');
+			$("#c_rpassword").focus();
+			return false;
+		}
+
+
+		if($("#yqm").val()==""){
+			alert('先填写邀请码!');
+			$("#yqm").focus();
+			return false;
+		}
+		
+		if($("#province").val()==0){
+			alert("请选择省份");
+			return false;
+		}
+		//console.log($("#WX_promaryInfo").val());
+		//console.log($("#WX_CityInfo").val());
+		if($("#city").val()==0){
+			alert("请选择市县");
+			return false;
+		}
+			$.ajax({
+				type:"post",
+				url:"/index.php/Juym_admin/Login/Cszcm",
+				data:$("form#addform").serialize(),
+				dataType:"json",
+				success:function(data){
+					console.log(data);
+					console.log(data.ok);
+					 if (data.password==2) {
+                        dialog.error("输入密码不同");
+                        $("#form_a").find("input").val('');
+                        return false
+                    }
+                   
+                    if(data.ok==1){
+
+                          dialog.success("注册成功","{:U('Login/index')}");
+                          return false
+                    }else{
+                    	
+                         dialog.error("注册失败");
+                         return false
+
+                    }    
+	
+					
+				},
+				
+			})
+
+			
+	}
+	
+var $tmpselect;
+$(".user_login_input_value_select_value").click(function(){
+	$tmpselect=$(this).parent().find(".user_login_input_value_select_list_out")
+	if($tmpselect.length==0){
+		$tmpselect=$(this).parent().find(".user_login_input_value_select_list_over")
+		$tmpselect.addClass("user_login_input_value_select_list_out");
+		$tmpselect.removeClass("user_login_input_value_select_list_over");
+	}
+	else{
+		$tmpselect.addClass("user_login_input_value_select_list_over");
+		$tmpselect.removeClass("user_login_input_value_select_list_out");
+	}
+})
+$(".user_login_input_value_select_arrow").click(function(){
+	$tmpselect=$(this).parent().find(".user_login_input_value_select_list_out")
+	if($tmpselect.length==0){
+		$tmpselect=$(this).parent().find(".user_login_input_value_select_list_over")
+		$tmpselect.addClass("user_login_input_value_select_list_out");
+		$tmpselect.removeClass("user_login_input_value_select_list_over");
+	}
+	else{
+		$tmpselect.addClass("user_login_input_value_select_list_over");
+		$tmpselect.removeClass("user_login_input_value_select_list_out");
+	}
+})
+
+$(".user_login_input_value_select_list_out").find("div").on("click",function(){
+	
+	if($(this).parent().parent().parent().attr("id")=="divProIId"){
+		if($(this).attr("id")!=0){
+			$.get("/index.php/Home/Index/cityName?cityID="+$(this).attr("id"),function(data){
+				$("#WX_CityInfo option").remove();
+				//console.log(obj);
+				$("#WX_CityInfo").empty();
+				$("#WX_CityInfo").append("<option value=\"0\" selected=\"selected\">请选择市县</option>");
+				$("#divcityID").find(".user_login_input_value_select_list_out").html("");
+				$("#divcityID").find(".user_login_input_value_select_list_out").append("<div id=\"0\">请选择市县</div>");
+				for(var i=0;i<data.length;i++){
+					// console.log(obj.item[i].cityID);
+					// console.log(obj.item[i].cityName);
+					$("#divcityID").find(".user_login_input_value_select_list_out").append("<div id=\""+data[i].id+"\">"+data[i].name+"</div>");
+					$("#city").append("<option value=\""+data[i].id+"\">"+data[i].name+"</option>");
+				}
+				$("#divcityID").find(".user_login_input_value_select_list_out").find("div").click(function(){
+					$(this).parent().parent().parent().find(".user_login_input_value_select_value").html($(this).html());
+					$(this).parent().parent().parent().find("select").val($(this).attr("id"));
+					$(this).parent().parent().parent().find(".user_login_input_value_select_list_over").attr("class","user_login_input_value_select_list_out");
+				})
+				
+			});
+		}
+	}
+	$(this).parent().parent().parent().find(".user_login_input_value_select_value").html($(this).html());
+	$(this).parent().parent().parent().find("select").val($(this).attr("id"));
+	$(this).parent().parent().parent().find(".user_login_input_value_select_list_over").attr("class","user_login_input_value_select_list_out");
+});
+
+
+
+
+</script>
+
+<div class="pika-single is-hidden is-bound"></div></body></html>

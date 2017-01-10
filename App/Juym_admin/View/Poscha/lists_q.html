@@ -1,0 +1,224 @@
+<include file="Public/head" />
+<include file="Public/sidebar"/>
+  <!-- content start -->
+  <div class="admin-content">
+    <div class="admin-content-body">
+      <div class="am-cf am-padding am-padding-bottom-0">
+      </div>
+
+      <hr>
+
+       <div class="am-g">
+        <div class="am-u-sm-12 am-u-md-6">
+          <div class="am-btn-toolbar">
+            <div class="am-btn-group am-btn-group-xs">
+              <a href="{:U('Poscha/adds_q',array('id'=>$id))}"><button type="button"; class="am-btn am-btn-default"><span class="am-icon-plus"></span>添加</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="am-g">
+        <div class="am-u-sm-12">
+          <form class="am-form">
+            <table class="am-table am-table-striped am-table-hover table-main">
+              <thead>
+              <tr>
+                <th class="table-check"><input type="checkbox" /></th>
+                <th class="table-id">序号</th>
+                <th class="table-title" id="title" >任务名称</th>
+                <th class="">所属公司</th>
+                <th class="img_show">封面照片</th>
+                <th class="">需求人数</th>
+                <th class="">区域</th>
+                <th class="">佣金</th>
+                <th class="">薪资</th>
+                <th class="">工作类型</th>
+                <th class="">工作时间</th>
+                <th class="">上下架</th>
+                <th class="">人才匹配</th>
+                <!-- <th class="">排序</th> -->
+                <th class="">已录取人数</th>
+                <th class="table-set">操作</th>
+              </tr>
+              </thead>
+              <tbody>
+              <foreach name="data" item="v">
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>{$v['pos_id']}</td>
+                <td>{$v['pos_name']}</td>
+                <td>
+                      <?php
+                            $db=M('company');
+                            $map['com_id']=$v['pos_company_id'];  
+                            $datacom=$db->where($map)->select();
+                                                
+                            foreach($datacom as $datacoms){
+                                echo $datacoms['com_name'];
+                            }                   
+                      ?>
+                </td>
+                <td class="img_show">
+                    <if condition="$v['pos_img'] neq '' ">
+                    <img style="height:70px;width:90px" src="{$v['pos_img']}">
+                     <else />无
+                     </if>
+                </td>
+                <td>{$v['pos_recruitmun']}</td>
+                <td>
+                    <?php
+                        $db=M('pos');
+                        $map['pos_id']=$v['pos_county'];
+                        $data=$db->where($map)->select();
+                        
+                        foreach($data as $datas){
+                                echo $datas['pos_name'];
+                            } 
+                    ?>
+                </td>
+                <td>{$v['pos_brokerage']}</td>
+                <td>{$v['pos_salary']}</td>
+                <td>
+                    <?php
+                        $db=M('pos');
+                        $map['pos_id']=$v['pos_joptype'];
+                        $data=$db->where($map)->select();
+                        
+                        foreach($data as $datas){
+                                echo $datas['pos_name'];
+                            } 
+                    ?>
+                </td>
+                <td>{$v['pos_worktime']}</td>
+                <td>
+                    <a href="javascript:;" data-value="{$v['pos_online']}" class="btnRec">
+                    <?php 
+                     $db = M('orderinfo');
+                        $map['ord_poschaid']=$v['pos_id'];
+                        $data=$db->where($map)->count();
+                        if($data==$v['pos_recruitmun']){
+                            $v['pos_online']=0;
+                        }    
+                    echo $v['pos_online']?'上架':'下架';?></a>
+                </td>
+                <td>
+                    <开启/关闭>
+                </td>
+                <!-- <td>{$v['pos_desc']}</td> -->
+                <td>
+                    <?php
+                        $db = M('orderinfo');
+                        $map['ord_poschaid']=$v['pos_id'];
+                        $data=$db->where($map)->count();
+                        echo $data;
+                    ?>
+                </td>
+                <td>
+                  <div class="am-btn-toolbar">
+                    <div class="am-btn-group am-btn-group-xs">
+                      <button type="submit" formmethod="get" formaction="{:U('Poscha/view',array(id=>$v['pos_id']))}" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span>查看</button>
+                      <button type="submit" formmethod="get" formaction="{:U('Orderinfo/lists',array(id=>$v['pos_id']))}" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span>订单情况</button>
+                      <!-- <button id="del{$v['id']}" type="button" formaction1="{:U('Tem/zshow',array('id'=>$v['pid']))}" formmethod="get" formaction="{:U('Tem/delZshow',array(id=>$v['id']))}" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button> -->
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              </foreach>
+              </tbody>
+            </table>
+            <div class="am-cf">
+              共 {$row_page} 条记录
+              <div class="am-fr">
+                <ul class="am-pagination">
+                  {$page}
+                </ul>
+              </div>
+            </div>
+            <hr />
+            <p>注：.....</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+<!-- 删除弹出框 -->
+<div class="am-modal am-modal-confirm" tabindex="-1" id="my-confirm">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">Amaze UI</div>
+    <div class="am-modal-bd">
+      你，确定要删除这条记录吗？
+    </div>
+    <div class="am-modal-footer">
+      <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+      <span class="am-modal-btn" data-am-modal-confirm>确定</span>
+    </div>
+  </div>
+</div>
+
+<include file="Public/footer"/>
+
+<script type="text/javascript">
+
+$(document).on('click','.btnRec',function(){
+        var id=$(this).parent().siblings('.id').text();
+        var pos_online = $(this).attr('data-value');
+        if(pos_online==1)
+            value = 0
+        else
+            value = 1
+        $.ajax({
+            url:"{:U('poscha/doonline')}",
+            data:{
+                "id":id,
+                "pos_online":value,
+            },
+            type:'post',
+            dataType:"json",
+            success:function(data){
+                if(data.status){
+                    alert('操作成功');
+                    location.reload();
+                }else{
+                    alert(data.message);
+                }
+            },
+        });
+    });
+
+   $(function(){
+      // switch({$type}){
+
+      //   case 1 :
+      //      $(".model").css('display',"none");
+      //      break;
+      //   case 2 :
+      //     $(".model").css('display',"none");
+      //     $("#title").html("标题");
+      //      break;
+
+      //   case 3 :
+      //      $(".model").css('display',"none");
+          
+      //      break;
+
+      //    case 4 :
+
+      //       $(".img_show").css('display',"none");
+         
+      //      break;
+
+      //   case 6 :
+      //        $("#desc").css('display',"none");
+      //       $(".desc").css('display',"none");
+         
+      //      break;
+
+      //   }
+
+    }); 
+
+
+
+
+</script>

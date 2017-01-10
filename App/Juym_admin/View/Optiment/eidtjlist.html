@@ -1,0 +1,87 @@
+<include file="Public/head" />
+<include file="Public/sidebar"/>
+  <!-- content start -->
+    <!-- content start -->
+  <div class="admin-content">
+    <div class="admin-content-body">
+      <div class="am-cf am-padding am-padding-bottom-0">
+        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">兼职类型添加</strong> / <small>Administrator add</small></div>
+      </div>
+      <hr/>
+      <div class="am-g">
+        <div class="am-u-sm-12 am-u-md-4 am-u-md-push-8">
+        </div>
+        <div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
+          <form class="am-form am-form-horizontal" id="from_job" action="{:U('Optiment/doeidsxlist')}" method="post">
+            <div class="am-form-group">
+              <label for="user-name" class="am-u-sm-3 am-form-label">名称</label>
+              <div class="am-u-sm-9">
+                <input type="text" id="PosName" name="PosName" value="{$data[0]['pos_name']}" placeholder="输入名称" required/>
+                <small></small>
+              </div>
+            </div>
+            <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">排序</label>
+              <div class="am-u-sm-9">
+                <input type="text" name="Possort" id="Possort" value="{$data[0]['pos_sort']}" placeholder="请输入排序" required/>
+                <input type="hidden" name="Posjoptype" id="Posjoptype" value="{$data[0]['pos_joptype']}">
+                <input type="hidden" name="Posid" value="{$data[0]['pos_id']}">
+                <small></small>
+              </div>
+            </div>
+             <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">是否热搜</label>
+              <div class="am-u-sm-9">
+               <select data-am-selected name="Poshot" id=Poshot>
+                <option value="">请选着</option>
+                <option value="0" <if condition="$data[0]['pos_hot'] eq 0 ">selected<else /> </if>>是</option>
+                <option value="1" <if condition="$data[0]['pos_hot'] eq 1 ">selected<else /> </if>>否</option>
+              </select>
+              </div>
+            </div>
+            <div class="am-form-group">
+              <div class="am-u-sm-9 am-u-sm-push-3">
+                <button type="button" id="but_job"  class="am-btn am-btn-primary">添加兼职类型</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+<include file="Public/footer"/>
+<script type="text/javascript">
+  $('#but_job').click(function (e) { 
+      var url = $("#from_job").attr('action');
+      var t_url ="{:U('Optiment/tjlist')}";
+      var dot =1;
+      if($('#PosName').val()==""){
+            dot=0;
+            alert('先写名称');
+            return false;
+      }
+       if($('#Poshot').val()==""){
+            dot=0;
+            alert('选着是否热搜');
+            return false;
+      }
+        if(dot==1 ){
+          $.ajax({
+              type:"post",
+              url:url,
+              data:$("#from_job").serialize(),
+              dataType:"json",              
+              success:function(data){
+                  if (data=="ok") {
+                    dialog.success("修该成功",t_url);
+                    return false;
+                  }
+                  if(data=="no"){
+                    dialog.error("修改失败");
+                    return false;
+                  }    
+              }
+          }); 
+        }       
+  });
+
+</script>

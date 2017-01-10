@@ -1,0 +1,206 @@
+<!-- 任务详情 -->
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>任务详情</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="stylesheet" href="assets/css/amazeui.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/taskDetail.css">
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/amazeui.min.js"></script>
+  <script src="js/function.js"></script>
+  <script src="js/date.js"></script>
+  <script src="js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+<div class="listitem itemcur">
+  <div class="orderinfoBox">
+    <div class="ipt_box3">
+      <div class="mid">
+        <div class="title">{{object.pos_name}}</div>
+         <div class="type" v-if="(object.pos_task_type == '0')">兼职</div>
+        <div class="type" v-if="(object.pos_task_type == '2')">全职</div>
+        <div class="type" v-if="(object.pos_task_type == '1')">实习</div>
+        <div class="clearbox"></div>
+        <div class="introduce">{{object.pos_jobdescription}}</div>
+        <div class="area">地点：<span>{{object.pos_county}}</span></div>
+        <div class="clearbox"></div>
+      </div>
+      <div class="right">
+        <div class="ipt_value">{{object.pos_brokerage}}元</div>
+      </div>
+      <div class="clearbox"></div>
+
+      <div class="minrightbox">
+        <div class="num">{{object.pos_redeli}}</div>
+        <div class="img"><img src="images/taskico2.png" alt=""></div>
+
+        <div class="num">{{object.pos_toursmun}}</div>
+        <div class="img"><img src="images/taskico1.png" alt=""></div>
+        <div class="clearbox"></div>
+      </div>
+    </div>
+    <div class="ipt_box4">
+      <div>工作时间：{{object.pos_worktime}}</div>
+      <div>上班时段：{{object.pos_hours}}</div>
+    </div>
+  </div>
+
+  <div class="orderinfoBox">
+    <div class="ipt_box2">
+      <div class="left">薪资待遇</div>
+      <div class="right">
+        <div class="ipt_value">{{object.pos_salary}}/天</div>
+      </div>
+      <div class="clearbox"></div>
+    </div>
+    <div class="ipt_box2">
+      <div class="left">招聘人数</div>
+      <div class="right">
+        <div class="ipt_value">{{object.pos_recruitmun}}人</div>
+      </div>
+      <div class="clearbox"></div>
+    </div>
+    <div class="ipt_box2">
+      <div class="left">工作类型</div>
+      <div class="right">
+        <div class="ipt_value">{{object.pos_joptype}}</div>
+      </div>
+      <div class="clearbox"></div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="nav_bottom am-topbar am-topbar-inverse am-topbar-fixed-bottom">
+  <ul>
+    <li class="left">
+      <div style="width: 90px; margin: 0px auto;">
+        <div class="img"><img src="images/taskdetailicon1.png" alt=""></div>
+        <div class="title">客服咨询</div>
+      </div>
+    </li>
+    <li class="right" @click="order">领取任务</li>
+    <li class="right1" @click="select">查看二维码</li>
+  </ul>
+</footer>
+</div>
+
+<!-- 提示框架 -->
+<div id="rb1" class="remindbox">
+  <div class="icon"><i class="fa fa-exclamation-circle" aria-hidden="true"></i></div>
+  <div class="content"></div>
+</div>
+<script>
+  function showRemindbox(content){
+    $("#rb1").slideToggle();
+    $("#rb1").find(".content").html(content);
+    $("#rb1").unbind("click");
+    $("#rb1").bind("click",function(){
+      $("#rb1").slideToggle();
+    })
+  }
+  
+  $(function() {
+    // $(".nav_top li").click(function(){
+    //   console.log($(this).index());
+    //   $(".nav_top li div").removeClass("cur");//移除导航当前选项卡
+    //   $(".nav_top li div").eq($(this).index()).addClass("cur");//添加点击当前选项卡位置
+    //   $(".listitem").removeClass("itemcur");//移除导航当前选项卡对应任务内容
+    //   $(".listitem").eq($(this).index()).addClass("itemcur");//添加点击当前选项卡对应任务内容
+    //   console.log()
+    // })
+    var pos_id = getUrlParam('pos_id');
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+        var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+        if (r != null) return unescape(r[2]); return null; //返回参数值
+    }
+    var task = new Vue({
+          el: '#app',
+          data: {
+              //显示JSON
+              message:'',
+              //对象数组
+              object : ''
+          },
+          methods:{
+            order:function(){   
+              var phone = getCookie("phone");         
+              if(phone == null || phone == "" || phone == "undefined"){     
+
+                window.location.href = "login.html";
+              }else{
+                 $.ajax({
+                  //url: "http://suzhi.hzjuym.com/index.php/home/Poscha/lists",
+                  url: "http://suzhi.hzjuym.com/index.php/Home/Task/Relation",
+                  type: 'POST',
+                  dataType: 'json',
+                  data: {pos_id:pos_id},
+                  success: function(data) {
+                    //console.log(data);
+                    if(data == "ok"){
+                      showRemindbox("领取任务成功！");
+                      $(".right").attr("style","display:none;");
+                      $(".right1").attr("style","display:block;");
+                    }else if(data == "no"){
+                       showRemindbox("您已经领取过该任务！");
+                    }else{
+                      showRemindbox("未知错误！");
+                    }
+                   
+                  },
+                  error: function(e){
+                   showRemindbox("连接失败！");
+                  }
+                })
+              }  
+             
+            },
+            select:function(){           
+              window.location.href = "taskDetailqrcdoe.html?pos_id=" + pos_id;
+            }
+          } 
+      });
+    loadData(function(r){
+      task.object = r[0];;
+      // console.log(task.object);
+      // console.log(task.object.pos_id);
+    }) 
+    function loadData(callback) {
+      $.ajax({
+        //url: "http://suzhi.hzjuym.com/index.php/home/Poscha/lists",
+        url: "http://suzhi.hzjuym.com/index.php/home/Poscha/view",
+        type: 'POST',
+        dataType: 'json',
+        data: {id:pos_id},
+        success: function(data) {
+          //console.log(data);
+          if(data[0].orderinfo == null || data[0].orderinfo.length == 0){
+            $(".right").attr("style","display:block;");
+            $(".right1").attr("style","display:none;");
+          }else{
+            $(".right").attr("style","display:none;");
+            $(".right1").attr("style","display:block;");
+          }
+         
+         callback(data);
+        },
+        error: function(e){
+         showRemindbox("连接失败！");
+        }
+      })
+    }
+  })
+</script>
+</body>
+</html>

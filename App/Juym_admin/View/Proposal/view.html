@@ -1,0 +1,476 @@
+<include file="Public/head" />
+
+<include file="Public/sidebar"/>
+
+<style type="text/css">
+
+.uploadifive-button {
+  float: left;
+  margin-right: 10px;
+}
+#queue {
+  margin-top: 20px;
+  border: 1px solid #E5E5E5;
+  height: 107px;
+  overflow: auto;
+  margin-bottom: 10px;
+  padding: 0 3px 3px;
+  width: 250px;
+
+}
+#queue1 {
+  margin-top: 20px;
+  border: 1px solid #E5E5E5;
+  height: 107px;
+  overflow: auto;
+  margin-bottom: 10px;
+  padding: 0 3px 3px;
+  width: 250px;
+
+}
+</style>
+
+
+
+  <!-- content start -->
+    <!-- content start -->
+  <div class="admin-content">
+    <div class="admin-content-body">
+      <div class="am-cf am-padding am-padding-bottom-0">
+        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">{$zname}</strong> / <small>子栏目添加</small></div>
+      </div>
+
+      <hr/>
+
+      <div class="am-g">
+        <div class="am-u-sm-12 am-u-md-4 am-u-md-push-8">
+        </div>
+        <div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
+          <form class="am-form am-form-horizontal" id="form1" action="{:U('Tem/doeidZxinxi')}" action1="{:U('Tem/zshow',array('id'=>$data['pid']))}" method="post">
+            <div class="am-form-group" id="zname">
+              <label  for="user-name" class="am-u-sm-3 am-form-label">标题/Cate</label>
+              <div class="am-u-sm-9">
+                <input type="text" style="width:400px"  name="Zname" class="Zname" value="{$data['poname']}111" placeholder="请输入栏目名字" required/>
+                <input type="hidden" name="pid" value="{$data['pid']}">
+                 <input type="hidden" name="id" value="{$data['id']}">
+                <small></small>
+              </div>
+            </div>
+
+        <div class="am-form-group" >
+          <label for="user-name" class="am-u-sm-3 am-form-label">排序/model</label>
+            <div class="am-u-sm-9">
+              <input type="text" style="width:400px" id="name" name="sort" value="{$data['sort']}" placeholder="请输入排序" required/>
+
+              <small></small>
+           </div>
+        </div>
+
+        <div class="am-form-group" id="video_url" style="display:none" >
+          <label for="user-name" class="am-u-sm-3 am-form-label">视频链接/model</label>
+            <div class="am-u-sm-9">
+              <input type="text" style="width:400px" id="name" name="video_url" value="{$data['video_url']}" placeholder="请输入视频链接" required/>
+              <small></small>
+           </div>
+        </div>
+                                                           
+         <div class="am-form-group" id="simpleDesc">
+            <label for="user-email" class="am-u-sm-3 am-form-label">描述/describe</label>
+            <div class="am-u-sm-9" >
+              <textarea  style="width:400px;height:150px;"name="simpleDesc">{$data['simpledesc']}</textarea>
+              
+            </div>
+          </div>
+
+
+      <div class="am-form-group" id="model" style="display:none">
+          <label for="user-name" class="am-u-sm-3 am-form-label">型号/model</label>
+            <div class="am-u-sm-9">
+              <input type="text" style="width:400px" id="name" name="model" value="{$data['model']}" placeholder="请输入型号" required/>
+
+              <small></small>
+           </div>
+        </div>
+
+        <div class="am-form-group" id="performance" style="display:none" >
+          <label for="user-name" class="am-u-sm-3 am-form-label">性能/performance</label>
+            <div class="am-u-sm-9">
+              <textarea style="width:250px;height:80px" id="name" name="performance" placeholder="性能描素" required/>{$data['performance']}</textarea>
+              <small></small>
+           </div>
+        </div>
+
+         <!-- 图片上传单图-->
+        <div id="upimg1" style="display:none" >
+        <div class="am-form-group">
+          <label for="user-name" class="am-u-sm-3 am-form-label">缩略图单张上传</label>
+            <div class="am-u-sm-9">
+             <input id="file_upload1" name="file_upload" type="file" multiple="true">
+              <a style="position: relative; top: 8px;" href="javascript:$('#file_upload1').uploadifive('upload')">上传文件</a> 
+          <div style="clear:both;"></div>
+            <div id="queue1"></div>
+           </div>
+        </div> 
+        <div style="clear:both;"></div>
+         
+          <div id="both1">
+            <if condition="$data['picthn'] neq '' ">
+            <div class='add'><img  class='img1' src="__ROOT__/uploads/{$data['picthn']}" imgid="{$data['id']}" ><img class='ico' src='__PUBLIC__/img/ywrong.png'><input type='hidden' name='picThn' value="{$data['picthn']}">
+            </div>
+            <else />
+
+            </if>
+          </div>
+
+          <div style="clear:both;"></div>
+          </div>
+
+
+        <!-- 图片上传展示多图 -->
+        <div id="upimg" style="display:none">
+        <div class="am-form-group">
+          <label for="user-name" class="am-u-sm-3 am-form-label">图片上传</label>
+            <div class="am-u-sm-9">
+             <input id="file_upload" name="file_upload" type="file" multiple="true">
+              <a style="position: relative; top: 8px;" href="javascript:$('#file_upload').uploadifive('upload')">上传文件</a> 
+          <div style="clear:both;"></div>
+            <div id="queue"></div>
+           </div>
+        </div> 
+        <div style="clear:both;"></div>
+         
+          <div id="both">
+             <foreach name="data['imgaddress']" item="v">
+            <div class='add'><img  class='img1' src='__ROOT__/uploads/{$v}' imgid="{$data['id']}" ><img class='ico' src='__PUBLIC__/img/ywrong.png'><input type='hidden' name='img[]' value="{$v}">
+            </div>
+            </foreach>
+          </div>
+
+          <div style="clear:both;"></div>
+          </div>
+
+          <div class="am-form-group" id="content1"  >
+            <label for="user-email" class="am-u-sm-3 am-form-label">描述/describe</label>
+            <div class="am-u-sm-9" >
+              <textarea  style="width:700px;height:500px;" class="content"  name="content">{$data['content']}</textarea>
+            </div>
+          </div>
+          <div class="am-form-group" id="content2" style="display:none" >
+            <label for="user-email" class="am-u-sm-3 am-form-label">描述手机版/describe</label>
+            <div class="am-u-sm-9" >
+              <textarea  style="width:700px;height:500px;" class="content1"  name="content1">{$data['phone']}</textarea>
+              
+            </div>
+          </div>
+
+            <div class="am-form-group">
+              <div class="am-u-sm-9 am-u-sm-push-3">
+                <button type="button" id="eid_button"  class="am-btn am-btn-primary">修改</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+<include file="Public/footer"/>
+<script type="text/javascript">
+    //改变 样子
+    $(function(){
+      var type;
+      if(type=='type'){
+        type=1;
+      }else{
+
+        type={$type}
+
+      }
+
+      switch(type){
+        //图片加 详细内容
+        case 1 :
+          $("#upimg1").remove();
+          
+           break;
+           //标题 加详细内容
+        case 2 :
+           // $("#upimg").css("display","none");
+            $("#upimg1").remove();
+           $("#content1").css("display","none");
+           break;
+          //标题加图片 只能添加一张图片
+         case 3 :
+           $("#content1").css("display","none");
+           $("#content2").css("display","none");
+           $("#zname label").html("图片标题");
+           $("#video_url").css("display","none");
+           $("#name").attr("placeholder","请输入图片名字")
+           break;
+          //视频
+         case 5 :
+           $('#video_url').css("display","block")
+           $("#content").css("display","none");
+           $("#content1").css("display","none");
+           $("#content2").css("display","none");
+           $("#zname label").html("视频标题");
+           break;
+           //产品性能
+         case 6 :
+           $("#video_url").css("display","none");
+           $("#model").css("display","block");
+           $("#zname label").html("产品名字");
+           $("#performance").css("display","block");
+           $("#simpleDesc").css("display","none");
+           break;
+          case 8 :
+       
+          $("#content2").css('display',"none");
+         break;
+
+        case 11 :
+           $("#video_url").remove();
+           $("#model").remove();
+            $("#model").remove();
+           $("#performance").remove();
+           $("#upimg1").remove();
+           $("#upimg").remove();
+            var type ="11"
+           $("#content2").css('display',"none");
+
+           break;
+
+
+      }
+
+  }); 
+
+
+
+ // 异步上传 图片多图
+    <?php $timestamp = time();?>
+    $(function() {
+      $('#file_upload').uploadifive({
+        'auto'             : false,
+        'checkScript'      : '{:U('Upimg/checkexists')}',
+        'formData'         : {
+                     'timestamp' : '<?php echo $timestamp;?>',
+                     'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
+                             },
+        'queueID'          : 'queue',
+        'uploadScript'     : "{:U('Upimg/doPhoto')}",
+        'onUploadComplete' : function(file, data) {
+         //console.log(data);
+        //alert(data);
+         //console.log(file);
+         //var url =data;
+         console.log(data);
+         
+           $('#both').append("<div class='add'><img  class='img1' src='__ROOT__/uploads/"+data+"'><img class='ico' src='__PUBLIC__/img/ywrong.png'><input type='hidden' name='img[]' value="+data+"></div>");
+
+             //鼠标经过图片显示小图片
+          $(".add").unbind("mouseover");
+          $(".add").bind("mouseover",function(){
+             $(this).find(".ico").css("display","block");
+          });
+
+
+           //鼠标离开图片不显示显示小图片
+          $(".add").unbind("mouseout");
+          $(".add").bind("mouseout",function(){
+             $(this).find(".ico").css("display","none");
+
+          });
+          $(".ico").unbind("click");
+          $(".ico").bind('click', function(){
+           
+             $(this).parent('.add').remove();
+            var img=$(this).prev(".img1").attr('src');
+            var url='{:U('Properties/delImgw')}';
+          
+            $.ajax({
+                  type:"post",
+                  url:url,
+                  data:{ 'h':img},
+                  dataType:"json",
+                  
+                  success:function(data1){
+                    
+                            
+                    $('.div_tu').css("display","none");                   
+          
+                  }
+      
+      
+                })
+
+
+        });
+
+
+
+          }
+
+         
+      });
+
+    });
+      
+//鼠标经过图片显示小图片
+          $(".add").unbind("mouseover");
+          $(".add").bind("mouseover",function(){
+             $(this).find(".ico").css("display","block");
+          });
+
+
+           //鼠标离开图片不显示显示小图片
+          $(".add").unbind("mouseout");
+          $(".add").bind("mouseout",function(){
+             $(this).find(".ico").css("display","none");
+
+          });
+          $(".ico").unbind("click");
+          $(".ico").bind('click', function(){
+           
+            $(this).parent('.add').remove();
+            var img=$(this).prev(".img1").attr('src');
+            var url='{:U('Upimg/delImg')}';
+             var imgId="{$imgid}";
+             var imgId = $(this).prev(".img1").attr('imgid');
+
+            $.ajax({
+                  type:"post",
+                  url:url,
+                  data:{ h : img,
+                         b : imgId 
+                  },
+                  dataType:"json",
+                  
+                  success:function(data1){
+                    
+                            
+                    $('.div_tu').css("display","none");                   
+          
+        }
+      
+      
+    })
+
+
+});
+</script>
+
+<script type="text/javascript">
+  
+ // 异步上传 图片单图
+    <?php $timestamp = time();?>
+    $(function() {
+      $('#file_upload1').uploadifive({
+        'auto'             : false,
+        'checkScript'      : '{:U('Upimg/checkexists')}',
+        'formData'         : {
+                     'timestamp' : '<?php echo $timestamp;?>',
+                     'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
+                             },
+        'uploadLimit'      : 1,             
+        'queueID'          : 'queue1',
+        'uploadScript'     : "{:U('Upimg/doPhoto')}",
+        'onUploadComplete' : function(file, data) {
+         //console.log(data);
+        //alert(data);
+         //console.log(file);
+         //var url =data;
+         console.log(data);
+         
+           $('#both1').append("<div class='add'><img  class='img1' src='__ROOT__/uploads/"+data+"'><img class='ico' src='__PUBLIC__/img/ywrong.png'><input type='hidden' name='picThn' value="+data+"></div>");
+
+             //鼠标经过图片显示小图片
+          $(".add").unbind("mouseover");
+          $(".add").bind("mouseover",function(){
+             $(this).find(".ico").css("display","block");
+          });
+
+
+           //鼠标离开图片不显示显示小图片
+          $(".add").unbind("mouseout");
+          $(".add").bind("mouseout",function(){
+             $(this).find(".ico").css("display","none");
+
+          });
+          $(".ico").unbind("click");
+          $(".ico").bind('click', function(){
+           
+             $(this).parent('.add').remove();
+            var img=$(this).prev(".img1").attr('src');
+            var url='{:U('Properties/delImgw')}';
+          
+            $.ajax({
+                  type:"post",
+                  url:url,
+                  data:{ 'h':img},
+                  dataType:"json",
+                  
+                  success:function(data1){
+                    
+                            
+                    $('.div_tu').css("display","none");                   
+          
+                  }
+      
+      
+                })
+
+
+        });
+
+
+
+          }
+
+         
+      });
+
+    });
+      
+//鼠标经过图片显示小图片
+          $(".add").unbind("mouseover");
+          $(".add").bind("mouseover",function(){
+             $(this).find(".ico").css("display","block");
+          });
+
+
+           //鼠标离开图片不显示显示小图片
+          $(".add").unbind("mouseout");
+          $(".add").bind("mouseout",function(){
+             $(this).find(".ico").css("display","none");
+
+          });
+          $(".ico").unbind("click");
+          $(".ico").bind('click', function(){
+           
+            $(this).parent('.add').remove();
+            var img=$(this).prev(".img1").attr('src');
+            var url='{:U('Upimg/delImg_d')}';
+             var imgId="{$imgid}";
+             var imgId = $(this).prev(".img1").attr('imgid');
+
+            $.ajax({
+                  type:"post",
+                  url:url,
+                  data:{ h : img,
+                         b : imgId 
+                  },
+                  dataType:"json",
+                  
+                  success:function(data1){
+                    
+                            
+                    $('.div_tu').css("display","none");                   
+          
+        }
+      
+      
+    })
+
+
+});
+</script>

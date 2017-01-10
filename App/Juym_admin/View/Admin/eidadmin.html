@@ -1,0 +1,637 @@
+<include file="Public/head" />
+<include file="Public/sidebar"/>
+<style type="text/css">
+
+.uploadifive-button {
+  float: left;
+  margin-right: 10px;
+}
+#queue {
+  margin-top: 20px;
+  border: 1px solid #E5E5E5;
+  height: 107px;
+  overflow: auto;
+  margin-bottom: 10px;
+  padding: 0 3px 3px;
+  width: 250px;
+
+}
+</style>
+
+  <!-- content start -->
+    <!-- content start -->
+  <div class="admin-content">
+    <div class="admin-content-body">
+      <div class="am-cf am-padding am-padding-bottom-0">
+        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">管理员添加</strong> <small></small></div>
+      </div>
+
+      <hr/>
+
+      <div class="am-g">
+        <div class="am-u-sm-12 am-u-md-4 am-u-md-push-8">
+        </div>
+        <div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
+          <form class="am-form am-form-horizontal" id="form_a" action="{:U('admin/doeidadmin')}" method="post">
+            <div class="am-form-group">
+              <label for="user-name" class="am-u-sm-3 am-form-label">管理员注册</label>
+              <div class="am-u-sm-9">
+                <input type="text" id="username" name="username" value="{$data['username']}" placeholder="请输入管理名字" required/>
+                <small></small>
+              </div>
+            </div>
+
+           <!--  <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">密码 </label>
+              <div class="am-u-sm-9">
+                <input type="password" name="password" id="password" placeholder="请输入密码" required/>
+                <small>输入密码</small>
+              </div>
+            </div> -->
+
+            <!--  <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">确认密码 </label>
+              <div class="am-u-sm-9">
+                <input type="password" name="repassword" id="repassword" placeholder="请输入密码" required/>
+                <small>确认密码</small>
+              </div>
+            </div> -->
+
+          <!--   <div class="am-form-group">
+              <label for="user-phone" class="am-u-sm-3 am-form-label">邮箱</label>
+              <div class="am-u-sm-9">
+                <input type="tel" value="{$data['email']}" name="email" id="email"  placeholder="输入你的邮箱 " >
+              </div>
+            </div> -->
+
+            <div class="am-form-group">
+              <label for="user-phone" class="am-u-sm-3 am-form-label">收件地址</label>
+              <div class="am-u-sm-9">
+                <input type="tel" value="{$data['address']}" name="address" id="address"  placeholder="输入收件地址 " >
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="user-phone" class="am-u-sm-3 am-form-label">iPhone/ID</label>
+              <div class="am-u-sm-9">
+                <input type="tel" id="iphone" value="{$data['iphone']}" name="iphone"  placeholder="输入你的手机号码 " >
+              </div>
+            </div>
+            <div class="am-form-group">
+              <label for="user-phone" class="am-u-sm-3 am-form-label">微信号</label>
+              <div class="am-u-sm-9">
+                <input type="tel" id="wxNum" value="{$data['wxnum']}" name="wxNum"  placeholder="输入你的微信号 " >
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="user-phone" class="am-u-sm-3 am-form-label">真实姓名</label>
+              <div class="am-u-sm-9">
+                <input  id="name_zsmz" name="name" value="{$data['name']}" placeholder="输入你的名字" >
+              </div>
+            </div>
+
+             <div class="am-form-group">
+              <label for="user-phone" class="am-u-sm-3 am-form-label">级别</label>
+              <div class="am-u-sm-3" id="am-u-sm-3">
+                      <select id="level" name="level">
+                        <option value="option1">请选着</option>
+                        <option value="1" <if condition="$data['type'] eq 1" >  selected="selected" <else />  </if>  >超级管理员</option>
+                        <option value="2" <if condition="$data['type'] eq 2" >  selected="selected" <else />  </if>  >省级代理</option>
+                         <option value="3" <if condition="$data['type'] eq 3" >  selected="selected" <else />  </if>  >城市代理</option>
+                          <option value="4" <if condition="$data['type'] eq 4" >  selected="selected" <else />  </if>  >平安</option>
+                      </select>
+                      <span class="am-form-caret"></span>
+              </div>
+
+               <div class="am-u-sm-3" id="am-u-sm-4" style="display:none" >
+                      <select id="doc-select-2" class="doc-select-2" name="province">
+                        <option pid="o" value="o">请选着</option>
+              
+                      </select>
+                      <span class="am-form-caret"></span>
+              </div>
+
+               <div class="am-u-sm-3" id="am-u-sm-5" style="display:none">
+                      <select id="doc-select-3" name="city">
+                         <option value="option1">请选着</option>
+                       
+                      </select>
+                      <span class="am-form-caret"></span>
+              </div>
+
+            </div>
+
+
+             <div class="am-form-group">
+              <label for="user-phone" class="am-u-sm-3 am-form-label">支付宝</label>
+              <div class="am-u-sm-9">
+                <input type="tel" id="zhifubao" value="{$data['zhifubao']}" name="zhifubao"  placeholder="输入你支付宝 " >
+              </div>
+            </div>
+
+             <div class="am-form-group">
+              <label  class="am-u-sm-3 am-form-label">身份证号码</label>
+              <div class="am-u-sm-9">
+                <input  id="sfzid" name="sfzid" value="{$data['sfzid']}" placeholder="输入你的身份证 " >
+                 <input type='hidden' name="id" value="{$data['id']}" placeholder="输入你的身份证 " >
+              </div>
+            </div>
+
+         <div id="upimg">
+          <div class="am-form-group">
+            <label for="user-name" class="am-u-sm-3 am-form-label">图片上传</label>
+              <div class="am-u-sm-9">
+               <input id="file_upload" name="file_upload" type="file" multiple="true">
+                <a style="position: relative; top: 8px;" href="javascript:$('#file_upload').uploadifive('upload')">上传文件</a> 
+            <div style="clear:both;"></div>
+              <div id="queue"></div>
+             </div>
+          </div>
+          <div style="clear:both;"></div>
+            <div id="both">
+
+              <foreach name="data['sfzimg']" item="v">
+                  <div class='add'><img  class='img1' src='__ROOT__/upimgid/{$v}' imgid="{$data['id']}" ><img class='ico' src='__PUBLIC__/img/ywrong.png'><input type='hidden' name='img[]' value="{$v}">
+                  </div>
+            </foreach>
+            </div>
+
+            <div style="clear:both;"></div>
+        </div>
+
+            <div class="am-form-group">
+              <div class="am-u-sm-9 am-u-sm-push-3">
+                <button type="button" id="button_a"  class="am-btn am-btn-primary">修改管理员</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+<include file="Public/footer"/>
+<script type="text/javascript">
+  
+
+$(function() {
+
+
+  $('#button_a').click(function (e) {
+        
+        var error = false;
+        var name = $('#username').val();
+        // var password = $('#password').val();
+        // var repassword = $('#password').val();
+        var address=$("#address").val(); 
+        var iphone=$("#iphone").val();
+        var name_zsmz=$("#name_zsmz").val();
+        var level =$("#level").val();
+        var zhifubao=$("#zhifubao").val();
+        var sfzid=$("#sfzid").val();
+        var file_upload=$("#file_upload").val();
+        if (username.length == 0) {
+            var error = true;
+            $('#username').css("border-color", "#D8000C");
+        } else {
+            $('#username').css("border-color", "#666");
+        }
+
+        // if (password.length == 0) {
+        //     var error = true;
+        //     $('#password').css("border-color", "#D8000C");
+        // } else {
+        //     $('#password').css("border-color", "#666");
+        // }
+
+        // if (repassword.length == 0) {
+        //     var error = true;
+        //     $('#repassword').css("border-color", "#D8000C");
+        // } else {
+        //     $('#repassword').css("border-color", "#666");
+        // }
+
+        if (address.length == 0) {
+            var error = true;
+            $('#address').css("border-color", "#D8000C");
+        } else {
+            $('#address').css("border-color", "#666");
+        }
+
+        if (iphone.length == 0) {
+            var error = true;
+            $('#iphone').css("border-color", "#D8000C");
+        } else {
+            $('#iphone').css("border-color", "#666");
+        }
+
+        alert(name_zsmz.length);
+        if (name_zsmz.length == 0) {
+            var error = true;
+            $('#name_zsmz').css("border-color", "#D8000C");
+        } else {
+            $('#name_zsmz').css("border-color", "#666");
+        }
+
+        if (sfzid.length == 0) {
+            var error = true;
+            $('#sfzid').css("border-color", "#D8000C");
+        } else {
+            $('#sfzid').css("border-color", "#666");
+        }
+
+         if (level.length == 0) {
+            var error = true;
+            dialog.error("级别未选着")
+        } else {
+            $('#level').css("border-color", "#666");
+        }
+
+         if (zhifubao.length == 0) {
+            var error = true;
+            $('#zhifubao').css("border-color", "#D8000C");
+        } else {
+            $('#zhifubao').css("border-color", "#666");
+        }
+
+        //  if (file_upload.length == 0) {
+        //     var error = true;
+        //     $('#name_zsmz').css("border-color", "#D8000C");
+        // } else {
+        //     $('#name_zsmz').css("border-color", "#666");
+        // }
+
+
+
+        //now when the validation is done we check if the error variable is false (no errors)
+        if (error == false) {
+         
+            var url = $("#form_a").attr('action');
+               
+            var data=$("#form_a").serialize();
+               
+            console.log(data);
+            $.ajax({
+                type:"post",
+                url:url,
+                data:data,
+                dataType:"json",
+
+                success:function(data){
+
+
+                        if(data=='password_no'){
+
+                            dialog.error("两次秘密提交不同"); 
+                        }
+
+                        if(data=='img_no'){
+
+                            dialog.error("照片需传正反面"); 
+                        }
+                        if(data=='username_no'){
+
+                            dialog.error("该用户已经存在"); 
+                        }
+
+                        if(data=='up_ok'){
+
+                            dialog.success("更新成功","{:U('city/Citylist')}"); 
+                        }
+
+                        if(data=='up_no'){
+
+                            dialog.error("更新失败"); 
+                        }
+
+
+                    
+                }
+
+            });
+
+            
+        }
+ });
+
+    // 判断拉去级别 显示区域
+
+    var type={$type};
+
+    // 城市
+    if(type==3){
+
+      $("#am-u-sm-4").css('display','block');
+      $("#am-u-sm-5").css('display','block');
+      var url ="{:U('Upimg/province')}"
+      $.ajax({
+                  type:"post",
+                  url:url,
+                  data:{ 'h':''},
+                  dataType:"json",
+                  
+                  success:function(data){
+                    
+                   
+                      $("#doc-select-2").html()
+
+                        for(var i=0;i<data.length ;i++){
+                         
+                           $("#doc-select-2").append('<option value="'+data[i]['id']+'">'+data[i]['name']+'</option>');
+                          
+                        } 
+                        console.log({$data['province']});
+                       
+                        $("#doc-select-2").val({$data['province']});
+                        var   id=$('#doc-select-2').val();
+                        
+                        var url1="{:U('Upimg/city')}"
+
+                         $.ajax({
+                          type:"post",
+                          url:url1,
+                          data:{ 'h':id},
+                          dataType:"json",
+                          success:function(data){
+                              console.log(data);
+
+                              // $("#doc-select-3").find("option").remove();
+                              $("#doc-select-3").html()
+
+                                for(var i=0;i<data.length ;i++){
+                                 
+                                   $("#doc-select-3").append('<option  value="'+data[i]['id']+'">'+data[i]['name']+'</option>');
+                                     
+                                } 
+
+                                    console.log({$data['city']});
+                                   //$("#doc-select-3 option:eq({$data['city']})").attr("selected",true);
+                                   $("#doc-select-3").val({$data['city']});
+
+
+
+                             }
+          
+                            })
+
+                        
+                        }
+          
+                    })
+
+              }
+
+    if(type==2){
+      $("#am-u-sm-4").css('display','block');
+        var url ="{:U('Upimg/province')}"
+      
+           $.ajax({
+                  type:"post",
+                  url:url,
+                  data:{ 'h':''},
+                  dataType:"json",
+                  
+                  success:function(data){
+                    
+                   
+                      $("#doc-select-2").html()
+
+                        for(var i=0;i<data.length ;i++){
+                         
+                           $("#doc-select-2").append('<option value="'+data[i]['id']+'">'+data[i]['name']+'</option>');
+                          
+                        } 
+                        $("#doc-select-2").val({$data['province']});
+                       
+
+                  }
+  
+            })
+
+
+              
+
+    }
+
+      // 异步拉省份
+      $("#level").change(function(){
+       //判断级别
+       
+       var  level=$(this).val()
+       if(level==1){
+            $("#am-u-sm-4").css("display","none")
+            $("#am-u-sm-5").css("display","none")
+
+       }
+
+       //省级代理
+       if(level==2){
+        $("#am-u-sm-5").css("display","none")
+        var url ="{:U('Upimg/province')}"
+          $("#am-u-sm-4").css('display','block')
+           $.ajax({
+                  type:"post",
+                  url:url,
+                  data:{ 'h':''},
+                  dataType:"json",
+                  
+                  success:function(data){
+                    
+                   
+                      $("#doc-select-2").html()
+
+                        for(var i=0;i<data.length ;i++){
+                         
+                           $("#doc-select-2").append('<option  value="'+data[i]['id']+'">'+data[i]['name']+'</option>');
+                          
+                        }                     
+          
+                  }
+  
+            })
+
+           return false;
+       }
+
+      //城市代理
+      if( level==3){
+        alert("城市")
+          var url ="{:U('Upimg/province')}"
+          $("#am-u-sm-5").css('display','block')
+          $("#am-u-sm-4").css('display','block')
+           $.ajax({
+                  type:"post",
+                  url:url,
+                  data:{ 'h':''},
+                  dataType:"json",
+                  
+                  success:function(data){
+                    
+                   
+                      $("#doc-select-2").html()
+
+                        for(var i=0;i<data.length ;i++){
+                         
+                           $("#doc-select-2").append('<option value="'+data[i]['name']+'">'+data[i]['name']+'</option>');
+                          
+                        }                     
+          
+                  }
+  
+            })
+
+          }
+
+
+            $("#doc-select-2").change(function(){
+               var   id=$('#doc-select-2').val();
+               alert(22222);
+               var url1="{:U('Upimg/city')}"
+                $.ajax({
+                  type:"post",
+                  url:url1,
+                  data:{ 'h':id},
+                  dataType:"json",
+                  
+                  success:function(data){
+                    
+                      $("#doc-select-3").find("option").remove();
+                      $("#doc-select-3").html()
+
+                        for(var i=0;i<data.length ;i++){
+                         
+                           $("#doc-select-3").append('<option  value="'+data[i]['id']+'">'+data[i]['name']+'</option>');
+                          
+                        }                     
+          
+                  }
+  
+            })
+
+
+            });
+
+
+
+      });
+
+
+
+     // 异步上传 图片
+    <?php $timestamp = time();?>
+    $(function() {
+      $('#file_upload').uploadifive({
+        'auto'             : false,
+        'checkScript'      : '{:U('Upimg/checkexists')}',
+        'formData'         : {
+                     'timestamp' : '<?php echo $timestamp;?>',
+                     'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
+                             },
+        'queueID'          : 'queue',
+        'uploadScript'     : "{:U('Upimg/doPhoto')}",
+        'onUploadComplete' : function(file, data) {
+         //console.log(data);
+        //alert(data);
+         //console.log(file);
+         //var url =data;
+         console.log(data);
+         
+           $('#both').append("<div class='add'><img  class='img1' src='__ROOT__/upimgid/"+data+"'><img class='ico' src='__PUBLIC__/img/ywrong.png'><input type='hidden' name='img[]' value="+data+"></div>");
+
+             //鼠标经过图片显示小图片
+          $(".add").unbind("mouseover");
+          $(".add").bind("mouseover",function(){
+             $(this).find(".ico").css("display","block");
+          });
+
+
+           //鼠标离开图片不显示显示小图片
+          $(".add").unbind("mouseout");
+          $(".add").bind("mouseout",function(){
+             $(this).find(".ico").css("display","none");
+
+          });
+          $(".ico").unbind("click");
+          $(".ico").bind('click', function(){
+           
+             $(this).parent('.add').remove();
+            var img=$(this).prev(".img1").attr('src');
+            var url='{:U('Upimg/delImg_s')}';
+          
+            $.ajax({
+                  type:"post",
+                  url:url,
+                  data:{ 'h':img},
+                  dataType:"json",
+                  
+                  success:function(data1){
+                    
+                            
+                    $('.div_tu').css("display","none");                   
+          
+                  }
+      
+      
+                })
+
+
+        });
+
+
+
+          }
+
+         
+      });
+
+    });
+      
+//鼠标经过图片显示小图片
+          $(".add").unbind("mouseover");
+          $(".add").bind("mouseover",function(){
+             $(this).find(".ico").css("display","block");
+          });
+
+
+           //鼠标离开图片不显示显示小图片
+          $(".add").unbind("mouseout");
+          $(".add").bind("mouseout",function(){
+             $(this).find(".ico").css("display","none");
+
+          });
+          $(".ico").unbind("click");
+          $(".ico").bind('click', function(){
+           
+            $(this).parent('.add').remove();
+            var img=$(this).prev(".img1").attr('src');
+            var url='{:U('Upimg/delImg_s')}';
+            var imgId="{$imgid}";
+            var imgId = $(this).prev(".img1").attr('imgid');
+
+            $.ajax({
+                  type:"post",
+                  url:url,
+           
+                  data:{ h : img,
+                         b : imgId 
+                  },
+                  dataType:"json",
+                  
+                  success:function(data1){
+                    
+                            
+                    $('.div_tu').css("display","none");                   
+          
+        }
+      
+      
+    })
+
+
+});
+
+ 
+ })
+
+
+  </script>

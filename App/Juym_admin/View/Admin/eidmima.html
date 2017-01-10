@@ -1,0 +1,100 @@
+﻿<include file="Public/head" />
+<include file="Public/sidebar"/>
+  <!-- content start -->
+    <!-- content start -->
+  <div class="admin-content">
+    <div class="admin-content-body">
+      <div class="am-cf am-padding am-padding-bottom-0">
+        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">管理员添加</strong> <small></small></div>
+      </div>
+
+      <hr/>
+
+      <div class="am-g">
+        <div class="am-u-sm-12 am-u-md-4 am-u-md-push-8">
+        </div>
+        <div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
+          <form class="am-form am-form-horizontal" id="form_a" action="{:U('admin/doeidmima')}" method="post">
+            <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">密码</label>
+              <div class="am-u-sm-9">
+                <input type="password" name="password" id="password" placeholder="请输入密码" required/>
+                <small>输入密码</small>
+              </div>
+            </div>
+
+             <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">确认密码</label>
+              <div class="am-u-sm-9">
+                <input type="password" name="repassword" id="repassword" placeholder="请输入密码" required/>
+                 <input type="hidden" name="id" value="{$id}" >
+                <small>确认密码</small>
+              </div>
+            </div>
+            <div class="am-form-group">
+              <div class="am-u-sm-9 am-u-sm-push-3">
+                <button type="button" id="button_a"  class="am-btn am-btn-primary">修改密码</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+<include file="Public/footer"/>
+<script type="text/javascript">
+  
+
+$(function() {
+
+
+  $('#button_a').click(function (e) {
+        var error = false;
+        var password = $('#password').val();
+        var repassword = $('#repassword').val();
+        if(password!=repassword){
+           dialog.error("两次秘密提交不同"); 
+        }
+        if (password.length == 0) {
+            var error = true;
+            $('#password').css("border-color", "#D8000C");
+        } else {
+            $('#password').css("border-color", "#666");
+        }
+        if (repassword.length == 0) {
+            var error = true;
+            $('#repassword').css("border-color", "#D8000C");
+        } else {
+            $('#repassword').css("border-color", "#666");
+        }
+        if (error == false) {
+          var url = $("#form_a").attr('action');    
+          var data=$("#form_a").serialize();   
+            $.ajax({
+                type:"post",
+                url:url,
+                data:data,
+                dataType:"json",
+
+                success:function(data){
+
+
+                        if(data=='password_no'){
+
+                            dialog.error("两次秘密提交不同"); 
+                        }
+                        if(data=='ok'){
+
+                            dialog.success("密码修改成功","{:U('index/index')}"); 
+                        }
+                         if(data=='on'){
+
+                            dialog.error("密码修改失败"); 
+                        }
+                }
+
+             });    
+         }
+  });
+});
+  </script>

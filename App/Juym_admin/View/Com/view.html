@@ -1,0 +1,229 @@
+<link href="/Css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+    <link href="/Css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="/Css/animate.min.css" rel="stylesheet">
+    <link href="/Css/plugins/summernote/summernote.css" rel="stylesheet">
+    <link href="/Css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
+    <link href="/Css/style.min.css?v=4.0.0" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/Css/webuploader.css">
+    <link rel="stylesheet" type="text/css" href="/Css/diyUpload.css">
+<style>
+        .demo{
+            margin:0px auto;
+            width:100%;
+            min-height:50px;
+        } 
+        .note-editable{
+            height: 300px !important;
+        }  
+    </style>
+
+<include file="Public/head" />
+<include file="Public/sidebar"/>
+  <!-- content start -->
+    <!-- content start -->
+  <div class="admin-content">
+    <div class="admin-content-body">
+
+      <hr/>
+
+      <div class="am-g">
+        <div class="am-u-sm-12 am-u-md-4 am-u-md-push-8">
+        </div>
+        <div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
+      <div class="am-form am-form-horizontal" >
+        <foreach name="data" item="v">
+          <div class="am-form-group">
+            <div id="upimg">
+              <label for="user-name" class="am-u-sm-3 am-form-label">企业头像</label>
+              <div class="am-u-sm-9">
+                  <img src="{$v['comlogo']}" style="max-width: 300px;" id="image">
+                  <input id="file_upload" name="file_upload" type="file" multiple="true">
+                  <a style="position: relative; top: 8px;" href="javascript:$('#file_upload').uploadifive('upload')">上传文件</a> 
+                  <div style="clear:both;"></div>
+                    <div id="queue"></div>
+                   </div>
+                   <div id="both" style="width:200px">
+
+                </div>
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">企业名称</label>
+              <div class="am-u-sm-9">
+                <input type="" name="comname" id="comname" placeholder="" value="{$v[comname]}"/>
+             
+              </div>
+            </div>
+
+             <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">联系人</label>
+              <div class="am-u-sm-9">
+                <input type="" name="comlinkman" id="comlinkman" placeholder="" value="{$v[comlinkman]}"/>
+               
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">手机号</label>
+              <div class="am-u-sm-9">
+                <input type="" name="comtel" id="comtel" placeholder="" value="{$v[comtel]}"/>
+               
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">公司类型</label>
+              <div class="am-u-sm-9">
+                <input type="" name="comtype" id="comtype" placeholder="" value="{$v[comtype]}"/>
+               
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">融资情况</label>
+              <div class="am-u-sm-9">
+                <!-- <input type="" name="comangel" id="comangel" placeholder="" value="{$v[comangel]}"/> -->
+                <select id="comangel" class="" name="comangel" >
+                          <option value="{$v[comangel]}">{$v[comangel]}</option>
+                          <option value="未融资">未融资</option>
+                          <option value="天使轮">天使轮</option>
+                          <option value="A轮">A轮</option>
+                          <option value="B轮">B轮</option>
+                          <option value="C轮">C轮</option>
+                          <option value="D轮以上">D轮以上</option>
+                          <option value="上市公司">上市公司</option>
+                          <option value="不需要融资">不需要融资</option>                             
+                </select>
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">公司人数</label>
+              <div class="am-u-sm-9">
+                <!-- <input type="" name="communren" id="communren" placeholder="" value="{$v[communren]}"/> -->
+               <select id="communren" class="" name="communren">
+                          <option value="{$v[communren]}">{$v[communren]}</option>
+                          <option value="少于15人">少于15人</option>
+                          <option value="15-50人">15-50人</option>
+                          <option value="150-500人">150-500人</option>
+                          <option value="500-2000人">500-2000人</option>
+                          <option value="2000人以上">2000人以上</option>            
+                </select>
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">公司地址</label>
+              <div class="am-u-sm-9">
+                <input type="" name="comaddress" id="comaddress" placeholder="" value="{$v[comaddress]}"/>
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">公司介绍</label>
+              <div class="am-u-sm-9">
+                <input type="" name="comdesc" id="comdesc" placeholder="" value="{$v[comdesc]}"/>
+               
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">热招职位人数</label>
+              <div class="am-u-sm-9">
+                <input type="" name="" id="" placeholder="" readonly="readonly" value="{$count1}"/>
+               
+              </div>
+            </div>
+            </foreach>
+            <div class="am-form-group" >
+              <div class="am-u-sm-9 am-u-sm-push-3" >
+              <button type="button" id=""  class="am-btn am-btn-primary" onclick="history.go(-1)">取消</button>
+                <button type="button" id="save"  class="am-btn am-btn-primary" style="margin-left: 50px;">保存</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<input type="hidden" name="comid" id="comid" placeholder="" value="{$v[comid]}"/>
+
+<include file="Public/footer"/>
+<script type="text/javascript">
+
+$(document).ready(function(){ 
+　 $('#file_upload').uploadifive({
+        'auto'             : false,
+        'formData'         : {
+                     'timestamp' : '<?php echo $timestamp;?>',
+                     'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
+                             },
+        'queueID'          : 'queue',
+        'uploadScript'     : "{:U('Com/doPhoto')}",
+        'onUploadComplete' : function(file, data) {
+          console.log(data);
+            $('#both').append("<div class='add'><img  class='img1' width=100px src='"+data+"' >          <img class='ico' src='/Public/img/ywrong.png'> <input type='hidden' name='img[]' value="+data+"></div>");
+              /*点击删除上传图片*/
+              $(".ico").unbind("click");
+              $(".ico").click(function(){
+                  var objo=$(this).prev();
+                  var img=$(this).prev(".img1").attr('src')
+                  var url ="{:U('Com/delimg')}";
+                  $.ajax({
+                        type:"post",
+                        url:url,
+                        data:{'img':img},
+                        dataType:"json",
+                        success:function(data){
+                          if(data=="ok"){
+                             $(objo).parent('.add').remove();
+                          }
+                          }
+                    });
+              });
+                } 
+          });
+      });
+
+
+  $(document).on('click','#save',function(){
+        var comid = $('#comid').val();
+        var comname=$('#comname').val();
+        var comlinkman=$('#comlinkman').val();
+        var comtel=$('#comtel').val();
+        var comtype=$('#comtype').val();
+        var comangel=$("#comangel  option:selected").val();
+        var communren=$("#communren  option:selected").val();
+        var comaddress=$("#comaddress").val();
+        var comdesc=$('#comdesc').val();
+        var objo=$(".ico").prev();
+        var img=$(".ico").prev(".img1").attr('src');
+        $.ajax({
+            url:"{:U('com/doview')}",
+            data:{
+                "comid":comid,
+                "comname":comname,
+                "comlinkman":comlinkman,
+                "comtel":comtel,
+                "comtype":comtype,
+                "comangel":comangel,
+                "communren":communren,
+                "comaddress":comaddress,
+                "comdesc":comdesc,
+                "img":img
+            },
+            type:'post',
+            dataType:"json",
+            success:function(data){
+                if(data.status){
+                    alert('保存成功');
+                    window.location="{:U('com/lists')}";
+                }else{
+                    alert(data.message);
+                }
+            }
+        });
+    })
+    
+</script>

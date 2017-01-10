@@ -1,0 +1,173 @@
+body{
+	background-color: #eeeeee;
+}
+.nav_top{
+	padding: 0px 0px;
+	margin:0px 0px;
+	list-style: none;
+	height: 30px;
+	background-color: #fafafa;
+	margin-bottom: 10px;
+}
+.nav_top li{
+	width: 16.67%;
+	float: left;
+	height: 29px;
+	line-height: 29px;
+	text-align: center;
+	color: #666666;
+}
+
+.nav_top li .cur{
+	border-bottom: 1px solid #ff8903;
+	margin: 0px 15%;
+	color: #ff8903;
+}
+
+.orderinfoBox{
+	background-color: #ffffff;
+	margin-bottom: 10px;
+}
+.orderinfoBox .ipt_box2 {
+    width: 95%;
+    background-color: #ffffff;
+    height: 48px;
+    line-height: 48px;
+    margin-left: 5%;
+    border-bottom: 1px solid #d8d8d8;
+}
+.orderinfoBox .ipt_box2 .left{
+	float: left;
+	font-size: 13px;
+	color: #666666;
+}
+.orderinfoBox .ipt_box2 .right{
+	float: right;
+	margin-right: 5%;
+	color: #e74a50;
+}
+.orderinfoBox .ipt_box2 .right2{
+	float: right;
+	margin-right: 5%;
+	font-size: 13px;
+	color: #666666;
+}
+.orderinfoBox .ipt_box3 {
+    width: 95%;
+    background-color: #ffffff;
+    line-height: 88px;
+    margin-left: 5%;
+    border-bottom: 1px solid #d8d8d8;
+}
+.orderinfoBox .ipt_box3 .left{
+	float: left;
+	font-size: 13px;
+	color: #666666;
+}
+.orderinfoBox .ipt_box3 .mid{
+	float: left;
+}
+.orderinfoBox .ipt_box3 .mid .type{
+	width: 32px;
+	height: 16px;
+	border-radius: 2px;
+	border: solid 1px #ff8903;
+	color: #ff8903;
+	font-size: 11px;
+	line-height: 15px;
+	text-align: center;
+	margin-top: 16px;
+	float:left;
+}
+.orderinfoBox .ipt_box3 .mid .title{
+	font-size: 14px;
+	color: #333333;
+	width: 160px;
+	line-height: 15px;
+	margin-top: 16px;
+	margin-left: 5px;
+	float: left;
+}
+.orderinfoBox .ipt_box3 .mid .introduce{
+	font-size: 12px;
+	color: #999999;
+	line-height: 15px;
+	margin-top: 5px;
+	width: 160px;
+}
+.orderinfoBox .ipt_box3 .mid .area{
+	font-size: 12px;
+	color: #666666;
+	line-height: 15px;
+	margin-top: 5px;
+	margin-right: 20px;
+	margin-bottom: 17px;
+	float: left;
+}
+.orderinfoBox .ipt_box3 .mid .need{
+	font-size: 12px;
+	color: #666666;
+	line-height: 15px;
+	margin-top: 5px;
+	margin-right: 20px;
+	float: left;
+}
+
+.orderinfoBox .ipt_box3 .left .head{
+	width: 55px;
+	height: 55px;
+	background-color: #e8e8e8;
+	margin-top: 16px;
+	margin-right: 21px;
+}
+.orderinfoBox .ipt_box3 .right{
+	float: right;
+	margin-right: 5%;
+	font-size: 14px;
+	height: 55px;
+	line-height: initial;
+	margin-top: 16px;
+	color: #666666;
+}
+.orderinfoBox .ipt_box4 {
+    width: 95%;
+    background-color: #ffffff;
+    height: 60px;
+    margin-left: 5%;
+    border-bottom: 1px solid #d8d8d8;
+}
+.orderinfoBox .ipt_box4 .left{
+	float: left;
+	font-size: 13px;
+	color: #666666;
+}
+.orderinfoBox .ipt_box4 .left .head{
+	width: 40px;
+	height: 40px;
+	background-image: linear-gradient(to bottom, #e7e7e7, #cbcbcb);
+	border-radius: 50%;
+	margin-top: 9px;
+	overflow: hidden;
+}
+.orderinfoBox .ipt_box4 .left .head img{
+	width: 100%;
+}
+.orderinfoBox .ipt_box4 .name{
+	float: left;
+	font-size: 15px;
+	line-height: 58px;
+	margin-left: 16px;
+	color: #333333;
+}
+.listitem{
+	display: none;
+}
+.itemcur{
+	display: block;
+}
+
+
+
+
+
+
