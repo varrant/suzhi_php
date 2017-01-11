@@ -1,0 +1,47 @@
+{
+  "name": "hr",
+  "version": "0.0.1",
+  "description": "suzhi",
+  "keywords": [
+    "missionHplus"
+  ],
+  "author": {
+    "name": "czh",
+    "email": "varrantczh@sina.com",
+    "url": "https://github.com/varrant"
+  },
+  "repository": "varrant/missionHplus",
+  "license": "MIT",
+  "scripts": {
+    "gulp":"gulp sass && gulp",
+    "start": "node ./clis/start.js",
+    "build": "rm -rf webroot-pro && coolie build -d webroot-dev",
+    "publish": "git add webroot-pro && git commit -am 'release' && git push git@120.55.89.120:gitolite-admin",
+    "release": "grunt less && rd/s/q webroot-pro && cd ./webroot-dev && coolie build "
+  },
+  "main": "app.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "browserslist": "^1.4.0",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-relative-sourcemaps-source": "^0.1.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-sass-lint": "1.3.2",
+    "gulp-sourcemaps": "^1.9.1",
+    "js-base64": "^2.1.9",
+    "node-sass": "^3.13.0",
+    "normalize-range": "^0.1.2",
+    "num2fraction": "^1.2.2",
+    "postcss-reporter": "^2.0.0",
+    "postcss-scss": "^0.4.0",
+    "postcss-selector-parser": "^2.2.2",
+    "postcss-value-parser": "^3.3.0",
+    "style-search": "^0.1.0",
+    "stylelint": "^7.6.0"
+  },
+  "licenses": "MIT"
+}

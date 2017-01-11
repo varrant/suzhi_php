@@ -18,7 +18,6 @@
   <script src="assets/js/amazeui.min.js"></script>
   <script src="js/function.js"></script>
   <script src="js/date.js"></script>
-  <script src="js/vue.js"></script>
 </head>
 <body>
 <div id="app">
@@ -27,7 +26,7 @@
     <div class="name">提现金额</div>
     <div class="cashbox">
       <div class="sign">¥</div>
-      <input v-model="mysetModel.csmoney" type="text" >
+      <input v-model="mysetModel.csmoney" type="text" value="51">
     </div>
   </div>
   <div class="info2">
@@ -38,13 +37,9 @@
 </div>
 
 <div class="btn_box" style="margin-top: 304px;">
-  <button class="btn_login_over" id="btn_login" @click="myset">确认提现</button>
+  <button class="btn_login_over" id="btn_login" onclick="login()">确认提现</button>
 </div>
 
-<div id="rb1" class="remindbox">
-  <div class="icon"><i class="fa fa-exclamation-circle" aria-hidden="true"></i></div>
-  <div class="content"></div>
-</div>
 <!-- 什么是保证金 -->
 <div class="cashbox2">
   <div class="cashbg"></div>
@@ -63,7 +58,7 @@
 若零钱累积到达一定数量，用户可以申请提现。具体积累金额请参见提现页面说明。
     </div>
   </div>
-  <div class="cashbtn" onclick="myset">×</div>
+  <div class="cashbtn" onclick="closecashbox()">×</div>
 </div>
 </div>
 </body>
@@ -77,21 +72,6 @@
 
   function closecashbox(){
     $(".cashbox2").attr("style","display:none;");
-  }
-    function showRemindbox(content){
-    $("#rb1").slideToggle();
-    $("#rb1").find(".content").html(content);
-    $("#rb1").unbind("click");
-    $("#rb1").bind("click",function(){
-      $("#rb1").slideToggle();
-    })
-    setTimeout('hideRemindbox()',2000);
-  }
-  function hideRemindbox(){
-    console.log($("#rb1").is(":hidden"));
-    if(!$("#rb1").is(":hidden")){
-      $("#rb1").slideToggle();
-    }
   }
 $(function() {
   var $width=$(window).width();
@@ -125,7 +105,7 @@ $(function() {
                 window.location.href = "login.html";
               }else{
                 vm.mysetModel.pohone = phone;
-                 var csmoney = vm.mysetModel.csmoney;
+                 var csmoney = vm.mysetModel.csmoney；
 
                  if(csmoney == null || csmoney == ""){
                     showRemindbox("金额不能为空！");
@@ -137,7 +117,7 @@ $(function() {
                  }
                  $.ajax({
                   //url: "http://suzhi.hzjuym.com/index.php/home/Poscha/lists",
-                  url: "http://suzhi.hzjuym.com/index.php/Home/profit/tixianadd",
+                  url: "http://suzhi.hzjuym.com/index.php/Home/Profit/tixianadd",
                   type: 'POST',
                   dataType: 'json',
                   data: vm.mysetModel,

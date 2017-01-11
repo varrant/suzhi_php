@@ -99,8 +99,8 @@
         'auto'             : false,
         'checkScript'      : '{:U('Upimg/checkexists')}',
         'formData'         : {
-                     'timestamp' : '<?php echo $timestamp;?>',
-                     'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
+        'timestamp' : '<?php echo $timestamp;?>',
+        'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
                              },
         'queueID'          : 'queue',
         'uploadScript'     : "{:U('Upimg/doPhoto')}",

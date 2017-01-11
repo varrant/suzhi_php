@@ -1,0 +1,218 @@
+<include file="Public/head" />
+<include file="Public/sidebar"/>
+
+<style type="text/css">
+
+    .uploadifive-button {
+        float: left;
+        margin-right: 10px;
+    }
+    #queue {
+        margin-top: 20px;
+        border: 1px solid #E5E5E5;
+        height: 107px;
+        overflow: auto;
+        margin-bottom: 10px;
+        padding: 0 3px 3px;
+        width: 250px;
+
+    }
+</style>
+<!-- content start -->
+<!-- content start -->
+<div class="admin-content">
+    <div class="admin-content-body">
+
+        <hr/>
+
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-4 am-u-md-push-8">
+            </div>
+            <div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
+                <foreach name="data" item="v">
+                <div class="am-form am-form-horizontal" >
+                    <input type="hidden" id="pos_id" value="{$v['pos_id']}">
+                    <div class="am-form-group">
+                        <div id="upimg">
+                            <label for="user-name" class="am-u-sm-3 am-form-label">任务照片</label>
+                            <div class="am-u-sm-9">
+                                <img src="{$v['pos_img']}" id="work_image" style="width: 130px;height: 130px;margin-top: 15px;">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="am-form-group" >
+                        <label for="user-email" class="am-u-sm-3 am-form-label">任务名称</label>
+                        <div class="am-u-sm-9">
+                            <input type="text" value ="{$v['pos_name']}" id="pos_name"  readonly="readonly" style="width:52%"/>
+
+                        </div>
+                    </div>
+                    <div class="am-form-group">
+                        <label for="user-email" class="am-u-sm-3 am-form-label">所属公司</label>
+                        <div class="am-u-sm-9">
+                            <input type="text"     value ="{$v['pos_company_name']}"  id="pos_company_name" readonly="readonly"  style="width:52%"/>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label for="user-email" class="am-u-sm-3 am-form-label">需求人数</label>
+                        <div class="am-u-sm-9">
+                            <input type="number" value ="{$v['pos_recruitmun']}" id="pos_recruitmun" readonly="readonly" style="width:52%"/>
+
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label for="user-email" class="am-u-sm-3 am-form-label">区域</label>
+                        <div class="am-u-sm-9">
+                            <?php
+                        $posdb=M('pos');
+                        $map['pos_id']=$v['pos_county'];
+                        $posdata=$posdb->where($map)->find();
+                            echo"<input type='text' value =".$posdata['pos_name']." id='pos_county' readonly='readonly' style='width:52%'/>";
+                            ?>
+
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label for="user-email" class="am-u-sm-3 am-form-label">佣金</label>
+                        <div class="am-u-sm-9">
+                            <input type="number" value ="{$v['pos_brokerage']}" id="pos_brokerage"  readonly='readonly' style="width:52%"/>
+
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label for="user-email" class="am-u-sm-3 am-form-label">薪资</label>
+                        <div class="am-u-sm-9">
+                            <input type="number" value ="{$v['pos_salary']}" id="pos_salary" readonly='readonly' style="width:52%"/>
+
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label for="user-email" class="am-u-sm-3 am-form-label">工作类型</label>
+                        <div class="am-u-sm-9">
+                            <?php
+                        $posdb=M('pos');
+                        $map['pos_id']=$v['pos_joptype'];
+                        $posdata=$posdb->where($map)->find();
+                            echo"<input type='text' value =".$posdata['pos_name']." id='pos_joptype' readonly='readonly' style='width:52%'/>";
+                            ?>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label for="user-email" class="am-u-sm-3 am-form-label">工作时间</label>
+                        <div class="am-u-sm-9">
+                            <input type="text" value ="{$v['pos_worktime']}" id="pos_worktime" readonly='readonly' style="width:52%"/>
+
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label for="user-email" class="am-u-sm-3 am-form-label">上班时段</label>
+                        <div class="am-u-sm-9">
+                            <input type="text"  value ="{$v['pos_hours']}"id="pos_hours" readonly='readonly' style="width:52%"/>
+
+                        </div>
+                    </div>
+                    <div class="am-form-group">
+                        <label for="user-email" class="am-u-sm-3 am-form-label">浏览次数</label>
+                        <div class="am-u-sm-9">
+                            <?php
+                            $total=$v['pos_true_liulan'] + $v['pos_liuan'];
+                            echo "<input type='text' id='pos_liuan' value =".$total." readonly='readonly'   style='width:52%'/>";
+                            ?>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label for="user-email" class="am-u-sm-3 am-form-label">投递简历次数</label>
+                        <div class="am-u-sm-9">
+                            <?php
+                            $total=$v['pos_true_toudi'] + $v['pos_toudi'];
+                            echo "<input type='text' id='pos_toudi' value =".$total." readonly='readonly'   style='width:52%'/>";
+                            ?>
+
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label for="user-email" class="am-u-sm-3 am-form-label">工作描述</label>
+                        <div class="am-u-sm-9">
+                            <textarea id="pos_jobdescription" class="form-control"  readonly='readonly' rows="3">{$v['pos_jobdescription']}</textarea>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label for="user-email" class="am-u-sm-3 am-form-label">职责描述</label>
+                        <div class="am-u-sm-9">
+                            <textarea id="pos_responsibilities" class="form-control" readonly='readonly' rows="3">{$v['pos_responsibilities']}</textarea>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label for="user-email" class="am-u-sm-3 am-form-label">福利待遇</label>
+                        <div class="am-u-sm-9">
+                            <textarea id="pos_welfarebenefits" class="form-control" readonly='readonly' rows="2">{$v['pos_welfarebenefits']}</textarea>
+
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label for="user-email" class="am-u-sm-3 am-form-label">上下架</label>
+                        <div class="am-u-sm-9">
+
+                            <?php
+                            if($v['pos_online'] == 1){
+                            echo"<input type='text' value ='上架'  readonly='readonly' style='width:52%'/>";
+                                }else{
+                                echo"<input type='text' value ='下架'  readonly='readonly' style='width:52%'/>";
+                            }
+                            ?>
+
+                        </div>
+                    </div>
+                    <div class="am-form-group">
+                        <label for="user-email" class="am-u-sm-3 am-form-label">猎头手机号</label>
+                        <div class="am-u-sm-9">
+                            <input type="text"  value ="{$v['he_phone']}" readonly='readonly' style="width:52%"/>
+                        </div>
+                    </div>
+                    <div class="am-form-group">
+                        <label for="user-email" class="am-u-sm-3 am-form-label">猎头昵称</label>
+                        <div class="am-u-sm-9">
+                            <input type="text"  value ="{$v['he_nickname']}" readonly='readonly' style="width:52%"/>
+                        </div>
+                    </div>
+                    <div class="am-form-group">
+                        <label for="user-email" class="am-u-sm-3 am-form-label">猎头姓名</label>
+                        <div class="am-u-sm-9">
+                            <input type="text"  value ="{$v['he_name']}" readonly='readonly' style="width:52%"/>
+                        </div>
+                    </div>
+                    <div class="am-form-group">
+                        <label for="user-email" class="am-u-sm-3 am-form-label">订单状态</label>
+                        <div class="am-u-sm-9">
+                            <input type="text"  value ="已领取" readonly='readonly' style="width:52%"/>
+                        </div>
+                    </div>
+
+
+                    <div class="am-form-group">
+                        <div class="am-u-sm-9 am-u-sm-push-3">
+                            <button type="button" onclick="history.go(-1)" class="am-btn am-btn-primary">返回</button>
+                        </div>
+
+                    </div>
+                </div>
+                 </foreach>
+            </div>
+        </div>
+    </div>
+
+    <include file="Public/footer"/>
