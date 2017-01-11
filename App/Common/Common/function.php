@@ -338,6 +338,42 @@ function fcode($src_path, $type_path, $position, $salary, $fringe ){
 	return $img_addre;
 
 }
+/**
+ * 上传图片
+ * create by wuguangyun
+ */
+function uploadPic($img){
+    $expData = explode(';',$img);
+    $postfix   = explode(':',$expData[0]);
+    $type = $postfix[1];
+    switch($type){
+        case 'image/png':
+            $ext='.png';
+            break;
+        case 'image/jpeg';
+            $ext='.jpeg';
+            break;
+        case 'image/jpeg':
+            $ext='.jpg';
+            break;
+        case 'image/bmp':
+            $ext='.bmp';
+            break;
+        default:
+            $ext='.jpg';
+    }
+    $r = rand(10,1000);
+    $file_path='uploads/images/'.time().'_'.$r.$ext;
+    $img_content = str_replace('data:'.$type.';base64,','',$img);
+    $img_content = base64_decode($img_content);
+    $res = file_put_contents($file_path,$img_content);
+    if($res){
+        return "/".$file_path;
+    }
+    return $res;
+}
+
+
 
 
 

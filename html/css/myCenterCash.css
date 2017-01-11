@@ -1,31 +1,6 @@
 body{
 	background-color: #eeeeee;
 }
-.remindbox{
-	display: none;
-	text-align: center;
-	top:50%;
-	margin-top: -45px;
-	left: 50%;
-	margin-left: -115px;
-	position: absolute;
-	width: 230px;
-	height: 99px;
-	opacity: 0.6;
-	border-radius: 8px;
-	-webkit-backdrop-filter: blur(15px);
-	backdrop-filter: blur(15px);
-	background-color: #000000;
-	overflow: hidden;
-}
-.remindbox .icon{
-	margin-top: 16px;
-}
-.remindbox .content{
-	margin-top: 15px;
-	color: #ffffff;
-	font-size: 16px;
-}
 .mytopbannerbox{
 	width: 100%;
 	/*height: 76px;*/

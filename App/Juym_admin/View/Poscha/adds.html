@@ -37,49 +37,41 @@
           <div id="upimg">
             <label for="user-name" class="am-u-sm-3 am-form-label">任务照片</label>
               <div class="am-u-sm-9">
-               <input id="file_upload" name="file_upload" type="file" multiple="true">
-                <a style="position: relative; top: 8px;" href="javascript:$('#file_upload').uploadifive('upload')">上传文件</a> 
-            <div style="clear:both;"></div>
-              <div id="queue"></div>
-             </div>
-             <div id="both" style="width:200px">
+               <input id="work" name="file_upload" type="file" multiple="true">
+                  <img src="" id="work_image" style="width: 130px;height: 130px;margin-top: 15px;">
+            <!--<div style="clear:both;"></div>-->
+              <!--<div id="queue"></div>-->
+             <!--</div>-->
+             <!--<div id="both" style="width:200px">-->
 
           </div>
         </div>
           </div>
           
 
-            <div class="am-form-group">
-              <label for="" class="am-u-sm-3 am-form-label">任务名称</label>
+            <div class="am-form-group" >
+              <label for="user-email" class="am-u-sm-3 am-form-label">任务名称</label>
               <div class="am-u-sm-9">
-                <input type="" id="" name="" placeholder="" />
+                <input type="text" id="pos_name" placeholder="请输入任务名称" style="width:52%"/>
              
               </div>
             </div>
-
-             <!-- <div class="am-form-group">
-              <label for="" class="am-u-sm-3 am-form-label">所属公司</label>
-              <div class="am-u-sm-9">
-                <input type="" name="" id="" placeholder="" />
-               
-              </div>
-            </div> -->
-            <div class="am-form-group">
-              <label for="user-email" class="am-u-sm-3 am-form-label">所属公司</label>
-              <div class="am-u-sm-9">
-                <input type="" name="comangel" id="comangel" placeholder="" />
-                <!-- <select id="comangel" class="" name="comangel">
-                          <option value="未融资">未融资</option>
-                          <option value="天使轮">天使轮</option>
-                                                 
-                </select> -->
-              </div>
-            </div>
+            <!--<div class="am-form-group">-->
+              <!--<label for="user-email" class="am-u-sm-3 am-form-label">所属公司</label>-->
+              <!--<div class="am-u-sm-9">-->
+                <!--<input type="" name="comangel" id="comangel" placeholder="" />-->
+                <!--&lt;!&ndash; <select id="comangel" class="" name="comangel">-->
+                          <!--<option value="未融资">未融资</option>-->
+                          <!--<option value="天使轮">天使轮</option>-->
+                                                 <!---->
+                <!--</select> &ndash;&gt;-->
+              <!--</div>-->
+            <!--</div>-->
 
             <div class="am-form-group">
-              <label for="" class="am-u-sm-3 am-form-label">需求人数</label>
+              <label for="user-email" class="am-u-sm-3 am-form-label">需求人数</label>
               <div class="am-u-sm-9">
-                <input type="" name="" id="" placeholder="" />
+                <input type="number" id="pos_recruitmun" placeholder="请输入需求人数" style="width:52%"/>
                
               </div>
             </div>
@@ -88,16 +80,17 @@
               <label for="user-email" class="am-u-sm-3 am-form-label">区域</label>
               <div class="am-u-sm-9">
                 <!-- <input type="" name="comangel" id="comangel" placeholder="" /> -->
-                <select id="posjoptype" class="" name="posjoptype">
-                          <option value="">请选择区域</option>
+                <select id="pos_county" class="" name="posjoptype" style="width:52%">
+                          <option value="0">请选择区域</option>
                           <?php
-                                $posdb=M('pos');
-                                $posdata=$posdb->select();
+                            $posdb=M('pos');
+                            $map['pos_joptype']=3;
+                            $map['pos_is_delete']=1;
+                            $posdata=$posdb->where($map)->select();
                                 foreach($posdata as $k=>$ma){
-                                     echo '<option value="'.$k.'">'.$ma['posname'].'</option>';
+                                     echo "<option value=".$ma['pos_id'].">".$ma['pos_name']."</option>";
                                 }
                           ?>
-                                                 
                 </select>
               </div>
             </div>
@@ -105,15 +98,15 @@
             <div class="am-form-group">
               <label for="user-email" class="am-u-sm-3 am-form-label">佣金</label>
               <div class="am-u-sm-9">
-                <input type="" id="" name="" placeholder="" />
-                
+                <input type="number" id="pos_brokerage"  placeholder="请输入佣金数量" style="width:52%"/>
+
               </div>
             </div>
 
             <div class="am-form-group">
               <label for="user-email" class="am-u-sm-3 am-form-label">薪资</label>
               <div class="am-u-sm-9">
-                <input type="" id="" name="" placeholder="" />
+                <input type="number" id="pos_salary" placeholder="请输入薪资数目" style="width:52%"/>
                 
               </div>
             </div>
@@ -122,16 +115,18 @@
               <label for="user-email" class="am-u-sm-3 am-form-label">工作类型</label>
               <div class="am-u-sm-9">
                 <!-- <input type="" name="comangel" id="comangel" placeholder="" /> -->
-                <select id="posjoptype" class="" name="posjoptype">
-                          <option value="">请选择工作类型</option>
+                <select id="pos_joptype" class="" name="posjoptype" style="width:52%">
+                          <option value="0">请选择工作类型</option>
                           <?php
-                                $posdb=M('pos');
-                                $posdata=$posdb->select();
+                             $posdb=M('pos');
+                             //必须是兼职
+                            $map['pos_joptype']=0;
+                            $map['pos_is_delete']=1;
+                            $posdata=$posdb->where($map)->select();
                                 foreach($posdata as $k=>$ma){
-                                     echo '<option value="'.$k.'">'.$ma['posname'].'</option>';
+                                    echo "<option value=".$ma['pos_id'].">".$ma['pos_name']."</option>";
                                 }
                           ?>
-                                                 
                 </select>
               </div>
             </div>
@@ -139,7 +134,7 @@
             <div class="am-form-group">
               <label for="user-email" class="am-u-sm-3 am-form-label">工作时间</label>
               <div class="am-u-sm-9">
-                <input type="" id="" name="" placeholder="" />
+                <input type="text" id="pos_worktime" placeholder="请输入工作时间段" style="width:52%"/>
                
               </div>
             </div>
@@ -147,23 +142,51 @@
             <div class="am-form-group">
               <label for="user-email" class="am-u-sm-3 am-form-label">上班时段</label>
               <div class="am-u-sm-9">
-                <input type="" name="" placeholder=""  value=""/>
+                <input type="text" id="pos_hours" placeholder="请输入上班时间段"  style="width:52%"/>
+               
+              </div>
+            </div>
+              <div class="am-form-group">
+                  <label for="user-email" class="am-u-sm-3 am-form-label">公司名称</label>
+                  <div class="am-u-sm-9">
+                      <input type="text" id="pos_company_name" placeholder="请输入公司名称"  style="width:52%"/>
+
+                  </div>
+              </div>
+              <div class="am-form-group">
+                  <label for="user-email" class="am-u-sm-3 am-form-label">详细地址</label>
+                  <div class="am-u-sm-9">
+                      <input type="text" id="pos_company_address" placeholder="请输入详细地址"  style="width:52%"/>
+
+                  </div>
+              </div>
+              <div class="am-form-group">
+                  <label for="user-email" class="am-u-sm-3 am-form-label">真实浏览次数</label>
+                  <div class="am-u-sm-9">
+                      <input type="text" id="pos_true_liulan"   value="0" readonly="readonly" style="width:52%"/>
+
+                  </div>
+              </div>
+
+              <div class="am-form-group">
+                  <label for="user-email" class="am-u-sm-3 am-form-label">真实投递简历次数</label>
+                  <div class="am-u-sm-9">
+                      <input type="text" id="pos_true_toudi"   value="0"  readonly="readonly" style="width:52%"/>
+
+                  </div>
+              </div>
+            <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">+浏览次数</label>
+              <div class="am-u-sm-9">
+                <input type="text" id="pos_liuan" placeholder="请输入浏览次数"  value="" style="width:52%"/>
                
               </div>
             </div>
 
             <div class="am-form-group">
-              <label for="user-email" class="am-u-sm-3 am-form-label">浏览次数</label>
+              <label for="user-email" class="am-u-sm-3 am-form-label">+投递简历次数</label>
               <div class="am-u-sm-9">
-                <input type="" name="" placeholder=""  value=""/>
-               
-              </div>
-            </div>
-
-            <div class="am-form-group">
-              <label for="user-email" class="am-u-sm-3 am-form-label">投递简历次数</label>
-              <div class="am-u-sm-9">
-                <input type="" name="" placeholder=""  value=""/>
+                <input type="text" id="pos_toudi" placeholder="请输入投递简历次数"  value="" style="width:52%"/>
                
               </div>
             </div>
@@ -171,23 +194,21 @@
             <div class="am-form-group">
               <label for="user-email" class="am-u-sm-3 am-form-label">工作描述</label>
               <div class="am-u-sm-9">
-                <input type="" name="" placeholder=""  value=""/>
-               
+                  <textarea id="pos_jobdescription" class="form-control" rows="3"></textarea>
               </div>
             </div>
 
             <div class="am-form-group">
               <label for="user-email" class="am-u-sm-3 am-form-label">职责描述</label>
               <div class="am-u-sm-9">
-                <input type="" name="" placeholder=""  value=""/>
-               
+                  <textarea id="pos_responsibilities" class="form-control" rows="3"></textarea>
               </div>
             </div>
 
             <div class="am-form-group">
               <label for="user-email" class="am-u-sm-3 am-form-label">福利待遇</label>
               <div class="am-u-sm-9">
-                <input type="" name="" placeholder=""  value=""/>
+                  <textarea id="pos_welfarebenefits" class="form-control" rows="2"></textarea>
                
               </div>
             </div>
@@ -196,29 +217,29 @@
               <label for="user-email" class="am-u-sm-3 am-form-label">上下架</label>
               <div class="am-u-sm-9">
                 <!-- <input type="" name="comangel" id="comangel" placeholder="" /> -->
-                <select id="comangel" class="" name="comangel">
-                          <option value="">上架</option>
-                          <option value="">下架</option>
+                <select id="pos_online" class="" name="comangel" style="width:52%">
+                          <option value="1">上架</option>
+                          <option value="0">下架</option>
                                                  
                 </select>
               </div>
             </div>
 
-            <div class="am-form-group">
-              <label for="user-email" class="am-u-sm-3 am-form-label">人才匹配</label>
-              <div class="am-u-sm-9">
-                <!-- <input type="" name="comangel" id="comangel" placeholder="" /> -->
-                <select id="comangel" class="" name="comangel">
-                          <option value="">开启</option>
-                          <option value="">关闭</option>
-                                                 
-                </select>
-              </div>
-            </div>
+            <!--<div class="am-form-group">-->
+              <!--<label for="user-email" class="am-u-sm-3 am-form-label">人才匹配</label>-->
+              <!--<div class="am-u-sm-9">-->
+                <!--&lt;!&ndash; <input type="" name="comangel" id="comangel" placeholder="" /> &ndash;&gt;-->
+                <!--<select id="comangel" class="" name="comangel">-->
+                          <!--<option value="">开启</option>-->
+                          <!--<option value="">关闭</option>-->
+                                                 <!---->
+                <!--</select>-->
+              <!--</div>-->
+            <!--</div>-->
             
             <div class="am-form-group">
               <div class="am-u-sm-9 am-u-sm-push-3">
-                <button type="button" id="save"  class="am-btn am-btn-primary">保存</button>
+                <button type="button" onclick="baocun()" class="am-btn am-btn-primary">保存</button>
               </div>
             </div>
           </div>
@@ -227,106 +248,167 @@
     </div>
 
 <include file="Public/footer"/>
+<script src="__PUBLIC__/myjs/UploadPic.js" type="text/javascript"></script>
 <script type="text/javascript">
-
-$(document).ready(function(){ 
-　 $('#file_upload').uploadifive({
-        'auto'             : false,
-        'formData'         : {
-                     'timestamp' : '<?php echo $timestamp;?>',
-                     'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
-                             },
-        'queueID'          : 'queue',
-        'uploadScript'     : "{:U('Com/doPhoto')}",
-        'onUploadComplete' : function(file, data) {
-          console.log(data);
-            $('#both').append("<div class='add'><img  class='img1' width=100px src='"+data+"' >          <img class='ico' src='/Public/img/ywrong.png'> <input type='hidden' name='img[]' value="+data+"></div>");
-              /*点击删除上传图片*/
-              $(".ico").unbind("click");
-              $(".ico").click(function(){
-                  var objo=$(this).prev();
-                  var img=$(this).prev(".img1").attr('src')
-                  var url ="{:U('Com/delimg')}";
-                  $.ajax({
-                        type:"post",
-                        url:url,
-                        data:{'img':img},
-                        dataType:"json",
-                        success:function(data){
-                          if(data=="ok"){
-                             $(objo).parent('.add').remove();
-                          }
-                          }
-                    });
-              });
-                } 
-          });
-      });
-
-
-
-  $(document).on('click','#save',function(){
-        var comname=$('#comname').val();
-        var comlinkman=$('#comlinkman').val();
-        var comtel=$('#comtel').val();
-        var comtype=$("#comtype").val();
-        var comangel=$("#comangel  option:selected").val();
-        var communren=$("#communren  option:selected").val();
-        var province=$("#s_province").val();
-        var city=$("#s_city").val();
-        var county=$("#s_county").val();
-        var objo=$(".ico").prev();
-        var img=$(".ico").prev(".img1").attr('src');
-        // alert(comangel);
-        // alert(communren);
-        // alert(img);
-        // return;
-        var s_address=$("#s_address").val();
-        var comaddress=province+city+county+s_address;
-        var comdesc=$('#comdesc').val();
-
-        if(comname==""){
-          alert('企业名称不能为空');
-          return;
-        }
-        if(comlinkman==""){
-          alert('联系人不能为空');
-          return;
-        }
-        if(comtel==""){
-          alert('请输入联系电话');
-          return;
-        }
-        if(county=="市、县级市"){
-          alert('公司地址不能为空');
-          return;
-        }
-
-        $.ajax({
-            url:"{:U('poscha/doadds')}",
-            data:{
-                "comname":comname,
-                "comlinkman":comlinkman,
-                "comtel":comtel,
-                "comtype":comtype,
-                "comangel":comangel,
-                "communren":communren,
-                "comaddress":comaddress,
-                "comdesc":comdesc,
-                "img":img
+    $(function() {
+        upload("work", "work_image"); //上传证件合影
+    });
+    /*
+     * id file input的id
+     * thumb 缩略图id
+     */
+    function upload(id, thumb) {
+        //上传证书
+        var u = new UploadPic();
+        u.init({
+            input: document.getElementById(id),
+            callback: function(base64, fileType) {
+                console.log(base64);
+                $("#" + thumb).attr("src", base64);
+                $("#" + thumb).attr("filetype", fileType);
             },
+            loading: function() {
+                //say_error("等待上传...");
+            }
+        });
+    }
+//$(document).ready(function(){
+//　 $('#file_upload').uploadifive({
+//        'auto'             : false,
+//        'formData'         : {
+//            'timestamp' : '<?php echo $timestamp;?>',
+//            'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
+//                             },
+//        'queueID'          : 'queue',
+//        'uploadScript'     : "{:U('Com/doPhoto')}",
+//        'onUploadComplete' : function(file, data) {
+//          console.log(data);
+//            $('#both').append("<div class='add'><img  class='img1' width=100px src='"+data+"' >          <img class='ico' src='/Public/img/ywrong.png'> <input type='hidden' name='img[]' value="+data+"></div>");
+//              /*点击删除上传图片*/
+//              $(".ico").unbind("click");
+//              $(".ico").click(function(){
+//                  var objo=$(this).prev();
+//                  var img=$(this).prev(".img1").attr('src')
+//                  var url ="{:U('Com/delimg')}";
+//                  $.ajax({
+//                        type:"post",
+//                        url:url,
+//                        data:{'img':img},
+//                        dataType:"json",
+//                        success:function(data){
+//                          if(data=="ok"){
+//                             $(objo).parent('.add').remove();
+//                          }
+//                          }
+//                    });
+//              });
+//            }
+//          });
+//      });
+
+
+
+  function baocun(){
+        var pos_img =$('#work_image').attr('src');
+        var pos_name = $('#pos_name').val();
+        var pos_recruitmun=$('#pos_recruitmun').val();
+        var pos_county=$('#pos_county').val();
+        var pos_brokerage =$('#pos_brokerage').val();
+        var pos_salary=$('#pos_salary').val();
+        var pos_joptype=$('#pos_joptype').val();
+        var pos_worktime=$('#pos_worktime').val();
+        var pos_hours=$('#pos_hours').val();
+        var pos_company_name=$('#pos_company_name').val();
+        var pos_company_address=$('#pos_company_address').val();
+        var pos_true_liulan=$('#pos_true_liulan').val();
+        var pos_true_toudi=$('#pos_true_toudi').val();
+        var pos_liuan=$('#pos_liuan').val();
+        var pos_toudi=$('#pos_toudi').val();
+        var pos_jobdescription=$('#pos_jobdescription').val();
+        var pos_responsibilities=$('#pos_responsibilities').val();
+        var pos_welfarebenefits=$('#pos_welfarebenefits').val();
+        var pos_online=$('#pos_online').val();
+
+
+      if(pos_img=="" || pos_img == null){
+          alert('任务照片不能为空');
+          return;
+      }
+
+        if(pos_name=="" || pos_name == null){
+          alert('任务名称不能为空');
+          return;
+        }
+      if(pos_recruitmun=="" || pos_recruitmun == null){
+          alert('需求人数不能为空');
+          return;
+      }
+      if(pos_county =="0" ){
+          alert('请选择区域');
+          return;
+      }
+      if(pos_brokerage=="" || pos_brokerage == null){
+          alert('佣金不能为空');
+          return;
+      }
+      if(pos_worktime=="" || pos_worktime == null){
+          alert('薪资不能为空');
+          return;
+      }
+      if(pos_joptype =="0" ){
+          alert('请选择工作类型');
+          return;
+      }
+
+      if(pos_salary=="" || pos_salary == null){
+          alert('工作时间不能为空');
+          return;
+      }
+      if(pos_hours=="" || pos_hours == null){
+          alert('上班时间段不能为空');
+          return;
+      }
+      if(pos_company_name=="" || pos_company_name == null){
+          alert('公司名称不能为空');
+          return;
+      }
+      if(pos_company_address=="" || pos_company_address == null){
+          alert('详细地址不能为空');
+          return;
+      }
+      if(pos_liuan == '' || pos_liuan == null){
+          pos_liuan=0;
+      }
+      if(pos_toudi == '' || pos_toudi == null){
+          pos_toudi=0;
+      }
+      if(pos_jobdescription=="" || pos_jobdescription == null){
+          alert('工作描述不能为空');
+          return;
+      }
+      if(pos_responsibilities=="" || pos_responsibilities == null){
+          alert('职责描述不能为空');
+          return;
+      }
+      if(pos_welfarebenefits=="" || pos_welfarebenefits == null){
+          alert('福利待遇描述不能为空');
+          return;
+      }
+
+      var data={'pos_img':pos_img,'pos_name':pos_name,'pos_recruitmun':pos_recruitmun,'pos_county':pos_county,'pos_brokerage':pos_brokerage,'pos_salary':pos_salary,'pos_joptype':pos_joptype,'pos_worktime':pos_worktime,'pos_hours':pos_hours,'pos_company_name':pos_company_name,'pos_company_address':pos_company_address,'pos_true_liulan':pos_true_liulan,'pos_true_toudi':pos_true_toudi,'pos_liuan':pos_liuan,'pos_toudi':pos_toudi,'pos_jobdescription':pos_jobdescription,'pos_responsibilities':pos_responsibilities,'pos_welfarebenefits':pos_welfarebenefits,'pos_online':pos_online};
+        $.ajax({
+            url:"{:U('poscha/doadds_j')}",
+            data:data,
             type:'post',
             dataType:"json",
             success:function(data){
                 if(data.status){
                     alert('添加成功');
-                    window.location="{:U('com/lists')}";
+                    window.location="{:U('Poscha/lists')}";
                 }else{
                     alert(data.message);
                 }
             }
         });
-    })
-    
-
+    }
 </script>

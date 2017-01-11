@@ -1,0 +1,128 @@
+[ 2017-01-04T13:01:28+08:00 ] 122.235.226.69 /index.php/Juym_admin/Optiment/tjlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `suzhi_pos` [ RunTime:0.0176s ]
+SQL: SELECT * FROM `suzhi_pos` WHERE `Posjoptype` = 0  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `suzhi_pos` WHERE `Posjoptype` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `suzhi_pos` WHERE `Posjoptype` = 0 ORDER BY Possort LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: s_name C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\188984ed4a31f46d97a3a4a89ff021dd.php 第 98 行.
+NOTIC: [8] Undefined variable: c_name C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\188984ed4a31f46d97a3a4a89ff021dd.php 第 98 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\188984ed4a31f46d97a3a4a89ff021dd.php 第 195 行.
+NOTIC: [8] Undefined index: id C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\188984ed4a31f46d97a3a4a89ff021dd.php 第 196 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\188984ed4a31f46d97a3a4a89ff021dd.php 第 196 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\188984ed4a31f46d97a3a4a89ff021dd.php 第 195 行.
+NOTIC: [8] Undefined index: id C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\188984ed4a31f46d97a3a4a89ff021dd.php 第 196 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\188984ed4a31f46d97a3a4a89ff021dd.php 第 196 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\188984ed4a31f46d97a3a4a89ff021dd.php 第 195 行.
+NOTIC: [8] Undefined index: id C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\188984ed4a31f46d97a3a4a89ff021dd.php 第 196 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\188984ed4a31f46d97a3a4a89ff021dd.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-01-04T13:07:26+08:00 ] 122.235.226.69 /index.php/Juym_admin/Optiment/qylist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `suzhi_pos` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `suzhi_pos` WHERE `Posjoptype` = 3  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `suzhi_pos` WHERE `Posjoptype` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `suzhi_pos` WHERE `Posjoptype` = 3 ORDER BY Possort LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined variable: s_name C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\3b094488d86c2b11fb938d9ac88390ee.php 第 98 行.
+NOTIC: [8] Undefined variable: c_name C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\3b094488d86c2b11fb938d9ac88390ee.php 第 98 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\3b094488d86c2b11fb938d9ac88390ee.php 第 193 行.
+NOTIC: [8] Undefined index: id C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\3b094488d86c2b11fb938d9ac88390ee.php 第 194 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\3b094488d86c2b11fb938d9ac88390ee.php 第 194 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-01-04T13:07:29+08:00 ] 122.235.226.69 /index.php/Juym_admin/Optiment/qzlist/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `suzhi_pos` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `suzhi_pos` WHERE `Posjoptype` = 2  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `suzhi_pos` WHERE `Posjoptype` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `suzhi_pos` WHERE `Posjoptype` = 2 ORDER BY Possort LIMIT 0,3   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: s_name C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\91f8bdf4bd9f7df7bb731861b3ba8196.php 第 98 行.
+NOTIC: [8] Undefined variable: c_name C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\91f8bdf4bd9f7df7bb731861b3ba8196.php 第 98 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\91f8bdf4bd9f7df7bb731861b3ba8196.php 第 195 行.
+NOTIC: [8] Undefined index: id C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\91f8bdf4bd9f7df7bb731861b3ba8196.php 第 196 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\91f8bdf4bd9f7df7bb731861b3ba8196.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-01-04T13:07:31+08:00 ] 122.235.226.69 /index.php/Juym_admin/Optiment/tjlist/id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `suzhi_pos` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `suzhi_pos` WHERE `Posjoptype` = 0  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `suzhi_pos` WHERE `Posjoptype` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `suzhi_pos` WHERE `Posjoptype` = 0 ORDER BY Possort LIMIT 0,3   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: s_name C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\188984ed4a31f46d97a3a4a89ff021dd.php 第 98 行.
+NOTIC: [8] Undefined variable: c_name C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\188984ed4a31f46d97a3a4a89ff021dd.php 第 98 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\188984ed4a31f46d97a3a4a89ff021dd.php 第 195 行.
+NOTIC: [8] Undefined index: id C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\188984ed4a31f46d97a3a4a89ff021dd.php 第 196 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\188984ed4a31f46d97a3a4a89ff021dd.php 第 196 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\188984ed4a31f46d97a3a4a89ff021dd.php 第 195 行.
+NOTIC: [8] Undefined index: id C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\188984ed4a31f46d97a3a4a89ff021dd.php 第 196 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\188984ed4a31f46d97a3a4a89ff021dd.php 第 196 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\188984ed4a31f46d97a3a4a89ff021dd.php 第 195 行.
+NOTIC: [8] Undefined index: id C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\188984ed4a31f46d97a3a4a89ff021dd.php 第 196 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\WWW\suzhi_php\App\Runtime\Cache\Juym_admin\188984ed4a31f46d97a3a4a89ff021dd.php 第 196 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
