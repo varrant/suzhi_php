@@ -53,6 +53,7 @@
                   <div class="am-btn-toolbar">
                     <div class="am-btn-group am-btn-group-xs">
                       <button type="submit" formmethod="get" formaction="{:U('Head/view',array(id=>$v['he_id']))}" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span>查看个人信息</button>
+                      <button type="submit" formmethod="get" formaction="{:U('Order/receive_list',array(id=>$v['he_id']))}" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span>查看订单</button>
                       <button  onclick="ssss(this)" value="{$v['he_id']}" type="button"  class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 封号</button>
                       <!--<button type="submit" formmethod="get" formaction="{:U('Orderinfo/lists',array(id=>$v['pos_id']))}" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span>订单情况</button>-->
                     </div>
