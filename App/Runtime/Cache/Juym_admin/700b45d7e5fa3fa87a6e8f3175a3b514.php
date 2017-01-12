@@ -239,7 +239,7 @@
                                         <div class="am-btn-group am-btn-group-xs">
                                             <button type="submit" formmethod="get" formaction="<?php echo U('Poscha/view_q',array(id=>$v['pos_id']));?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span>查看</button>
                                             <button  onclick="ssss(this)" value="<?php echo ($v['pos_id']); ?>" type="button"  class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
-                                            <button type="submit" formmethod="get" formaction="<?php echo U('Orderinfo/lists',array(id=>$v['pos_id']));?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span>订单情况</button>
+                                            <!--<button type="submit" formmethod="get" formaction="<?php echo U('Orderinfo/lists',array(id=>$v['pos_id']));?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span>订单情况</button>-->
                                             <!-- <button id="del<?php echo ($v['id']); ?>" type="button" formaction1="<?php echo U('Tem/zshow',array('id'=>$v['pid']));?>" formmethod="get" formaction="<?php echo U('Tem/delZshow',array(id=>$v['id']));?>" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button> -->
                                         </div>
                                     </div>
