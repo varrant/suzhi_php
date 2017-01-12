@@ -1,4 +1,0 @@
-缴纳保证金：pay_deposit.html
-首页：index.html
-任务：task_list.html
-任务详情：tast_detail.html

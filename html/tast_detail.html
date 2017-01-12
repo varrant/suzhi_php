@@ -16,10 +16,9 @@
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/amazeui.min.js"></script>
   <script src="js/function.js"></script>
-  <script src="js/TouchSlide.1.1.js"></script>
 </head>
 <body style="background:#eee;">
-	<div class="main" style="padding-bottom:50px;">
+	<div class="main" style="padding-bottom:60px;">
 		<div class="mission_top">
 			<div class="top_head">
 				<div style="overflow:hidden;">
@@ -47,8 +46,8 @@
 		<div class="detail_list">
 			<ul>
 				<li>
-					<h3>工作类型</h3>
-					<div class="t_main">
+					<h3>工作类型<img src="images/icon_5.png" width="12" class="on" /></h3>
+					<div class="slide_main">
 						<ul>
 							<li>1、测试需求分析、测试计划、测试方案、测试用例、及各项相关评审工作；</li>
 							<li>2、执行测试，包括B/S、App功能测试，及部分性能、安全、健壮性、接口测试；</li>
@@ -57,8 +56,18 @@
 					</div>
 				</li>
 				<li>
-					<h3>资者要求</h3>
-					<div class="t_main">
+					<h3>职责要求<img src="images/icon_5.png" width="12" class="on" /></h3>
+					<div class="slide_main">
+						<ul>
+							<li>1、测试需求分析、测试计划、测试方案、测试用例、及各项相关评审工作；</li>
+							<li>2、执行测试，包括B/S、App功能测试，及部分性能、安全、健壮性、接口测试；</li>
+							<li>3、系统质量评价和反馈，及问题跟踪、推动解决；</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<h3>福利待遇<img src="images/icon_5.png" width="12" class="on" /></h3>
+					<div class="slide_main">
 						<ul>
 							<li>1、测试需求分析、测试计划、测试方案、测试用例、及各项相关评审工作；</li>
 							<li>2、执行测试，包括B/S、App功能测试，及部分性能、安全、健壮性、接口测试；</li>
@@ -68,28 +77,58 @@
 				</li>
 			</ul>
 		</div>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		<!--公司介绍-->
+		<div class="csompany_introduction">
+	
+			<div class="csompany_introduction_main">
+				
+				<div class="csompany_introduction_word">
+					<h3>公司名称：杭州巨光科技有限公司</h3>
+					
+				</div>
+			</div>
+			<div class="csompany_introduction_p">
+				<h3>详细地址：浙江省杭州市西湖区</h3>
+				
+			</div>
+		</div>
+		<div class="tast_footer">
+			<a href="javascript:void(0);" class="customer_service_consulting"><img src="images/icon_4.png" />客服咨询</a>
+			<a href="javascript:receive_task()" class="receive_task">领取任务</a>
+		</div>
+	</div>
+	<!--弹框-->
+	<div class="receive_task_bg" id="receive_task_bg" style="display:none;">
+		<div class="receive_task_box">
+			<h3>确认领取该任务吗？</h3>
+			<div class="receive_task_link">
+				<a href="javascript:cancel()">取消</a>
+				<a href="tast_detail_receive.html">确认</a>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
+<script>
+	$(function(){
+		$(".detail_list li h3").click(function(){
+			if($(this).find("img").hasClass("on")){
+				$(this).find("img").attr('src','images/icon_6.png');
+				$(this).siblings(".slide_main").slideDown();
+				$(this).find("img").removeClass("on");
+			}else{
+				$(this).find("img").attr('src','images/icon_5.png');
+				$(this).siblings(".slide_main").slideUp();
+				$(this).find("img").addClass("on");
+			}
+		});
+	})
+	function receive_task(){
+		$("#receive_task_bg").show();
+	}
+	function cancel(){
+		$("#receive_task_bg").hide();
+	}
+</script>
+
+

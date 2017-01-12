@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>VIPETA宠物健康管理系统</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="alternate icon" type="image/png" href="__PUBLIC__/assets/i/favicon.png">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/layer/skin/layer.css">
+     <script type="text/javascript" src="__PUBLIC__/layer/layer.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/amazeui.min.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/mycss/my.css">
+    <script type="text/javascript" src="__PUBLIC__/assets/js/jquery.min.js"></script>
+   
+   
+    <style>
+
+    body{
+		background:url(__PUBLIC__/image/login_p.jpg) top center no-repeat; background-size:cover;*/
+		/*text-align:center;*/
+		background:#E4E5E7;
+		
+
+    }
+    .header {
+        text-align: center;
+    }
+    
+    .header h1 {
+        font-size: 200%;
+        color: #333;
+        margin-top: 30px;
+    }
+    
+    .header p {
+        font-size: 14px;
+    }
+    .hdzc{
+	/*float: left;	*/	
+	margin-top: 45px;
+	width:100%;
+	height: 80px;
+    }
+
+    .bd{
+		
+    	border: 1px;
+    	width: 90%;
+    	/*border:1px solid #F00;*/
+    	margin-left: 5%;
+    }
+    .input_t{
+        color: red;
+		border:0;
+		margin-top:0px;
+		width: 100%;
+		height: 60px;
+        padding:0px 10px;
+		border-bottom: 1px solid rgb(192,192,192);
+		border-radius:5px;
+        /*background: transparent none ;*/
+   /* border:0; */
+    }
+    .input_t placeholder{
+        color: #999; 
+    }
+    .login{
+
+    	
+    }
+    .div_codep{
+		margin-left: 5%;
+		margin-top: 3%;
+
+    }
+    .xieyi{
+
+	margin-left: 5%;
+	
+	margin-top: 6px;
+    }
+    .sqr{
+        margin-left: 5%;
+        margin-top: 50px;
+
+    }
+
+    ::-webkit-input-placeholder { /* WebKit browsers */  
+    color:    #A9A9A9;  
+}  
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */  
+   color:    #A9A9A9;  
+   opacity:  1;  
+}  
+::-moz-placeholder { /* Mozilla Firefox 19+ */  
+   color:    #A9A9A9;  
+   opacity:  1;  
+}  
+:-ms-input-placeholder { /* Internet Explorer 10+ */  
+   color:    #A9A9A9;  
+}  
+    </style>
+    
+</head>
+
+<body >
+<div class="login">
+	<form method="post" id="form_a" action="{:U('Login/Cszcm')}"  onsubmit="return check()">
+		<div class="hdzc"><h1 style="margin-left:39%;color:#F5580C" ><!-- 活动注册 --></h1></div>		
+		<div class="bd">
+		<input class="input_t" type="text" name="c_name" id="c_name" placeholder="市级：输入注册号(输入真实姓名)">
+		<div style="clear:both"></div>
+		<input style="margin-top:15px"  class="input_t" type="text" name="c_phone" id="c_phone" placeholder="输入手机号">
+		<div style="clear:both"></div>
+		<input style="margin-top:15px" type="password"  class="input_t" name="c_password" id="c_password" placeholder="输入密码">
+	    <div style="clear:both"></div>
+        <input style="margin-top:15px"  type="password" class="input_t" name="c_rpassword" id="c_rpassword" placeholder="确认密码">
+        <div style="clear:both"></div>
+        <input style="margin-top:15px"  class="input_t" name="c_tjm" id="c_tjm" placeholder="输入推荐码">
+		<!-- <div class="xieyi">
+			<span style="margin-left: 70px;margin-top:20px;font-size:14px;"> <input checked  type="checkbox">我已阅读并同意《<span style="color:red">在线服务协议</span>》</span>
+
+		</div> -->
+		<div>
+			<button type="button" id="button" class="am-btn am-btn-default am-radius"" style=" border-radius: 5px;  border-style: none; width: 100%; height: 60px; margin-left:0px;background-color:#F76E42; margin-top:25px">提交申请</button>
+		</div>
+       
+	</form>
+</div>
+   
+</body>
+
+
+<script type="text/javascript">
+/*提示框类*/
+var dialog = {
+    // 错误弹出
+    error: function(message) {
+
+        layer.open({
+            content: message,
+            icon: 2,
+            title: "错误提示",
+
+        });
+    },
+
+    //成功弹出框
+    success: function(message, url) {
+
+        layer.open({
+            content: message,
+            icon: 1,
+            title: "错误提示",
+            yes: function() {
+                location.href = url;
+            }
+
+        });
+    },
+
+
+
+}
+
+$('#button').click(function (e) {
+        
+      
+        var error = false;
+        var name = $('#c_name').val();
+        var phone = $('#c_phone').val();
+        var c_password=$("#c_password").val();
+        var c_rpassword = $('#c_rpassword').val();
+        var c_tjm=$("#c_tjm").val();
+
+        if(c_password!=c_rpassword){
+                dialog.error("两次密码不同");
+
+                 var error =true;
+        }
+       
+
+        if (name.length == 0) {
+            var error = true;
+            $('#c_name').css("border-color", "#D8000C");
+        } else {
+            $('#c_name').css("border-color", "#666");
+        }
+
+        if (phone.length == 0) {
+            var error = true;
+            $('#c_phone').css("border-color", "#D8000C");
+        } else {
+            $('#c_phone').css("border-color", "#666");
+        }
+        if (c_password.length == 0) {
+            var error = true;
+            $('#c_password').css("border-color", "#D8000C");
+        } else {
+            $('#c_password').css("border-color", "#666");
+        }
+         if (c_rpassword.length == 0) {
+            var error = true;
+            $('#c_rpassword').css("border-color", "#D8000C");
+        } else {
+            $('#c_rpassword').css("border-color", "#666");
+        }
+          if (c_tjm.length == 0) {
+            var error = true;
+            $('#c_tjm').css("border-color", "#D8000C");
+        } else {
+            $('#c_tjm').css("border-color", "#666");
+        }
+
+        //now when the validation is done we check if the error variable is false (no errors)
+        if (error == false) {
+         
+            var url = $("#form_a").attr('action');
+               
+            var data=$("#form_a").serialize();
+               
+            console.log(data);
+            $.ajax({
+                type:"post",
+                url:url,
+                data:data,
+                dataType:"json",
+
+                success:function(data){
+                    if (data=="password_no") {
+                        dialog.error("输入密码不同");
+                        $("#form_a").find("input").val('');
+                    }
+                    if(data=='yqmcw'){
+
+                          dialog.error("邀请码错误");
+                    }
+                    if(data=='zccg'){
+
+                          dialog.success("注册成功","{:U('Login/index')}");
+                    }else{
+
+                         dialog.error("注册失败");
+
+                    }         
+                }
+
+            });
+            
+        }
+ });
+
+
+// 删除弹框
+
+$('button[id^=del]').click(function (e) {
+            //获取id
+            var id=$(this).attr('id').replace("del", "")
+          
+            var url = $(this).attr('formaction');
+            var t_url = $(this).attr('formaction1');
+           
+                // alert(url);     
+            $('#my-confirm').modal({
+            relatedTarget: this,
+            onConfirm: function(options) {
+                $.ajax({
+                    type:"get",
+                    url:url,
+                    data:$("#form1").serialize(),
+                    dataType:"json",
+                                     
+                    success:function(data){
+                    
+                        if (data=="del_ok") {
+                           
+                           dialog.success("删除成功",t_url);  
+                        }
+                        
+                        if(data=="del_no"){
+
+                            dialog.error("删除失败")
+                        }
+
+                    }
+            
+            
+          });
+              
+            },
+            // closeOnConfirm: false,
+            onCancel: function() {
+
+             
+             }
+
+          });
+
+          
+    });
+
+
+
+</script>
+</html>
