@@ -161,6 +161,9 @@ h3{margin-bottom:0px;margin-top:0px;}
 .balance_top p{font-size: 48px;margin-top:5px;}
 .balance_link{display:block;height:48px;background:#fff;line-height:48px;padding:0 16px; font-size: 14px;color:#333;position:relative;}
 .balance_link img{position:absolute;right:16px;top:50%;margin-top:-5px;}
+.agreement h3{text-align:center;line-height:30px;font-size:14px;}
+.agreement{padding:0px 16px 20px;}
+.agreement p{text-indent:24px;font-size:13px;}
 
 
 
