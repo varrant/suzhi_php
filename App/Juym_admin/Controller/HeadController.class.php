@@ -5,7 +5,7 @@ class HeadController extends CommonController {
    //猎头列表
       function lists(){
           $db=M('headhunter');
-          //必须是兼职
+          //必须是猎头身份
           $map['he_type'] = 1;
           //必须是未封号
           $map['he_is_delete'] = 1;
@@ -21,7 +21,7 @@ class HeadController extends CommonController {
           $this->display();
 
        }
-    //查看个人信息
+    //查看猎头个人信息
     function view(){
         $db=M('headhunter');
         $map['he_id']=I('id');
@@ -129,8 +129,102 @@ class HeadController extends CommonController {
         }
     }
 
+    //求职者列表
+    function qz_lists(){
+        $db=M('headhunter');
+        //必须是求职者身份
+        $map['he_type'] = 2;
+        //必须是未封号
+        $map['he_is_delete'] = 1;
+        $count =$db->where($map)->count();
+        $Page = new \Think\Page($count,2);
+        $Page->setConfig('theme', "%UP_PAGE% %FIRST% %END% %LINK_PAGE% %DOWN_PAGE% %TOTAL_ROW%");
+        $show = $Page->show();// 分页显示输出
+        $show=substr($show,0,strlen($show)-1);
+        $data = $db->where($map)->limit($Page->firstRow.','.$Page->listRows)->select(); // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
+        foreach ($data as $key => $value){
+            $where['he_id']=$value['he_hunterid'];
+            $res=$db->where($where)->find();
+            $data[$key]['l_phone']=$res['he_phone'];
+            $data[$key]['l_nick']=$res['he_nickname'];
+            $data[$key]['l_name']=$res['he_name'];
 
+        }
+        $this->row_page=$count;
+        $this->assign('data',$data);// 赋值数据集
+        $this->assign('page',$show);// 赋值分页输出 $this->display(); // 输出模板
+        $this->display();
 
+    }
+    //查看求职者个人信息
+    function qz_view(){
+        $db=M('headhunter');
+        $map['he_id']=I('id');
+        $data=$db->where($map)->select();
+        foreach ($data as $key => $value){
+            $where['he_id']=$value['he_hunterid'];
+            $res=$db->where($where)->find();
+            $data[$key]['l_phone']=$res['he_phone'];
+            $data[$key]['l_nick']=$res['he_nickname'];
+            $data[$key]['l_name']=$res['he_name'];
 
+        }
+        $this->assign('data',$data);// 赋值数据集
+        $this->display();
+
+    }
+    //更新操作
+    function qz_doview(){
+        $data=array();
+        $map=array();
+        $arr=$_POST;
+        //查询照片是否发生改变
+        $db=M('headhunter');
+        $map['he_id']=$arr['he_id'];
+        $aa=$db->where($map)->find();
+        if($aa['he_image'] == $arr['he_image']){
+            $data['he_image']=$arr['he_image'];
+        }else{
+            $data['he_image']=uploadPic($arr['he_image']);
+        }
+        $data['he_contact']=$arr['he_contact'];
+        $data['he_nickname']=$arr['he_nickname'];
+        $data['he_name']=$arr['he_name'];
+        $data['he_sex']=$arr['he_sex'];
+        $data['he_occupation']=$arr['he_occupation'];
+
+        //更新时间
+        $data['he_update_time']=date('Y-m-d h:i:s',time());
+
+        $do_add=$db->where($map)->save($data);
+
+        if($do_add){
+            $this->success('保存成功',U('head/qz_lists'));
+
+        }else{
+
+            $this->error("保存失败");
+        }
+    }
+    //求职者封号操作
+    function qz_delete(){
+        $map = array();
+        $data = array();
+        $map['he_id'] = $_POST['he_id'];
+        //改为已封号
+        $data['he_is_delete'] = 2;
+        $data['he_delete_time'] = date('Y-m-d h:i:s', time());
+        $db = M('headhunter');
+
+        $do_add = $db->where($map)->save($data);
+
+        if ($do_add) {
+            $this->success('封号成功', U('head/qz_lists'));
+
+        } else {
+
+            $this->error("封号失败");
+        }
+    }
 
 }
