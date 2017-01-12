@@ -1,0 +1,295 @@
+<!-- 登陆 -->
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>注册</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="stylesheet" href="../../assets/css/amazeui.css">
+  <link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/login.css">
+  <link rel="stylesheet" href="../../js/uploadifive/uploadifive.css">
+  <script src="../../assets/js/jquery.min.js"></script>
+  <script src="../../assets/js/amazeui.min.js"></script>
+  <script src="../../js/jquery.uploadifive.js"></script>
+  <script src="../../js/function.js"></script>
+  <script src="../../js/date.js"></script>
+</head>
+<body>
+
+<!-- 填写手机号步骤 -->
+<div class="liststep1">
+  <div class="logo"></div>
+  <div class="ipt_box">
+  	<input type="text" class="ipt_username" placeholder="请输入需要绑定的手机号">
+  </div>
+  <div class="ipt_box">
+  	<input type="text" class="ipt_username" placeholder="请输入验证码">
+  	<div class="ipt_sendCode" onclick="getcode(this)">获取验证码</div>
+  </div>
+  <div class="tipsbox">
+    <div class="ico"><i class="fa fa-circle-o" aria-hidden="true" id="isYes" onclick="checkYes()"></i></div>
+    <div class="content">我已经阅读并同意速职用户协议</div>
+    </div>
+  <div class="margin_box180"></div>
+  <div class="btn_box">
+  	<button class="btn_login_out" id="btn_login" onclick="login()">下一步</button>
+  </div>
+</div>
+
+<!-- 上传身份证步骤 -->
+<div class="liststep2">
+  <div style="margin-top: 50px;"></div>
+  <div class="ipt_box">
+    <input type="text" class="ipt_username" placeholder="请输入真实姓名">
+  </div>
+  <div class="ipt_box">
+    <input type="text" class="ipt_username" placeholder="请输入身份证号">
+  </div>
+  <div class="ipt_box">
+    <div class="listItem">
+      <div class="title">上传证件照</div>
+      <div class="pic">
+        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+        
+        <input id="file_upload" name="file_upload" type="file" multiple="true">
+      </div>
+    </div>
+    <div class="listItem">
+      <div class="title">上传证件照</div>
+      <div class="pic"><img src="images/reg_eg1.png" alt=""></div>
+    </div>
+    <div class="clearbox"></div>
+  </div>
+  <div class="ipt_box">
+    <div id="queue"></div>
+  </div>
+  <div style="margin-top: 120px;"></div>
+  <div class="btn_box">
+    <button class="btn_login_out" id="btn_login" onclick="login()">下一步</button>
+  </div>
+</div>
+
+<!-- 填写个人信息步骤 -->
+<div class="liststep3" style="display: block;">
+  <div class="ipt_box2_top">
+    <div class="left">昵称</div>
+    <div class="right"><input type="text" class="inp_username" placeholder="可以填写真实姓名"></div>
+    <div class="clearbox"></div>
+  </div>
+  <div class="ipt_box2_line"></div>
+  <div class="ipt_box2">
+    <div class="left">性别</div>
+    <div class="right">
+      <div class="ipt_value">男<i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      <input type="hidden" class="inp_username" value="男">
+    </div>
+    <div class="clearbox"></div>
+  </div>
+  <div class="ipt_box2">
+    <div class="left">生日</div>
+    <div class="right">
+      <div class="ipt_value" id="doc-datepicker"><span>1993-05-04</span><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      <input type="hidden" class="inp_username" value="1993-05-04">
+    </div>
+    <div class="clearbox"></div>
+  </div>
+  <div class="ipt_box2">
+    <div class="left">职业</div>
+    <div class="right">
+      <div class="ipt_value" id="zhiye">产品经理<i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      <input type="hidden" class="inp_username" value="产品经理">
+    </div>
+    <div class="clearbox"></div>
+  </div>
+  <div class="ipt_box2">
+    <div class="left">学历</div>
+    <div class="right">
+      <div class="ipt_value" id="xueli">请选择<i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      <input type="hidden" class="inp_username" value="请选择">
+    </div>
+    <div class="clearbox"></div>
+  </div>
+  <div class="ipt_box2">
+    <div class="left">学校</div>
+    <div class="right">
+      <div class="ipt_value" id="xuexiao">请选择<i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      <input type="hidden" class="inp_username" value="请选择">
+    </div>
+    <div class="clearbox"></div>
+  </div>
+  <div class="ipt_box2">
+    <div class="left">专业</div>
+    <div class="right">
+      <div class="ipt_value" id="zhuanye">请选择<i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      <input type="hidden" class="inp_username" value="请选择">
+    </div>
+    <div class="clearbox"></div>
+  </div>
+  <div class="ipt_box2 ipt_box2_bottom">
+    <div class="left">年级</div>
+    <div class="right">
+      <div class="ipt_value" id="nianji">请选择<i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      <input type="hidden" class="inp_username" value="请选择">
+    </div>
+    <div class="clearbox"></div>
+  </div>
+
+  <div style="background-color: #d8d8d8; padding-top: 120px; padding-bottom: 50px;">
+    <div class="btn_box">
+      <button class="btn_login_over" id="btn_login" onclick="login()">下一步</button>
+    </div>
+  </div>
+</div>
+
+<!-- 交纳保证金步骤 -->
+<div class="liststep4">
+  <div class="ipt_box3_top">
+    <div class="left">领队保证金&nbsp;&nbsp;<i class="fa fa-question-circle" aria-hidden="true"></i></div>
+    <div class="clearbox"></div>
+  </div>
+  <div class="ipt_box2">
+    <div class="left">保证金额</div>
+    <div class="right">
+      <div class="ipt_value" style="color: #333333;">500元</div>
+      <input type="hidden" class="inp_username" value="500">
+    </div>
+    <div class="clearbox"></div>
+  </div>
+  <div class="ipt_box2 ipt_box2_bottom">
+    <div class="left" style="color: #999999;">当推荐成功10个人，全额返还（防止刷单现象）</div>
+    <div class="right">
+    </div>
+    <div class="clearbox"></div>
+  </div>
+
+  <div style="background-color: #d8d8d8; padding-top: 300px; padding-bottom: 80px;">
+    <div class="btn_box">
+      <button class="btn_login_pay_over" id="btn_login" data-am-modal="{target: '#mypay'}">立即支付</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- 提示框架 -->
+<div id="rb1" class="remindbox">
+  <div class="icon"><i class="fa fa-exclamation-circle" aria-hidden="true"></i></div>
+  <div class="content"></div>
+</div>
+<!-- 选择对话框 -->
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="your-modal">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd"><span>标题</span>
+      <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+    </div>
+    <div class="am-modal-bd">
+      内容。
+    </div>
+  </div>
+</div>
+
+<!-- 支付提示方式 -->
+<div class="am-modal-actions" id="mypay">
+  <div class="am-modal-actions-group">
+    <ul class="am-list">
+      <li class="am-modal-actions-header">选择支付方式<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close="" style="float: right; line-height: 25px; height: 25px; padding: 0px; font-size: 20px;">×</a></li>
+      <li><a href="#" style="color: #05cb04;"><span><img src="images/wechat1.png" alt=""></span>&nbsp;微信支付<i class="fa fa-angle-right" style="float: right; color: #999999; margin-right: 16px; line-height: 66px;" aria-hidden="true"></i></a></li>
+      <li><a href="#" style="color: #01a9ef;"><span><img src="images/alipay1.png" alt=""></span>&nbsp;支付宝<i class="fa fa-angle-right" style="float: right; color: #999999; margin-right: 16px; line-height: 66px;" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+</div>
+</body>
+<script>
+	function getcode(t){
+    $(t).html("重新发送");
+		$("#btn_login").attr("class","btn_login_over");
+    $("#btn_login").html("下一步");
+	}
+  function login(){
+    showRemindbox("手机号格式错误，请重新输入");
+  }
+
+  function showRemindbox(content){
+    $("#rb1").slideToggle();
+    $("#rb1").find(".content").html(content);
+    $("#rb1").unbind("click");
+    $("#rb1").bind("click",function(){
+      $("#rb1").slideToggle();
+    })
+  }
+
+  function checkYes(){//自行添加JS变量，用来标识是否同意协议
+    if($("#isYes").attr("class").indexOf("fa-check-circleover")>-1){
+      $("#isYes").addClass("fa-circle-o");
+      $("#isYes").removeClass("fa-check-circle");
+      $("#isYes").removeClass("fa-check-circleover");
+      //不同意协议此处应该返回FALSE
+    }
+    else{
+      $("#isYes").removeClass("fa-circle-o");
+      $("#isYes").addClass("fa-check-circle");
+      $("#isYes").addClass("fa-check-circleover");
+      //同意协议此处应该返回TRUE
+    }
+  }
+
+  function showbox($yourmodal,$ammodaldialog,$height,id,title,content){
+    $("#"+id).click(function(){
+      $yourmodal.css("height",$height);
+      $ammodaldialog.css("height",$height);
+      $yourmodal.unbind('open.modal.amui');
+      $yourmodal.bind('open.modal.amui', function(){
+        console.log("打开窗口");
+        $yourmodal.find("span").html(title);//设置标题
+        $yourmodal.find(".am-modal-bd").html(content);//设置显示内容
+        // console.log($yourmodal.find(".am-modal-bd").html());
+      });
+      $yourmodal.unbind('close.modal.amui');
+      $yourmodal.bind('close.modal.amui', function(){
+        console.log('关闭了窗口');
+      });
+      $yourmodal.modal();
+    })
+  }
+  $(function() {
+    //调用日期组件
+    $('#doc-datepicker').datepicker().
+      on('changeDate.datepicker.amui', function(event) {
+        $("#doc-datepicker").find("span").html(event.date.Format("yyyy-MM-dd"));
+    });
+    var $height=$(window).height();
+    var $yourmodal=$('#your-modal');
+    var $ammodaldialog=$(".am-modal-dialog");
+    //选择职业
+    showbox($yourmodal,$ammodaldialog,$height,"zhiye","可以设置的职业标题","可以设置的内容");
+    //选择学历
+    showbox($yourmodal,$ammodaldialog,$height,"xueli","可以设置的学历标题","可以设置的内容");
+    //选择学校
+    showbox($yourmodal,$ammodaldialog,$height,"xuexiao","可以设置的学校标题","可以设置的内容");
+    //选择专业
+    showbox($yourmodal,$ammodaldialog,$height,"zhuanye","可以设置的专业标题","可以设置的内容");
+    //选择年级
+    showbox($yourmodal,$ammodaldialog,$height,"nianji","可以设置的年级标题","可以设置的内容");
+
+
+    //上传身份证照片
+    $('#file_upload').uploadifive({
+      'auto'             : true,
+      'checkScript'      : 'check-exists.php',
+      'buttonText'       : ' ',
+      'queueID'          : 'queue',
+      'uploadScript'     : 'uploadifive.php',
+      'onUploadComplete' : function(file, data) { console.log(data); }
+    });
+  });
+
+  
+  
+</script>
+</html>

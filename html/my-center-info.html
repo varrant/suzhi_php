@@ -1,0 +1,141 @@
+<!-- 登陆 -->
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>我的</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="stylesheet" href="assets/css/amazeui.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/myCenterInfo.css">
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/amazeui.min.js"></script>
+  <script src="js/function.js"></script>
+  <script src="js/date.js"></script>
+</head>
+<body>
+<div class="mytopbannerbox">
+  <div class="info">
+    <div class="head">
+      <img src="images/head1.png" alt="">
+    </div>
+    <div class="infobox">
+      <div class="name">suzhi01</div>
+      <div class="phone">157 5731 6115</div>
+    </div>
+    <div class="ico">
+      
+    </div>
+    <div class="clearbox"></div>
+  </div>
+</div>
+
+<div class="orderlist" style="margin-top: 0px; height: auto;">
+  <div class="ipt_box2" style="border-top: 1px solid #d8d8d8;">
+    <div class="left">昵称</div>
+    <div class="right">
+      <div class="ipt_value"><input type="text" class="inp_username" placeholder="可以填写真实姓名" value="suzhi"></div>
+    </div>
+    <div class="clearbox"></div>
+  </div>
+  <div class="ipt_box2" style="border-bottom: 0px;">
+    <div class="left">手机号</div>
+    <div class="right">
+      <div class="ipt_value"><input type="text" class="inp_username" placeholder="可以填写真实姓名" value="18888964864"></div>
+    </div>
+    <div class="clearbox"></div>
+  </div>
+</div>
+
+<div class="menu_list">
+  <div class="ipt_box2">
+    <div class="left">姓名</div>
+    <div class="right">
+      <div class="ipt_value"><input type="text" class="inp_username" placeholder="可以填写真实姓名" value="叶志琳"> &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></div>
+    </div>
+    <div class="clearbox"></div>
+  </div>
+  <div class="ipt_box2">
+    <div class="left">性别</div>
+    <div class="right">
+      <div class="ipt_value"><input type="text" class="inp_username" placeholder="可以填写真实姓名" value="男"> &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></div>
+    </div>
+    <div class="clearbox"></div>
+  </div>
+  <div class="ipt_box2">
+    <div class="left">生日</div>
+    <div class="right">
+      <div class="ipt_value" id="doc-datepicker"><span>1993-05-04</span> &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></div>
+    </div>
+    <div class="clearbox"></div>
+  </div>
+  <div class="ipt_box2">
+    <div class="left">职业</div>
+    <div class="right">
+      <div class="ipt_value"><input type="text" class="inp_username" placeholder="可以填写真实姓名" value="产品经理"> &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></div>
+    </div>
+    <div class="clearbox"></div>
+  </div>
+  <div class="ipt_box2">
+    <div class="left">学历</div>
+    <div class="right">
+      <div class="ipt_value"><input type="text" class="inp_username" placeholder="可以填写真实姓名" value="本科"> &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></div>
+    </div>
+    <div class="clearbox"></div>
+  </div>
+  <div class="ipt_box2">
+    <div class="left">学校</div>
+    <div class="right">
+      <div class="ipt_value"><input type="text" class="inp_username" placeholder="可以填写真实姓名" value="浙江大学"> &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></div>
+    </div>
+    <div class="clearbox"></div>
+  </div>
+  <div class="ipt_box2">
+    <div class="left">专业</div>
+    <div class="right">
+      <div class="ipt_value"><input type="text" class="inp_username" placeholder="可以填写真实姓名" value="经济"> &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></div>
+    </div>
+    <div class="clearbox"></div>
+  </div>
+  <div class="ipt_box2" style="border-bottom: 0px solid #d8d8d8;">
+    <div class="left">年级</div>
+    <div class="right">
+      <div class="ipt_value"><input type="text" class="inp_username" placeholder="可以填写真实姓名" value="2012级"> &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></div>
+    </div>
+    <div class="clearbox"></div>
+  </div>
+</div>
+
+<footer class="nav_bottom am-topbar am-topbar-inverse am-topbar-fixed-bottom">
+  <ul>
+    <li>
+      <div class="img"><img src="images/mycenterbottomicon1over.png" alt=""></div>
+      <div class="title cur">首页</div>
+    </li>
+    <li>
+      <div class="img"><img src="images/mycenterbottomicon2.png" alt=""></div>
+      <div class="title">任务</div>
+    </li>
+    <li>
+      <div class="img"><img src="images/mycenterbottomicon3.png" alt=""></div>
+      <div class="title">我的</div>
+    </li>
+  </ul>
+</footer>
+
+</body>
+<script>
+$(function() {
+  $('#doc-datepicker').datepicker().
+    on('changeDate.datepicker.amui', function(event) {
+      $("#doc-datepicker").find("span").html(event.date.Format("yyyy-MM-dd"));
+  });
+})
+</script>
+</html>
