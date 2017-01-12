@@ -94,13 +94,17 @@
 		</div>
 		<div class="tast_footer">
 			<a href="javascript:void(0);" class="customer_service_consulting"><img src="images/icon_4.png" />客服咨询</a>
-			<a href="javascript:void(0);" class="receive_task">领取任务</a>
+			<a href="javascript:receive_task()" class="receive_task">领取任务</a>
 		</div>
 	</div>
 	<!--弹框-->
-	<div class="receive_task_bg">
+	<div class="receive_task_bg" id="receive_task_bg" style="display:none;">
 		<div class="receive_task_box">
 			<h3>确认领取该任务吗？</h3>
+			<div class="receive_task_link">
+				<a href="javascript:cancel()">取消</a>
+				<a href="tast_detail_receive.html">确认</a>
+			</div>
 		</div>
 	</div>
 </body>
@@ -119,6 +123,12 @@
 			}
 		});
 	})
+	function receive_task(){
+		$("#receive_task_bg").show();
+	}
+	function cancel(){
+		$("#receive_task_bg").hide();
+	}
 </script>
 
 
