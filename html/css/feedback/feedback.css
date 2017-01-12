@@ -1,3 +1,15 @@
+@charset "UTF-8";
+.feedback:before, .feedback:after {
+  content: "";
+  display: table; }
+
+.feedback:after {
+  clear: both; }
+
+/* @mixin transition($obj:all, $time:.2s, $type:ease){
+    -webkit-transition: $obj $time $type;
+            transition: $obj $time $type;
+} */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
@@ -445,13 +457,31 @@ input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #ccc; }
 
+.feedback:before, .feedback:after {
+  content: "";
+  display: table; }
+
+.feedback:after {
+  clear: both; }
+
 /* @mixin transition($obj:all, $time:.2s, $type:ease){
     -webkit-transition: $obj $time $type;
             transition: $obj $time $type;
 } */
-@font-face {
-  font-family: 'iconfont';
-  src: url("./font/iconfont.eot");
-  src: url("./font/iconfont.eot?#iefix") format("embedded-opentype"), url("./font/iconfont.woff") format("woff"), url("./font/iconfont.ttf") format("truetype"), url("./font/iconfont.svg#iconfont") format("svg"); }
+/*意见反馈*/
+.feedback {
+  text-align: center;
+  padding-top: 40px;
+  margin: 0 auto;
+  width: 240px; }
+  .feedback .tel {
+    display: block;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    padding-right: 20px; }
+  .feedback .tel_img {
+    display: block;
+    float: left; }
 
-/*# sourceMappingURL=base.css.map */
+/*# sourceMappingURL=feedback.css.map */

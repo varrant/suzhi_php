@@ -36,3 +36,22 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
 ERR: 模板不存在:./App/Home/View/Login/index.html
 
+[ 2017-01-12T21:13:11+08:00 ] 127.0.0.1 /suzhi_php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+NOTIC: [8] Undefined index: pohone /Applications/MAMP/htdocs/suzhi_php/App/Home/Controller/CommonController.class.php 第 8 行.
+NOTIC: [8] Undefined index: pohone /Applications/MAMP/htdocs/suzhi_php/App/Home/Controller/CommonController.class.php 第 8 行.
+
+[ 2017-01-12T21:13:11+08:00 ] 127.0.0.1 /suzhi_php/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003917s ]
+ERR: 模板不存在:./App/Home/View/Login/index.html
+
