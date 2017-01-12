@@ -10,3 +10,27 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
 ERR: 无法加载模块:Html
 
+[ 2017-01-12T20:33:43+08:00 ] 127.0.0.1 /suzhi_php/index.php/index/1.hml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002784s ]
+ERR: 无法加载模块:Index
+
+[ 2017-01-12T20:33:57+08:00 ] 127.0.0.1 /suzhi_php/index.php/1.hml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002057s ]
+ERR: 无法加载模块:1
+
+[ 2017-01-12T20:34:01+08:00 ] 127.0.0.1 /suzhi_php/index.php/html/1.hml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004246s ]
+ERR: 无法加载模块:Html
+
+[ 2017-01-12T20:34:10+08:00 ] 127.0.0.1 /suzhi_php/index.php/html/index.hml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004367s ]
+ERR: 无法加载模块:Html
+

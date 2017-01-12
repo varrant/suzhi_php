@@ -55,17 +55,17 @@ gulp.task("scss-lint", function() {
     .pipe(postcss(processors), {syntax: syntax_scss});
 });
 
-
+//
 gulp.task('serve', function() {
     // browserSync.init({
     //     server: "./app"
     // });
     browserSync.init(null, {
-      proxy: "http://localhost:3000" // port of node server
+      proxy: "http://localhost:8888" // port of node server
   });
     gulp.watch("./html/sass/*.scss", ['sass']); // sass监听
     gulp.watch("./html/js/**/*.js", ['js-watch']); //js监听
-    gulp.watch("./html/views/**/*.html").on('change', browserSync.reload); //html监听
+    gulp.watch("./html/**/*.html").on('change', browserSync.reload); //html监听
 });
 
 gulp.task('js-watch', function (done) {
@@ -75,7 +75,7 @@ gulp.task('js-watch', function (done) {
 
 // sass 编译
 gulp.task('sass', function() {
-    gulp.src('./webroot-dev/static/sass/*.scss')
+    gulp.src('./html/sass/*.scss')
         .pipe(sourcemaps.init({largeFile: true}))
         // .pipe(sassLint())
         // .pipe(sassLint.format())
@@ -92,7 +92,7 @@ gulp.task('sass', function() {
           sourceRoot: '.'
         }))
         // .pipe(browserSync.stream({match: './webroot-dev/public/css'}));
-        .pipe(gulp.dest('./webroot-dev/static/css'));
+        .pipe(gulp.dest('./html/static/css'));
 });
 
 gulp.task('default', ['serve']);
