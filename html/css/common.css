@@ -89,9 +89,29 @@ h3{margin-bottom:0px;margin-top:0px;}
 .detail_list{margin-top:10px;}
 .detail_list li{background:#fff;margin-bottom:10px;}
 .detail_list li h3{font-size:14px;font-weight:normal;color:#333;height:48px;text-align:center;border-bottom:1px solid #d8d8d8;line-height:48px;}
-.t_main{padding:15px 16px;font-size: 14px;font-weight: normal;color: #666666;}px
-.t_main li{margin-bottom:3px;}
+.slide_main{padding:15px 16px;font-size: 14px;font-weight: normal;color: #666666;display:none;}
+.slide_main li{margin-bottom:3px;}
 
+/**公司介绍**/
+.csompany_introduction{background:#fff;}
+.csompany_introduction>h3{font-size: 14px;font-weight: normal;color: #333;height:48px;line-height:48px;text-align:center;}
+.csompany_introduction_img{width:56px;height:56px;overflow:hidden;float:left;border-radius:50%;margin-right:20px;}
+.csompany_introduction_main{border-top:1px solid #d8d8d8;overflow:hidden;padding:16px;}
+.csompany_introduction_word{float:left;}
+.csompany_introduction_word h3{font-size:14px;color:#333;}
+.csompany_introduction_word p{font-size: 13px;color: #666;margin-top:17px;}
+.csompany_introduction_p{height:48px;line-height:48px;font-size:14px;border-top:1px solid #d8d8d8;font-weight: normal;padding:0 16px;}
+.csompany_introduction_p h3{float:left;color:#333;}
+.csompany_introduction_p a{float:right;color:#ff8903;}
+.tast_footer{position:fixed;height:49px;width:100%;bottom:0px;left:0px;background:#fff;line-height:49px;text-align:center;font-size: 14px;font-weight: normal;}
+.tast_footer a{display:block;float:left;}
+.customer_service_consulting{width:34%;color:#333;}
+.customer_service_consulting img{padding-right:7px;}
+.receive_task{width:66%;background:#ff8903;color:#fff;}
+.detail_list h3 img{padding-bottom:2px;margin-left:4px;}
+.receive_task_bg{position:fixed;width:100%;height:100%;background-color:rgba(0, 0, 0, 0.6);top:0px;left:0px;z-index:1;}
+.receive_task_box{width:72%;position:fixed;height:104px;background-color:rgba(253, 253, 253, 0.9);border-radius:7px;left:14%;top:50%;margin-top:-52px;}
+.receive_task_box h3{height:60px;line-height:60px;border-bottom:1px solid #4d4d4d;}
 
 
 
