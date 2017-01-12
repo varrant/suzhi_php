@@ -138,6 +138,12 @@
       </li>
 
       <li class="admin-parent">
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav4'}"><span class="am-icon-columns"></span>订单中心<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav4">
+              <li><a href="<?php echo U('Order/receive_list');?>" class="am-cf"><span class="am-icon-slideshare"></span>已领取<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+          </ul>
+      </li>
+      <li class="admin-parent">
         <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-users"></span>管理员管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
         <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav1">
           <li><a href="<?php echo U('Admin/Index');?>" class="am-cf"><span class="am-icon-child"></span>管理员列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>
