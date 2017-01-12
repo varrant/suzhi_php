@@ -441,5 +441,55 @@ class PoschaController extends CommonController {
             $this->error("删除失败");
         }
     }
+    function edit(){
+        $map = array();
+        $data = array();
+        $map['pos_id'] = $_POST['pos_id'];
+        $data['pos_isindex'] = (int)$_POST['pos_isindex'];
+        $db = M('poscha');
+        $do_add = $db->where($map)->save($data);
 
+        if ($do_add) {
+            $this->success('修改成功', U('poscha/lists'));
+
+        } else {
+
+            $this->error("修改失败");
+        }
+
+    }
+    function edit_s()
+    {
+        $map = array();
+        $data = array();
+        $map['pos_id'] = $_POST['pos_id'];
+        $data['pos_isindex'] = (int)$_POST['pos_isindex'];
+        $db = M('poscha');
+        $do_add = $db->where($map)->save($data);
+
+        if ($do_add) {
+            $this->success('修改成功', U('poscha/lists_s'));
+
+        } else {
+
+            $this->error("修改失败");
+        }
+    }
+    function edit_q()
+    {
+        $map = array();
+        $data = array();
+        $map['pos_id'] = $_POST['pos_id'];
+        $data['pos_isindex'] = (int)$_POST['pos_isindex'];
+        $db = M('poscha');
+        $do_add = $db->where($map)->save($data);
+
+        if ($do_add) {
+            $this->success('修改成功', U('poscha/lists_q'));
+
+        } else {
+
+            $this->error("修改失败");
+        }
+    }
 }

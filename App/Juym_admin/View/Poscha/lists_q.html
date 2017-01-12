@@ -82,7 +82,12 @@
                                         <div class="am-btn-group am-btn-group-xs">
                                             <button type="submit" formmethod="get" formaction="{:U('Poscha/view_q',array(id=>$v['pos_id']))}" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span>查看</button>
                                             <button  onclick="ssss(this)" value="{$v['pos_id']}" type="button"  class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
-                                            <button type="submit" formmethod="get" formaction="{:U('Orderinfo/lists',array(id=>$v['pos_id']))}" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span>订单情况</button>
+                                            <!--<button type="submit" formmethod="get" formaction="{:U('Orderinfo/lists',array(id=>$v['pos_id']))}" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span>订单情况</button>-->
+                                            <if condition="$v['pos_isindex'] eq 1">
+                                                <button   onclick="fclick(this,2)" value="{$v['pos_id']}" type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span>首页展示</button>
+                                                <else />
+                                                <button  onclick="fclick(this,1)" value="{$v['pos_id']}" type="button"  class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span>取消首页展示</button>
+                                            </if>
                                             <!-- <button id="del{$v['id']}" type="button" formaction1="{:U('Tem/zshow',array('id'=>$v['pid']))}" formmethod="get" formaction="{:U('Tem/delZshow',array(id=>$v['id']))}" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button> -->
                                         </div>
                                     </div>
@@ -140,5 +145,24 @@
                 }
             });
 
+        }
+        function fclick(am,type) {
+            //获取要展示或取消的ID
+            var pos_id =$(am).val();
+            var pos_isindex = type;
+            var data={'pos_id':pos_id,'pos_isindex':pos_isindex};
+            $.ajax({
+                url:"{:U('poscha/edit_q')}",
+                data:data,
+                type:'post',
+                dataType:"json",
+                success:function(data){
+                    if(data.status){
+                        window.location="{:U('Poscha/lists_q')}";
+                    }else{
+                        alert(data.message);
+                    }
+                }
+            });
         }
     </script>
