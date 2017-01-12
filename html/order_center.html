@@ -29,16 +29,74 @@
 						<div class="order_center_main_img"><img src="images/alipay3.png" width="100%" /></div>
 						<div class="order_center_main_word">
 							<h3><span class="full">全职</span>物流拣货员</h3>
-							<p></p>
+							<p>地区：西湖区<span>需求：10人</span></p>
 						</div>
+						<span>600元</span>
 					</div>
 					<div class="order_center_foot">
 						<a href="two_code.html">查看二维码</a>
-						<a href="javascript:void(0);">取消任务</a>
+						<a href="javascript:receive_task()">取消任务</a>
+					</div>
+				</li>
+				
+				<li>
+					<div class="order_center_top">
+						<h3>2017-1-13</h3>
+						<span>已领取</span>
+					</div>
+					<div class="order_center_main">
+						<div class="order_center_main_img"><img src="images/alipay3.png" width="100%" /></div>
+						<div class="order_center_main_word">
+							<h3><span class="fieldwork">全职</span>物流拣货员</h3>
+							<p>地区：西湖区<span>需求：10人</span></p>
+						</div>
+						<span>600元</span>
+					</div>
+					<div class="order_center_foot">
+						<a href="two_code.html">查看二维码</a>
+						<a href="javascript:receive_task()">取消任务</a>
+					</div>
+				</li>
+				
+				<li>
+					<div class="order_center_top">
+						<h3>2017-1-13</h3>
+						<span>已领取</span>
+					</div>
+					<div class="order_center_main">
+						<div class="order_center_main_img"><img src="images/alipay3.png" width="100%" /></div>
+						<div class="order_center_main_word">
+							<h3><span class="price">全职</span>物流拣货员</h3>
+							<p>地区：西湖区<span>需求：10人</span></p>
+						</div>
+						<span>600元</span>
+					</div>
+					<div class="order_center_foot">
+						<a href="two_code.html">查看二维码</a>
+						<a href="javascript:receive_task()">取消任务</a>
 					</div>
 				</li>
 			</ul>
 		</div>
+		<!--弹框-->
+		<div class="receive_task_bg" id="receive_task_bg" style="display:none;">
+			<div class="receive_task_box">
+				<h3>确定取消任务吗？</h3>
+				<div class="receive_task_link">
+					<a href="javascript:cancel()">取消</a>
+					<a href="tast_detail.html">确认</a>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
+<script>
+	function receive_task(){
+		$("#receive_task_bg").show();
+	}
+	function cancel(){
+		$("#receive_task_bg").hide();
+	}
+</script>
+
