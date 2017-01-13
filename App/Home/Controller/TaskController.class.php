@@ -2,6 +2,149 @@
 namespace Home\Controller;
 use Think\Controller;
 class TaskController extends Controller {
+    //猎头的任务列表
+    function lists(){
+        $db=M('poscha');
+        //获取页数
+        $page = isset($_POST['page']) ? $_POST['page'] : '1';
+        //获取每页的个数
+        $limit = 2;
+        //获取偏移量
+        $offset = ($page-1)*$limit;
+        if($_REQUEST['pos_task_type']){
+            $where['pos_task_type']=$_REQUEST['pos_task_type'];
+            $res=$db->where($where)->limit($offset,$limit)->select();
+        }else{
+            $res=$db->limit($offset,$limit)->select();
+        }
+//        $isNextPage='0';
+//        //判断是否有下一页
+//        if(count($res) == $limit+1){
+//            $isNextPage='1';
+//        }
+//        unset($res[$limit]);
+        foreach ($res as $key => $value){
+            $res[$key]['total_liulan']=(int)$value['pos_liuan'] + (int)$value['pos_true_liulan'];
+            $res[$key]['total_toudi']=(int)$value['pos_toudi'] + (int)$value['pos_true_toudi'];
+        }
+        if(isset($_REQUEST['fhtype']) && ($_REQUEST['fhtype'] == 'json')){
+            $this->ajaxReturn(array('data'=>$res,'page'=>$page));
+        }
+        $this->assign("res", $res);
+        $this->display('/task/task_list');
+
+    }
+    //猎头的任务详情
+    function details(){
+        $where['pos_id']=$_REQUEST['pos_id'];
+        //查看订单中该人是否已经领取过该任务
+        $dbs=M('orderinfo');
+        $arr['ord_poschaid']=$where['pos_id'];
+        //猎头的ID不能写死 暂时测试用
+        $arr['ord_headh']=119;
+        $arr['ord_status']=1;
+//        $arr['ord_headh']=$_SESSION['he_id'];
+        $res=$dbs->where($arr)->find();
+        $db=M('poscha');
+        $data=$db->where($where)->find();
+        $data['total_liulan']=(int)$data['pos_liuan']+(int)$data['pos_true_liulan'];
+        $data['total_toudi']=(int)$data['pos_toudi']+(int)$data['pos_true_toudi'];
+        if($res){
+            $data['ord_id']=$res['ord_id'];
+            $this->assign('data',$data);
+            $this->display('/task/tast_detail_receive');
+        }else{
+            $this->assign('data',$data);
+            $this->display('/task/tast_detail');
+        }
+
+
+
+    }
+    //猎头的任务领取接口
+    function head_ling(){
+        $data['ord_poschaid']=$_POST['ord_poschaid'];
+        $data['ord_headh']=$_POST['ord_headh'];
+        $data['ord_status']=1;
+        $data['ord_type']=0;
+        $data['ord_create_time']=date('Y-m-d h:i:s',time());
+        $db=M('orderinfo');
+        $do_add=$db->add($data);
+        if ($do_add) {
+            $this->success('领取成功', U('task/head_hasling',array('ord_id'=>$do_add)));
+        } else {
+            $this->error("领取失败");
+        }
+    }
+    //猎头的已领取页面
+    function head_hasling(){
+        //查询订单获取任务ID
+        $where['ord_id']=$_REQUEST['ord_id'];
+        $db=M('orderinfo');
+        $res=$db->where($where)->find();
+        //获取任务信息
+        $dbs=M('poscha');
+        $arr['pos_id']=$res['ord_poschaid'];
+        $data=$dbs->where($arr)->find();
+        $data['total_liulan']=(int)$data['pos_liuan']+(int)$data['pos_true_liulan'];
+        $data['total_toudi']=(int)$data['pos_toudi']+(int)$data['pos_true_toudi'];
+        $data['ord_id']=$res['ord_id'];
+        $this->assign('data',$data);
+        $this->display('/task/tast_detail_receive');
+
+    }
+    //猎头的任务取消接口
+    function cancle(){
+        $where['ord_id']=$_REQUEST['ord_id'];
+        $data['ord_status']=6;
+        $data['ord_update_time']=date('Y-m-d h:i:s',time());
+        $db=M('orderinfo');
+        $res=$db->where($where)->find();
+        $do_add=$db->where($where)->save($data);
+        if ($do_add) {
+            $this->success('取消成功', U('task/details',array('pos_id'=>$res['ord_poschaid'])));
+        } else {
+            $this->error("取消失败");
+        }
+    }
+    //猎头的二维码推广
+    function extend(){
+        $where['pos_id']=$_REQUEST['pos_id'];
+        //获取任务信息
+        $dbs=M('poscha');
+        $data=$dbs->where($where)->find();
+        $this->assign('data',$data);
+        $this->display('/task/two_code');
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     function Relation(){
     	$data['ord_poschaid']=I('pos_id');
 	    $data['ord_headh']=100;

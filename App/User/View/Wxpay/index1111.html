@@ -1,0 +1,61 @@
+<html class="no-js"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>DEEN宠物明星学院</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+  <script src="__PUBLIC__/assets/js/jquery.min.js"></script>
+  <body>
+    <button id="test" type="button"></button>
+  </body>
+
+
+<script type="text/javascript">
+        
+//调用微信JS api 支付
+function jsApiCall(){  
+    WeixinJSBridge.invoke(
+        'getBrandWCPayRequest',
+        <?php echo $jsApiParameters; ?>,
+        function(res){
+            WeixinJSBridge.log(res.err_msg);
+            if(res.err_msg == "get_brand_wcpay_request:ok"){
+              $('#erwm').css("display","block");
+           		$(".box").css("display","none");
+            //alert(res.err_code+res.err_desc+res.err_msg);
+               /*这里写如果支付成功的话执行什么操作*/
+            }else{
+                //返回跳转到订单详情页面
+                alert('支付失败');
+                    
+            }
+        }
+    );
+}
+function callpay()
+{
+    if (typeof WeixinJSBridge == "undefined"){
+        if( document.addEventListener ){
+            document.addEventListener('WeixinJSBridgeReady', jsApiCall, false);
+        }else if (document.attachEvent){
+            document.attachEvent('WeixinJSBridgeReady', jsApiCall); 
+            document.attachEvent('onWeixinJSBridgeReady', jsApiCall);
+        }
+    }else{
+        jsApiCall();
+    }
+}
+</script>
+<script>
+$(document).ready(function(){
+
+  $('#test').click(function(){
+     jsApiCall()
+    })
+
+})
+
+</script>
+</html>

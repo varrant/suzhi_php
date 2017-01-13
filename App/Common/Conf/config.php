@@ -20,7 +20,7 @@ return array(
 //	'DB_USER' => 'root', // 用户名
 //	'DB_PWD' => 'root', // 密码
 //	'DB_PORT' => 3306, // 端口
-//	'DB_PREFIX' => 'sz_', // 数据库表前缀
+//	'DB_PREFIX' => 'sz_', // 数据库表前缀f
 //	'DB_CHARSET'=> 'utf8', // 字符集
 //	'DB_DEBUG' => TRUE,
 
@@ -33,9 +33,6 @@ return array(
 	'DB_PREFIX' => 'sz_', // 数据库表前缀
 	'DB_CHARSET'=> 'utf8', // 字符集
 	'DB_DEBUG' => TRUE,
-<<<<<<< HEAD
-=======
-    'URL_MODEL' => 0
->>>>>>> 16f261c0608d294d2e32c4c4b3f1eba3d1120163
+    'URL_MODEL' => 1
 
 );

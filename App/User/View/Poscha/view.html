@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+<meta name="keywords" content="<?php echo $seo_info['keywords_online_fashion_brand'];?>" />
+<meta name="description" content="<?php echo $seo_info['description_online_fashion_brand'];?>" />
+<title><?php echo $seo_info['title_online_fashion_brand'];?></title>
+<link rel="stylesheet" href="">
+</head>
+<body>
+<foreach name="data" item="v">
+        
+            <div class="am-form-group">
+              <label for="" class="am-u-sm-3 am-form-label">任务名称</label>
+              <div class="am-u-sm-9">
+                <input type="" id="pos_name" name="pos_name" placeholder=""  value="{$v[pos_name]}"/>
+             
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="" class="am-u-sm-3 am-form-label">需求人数</label>
+              <div class="am-u-sm-9">
+                <input type="" name="pos_recruitmun" id="pos_recruitmun" placeholder="" value="{$v[pos_recruitmun]}"/>
+               
+              </div>
+            </div>
+            
+            <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">区域</label>
+              <div class="am-u-sm-9">
+                <!-- <input type="" name="comangel" id="comangel" placeholder="" /> -->
+                <select id="pos_county" class="" name="pos_county">
+                          <option value="">请选择区域</option>
+                          <?php
+                                $posdb=M('pos');
+                                $map['pos_joptype']='3';
+                                $posdata=$posdb->where($map)->select();
+                                foreach($posdata as $k=>$ma){
+                                    if($v[pos_county]==$ma[pos_id]){
+                                        $select = 'selected="selected"';
+                                    }else{
+                                        $select='';
+                                    }
+                                     echo '<option value="'.$ma['pos_id'].'"'.$select.'>'.$ma['pos_name'].'</option>';
+                                    }
+                          ?>
+                                                 
+                </select>
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">佣金</label>
+              <div class="am-u-sm-9">
+                <input type="" id="pos_brokerage" name="pos_brokerage" placeholder="" />
+                
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">薪资</label>
+              <div class="am-u-sm-9">
+                <input type="" id="pos_salary" name="pos_salary" placeholder="" value="{$v[pos_salary]}"/>
+                
+              </div>
+            </div>
+            
+            <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">工作类型</label>
+              <div class="am-u-sm-9">
+                <!-- <input type="" name="comangel" id="comangel" placeholder="" /> -->
+                <select id="pos_joptype" class="" name="pos_joptype">
+                          <option value="">请选择工作类型</option>
+                          <?php
+                                $posdb=M('pos');
+                                $map['pos_joptype']=array('NEQ', 3);
+                                $posdata=$posdb->where($map)->select();
+                                foreach($posdata as $k=>$ma){
+                                    if($v[pos_joptype]==$ma[pos_id]){
+                                        $select = 'selected="selected"';
+                                    }else{
+                                        $select='';
+                                    }
+                                     echo '<option value="'.$ma['pos_id'].'"'.$select.'>'.$ma['pos_name'].'</option>';
+                                    }
+                          ?>
+                                                 
+                </select>
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">工作时间</label>
+              <div class="am-u-sm-9">
+                <input type="" id="pos_worktime" name="pos_worktime" placeholder="" value="{$v[pos_worktime]}"/>
+               
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">上班时段</label>
+              <div class="am-u-sm-9">
+                <input type="" id="pos_hours" name="pos_hours" placeholder=""  value="{$v[pos_hours]}"/>
+               
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">工作描述</label>
+              <div class="am-u-sm-9">
+                <input type="" id="pos_Jobdescription" name="pos_Jobdescription" placeholder=""  value="{$v[pos_Jobdescription]}"/>
+               
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">职责描述</label>
+              <div class="am-u-sm-9">
+                <input type="" id="pos_responsibilities" name="pos_responsibilities" placeholder=""  value="{$v[pos_responsibilities]}"/>
+               
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="user-email" class="am-u-sm-3 am-form-label">福利待遇</label>
+              <div class="am-u-sm-9">
+                <input type="" id="pos_welfarebenefits" name="pos_welfarebenefits" placeholder=""  value="{$v[pos_welfarebenefits]}"/>
+               
+              </div>
+            </div>
+
+            <div>
+                <?php
+                       $db=M('company');
+                       $map['com_id']=$v['pos_company_id'];  
+                       $datacom=$db->where($map)->select();
+                                                
+                       foreach($datacom as $datacoms){
+                            echo "名字：".$datacoms['com_name'];
+                            echo "融资情况：".$datacoms['com_angel'];
+                            echo "人数：".$datacoms['com_munren'];
+                            echo "图标：".$datacoms['com_logo'];
+                            echo "类型：".$datacoms['com_type'];
+                            echo "地址：".$datacoms['com_address'];
+                            echo "坐标：".$datacoms['com_zuobiao'];
+                       }                   
+                  ?>
+            </div>
+          </foreach>
+
+            <button type="button" id="zixun"  class="am-btn am-btn-primary">客服咨询</button>
+            <button type="button" id="lingqu"  class="am-btn am-btn-primary">领取任务</button>
+
+            <input type="hidden" name="posid" id="posid" placeholder="" value="{$v[pos_id]}"/>  
+            <input type="hidden" name="pos_task_type" id="pos_task_type" placeholder="" value="{$v[pos_task_type]}"/>
+  </body>
+</html>
+ <script type="text/javascript" src="__PUBLIC__/assets/js/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).on('click','#lingqu',function(){
+        var posid = $('#posid').val();
+        var pos_name=$('#pos_name').val();
+        var pos_company_id=$("#pos_company_id option:selected").val(); 
+        var pos_task_type=$('#pos_task_type').val();         
+        var pos_recruitmun=$('#pos_recruitmun').val();
+        var pos_county=$('#pos_county option:selected').val();
+        var pos_brokerage=$('#pos_brokerage').val();
+        var pos_salary=$("#pos_salary").val();
+        var pos_joptype=$("#pos_joptype option:selected").val();
+        var pos_worktime=$("#pos_worktime").val();
+        var pos_hours=$("#pos_hours").val();
+        var pos_Jobdescription=$("#pos_Jobdescription").val();
+        var pos_responsibilities=$("#pos_responsibilities").val();
+        var pos_welfarebenefits=$("#pos_welfarebenefits").val();
+
+        
+        $.ajax({
+            url:"{:U('poscha/doview')}",
+            data:{
+                "posid":posid,
+                "pos_name":pos_name,
+                "pos_company_id":pos_company_id,
+                "pos_task_type":pos_task_type,
+                "pos_recruitmun":pos_recruitmun,
+                "pos_county":pos_county,
+                "pos_brokerage":pos_brokerage,
+                "pos_salary":pos_salary,
+                "pos_joptype":pos_joptype,
+                "pos_worktime":pos_worktime,
+                "pos_hours":pos_hours,
+                "pos_Jobdescription":pos_Jobdescription,
+                "pos_responsibilities":pos_responsibilities,
+                "pos_welfarebenefits":pos_welfarebenefits,
+            },
+            type:'post',
+            dataType:"json",
+            success:function(data){
+                if(data.status){
+                    alert('ok');
+                    location.href = document.referrer;
+                }else{
+                    alert('no');
+                }
+            }
+        });
+    })
+ </script>

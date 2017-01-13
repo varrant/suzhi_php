@@ -1,0 +1,57 @@
+<include file="Public/head" />
+
+<style type="text/css">
+</style>
+
+<body>
+    <form  id="form_1" action="{:U('Register/dore3')}" method="post">
+          <input type="hidden" name="Hephone" value="{$data['Hephone']}">
+          <input type="hidden" name="HeName" value="{$data['HeName']}">
+          <input type="hidden" name="Heidimg" value="{$data['Heidimg']}">
+          <input type="hidden" name="Hecardid" value="{$data['Hecardid']}">
+          <input type="hidden" name="Henickname" value="{$data['Henickname']}">
+          <input type="hidden" name="Hesex" value="{$data['Hesex']}">
+          <input type="hidden" name="Hebirthday" value="{$data['Hebirthday']}">
+          <input type="hidden" name="Heoccupation" value="{$data['Heoccupation']}">
+          <input type="hidden" name="Heeducation" value="{$data['Heeducation']}">
+          <input type="hidden" name="Heshcool" value="{$data['Heshcool']}">
+          <input type="hidden" name="Hetype" value="1">
+          <input type="hidden" name="Hegrade" value="{$data['Hegrade']}">
+          <button id="Sub" type="button"   >确定 模拟支撑成功按钮</button>
+    </form>
+</body>
+<script type="text/javascript">
+/**/
+$(document).ready(function(){ 
+	/*提交手机号码身份证图片*/
+	$("#Sub").click(function(){
+	  $("#Sub").attr('disabled',true)
+		var data=$("#form_1").serialize();
+		var url=$("#form_1").attr('action');
+		$.ajax({
+		        type:"post",
+		        url:url,
+		        data:data,
+		        dataType:"json",
+		        success:function(data){
+		        	console.log(data);
+		        	if(data=='1'){
+		        		  alert('注册成功');
+                 
+                   window.location.href="{:U('Login/index')}";
+                  return false; 
+		        	}
+              if(data=='0'){
+                 alert('注册失败');
+                  window.location.href="{:U('Register/re')}";
+                  return false; 
+              }
+            }
+    });
+
+	})
+
+}); 	
+
+</script>
+<html>

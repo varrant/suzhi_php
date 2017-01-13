@@ -74,6 +74,47 @@ abstract class Controller {
                 exit($data);            
         }
     }
+//    /**
+//     * Enter 输出结果，同时会判断返回的code
+//     * tags
+//     * @param unknowtype
+//     * @return string
+//     * @version v1.0.0
+//     */
+//    public function response($success=0, $error_msg='',$is_object=false,$result = array())
+//    {
+//
+//        if($success ==0 ){
+//            $result['status']['succeed']='1';
+//        }else{
+//            $result['status']['succeed']	='0';
+//            $result['status']['error_code']	=$success;
+//            $result['status']['error_desc'] =$error_msg?$error_msg:$this->getErrorMsg($success);
+//        }
+//        //error_log(date('Y-m-d H:i:s')."数据开始发送：\n",3,'log.txt');
+//        header("Access-Control-Allow-Origin:*");
+//        header("Content-type: text/html; charset=utf-8");
+//        header('Content-type : application/json');
+//        if ($is_object) {
+//            echo json_encode($result, JSON_FORCE_OBJECT);
+//            exit;
+//        } else {
+//            echo json_encode($result);
+//            exit;
+//        }
+//    }
+//    /**
+//     * Enter description here ...
+//     * tags
+//     * @param unknowtype
+//     * @return return_type
+//     * @version v1.0.0
+//     */
+//    private function getErrorMsg($success=0){
+////        @include(APPPATH.'config/http_status.php');
+//        return isset($http_status[$success])?$http_status[$success]:'未知错误';
+//
+//    }
 
     /**
      * Action跳转(URL重定向） 支持指定模块和延时跳转

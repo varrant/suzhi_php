@@ -1,0 +1,343 @@
+body{
+	background-color: #eeeeee;
+}
+.nav_top{
+	padding: 0px 0px;
+	margin:0px 0px;
+	list-style: none;
+	height: 44px;
+	background-color: #fafafa;
+	/*border-bottom: 1px solid #d8d8d8;*/
+}
+.nav_top .left{
+	width: 20%;
+	color: #ff8903;
+	font-size: 14px;
+}
+.nav_top .mid{
+	width: 65%;
+}
+.nav_top .right{
+	width: 15%;
+}
+.nav_top li{
+	/*width: 33.33%;*/
+	float: left;
+	height: 43px;
+	line-height: 43px;
+	text-align: center;
+	font-size: 13px;
+	color: #333333;
+}
+.nav_top li div{
+	height: 26px;
+	line-height: 26px;
+	border-right: 1px solid #d8d8d8;
+	margin-top: 9px;
+}
+.nav_top li .search{
+	position: relative;
+}
+.nav_top li .search i{
+	position: absolute;
+	right: 5%;
+	top: 8px;
+	height: 15px;
+	width: 26px;
+	text-align: center;
+}
+.nav_top li div input{
+	width: 90%;
+	border-radius: 5px;
+	border:0px;
+	height: 24px;
+	line-height: 24px;
+	background-color: #eeeeee;
+	padding-left: 10px;
+	font-size: 11px;
+	outline: none;
+}
+.nav_top li .last{
+	border-right: 0px solid #d8d8d8 !important;
+}
+.am-slider-default{
+	margin: 0 0 0px !important;
+}
+.am-direction-nav{
+	display: none;
+}
+.am-slider-default .am-control-nav li a{
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.am-slider-default .am-control-nav li a.am-active{
+	background-color: #ffffff;
+}
+
+.am-slider-default .am-control-nav{
+	bottom: 10px !important;
+}
+
+.orderinfoBox{
+	background-color: #ffffff;
+}
+.orderinfoBox .ipt_box2 {
+    width: 95%;
+    background-color: #ffffff;
+    height: 48px;
+    line-height: 48px;
+    margin-left: 5%;
+    border-bottom: 1px solid #d8d8d8;
+}
+.orderinfoBox .ipt_box2 .left{
+	float: left;
+	font-size: 13px;
+	color: #666666;
+}
+.orderinfoBox .ipt_box2 .right{
+	float: right;
+	margin-right: 5%;
+	color: #e74a50;
+}
+.orderinfoBox .ipt_box2 .right2{
+	float: right;
+	margin-right: 5%;
+	font-size: 13px;
+	color: #666666;
+}
+.orderinfoBox .ipt_box3 {
+    width: 95%;
+    background-color: #ffffff;
+    line-height: 88px;
+    margin-left: 5%;
+    border-bottom: 1px solid #d8d8d8;
+    position: relative;
+}
+.orderinfoBox .ipt_box3 .left{
+	float: left;
+	font-size: 13px;
+	color: #666666;
+}
+.orderinfoBox .ipt_box3 .mid{
+	float: left;
+}
+.orderinfoBox .ipt_box3 .mid .type{
+	width: 32px;
+	height: 16px;
+	border-radius: 2px;
+	border: solid 1px #ff8903;
+	color: #ff8903;
+	font-size: 11px;
+	line-height: 15px;
+	text-align: center;
+	margin-top: 16px;
+	float:left;
+}
+.orderinfoBox .ipt_box3 .mid .type2{
+	width: 32px;
+	height: 16px;
+	border-radius: 2px;
+	border: solid 1px #4990e2;
+	color: #4990e2;
+	font-size: 11px;
+	line-height: 15px;
+	text-align: center;
+	margin-top: 16px;
+	float:left;
+}
+.orderinfoBox .ipt_box3 .mid .type3{
+	width: 32px;
+	height: 16px;
+	border-radius: 2px;
+	border: solid 1px #6eb31e;
+	color: #6eb31e;
+	font-size: 11px;
+	line-height: 15px;
+	text-align: center;
+	margin-top: 16px;
+	float:left;
+}
+.orderinfoBox .ipt_box3 .mid .title{
+	font-size: 14px;
+	color: #333333;
+	width: 160px;
+	line-height: 15px;
+	margin-top: 16px;
+	margin-left: 5px;
+	float: left;
+}
+.orderinfoBox .ipt_box3 .mid .introduce{
+	font-size: 12px;
+	color: #999999;
+	line-height: 15px;
+	margin-top: 5px;
+	width: 160px;
+}
+.orderinfoBox .ipt_box3 .mid .need{
+	font-size: 12px;
+	color: #666666;
+	line-height: 15px;
+	margin-top: 5px;
+	margin-right: 20px;
+	margin-bottom: 17px;
+	float: left;
+}
+.orderinfoBox .ipt_box3 .minrightbox{
+	margin-top: 5px;
+	line-height: 15px;
+	position: absolute;
+	bottom: 15px;
+	right: 0px;
+}
+.orderinfoBox .ipt_box3 .minrightbox .img{
+	float: right;
+}
+.orderinfoBox .ipt_box3 .minrightbox .num{
+	float: right;
+	margin-right: 10px;
+	margin-left: 2px;
+	color: #666666;
+	font-size: 12px;
+}
+
+.orderinfoBox .ipt_box3 .left .head{
+	width: 55px;
+	height: 55px;
+	background-color: #e8e8e8;
+	margin-top: 16px;
+	margin-right: 21px;
+}
+.orderinfoBox .ipt_box3 .right{
+	float: right;
+	margin-right: 5%;
+	font-size: 14px;
+	height: 55px;
+	line-height: initial;
+	margin-top: 16px;
+	color: #ff8903;
+}
+
+.listitem{
+	display: none;
+}
+.itemcur{
+	display: block;
+}
+
+.categoryBox{
+	height: 90px;
+	background-color: #ffffff;
+	border-color: #b2b2b2;
+	color: #999999;
+	list-style: none;
+	margin-bottom: 10px;
+}
+.categoryBox li{
+	float: left;
+	width: 33.33%;
+	text-align: center;
+}
+.categoryBox li .img{
+	width: 40px;
+	height: 40px;
+	margin:0px auto;
+	margin-top: 13px;
+	margin-bottom: 5px;
+	border-radius: 50%;
+}
+
+
+.InterestedBox .ipt_box2 {
+    width: 100%;
+    background-color: #ffffff;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 5%;
+    border-bottom: 1px solid #d8d8d8;
+}
+.InterestedBox .ipt_box2 .left{
+	float: left;
+	font-size: 14px;
+	color: #333333;
+}
+.InterestedBox .ipt_box2 .right{
+	float: right;
+	margin-right: 5%;
+}
+.InterestedBox .ipt_box2 .right .ipt_value .fa-angle-right:before{
+	font-size: 18px;
+	margin-left: 10px;
+	color: #666666;
+}
+
+.InterestedSetBox .ipt_box2 {
+    width: 100%;
+    background-color: #ffffff;
+    height: 62px;
+    line-height: 62px;
+    padding-left: 5%;
+    border-bottom: 1px solid #d8d8d8;
+}
+.InterestedSetBox .ipt_box2 .left{
+	float: left;
+	font-size: 14px;
+	color: #333333;
+}
+.InterestedSetBox .ipt_box2 .left .ipt_value1{
+	line-height: 25px;
+	height: 25px;
+	color: #4a90e2;
+	font-size: 14px;
+	margin-top: 6px;
+	margin-left: 10px;
+}
+.InterestedSetBox .ipt_box2 .left .ipt_value2{
+	line-height: 20px;
+	height: 20px;
+	color: #999999;
+	font-size: 12px;
+	margin-left: 10px;
+}
+.InterestedSetBox .ipt_box2 .right{
+	float: right;
+	margin-right: 5%;
+}
+.InterestedSetBox .ipt_box2 .right .ipt_value .fa-angle-right:before{
+	font-size: 18px;
+	margin-left: 10px;
+	color: #666666;
+}
+
+.nav_bottom{
+	height: 49px;
+	background-color: #fafafa;
+	border-color: #b2b2b2;
+	color: #999999;
+}
+
+.nav_bottom ul{
+	margin:0px 0px;
+	padding: 0px 0px;
+	list-style: none;
+}
+.nav_bottom ul li{
+	width: 33.33%;
+	float: left;
+	text-align: center;
+	color: #666666;
+	font-size: 10px;
+}
+.nav_bottom ul li .img{
+	margin-top: 4px;
+	height: 23px;
+	line-height: 23px;
+	position: relative;
+}
+.nav_bottom ul li .cur{
+	color: #ff8903;
+}
+
+
+
+
+

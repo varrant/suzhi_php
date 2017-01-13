@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>缴纳保证金</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp"/>
+	<link rel="stylesheet" href="assets/css/amazeui.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/common.css">
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/amazeui.min.js"></script>
+	<script src="js/function.js"></script>
+</head>
+<body style="background:#eee;">
+	<div class="pay_main">
+		<h3>领队保证金<img src="images/icon.png" onclick="box()"></h3>
+		<ul class="pay_ul">
+			<li class="pay_frist"><h3>保证金额</h3><span>500元</span></li>
+			<li class="pay_p">当推荐成功10个人,全额返还（防止刷单现象）</li>
+		</ul>
+	</div>
+	<a class="pay_inp" href="javascript:pay();" style="position:absolute;bottom:105px;left:6%;">立即支付</a>
+	
+	<!--说明-->
+	<div class="box_bg" id="explain" style="display:none;">
+		<div class="pay_box">
+			<div class="deposit_word">
+				<h3>什么是保证金</h3>
+				<div class="box_word">
+					<h3>什么是保证金？</h3>
+					<p>为了保证履行双方约定而缴纳的钱，在完成双方履行的承诺之后给予退还。</p>
+					<h3>保证金去哪儿了？</h3>
+					<p>保证金存在乙方个人账户中，在乙方推荐成功入职者未满十人之前，保证金处于冻结状态，不可提现，不可使用。</p>
+					<h3>如何退还保证金？</h3>
+					<p>经乙方推荐，成功入职满十人，即可全额退还保证金。若发现刷单、逃单等情况，经平台审核情况属实，保证金不予退还。</p>
+				</div>
+				<a href="javascript:void(0);"><img class="guanbi" src="images/icon_1.png" onclick="guanbi()" width="52"></a>
+			</div>
+		</div>
+	</div>
+	<!--支付方式-->
+	<div class="box_bg" style="display:none;" id="pay_mode">
+		<div class="pay_mode">
+			<h3>选择支付方式 <a href="javascript:void(0);"><img src="images/icon_2.png" width="16" onclick="guanbi()" /></a></h3>
+			<ul>
+				<li class="mode_frist"><a href="javascript:void(0);" style="color:#05cb04;"><img src="images/wechat1.png" width="24" /> 微信支付 <img class="img_1" src="images/icon_3.png" width="7" /></a></li>
+				<li><a href="javascript:void(0);" style="color: #01a9ef;"><img src="images/alipay1.png" width="24" /> 支付宝 <img class="img_1" src="images/icon_3.png" width="7" /></a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
+<script>
+	function box(){
+		$("#explain").show();
+	}
+	//关闭
+	function guanbi(){
+		$("#explain").hide();
+		$("#pay_mode").hide();
+		$(".pay_mode").animate({
+			"bottom":"-184px"
+		},0);
+	}
+	
+	function pay(){
+		$("#pay_mode").css('display','block');
+		$(".pay_mode").animate({
+			"bottom":"0px"
+		},200);
+	}
+</script>

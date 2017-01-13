@@ -1,0 +1,134 @@
+<!-- 我的任务列表 -->
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>任务</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="stylesheet" href="assets/css/amazeui.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/taskList.css">
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/amazeui.min.js"></script>
+  <script src="js/function.js"></script>
+  <script src="js/date.js"></script>
+  <script src="js/vue.js"></script>
+</head>
+<body>
+<ul class="nav_top">
+  <li><div class="title">全部&nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></div></li>
+  <li><div class="title">已领取&nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></div></li>
+  <li><div class="title last">已报名&nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></div></li>
+  <li class="clearbox" style="width: 0px;height: 0px;"></li>
+</ul>
+
+<div id="app" class="listitem itemcur">
+  <div v-for="data in list" class="orderinfoBox">
+    <div class="ipt_box3" ><a @click="detials(data.pos_id)">
+      <div class="left">
+        <div class="head"><img :src="data.pos_img"></div>
+      </div>
+      <div class="mid">
+        <div class="type" v-if="(data.pos_task_type == '0')">兼职</div>
+        <div class="type" v-if="(data.pos_task_type == '2')">全职</div>
+        <div class="type" v-if="(data.pos_task_type == '1')">实习</div>
+        <div class="title">{{data.pos_name}} </div>
+        <div class="clearbox"></div>
+        <div class="introduce">{{data.pos_jobdescription}}</div>
+        <div class="need">需求：<span>{{data.pos_recruitmun}}</span>人</div>
+        <div class="clearbox"></div>
+      </div>
+      <div class="right">
+        <div class="ipt_value">{{data.pos_brokerage}}元</div>
+      </div>
+      <div class="clearbox"></div>
+
+      <div class="minrightbox">
+        <div class="num">{{data.pos_redeli}}</div>
+        <div class="img"><img src="images/taskico2.png" alt=""></div>
+
+        <div class="num">{{data.pos_toursmun}}</div>
+        <div class="img"><img src="images/taskico1.png" alt=""></div>
+        <div class="clearbox"></div>
+      </div></a>
+    </div>
+  </div>
+</div>
+
+<footer class="nav_bottom am-topbar am-topbar-inverse am-topbar-fixed-bottom">
+  <ul>
+    <li>
+      <div class="img"><img src="images/mycenterbottomicon1.png" alt=""></div>
+      <div class="title">首页</div>
+    </li>
+    <li>
+      <div class="img"><img src="images/mycenterbottomicon2over.png" alt=""></div>
+      <div class="title cur">任务</div>
+    </li>
+    <li onclick="window.location.href='mycenter.html'">
+      <div class="img"><img src="images/mycenterbottomicon3.png" alt=""></div>
+      <div class="title">我的</div>
+    </li>
+  </ul>
+</footer>
+<script>
+  $(function() {
+    // $(".nav_top li").click(function(){
+    //   console.log($(this).index());
+    //   $(".nav_top li div").removeClass("cur");//移除导航当前选项卡
+    //   $(".nav_top li div").eq($(this).index()).addClass("cur");//添加点击当前选项卡位置
+    //   $(".listitem").removeClass("itemcur");//移除导航当前选项卡对应任务内容
+    //   $(".listitem").eq($(this).index()).addClass("itemcur");//添加点击当前选项卡对应任务内容
+    //   console.log()
+    // })
+     var task = new Vue({
+          el: '#app',
+          data: {
+              //显示JSON
+              message:'',
+              //对象数组
+              list : ''
+          },
+          methods:{
+            detials:function(id){
+              var vm = this;
+              var phone = getCookie("phone");         
+              if(phone == null || phone == "" || phone == "undefined"){
+                window.location.href = "login.html";
+              }else{
+                window.location.href = "taskDetail.html?pos_id=" + id;
+              }
+              
+            }
+          }   
+      });
+    loadData(function(r){
+      task.list = r;
+    }) 
+    function loadData(callback) {
+      $.ajax({
+        //url: "http://suzhi.hzjuym.com/index.php/home/Poscha/lists",
+        url: "http://suzhi.hzjuym.com/index.php/home/Poscha/lists",
+        type: 'POST',
+        dataType: 'json',
+        data: {},
+        success: function(data) {
+         callback(data);
+        },
+        error: function(e){
+         showRemindbox("连接失败！");
+        }
+      })
+    }
+    
+
+  })
+</script>
+</body>
+</html>

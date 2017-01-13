@@ -1,0 +1,35 @@
+<div class="am-cf admin-main">
+  <!-- sidebar start -->
+  <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
+    <div class="am-offcanvas-bar admin-offcanvas-bar">
+      <ul class="am-list admin-sidebar-list">
+        <li><a href=""><span class="am-icon-home"></span> 首页</a></li>
+
+          <li class="admin-parent">
+        <a class="am-cf" data-am-collapse="{target: '#collapse-nav12'}"><span class="am-icon-file"></span>链接分享模块<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+        <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav12">
+          <li><a href="{:U('Csgl/link')}" class="am-cf"><span class="am-icon-slideshare"></span>链接表<span class="am-icon-star am-fr am-margin-right "></span></a>
+          </li>
+        </ul>
+      </li>
+
+        <li class="admin-parent">
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav'}"><span class="am-icon-list-alt"></span>订单模块<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav">
+            <li><a href="{:U('Csgl/Csgorderlist')}" class="am-cf"><span class="am-icon-reorder"></span>订单列表<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span></a></li>  
+          </ul>
+        </li>
+
+        <li class="admin-parent">
+        <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-users"></span>管理员管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+        <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav1">
+          <li><a href="{:U('Csgl/eidCsgl')}" class="am-cf"><span class="am-icon-edit"></span>修改信息<span class="am-icon-star am-fr am-margin-right "></span></a>
+          </li>
+        </ul>
+      </li>
+
+    
+       
+      </ul>
+    </div>
+  </div>

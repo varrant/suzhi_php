@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@import "../sassCore-master/base";
+@import "../sassCore-master/function";
+
+/*人才库*/
+.talentpool {
+  text-align: left;
+  padding-top:40px;
+  margin: 0 auto;
+  width: 240px;
+  .big{
+    font-size: 20px;
+  }
+  .small{
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  @extend %clearfix;
+
+}

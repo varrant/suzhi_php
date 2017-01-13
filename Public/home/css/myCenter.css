@@ -1,0 +1,184 @@
+body{
+	background-color: #eeeeee;
+}
+.mytopbannerbox{
+	width: 100%;
+	height: 76px;
+	background-color: #ff8903;
+	color: #ffffff;
+	
+}
+.mytopbannerboxline{
+	border-top:1px solid #fd9329;
+	border-bottom:1px solid #fd8e22;
+	width: 100%;
+}
+.mytopbannerbox .info{
+	padding-top: 13px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+.mytopbannerbox .info .head{
+	width: 50px;
+	height: 50px;
+	background-image: linear-gradient(to bottom, #e7e7e7, #cbcbcb);
+	border-radius: 50%; /* 所有角都使用半径为5px的圆角，此属性为CSS3标准属性 */ 
+	-moz-border-radius: 50%; /* Mozilla浏览器的私有属性 */ 
+	-webkit-border-radius: 50%; /* Webkit浏览器的私有属性 */ 
+	overflow: hidden;
+	float: left;
+}
+.mytopbannerbox .info .infobox{
+	font-size: 15px;
+	margin-left: 20px;
+	float: left;
+	line-height: 25px;
+}
+.mytopbannerbox .info .ico{
+	float: right;
+}
+.mytopbannerbox .info .ico .fa-angle-right:before{
+	font-size: 20px;
+	line-height: 50px;
+}
+.mytopbannerbox .cash{
+
+}
+
+.mytopbannerbox2{
+	width: 100%;
+	height: 46px;
+	line-height: 46px;
+	background-color: #ff8903;
+	color: #ffffff;
+	font-size: 14px;
+}
+.mytopbannerbox2 .left{
+	float: left;
+	margin-left: 16px;
+}
+.mytopbannerbox2 .right{
+	float: right;
+	margin-right: 16px;
+}
+.mytopbannerbox2 .right .fa-angle-right:before{
+	font-size: 20px;
+	line-height: 25px;
+}
+.orderlist{
+	margin-top: 10px;
+	background-color: #ffffff;
+	width: 100%;
+	height: 124px;
+}
+.orderlist .ipt_box2 {
+    width: 95%;
+    background-color: #ffffff;
+    height: 48px;
+    line-height: 48px;
+    margin-left: 5%;
+    border-bottom: 1px solid #d8d8d8;
+}
+.orderlist .ipt_box2 .left{
+	float: left;
+	font-size: 14px;
+	color: #333333;
+}
+.orderlist .ipt_box2 .right{
+	float: right;
+	margin-right: 5%;
+}
+.orderlist .ipt_box2 .right .ipt_value .fa-angle-right:before{
+	font-size: 18px;
+	margin-left: 10px;
+	color: #666666;
+}
+.orderlist ul{
+	margin:0px 0px;
+	padding: 0px 0px;
+	list-style: none;
+}
+.orderlist ul li{
+	width: 20%;
+	float: left;
+	text-align: center;
+	color: #666666;
+}
+.orderlist ul li .img{
+	margin-top: 16px;
+	height: 23px;
+	line-height: 23px;
+	position: relative;
+}
+.orderlist ul li .img .tips{
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	top:-3px;
+	right: 34%;
+	background-color: #e84950;
+	position: absolute;
+}
+.orderlist ul li .title{
+	margin-top: 6px;
+}
+.menu_list{
+	margin-top: 10px;
+	background-color: #ffffff;
+}
+.menu_list .ipt_box2 {
+    width: 95%;
+    background-color: #ffffff;
+    height: 48px;
+    line-height: 48px;
+    margin-left: 5%;
+    border-bottom: 1px solid #d8d8d8;
+}
+.menu_list .ipt_box2 .left{
+	float: left;
+	font-size: 14px;
+	color: #333333;
+}
+.menu_list .ipt_box2 .right{
+	float: right;
+	margin-right: 5%;
+}
+.menu_list .ipt_box2 .right .ipt_value .fa-angle-right:before{
+	font-size: 18px;
+	margin-left: 10px;
+	color: #666666;
+}
+
+.nav_bottom{
+	height: 49px;
+	background-color: #fafafa;
+	border-color: #b2b2b2;
+	color: #999999;
+}
+
+.nav_bottom ul{
+	margin:0px 0px;
+	padding: 0px 0px;
+	list-style: none;
+}
+.nav_bottom ul li{
+	width: 33.33%;
+	float: left;
+	text-align: center;
+	color: #666666;
+	font-size: 10px;
+}
+.nav_bottom ul li .img{
+	margin-top: 4px;
+	height: 23px;
+	line-height: 23px;
+	position: relative;
+}
+.nav_bottom ul li .cur{
+	color: #ff8903;
+}
+
+
+
+
+

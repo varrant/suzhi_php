@@ -372,7 +372,14 @@ function uploadPic($img){
     }
     return $res;
 }
-
+/**
+ * 该方法用上了英文字母、年月日、Unix 时间戳和微秒数、随机数，重复的可能性大大降低，还是很不错的。使用字母很有代表性，一个字母对应一个年份，总共16位
+ */
+ function createOrderId() {
+    $yCode = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J');
+    $orderSn = $yCode[intval(date('Y')) - 2011] . strtoupper(dechex(date('m'))) . date('d') . substr(time(), -5) . substr(microtime(), 2, 5) . sprintf('%02d', rand(0, 99));
+    return $orderSn;
+}
 
 
 

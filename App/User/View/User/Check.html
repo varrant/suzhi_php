@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://www.vipeta.cn/m/bm/bmindex.asp -->
+<html class="js cssanimations"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>VIPETA宠物健康检测</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <link rel="stylesheet" href="__PUBLIC__/strat/amazeui.css">
+  <link rel="stylesheet" href="__PUBLIC__/strat/WXactivity.css">
+  <link rel="stylesheet" href="__PUBLIC__/strat/echo.css">
+  <link rel="stylesheet" href="__PUBLIC__/strat/font-awesome.min.css">
+  <script src="__PUBLIC__/strat/jquery.min.js"></script>
+  <script src="__PUBLIC__/strat/clickiscroll.js"></script>
+  <script src="__PUBLIC__/strat/function.js"></script>
+  <script src="__PUBLIC__/strat/amazeui.min.js"></script>
+  <script src="__PUBLIC__/strat/echo.min.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/strat/jweixin-1.0.0.js"></script>
+  <style>
+  tr td {
+		color: #fff;
+	 border:1px solid #fff; 
+
+  }
+	#wrapper {
+		/*position:absolute;
+		top:0;
+		bottom:50px;
+		overflow: hidden;*/
+		width: 100%;
+		background-color:#f7f7f7;
+		margin-bottom: 0px;
+	}
+	.am-slider-a1 .am-control-nav{
+		/*bottom: 5px! important;*/
+	}
+	</style>
+	<script>
+	$(document).ready(function() { 
+		//loaded();
+	}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="scroller" style="background-color:#393839;padding-bottom:60px;">
+		<!-- <div class="bmindexboxtop"> -->
+			<div class="bmindexbox">
+				<img src="__PUBLIC__/strat/bmindex_top.jpg">
+				<div class="bmindexboxleft" onclick="window.location.href='http://card.vipeta.cn/index.php/home/index/starste'"></div>
+				<div class="bmindexboxright" onclick=""></div>
+			</div>
+		<!-- </div> -->
+		<div style="margin: 10px; background-color:#393839; height:28px;">
+			<form action="{:U('user/search')}" id="search"  method="post" >
+				<div style="position: relative;">
+					<input type="text" placeholder="输入手机号码/芯片号查询检测结果" name="ddh_ophone" style="width:100%;border-radius:5px; background: #E6E6E6;border:none; height: 28px; padding: 0px 0px;">
+					</div>
+				<div style="position: relative;top:-27px;left: 88%; width: 0;">
+					<button type="button" id="search_bu"  style="border:none;border-left: solid 1px #B3B3B3; height: 80% ; background: #E6E6E6;"><img style="margin-left: 5px;" height="25px"; src="__PUBLIC__/image/user/search.png.">
+					</button>
+				</div>
+				</form>
+		</div>
+		<div style="clear:both" ></div>
+		<!-- 动物头像显示区 -->
+		<div style="height:81px">
+			<div style="clear:both;height:10px"></div>
+			<div style="height:50px;">
+				<div style="height:50px;margin-left:10px">
+					<img style="height:50px;float:left; "  src="__PUBLIC__/image/user/dog.jpg">
+					<div style="float:left; margin-left:15px">
+					<div style="float:left; color:#C69D4E"><span>贝贝</span></div>
+					<div style="clear:both;height:5px"></div>
+					<div style="float:left; color:#949494"><span>送检时间:2016-09-15</span></div>
+					<div style="clear:both ;height:5px"></div>
+					<div style="float:left ;color:#949494"><span>宠物芯片:90084839483992</span></div>
+				</div>
+			 </div>
+			</div>
+		</div>
+		<div style="clear:both"></div>
+		<div ><img style="height:48px; width:100%" src="__PUBLIC__/image/user/vipjkbg.jpg"></div>
+		<!-- 基本信息 -->
+		<div>
+			<div style=" float:left; height: 27px;  margin-left: 5%;width: 95%;border-bottom:1px solid #606060"><span style="float: left;color: #C69D4E;margin-top:5px ;">基本信息</span>
+			</div>
+		</div>
+		<div style="clear:both"></div>
+		<!-- 基本信息内容 -->
+		<div style="height:150px;margin-left:15px;background:#393839;color:#fff;margin-top:10px">
+			<div style="float:left; height:18px;width:45%">
+				<span  style="float: left;font-size:14px">主&nbsp;人:</span>
+				<div style=" height: 17px; width: 77px; border :1px solid #606060;float:left ;margin-left:5px">
+					<span  style="font-size: 12px ;color: #FEFEFE;width:100%; margin-left: 15px;" >李敏镐</span>
+				</div>
+			</div>	
+			<div style="float:left; height:18px;width:50%">
+				<span  style="float: left;font-size:14px">宠物名字:</span>
+				<div style=" height: 17px; width: 77px; border :1px solid #606060;float:left ;margin-left:5px">
+					<span  style="font-size: 12px ;color: #FEFEFE;width:100%; margin-left: 15px;" >李敏镐</span>
+				</div>
+			</div>
+			<div style="clear:both ;height:11px"></div>
+			<div style="float:left; height:18px; font-size:14px">芯&nbsp;片:</div>
+				<div style=" height: 17px; width:75%; border :1px solid #606060;float:left; margin-left:5px">
+					<span  style="font-size: 12px ; margin-left: 13px;  color: #FEFEFE;width:100%; " >李敏镐</span>
+				</div>
+			<div style="clear:both;height:11px"></div>
+
+			<div style="float:left; height:18px;width:45%">
+				<span  style="float: left;font-size:14px">品&nbsp;种:</span>
+				<div style=" height: 17px; width: 77px; border :1px solid #606060;float:left ;margin-left:5px">
+					<span  style="font-size: 12px ;color: #FEFEFE;width:100%; margin-left: 15px;" >泰迪</span>
+				</div>
+			</div>
+
+			<div style="float:left; height:18px;width:50%">
+				<span  style="float: left;font-size:14px">性&nbsp;&nbsp;别:</span>
+				<div style=" height: 17px; width: 77px; border :1px solid #606060;float:left ;margin-left:5px">
+					<span  style="font-size: 12px ;color: #FEFEFE;width:100%; margin-left: 15px;" >男孩</span>
+				</div>
+			</div>
+			
+			<div style="clear:both;height:11px"></div>
+
+			<div style="float:left; height:18px;width:45%">
+				<span  style="float: left;font-size:14px">年&nbsp;龄:</span>
+				<div style=" height: 17px; width: 77px; border :1px solid #606060;float:left ;margin-left:5px">
+					<span  style="font-size: 12px ;color: #FEFEFE;width:100%; margin-left: 15px;" >泰迪</span>
+				</div>
+			</div>
+
+			<div style="float:left; height:18px;width:50%">
+				<span  style="float: left;font-size:14px">样本状态:</span>
+				<div style=" height: 17px; width: 77px; border :1px solid #606060;float:left ;margin-left:5px">
+					<span  style="font-size: 12px ;color: #FEFEFE;width:100%; margin-left: 15px;" >正常</span>
+				</div>
+			</div>
+		
+			<div style="clear:both ;height:11px"></div>
+
+			<div style="float:left; height:18px;width:45%">
+				<span  style="float: left;font-size:14px">检测员:</span>
+				<div style=" height: 17px; width: 77px; border :1px solid #606060;float:left ;margin-left:5px">
+					<span  style="font-size: 12px ;color: #FEFEFE;width:100%; margin-left: 15px;" >张晓明</span>
+				</div>
+			</div>
+
+			<div style="float:left; height:18px;width:50%">
+				<span  style="float: left;font-size:14px">送检时间:</span>
+				<div style=" height: 17px; width: 77px; border :1px solid #606060;float:left ;margin-left:5px">
+					<span  style="font-size:12px ;color: #FEFEFE;width:100%; margin-left:5px;" >2016-09-02</span>
+				</div>
+			</div>
+		</div>
+		
+			<div style=" float:left; height: 27px;  margin-left: 5%;width: 95%;border-bottom:1px solid #606060"><span style="float: left;color: #C69D4E;margin-top:5px ;;">检测项目</span>
+			</div>
+			<div style="clear:both"></div>
+			<div style="width:288px;height:auto;margin-left:5%;margin-top:10px">
+				<table style="height:100%">
+					<tr style="width:100%;height:27px">
+						<td  align="center" valign="middle" width="100" >序号</td>
+						<td  align="center" valign="middle" width="200">内容</td>
+						<td  align="center" valign="middle" width="200">检测结果</td>
+						<td   align="center" valign="middle" width="300">备注</td>
+					</tr>
+					<tr style="width:100%;height:27px">
+						<td  align="center" valign="middle" width="100" >1</td>
+						<td  align="center" valign="middle" width="200">弓形虫</td>
+						<td  align="center" valign="middle" width="200">11dd</td>
+						<td   align="center" valign="middle" width="300">1qwe1</td>
+					</tr>
+					<tr style="width:100%;height:27px">
+						<td  align="center" valign="middle" width="100" >2</td>
+						<td  align="center" valign="middle" width="200">钩端螺旋体</td>
+						<td  align="center" valign="middle" width="200">11dd</td>
+						<td   align="center" valign="middle" width="300">1qwe1</td>
+					</tr>
+					<tr style="width:100%;height:27px">
+						<td  align="center" valign="middle" width="100" >3</td>
+						<td  align="center" valign="middle" width="200">犬瘟</td>
+						<td  align="center" valign="middle" width="200">11dd</td>
+						<td   align="center" valign="middle" width="300">1qwe1</td>
+					</tr>
+					<tr style="width:100%;height:27px">
+						<td  align="center" valign="middle" width="100" >4</td>
+						<td  align="center" valign="middle" width="200">猫瘟</td>
+						<td  align="center" valign="middle" width="200">11dd</td>
+						<td   align="center" valign="middle" width="300">1qwe1</td>
+					</tr>
+					<tr style="width:100%;height:27px">
+						<td  align="center" valign="middle" width="100" >5</td>
+						<td  align="center" valign="middle" width="200">细小</td>
+						<td  align="center" valign="middle" width="200">11dd</td>
+						<td   align="center" valign="middle" width="300">1qwe1</td>
+					</tr>
+					<tr style="width:100%;height:27px">
+						<td  align="center" valign="middle" width="100" >6</td>
+						<td  align="center" valign="middle" width="200">蛔虫</td>
+						<td  align="center" valign="middle" width="200">11dd</td>
+						<td   align="center" valign="middle" width="300">1qwe1</td>
+					</tr>
+					<tr style="width:100%;height:27px">
+						<td  align="center" valign="middle" width="100" >7</td>
+						<td  align="center" valign="middle" width="200">吸虫</td>
+						<td  align="center" valign="middle" width="200">11dd</td>
+						<td  align="center" valign="middle" width="300">1qwe1</td>
+					</tr>
+					<tr style="width:100%;height:27px">
+						<td  align="center" valign="middle" width="100" >8</td>
+						<td  align="center" valign="middle" width="200">球虫</td>
+						<td  align="center" valign="middle" width="200">11dd</td>
+						<td   align="center" valign="middle" width="300">1qwe1</td>
+					</tr>
+					<tr style="width:100%;height:27px">
+						<td  align="center" valign="middle" width="100" >9</td>
+						<td  align="center" valign="middle" width="200">滴虫</td>
+						<td  align="center" valign="middle" width="200">11dd</td>
+						<td   align="center" valign="middle" width="300">1qwe1</td>
+					</tr>
+					<tr style="width:100%;height:27px">
+						<td  align="center" valign="middle" width="100" >10</td>
+						<td  align="center" valign="middle" width="200">虫卵</td>
+						<td  align="center" valign="middle" width="200">11dd</td>
+						<td   align="center" valign="middle" width="300">1qwe1</td>
+					</tr>
+				</table>
+			
+		</div>
+			<div style="clear:both;height:10px"></div>
+				<div style=" float:left; height: 27px;  margin-left: 5%;width: 95%;border-bottom:1px solid #606060"><span style="	float: left;color: #C69D4E;margin-top:5px ;;">结果说明</span>		
+				</div>
+			<div>
+			<div style="clear:both;height:10px"></div>
+			<div style="float:left;margin-left:15px;font-size:12px ;color:#fff;padding-right:12px"  >
+				<span style="display:block">阳性：样本中检测到相关病原体核酸</span>
+				<p style="display:block;line-height:20px;margin-top:5px">阴性：Ct值为0.00，样本中相关病原体核酸含量低于实时荧光PCR检测下限，或无病原体核酸存在。Ct值>36，并出现特定的扩增线，需要重新取样进行检测并对结果进行判断，如果出现特定的括展曲线，可判定为阳性。对于某些未呈现S型曲线但本底较高的样品应判定为阴性。
+				</p>
+			</div>
+
+			<div style="clear:both;height:10px"></div>
+				<div style=" float:left; height: 27px;  margin-left: 5%;width: 95%;border-bottom:1px solid #606060"><span style="	float: left;color: #C69D4E;margin-top:5px ;;">声明</span>		
+				</div>
+
+				<div style="float:left;margin-left:15px;font-size:12px ;color:#fff;margin-top:10px"  >
+					<div style="width:185px;height:93px;float:left">
+						<span>该检测报告仅对本次标本负责，结</span>	
+						<span style="display:block;margin-top:7px;">果仅供顾客参考，如果对检测结果</span>
+						<span style="display:block;margin-top:7px;">有疑问，请收到报告后1个工作日</span>
+						<span style="display:block;margin-top:7px;">于我们检测中心联系</span>
+						<span style="display:block;margin-top:7px;">400-5590-898</span>	
+
+					</div>
+
+					<div  style="width:92px;float:left;margin-left:12px;">
+						<img width=80px; src="__PUBLIC__/image/user/kefu.jpg">
+
+					</div>
+					<div style="clear:both;height:15px"></div>
+					<div style="border-bottom:solid 1px #606060;padding-bottom:10px"><spn style="color:#D1A351;font-size:14px;font-weight:bold;margin-bottom:12px">对待宠物健康，我们是认真的，更是专业的！</spn></div>
+					<div style="clear:both;height:15px"></div>
+				
+				</div>
+
+					<div style="float:left;margin-left: auto;margin-right:auto;width:100%"><spn style=" float:left;width: 300px;color:#606060; line-height:20px; text-align:center; ">对待宠物健康，我们是认真的，更是专业的！</spn></div>
+
+			<div>
+
+		<ul class="bmIndexBottom_Nav">
+			<li class="" onClick="window.location.href='http://card.vipeta.cn/index.php/home/user/homepage'"><div><i class="fa fa-home" aria-hidden="true"></i></div>VIPETA首页</li>
+			<li class="" onClick="window.location.href='https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx646080b0abdc4ce1&redirect_uri=http%3A%2F%2Fcard.vipeta.cn%2Findex.php%2Fhome%2Fuser%2Fusercenter2&response_type=code&scope=snsapi_base&state=12E#wechat_redirect'"><div><i class="fa fa-info-circle" aria-hidden="true"></i></div>检测结果</li>
+			<li class="" onClick="window.location.href='#'"><div><i class="fa fa-plus-square" aria-hidden="true"></i></div>招募合伙人</li>
+			<li class="" onClick="window.location.href='http://mp.weixin.qq.com/s?__biz=MzI5NTQ3OTA0MA==&tempkey=C7fqj3zzUWTliYU%2FIHDqQ65Xy%2BpRv4KjttbSbns35lZ2Tl0Ne%2FC4j7%2BP01Z50Inqok6ptOVMEqlYn9XslzWXYDDDlLgsEkl90mlsSDIIzNE7cp0e1bjzX9yI71Q%2FhT4eOgS9D1lDK%2B2%2FP7FTR5qg%2BQ%3D%3D&chksm=6c53b3645b243a72685979850c36d47081f097007959d67ba4a12d15b0bcbb2554d9e0fd9aeb#rd'"><div><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></div>激活保险</li>
+			<li style="clear:both"></li>
+		</ul>
+		<div style="clear:both"></div>
+	</div>
+</div>
+
+
+<script>
+
+
+//$(".bmindexHead").attr("style","height:"+($(".bmindexHead li").height()+10)+"px;")
+$(document).ready(function(){
+	//$CommentBannerImg=$(".CommentBanner").find("img");
+	//console.log($(".CommentBanner").eq(0).find("img").width());
+	//console.log($(".bmindexHead li img").height());
+	var firwidth=$(".CommentBanner").eq(0).find("img").width();
+	$(".CommentBanner").each(function(){
+		//console.log($(this).index());
+		$(this).find("img").attr("style","width:"+firwidth+"px; height:"+(firwidth*0.66)+"px;")
+		$(this).find(".CommentBannerBox").attr("style","width:"+$(this).find("img").width()+"px;height:"+$(this).find("img").height()+"px;");
+		$(this).find(".CommentBannerButton").attr("style","width:"+($(this).find("img").width()-20)+"px;margin-left:10px;")
+	})
+	$(".CommentBannerCount2").attr("style","display:inherit");
+	$(".CommentBannerCount3").attr("style","display:inherit");
+	$(".CommentBannerNickName").attr("style","display:inherit");
+	
+})
+
+	$("#r_button").click(function(){
+
+		
+  window.location.href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx646080b0abdc4ce1&redirect_uri=http%3A%2F%2Fcard.vipeta.cn%2Findex.php%2Fhome%2FIndex%2Fregis&response_type=code&scope=snsapi_base&state=12E#wechat_redirect"
+
+	});
+echo.init();
+
+
+
+$("#search_bu").click(function(){
+
+	var url =$("#search").attr('action');
+		var data=$("#search").serialize();
+		
+          $.ajax({
+              type:"post",
+              url:url,
+              data:data,
+              dataType:"json",
+
+              success:function(data){
+                      
+                  if(data=="ok"){
+                    dialog.success("审核成功","{:U('Order/Orderlist')}");
+
+
+                  }else{
+
+                     dialog.error("失败成功");
+                  }
+              }
+          });
+
+  
+
+});
+
+
+</script>
+
+
+
+
+</script>
+
+</body></html>

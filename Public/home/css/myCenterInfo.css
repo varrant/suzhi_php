@@ -1,0 +1,178 @@
+body{
+	background-color: #eeeeee;
+}
+.mytopbannerbox{
+	width: 100%;
+	height: 76px;
+	background-color: #ffffff;
+}
+.mytopbannerboxline{
+	border-top:1px solid #fd9329;
+	border-bottom:1px solid #fd8e22;
+	width: 100%;
+}
+.mytopbannerbox .info{
+	padding-top: 13px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+.mytopbannerbox .info .infobox .name{
+	font-size: 15px;
+	color: #333333;
+}
+.mytopbannerbox .info .infobox .phone{
+	font-size: 13px;
+	color: #999999;
+}
+.mytopbannerbox .info .head{
+	width: 50px;
+	height: 50px;
+	background-image: linear-gradient(to bottom, #e7e7e7, #cbcbcb);
+	border-radius: 50%; /* 所有角都使用半径为5px的圆角，此属性为CSS3标准属性 */ 
+	-moz-border-radius: 50%; /* Mozilla浏览器的私有属性 */ 
+	-webkit-border-radius: 50%; /* Webkit浏览器的私有属性 */ 
+	overflow: hidden;
+	float: left;
+}
+.mytopbannerbox .info .infobox{
+	font-size: 15px;
+	margin-left: 20px;
+	float: left;
+	line-height: 25px;
+}
+.mytopbannerbox .info .ico{
+	float: right;
+}
+.mytopbannerbox .info .ico .fa-angle-right:before{
+	font-size: 20px;
+	line-height: 50px;
+}
+.mytopbannerbox .cash{
+
+}
+
+
+.orderlist{
+	margin-top: 10px;
+	background-color: #ffffff;
+	width: 100%;
+	height: 124px;
+}
+.orderlist .ipt_box2 {
+    width: 95%;
+    background-color: #ffffff;
+    height: 48px;
+    line-height: 48px;
+    margin-left: 5%;
+    border-bottom: 1px solid #d8d8d8;
+    border-top: 1px solid #ffffff;
+}
+.orderlist .ipt_box2 .left{
+	float: left;
+	font-size: 14px;
+	color: #333333;
+}
+.orderlist .ipt_box2 .right{
+	float: right;
+	margin-right: 5%;
+	color: #999999;
+}
+.orderlist .ipt_box2 .right input{
+	border:0px;
+	outline: none;
+	font-size: 14px;
+	text-align: right;
+}
+.orderlist .ipt_box2 .right .inp_username{
+	width: 112px;
+}
+
+.orderlist .ipt_box2 .right .ipt_value .fa-angle-right:before{
+	font-size: 18px;
+	margin-left: 10px;
+	color: #666666;
+}
+
+.menu_list{
+	margin-top: 10px;
+	background-color: #ffffff;
+}
+.menu_list .ipt_box2 {
+    width: 95%;
+    background-color: #ffffff;
+    height: 48px;
+    line-height: 48px;
+    margin-left: 5%;
+    border-bottom: 1px solid #d8d8d8;
+}
+.menu_list .ipt_box2 .left{
+	float: left;
+	font-size: 14px;
+	color: #333333;
+}
+.menu_list .ipt_box2 .right{
+	float: right;
+	margin-right: 5%;
+	color: #999999;
+	font-size: 14px;
+}
+.menu_list .ipt_box2 .right input{
+	border:0px;
+	outline: none;
+	font-size: 14px;
+	text-align: right;
+}
+.menu_list .ipt_box2 .right .inp_username{
+	width: 112px;
+}
+.menu_list .ipt_box2 .right .ipt_value .fa-angle-right:before{
+	font-size: 18px;
+	margin-left: 10px;
+	color: #666666;
+}
+
+.nav_bottom{
+	height: 49px;
+	background-color: #fafafa;
+	border-color: #b2b2b2;
+	color: #999999;
+}
+
+.nav_bottom ul{
+	margin:0px 0px;
+	padding: 0px 0px;
+	list-style: none;
+}
+.nav_bottom ul li{
+	width: 33.33%;
+	float: left;
+	text-align: center;
+	color: #666666;
+	font-size: 10px;
+}
+.nav_bottom ul li .img{
+	margin-top: 4px;
+	height: 23px;
+	line-height: 23px;
+	position: relative;
+}
+.nav_bottom ul li .cur{
+	color: #ff8903;
+}
+
+
+
+/*-----------------------*/
+.nav_top{
+	padding: 0px 0px;
+	margin:0px 0px;
+	list-style: none;
+	height: 30px;
+	background-color: #fafafa;
+}
+.nav_top li{
+	width: 16.67%;
+}
+
+
+

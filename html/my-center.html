@@ -1,0 +1,183 @@
+<!-- 登陆 -->
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>我的</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="stylesheet" href="assets/css/amazeui.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/myCenter.css">
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/amazeui.min.js"></script>
+  <script src="js/function.js"></script>
+  <script src="js/date.js"></script>
+  <script src="js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+  <div class="mytopbannerbox" onclick="window.location.href='myCenterInfo.html'">
+    <div class="info">
+      <div class="head">
+        <img src="images/head1.png" alt="">
+      </div>
+      <div class="infobox">
+        <!-- <div class="type" v-if="(data.pos_task_type == null || data.)">兼职</div> -->
+        <div>suzhi01</div>
+        <div>157 5731 6115</div>
+         <!-- <div onclick="window.location.href='login.html'">登录/注册</div> -->
+      </div>
+      <div class="ico">
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+      </div>
+      <div class="clearbox"></div>
+    </div>
+  </div>
+  <div class="mytopbannerbox2" onclick="window.location.href='myCenterCash.html'">
+    <div class="mytopbannerboxline"></div>
+    <div class="left">余额：18000.00元</div>
+    <div class="right">账户安全保障中 &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></div>
+  </div>
+
+  <div class="orderlist">
+    <div class="ipt_box2">
+      <div class="left">我的订单</div>
+      <div class="right">
+        <div class="ipt_value"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      </div>
+      <div class="clearbox"></div>
+    </div>
+    <ul>
+      <li>
+        <div class="img"><img src="images/mycentericon1.png" alt=""><div class="tips"></div></div>
+        <div class="title">已领取</div>
+      </li>
+      <li>
+        <div class="img"><img src="images/mycentericon2.png" alt=""></div>
+        <div class="title">已报名</div>
+      </li>
+      <li>
+        <div class="img"><img src="images/mycentericon3.png" alt=""><div class="tips"></div></div>
+        <div class="title">进行中</div>
+      </li>
+      <li>
+        <div class="img"><img src="images/mycentericon4.png" alt=""></div>
+        <div class="title">已结束</div>
+      </li>
+      <li>
+        <div class="img"><img src="images/mycentericon5.png" alt=""></div>
+        <div class="title">问题单</div>
+      </li>
+      <li class="clearbox"></li>
+    </ul>
+  </div>
+
+  <div class="menu_list">
+    <div class="ipt_box2">
+      <div class="left">我的人才库</div>
+      <div class="right">
+        <div class="ipt_value"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      </div>
+      <div class="clearbox"></div>
+    </div>
+    <div class="ipt_box2">
+      <div class="left">推荐有奖</div>
+      <div class="right">
+        <div class="ipt_value"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      </div>
+      <div class="clearbox"></div>
+    </div>
+    <div class="ipt_box2">
+      <div class="left"><a href="">任务意向设置</a></div>
+      <div class="right">
+        <div class="ipt_value"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      </div>
+      <div class="clearbox"></div>
+    </div>
+    <div class="ipt_box2" onclick="window.location.href='myCenterCashSet.html'">
+      <div class="left">提现设置</div>
+      <div class="right">
+        <div class="ipt_value"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      </div>
+      <div class="clearbox"></div>
+    </div>
+    <div class="ipt_box2" style="border-bottom: 0px solid #d8d8d8;">
+      <div class="left">意见反馈</div>
+      <div class="right">
+        <div class="ipt_value"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      </div>
+      <div class="clearbox"></div>
+    </div>
+  </div>
+</div>
+<footer class="nav_bottom am-topbar am-topbar-inverse am-topbar-fixed-bottom">
+  <ul>
+    <li>
+      <div class="img"><img src="images/mycenterbottomicon1.png" alt=""></div>
+      <div class="title">首页</div>
+    </li>
+    <li onclick="window.location.href='tasklist.html'">
+      <div class="img"><img src="images/mycenterbottomicon2.png" alt=""></div>
+      <div class="title">任务</div>
+    </li>
+    <li onclick="window.location.href='mycenter.html'">
+      <div class="img"><img src="images/mycenterbottomicon3over.png" alt=""></div>
+      <div class="title cur">我的</div>
+    </li>
+  </ul>
+</footer>
+<script>
+  
+  $(function() {
+    var phone = getCookie("phone");
+    var my = new Vue({
+          el: '#app',
+          data: {
+              //显示JSON
+              message:'',
+              //对象数组
+              object : ''
+          },
+          methods:{
+            
+          } 
+      });
+    loadData(function(r){
+      my.object = r[0];;
+      // console.log(task.object);
+      // console.log(task.object.pos_id);
+    }) 
+    function loadData(callback) {
+      /*$.ajax({
+        //url: "http://suzhi.hzjuym.com/index.php/home/Poscha/lists",
+        url: "http://suzhi.hzjuym.com/index.php/home/Poscha/view",
+        type: 'POST',
+        dataType: 'json',
+        data: {phone:phone},
+        success: function(data) {
+          //console.log(data);
+          // if(data[0].orderinfo == null ){
+          //   $(".right").attr("style","display:block;");
+          //   $(".right1").attr("style","display:none;");
+          // }else{
+          //   $(".right").attr("style","display:none;");
+          //   $(".right1").attr("style","display:block;");
+          // }
+         
+         callback(data);
+        },
+        error: function(e){
+         showRemindbox("连接失败！");
+        }
+      })*/
+    }
+  })
+</script>
+</body>
+</html>

@@ -7,21 +7,15 @@ class WxpayController extends  CommonController {
         //引入WxPayPubHelper
         vendor('Weixinpay.WxPayPubHelper');
     } 
- 
-    function anniu(){
 
-
-        $this->display();
-    }
-   
-    public function index(){
+    public function pay($order_id,$price,$descript){
         header("Content-Type: text/html;charset=utf-8");
         /*获取openid*/
         $CODE=$_GET['code'];
         $url="https://api.weixin.qq.com/sns/oauth2/access_token?appid=".C(APPID)."&secret=".trim(C(APPSECRET))."&code=".$CODE."&grant_type=authorization_code";
         
        $openid=getopenid($url);
-  
+
         $jsApi = new \JsApi_pub();
         //=========步骤2：使用统一支付接口，获取prepay_id============
         //使用统一支付接口
@@ -36,12 +30,12 @@ class WxpayController extends  CommonController {
         //sign已填,商户无需重复填写
     
 
-        $NOTIFY_URL="http://suzhi.hzjuym.com/index.php/Home/Wxpay/notify";
+        $NOTIFY_URL="http://test.91suzhi.com/index.php/Home/Wxpay/notify";
         $unifiedOrder->setParameter("openid",$openid);//openid
-        $unifiedOrder->setParameter("body",'宠物考级信息费');//商品描述
-        $dbbh='12345678'.date("YmdHis").time();                               
-        $unifiedOrder->setParameter("out_trade_no",$dbbh);//商户订单
-        $unifiedOrder->setParameter("total_fee",100);//总金额 微信的钱1*100等于1
+        $unifiedOrder->setParameter("body",$descript);//商品描述
+//        $order_id='12345678'.date("YmdHis").time();
+        $unifiedOrder->setParameter("out_trade_no",$order_id);//商户订单
+        $unifiedOrder->setParameter("total_fee",$price);//总金额 微信的钱1*100等于1
         $unifiedOrder->setParameter("notify_url",$NOTIFY_URL);//通知地址
         $unifiedOrder->setParameter("trade_type","JSAPI");//交易类型
         //非必填参数，商户可根据实际情况选填
@@ -61,7 +55,7 @@ class WxpayController extends  CommonController {
         //=========步骤3：使用jsapi调起支付============
         $jsApi->setPrepayId($prepay_id);
         $jsApiParameters = $jsApi->getParameters();
-        $WEB_HOST='http://suzhi.hzjuym.com/index.php/Home/Wxpay/notify';//填写的话 如 http://nicaicai.imwork.net 最后面不用加 /
+        $WEB_HOST='http://test.91suzhi.com/index.php/Home/Wxpay/notify';//填写的话 如 http://nicaicai.imwork.net 最后面不用加 /
         $this->assign('HOSTS',$WEB_HOST);
         // var_dump($jsApiParameters);
         $this->assign('jsApiParameters',$jsApiParameters);

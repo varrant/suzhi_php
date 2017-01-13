@@ -2,65 +2,185 @@
 namespace Home\Controller;
 
 use Think\Controller;
+use Think\Upload;
 
-class RegisterController extends Controller
+/**
+ * 猎头注册；
+ * Class RegisterController
+ * @package Home\Controller
+ */
+class RegisterController extends CommonController
 {
-    /*显示注册页面*/
-    public function re()
+    /**
+     * 注册页面；
+     */
+    public function index()
     {
+        $this->display('/register/register');
+    }
 
+    /**
+     * 发送短信验证码；
+     */
+    public function smsvcode()
+    {
+        $this->send_sms_vcode();
+    }
+
+    /**
+     * 注册：第一步;
+     * 用户协议；
+     */
+    public function regstep0()
+    {
+        //显示用户协议页面；
         $this->display();
     }
 
-    //发送验证码
-    public function Sensms()
+    /**
+     * 注册：第二步；
+     * 实名认证；
+     */
+    public function regstep1()
     {
-        // var_dump(1111);
-        $phone = I('phone');
-        //判别该手机号码是否已注册 
-        $db_head = M('headhunter');
-        $map_head['he_phone'] = $phone;
-        $db_phone = $db_head->where($map_head)->find();
-        if (!I('login') == 'login') {
-            if ($db_phone) {
-                $this->ajaxReturn('exist');
-            }
-        }
-        /*生成四位随机码*/
-        $num = "";
-        for ($i = 0; $i < 4; $i++) {
-            $num .= rand(0, 9);
-        }
-        import("Org.Util.Im1");
-        import("Org.Util.Im2");
-        /*发送短信*/
-        $result = sendTemplateSMS("$phone", array($num, '5'), "117318");
-        if ($result == '1') {
-            $db_code = M('code');
-            $data['cod_code'] = $num;
-            $data['cod_phone'] = $phone;
-            $data['cod_time'] = time();
-            $map['cod_phone'] = $phone;
-            $do_phone = $db_code->where($map)->find();
-            if ($do_phone) {
-                $map_up['cod_phone'] = $phone;
-                $data_up['cod_code'] = $num;
-                $do_up = $db_code->where($map_up)->save($data_up);
-                if ($do_up) {
-                    $this->ajaxReturn('ok');
-                }
-            } else {
-                $db_codes = $db_code->add($data);
-                if ($db_codes) {
-                    $this->ajaxReturn('ok');
-                }
-            }
-        } else {
-            $this->ajaxReturn('error');
+        //判断是否同意
+        $agree = intval($_REQUEST['agree']);//同意
+        if ($agree !== 1) {
+            $this->redirect(U('Home/Register/regstep0'));
         }
 
+        //设置第一步骤完成；
+        session('reg_step0', 1);
+
+        //显示实名认证页面；
+        $this->display();
     }
 
+    /**
+     * 注册：第三步骤；
+     * 个人信息；
+     */
+    public function regstep2()
+    {
+        //只有第一步完成,才能保存第二步骤的数据；
+        if (session('reg_step0') !== 1) {
+            $this->redirect(U('Home/Register/regstep0'));
+        }
+        //保存第二步的数据；
+        $username = $_REQUEST['username'];//用户名；
+        $idno = $_REQUEST['idno'];//身份证号码；
+
+        if (empty($username)) {
+            $this->error('请填写用户名');
+        }
+        if (empty($idno)) {
+            $this->error('请填写身份证号码');
+        }
+        if (empty($_FILES['idcardimg']['size'])) {
+            $this->error('请上传身份正图片');
+        }
+
+        $upload = new Upload();
+        $upload->savePath = './Public/home/upload';
+        $upload_result = $upload->upload($_FILES);
+        if (!$upload_result) {
+            $this->error('图片上传失败');
+        }
+        $idcardimg = $upload_result['idcardimg']['savepath'] . $upload_result['idcardimg']['savename'];
+
+        $user_data['he_name'] = $username;
+        $user_data['he_carid'] = $idno;
+        $user_data['he_idimg'] = $idcardimg;
+        $model_headhunter = M('headhunter');
+        $he_id = $model_headhunter->data($user_data)->add();
+        if(!($he_id !== false && $he_id > 0)){
+            $this->error('保存信息失败');
+        }
+        session('he_id', $he_id);//保存生成的ID;
+
+        //设置第二步完成；
+        session('reg_step1', 1);
+
+        //显示第三步的页面；
+        $this->display();
+    }
+
+    /**
+     * 注册：第四步；操作进入第三方支付；
+     * 缴纳保证金；
+     */
+    public function regstep3()
+    {
+        //一二部完成；
+        if (session('reg_step0') !== 1) {
+            $this->redirect(U('Home/Register/regstep0'));
+        }
+        if (session('reg_step1') !== 1) {
+            $this->redirect(U('Home/Register/regstep1'));
+        }
+        //保存第三步提交的数据；
+        $he_id = session('he_id');
+        if(empty($he_id)){
+            $this->error('he_id不存在');
+        }
+        $nickname = $_REQUEST['nickname'];
+        $sex = $_REQUEST['sex'];
+        $birthday = ($_REQUEST['birth']);
+        $job = $_REQUEST['job'];
+        $edu = $_REQUEST['edu'];
+        $school = $_REQUEST['school'];
+        $major = $_REQUEST['major'];
+        $edutime = $_REQUEST['edutime'];//入学时间；
+
+        $user_data['he_nickname'] = $nickname;
+        $user_data['he_sex'] = $sex;
+        $user_data['he_birthday'] = $birthday;
+        $user_data['he_occupation'] = $job;
+        $user_data['he_topdegreee'] = $edu;
+        $user_data['he_school'] = $school;
+        $user_data['he_major'] = $major;
+        $user_data['he-grade'] = $edutime;//猎头年级，入学年份；
+
+        $model_user = M('headhunter');
+        $success = $model_user->where('he_id = ' . $he_id)->data($user_data)->save();
+
+        if($success === false){
+            $this->error('保存信息失败');
+        }
+
+        //设置第三步完成；
+        session('reg_step2', 1);
+
+        //显示第四步界面， 支付界面；
+        $this->display();
+    }
+
+    /**
+     * 注册完成页面；
+     */
+    public function regstep4(){
+        //一二三部完成；
+        if (session('reg_step0') !== 1) {
+            $this->redirect(U('Home/Register/regstep0'));
+        }
+        if (session('reg_step1') !== 1) {
+            $this->redirect(U('Home/Register/regstep1'));
+        }
+
+        if (session('reg_step2') !== 1) {
+            $this->redirect(U('Home/Register/regstep2'));
+        }
+        //处理第四步提交的信息；
+        //todo 检查支付是否完成；
+
+        //设置第四步完成, 此步骤并无必要；
+        session('reg_step3', 1);
+
+        //显示注册完成页面；
+        $this->display();
+    }
+
+/////////////////////////////////////////////////////////////////////////////
     /*处理验证码是否正确*/
     public function Verif()
     {
