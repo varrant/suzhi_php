@@ -2,7 +2,6 @@
 namespace User\Controller;
 
 use Think\Controller;
-use Vendor\Weixin\UserCommonController;
 
 
 /**
@@ -53,8 +52,9 @@ class UserController extends UserCommonController
     /**
      * 详情：个人信息；
      */
-    public function info()
+    public function pinfo()
     {
+
         $user_id = $this->login_inspect();//登录检查；
 
         //查询页面数据；
@@ -82,9 +82,16 @@ class UserController extends UserCommonController
      */
     public function order()
     {
+
         $this->display();
     }
 
+    /**
+     * 成为猎头
+     */
+    public function bcmhs(){
+        $this->display();
+    }
     /**
      * 意见反馈
      * todo

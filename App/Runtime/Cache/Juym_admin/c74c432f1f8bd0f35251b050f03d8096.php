@@ -106,7 +106,6 @@
     </ul>
   </div>
 </header>
-
 <div class="am-cf admin-main">
   <!-- sidebar start -->
   <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
@@ -132,24 +131,32 @@
       </li>
 
       <li class="admin-parent">
-        <a class="am-cf" data-am-collapse="{target: '#collapse-nav0'}"><span class="am-icon-columns"></span> 企业管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-        <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav0">
-          <li><a href="<?php echo U('Com/lists');?>" class="am-cf"><span class="am-icon-slideshare"></span>企业列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>
-        </ul>
-      </li>
-
-      <li class="admin-parent">
-          <a class="am-cf" data-am-collapse="{target: '#collapse-nav4'}"><span class="am-icon-columns"></span>订单中心<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav4'}"><span class="am-icon-columns"></span>求职者管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
           <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav4">
-              <li><a href="<?php echo U('Order/receive_list');?>" class="am-cf"><span class="am-icon-slideshare"></span>已领取<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+              <li><a href="<?php echo U('Head/qz_lists');?>" class="am-cf"><span class="am-icon-slideshare"></span>求职者列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>
           </ul>
       </li>
+
+      <!--<li class="admin-parent">-->
+        <!--<a class="am-cf" data-am-collapse="{target: '#collapse-nav0'}"><span class="am-icon-columns"></span> 企业管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>-->
+        <!--<ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav0">-->
+          <!--<li><a href="<?php echo U('Com/lists');?>" class="am-cf"><span class="am-icon-slideshare"></span>企业列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>-->
+        <!--</ul>-->
+      <!--</li>-->
+
       <li class="admin-parent">
-        <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-users"></span>管理员管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-        <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav1">
-          <li><a href="<?php echo U('Admin/Index');?>" class="am-cf"><span class="am-icon-child"></span>管理员列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>
-        </ul>
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-columns"></span>订单中心<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav5">
+              <li><a href="<?php echo U('Order/receive_list');?>" class="am-cf"><span class="am-icon-slideshare"></span>已领取<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+              <li><a href="<?php echo U('Order/enlist_list');?>" class="am-cf"><span class="am-icon-slideshare"></span>工作报名<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+          </ul>
       </li>
+      <!--<li class="admin-parent">-->
+        <!--<a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-users"></span>管理员管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>-->
+        <!--<ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav1">-->
+          <!--<li><a href="<?php echo U('Admin/Index');?>" class="am-cf"><span class="am-icon-child"></span>管理员列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>-->
+        <!--</ul>-->
+      <!--</li>-->
 
        <li class="admin-parent">
         <a class="am-cf" data-am-collapse="{target: '#collapse-nav21'}"><span class="am-icon-users"></span>选项管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
@@ -174,94 +181,80 @@
 
 <style type="text/css">
 
-.uploadifive-button {
-  float: left;
-  margin-right: 10px;
-}
-#queue {
-  margin-top: 20px;
-  border: 1px solid #E5E5E5;
-  height: 107px;
-  overflow: auto;
-  margin-bottom: 10px;
-  padding: 0 3px 3px;
-  width: 250px;
+    .uploadifive-button {
+        float: left;
+        margin-right: 10px;
+    }
+    #queue {
+        margin-top: 20px;
+        border: 1px solid #E5E5E5;
+        height: 107px;
+        overflow: auto;
+        margin-bottom: 10px;
+        padding: 0 3px 3px;
+        width: 250px;
 
-}
+    }
 </style>
-
-  <!-- content start -->
-    <!-- content start -->
-  <div class="admin-content">
+<!-- content start -->
+<!-- content start -->
+<div class="admin-content">
     <div class="admin-content-body">
-      <div class="am-cf am-padding am-padding-bottom-0">
-        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg"><?php echo ($zname); ?></strong> / <small>子栏目添加</small></div>
-      </div>
 
-      <hr/>
+        <hr/>
 
-      <div class="am-g">
-        <div class="am-u-sm-12 am-u-md-4 am-u-md-push-8">
+        <div class="am-g">
+            <div class="am-u-sm-12 am-u-md-4 am-u-md-push-8">
+            </div>
+            <div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
+                <div class="am-form am-form-horizontal" >
+
+                    <div class="am-form-group">
+                        <div id="upimg">
+                            <label for="user-name" class="am-u-sm-3 am-form-label">图片</label>
+                            <div class="am-u-sm-9">
+                                <input id="work" name="file_upload" type="file" multiple="true">
+                                <img src="" id="work_image" style="width: 130px;height: 130px;margin-top: 15px;">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="am-form-group" >
+                        <label for="user-email" class="am-u-sm-3 am-form-label">排序</label>
+                        <div class="am-u-sm-9">
+                            <input type="text" id="rl_sort" placeholder="请输入排序数字" style="width:52%"/>
+
+                        </div>
+                    </div>
+
+
+                    <div class="am-form-group">
+                        <label for="user-email" class="am-u-sm-3 am-form-label">链接</label>
+                        <div class="am-u-sm-9">
+                            <input type="text" id="rl_link" placeholder="请输入外部链接" style="width:52%"/>
+
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <div class="am-u-sm-9 am-u-sm-push-3">
+                            <div style="color: red;">排序数字越大，显示在前边</div>
+                        </div>
+                    </div>
+                    <div class="am-form-group">
+                        <div class="am-u-sm-9 am-u-sm-push-3">
+                            <button type="button" onclick="baocun()" class="am-btn am-btn-primary">保存</button>
+                            <button type="button" onclick="history.go(-1)" class="am-btn am-btn-primary">取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
-          <form class="am-form am-form-horizontal" id="form1" action="<?php echo U('Column/doaddcolumn');?>" action1="<?php echo U('Column/columnlist');?>" method="post">
-
-            <div class="am-form-group">
-              <label for="user-name" class="am-u-sm-3 am-form-label">图片上传</label>
-                <div class="am-u-sm-9">
-                 <input id="file_upload" name="file_upload" type="file" multiple="true">
-                  <a style="position: relative; top: 8px;" href="javascript:$('#file_upload').uploadifive('upload')">上传文件</a> 
-              <div style="clear:both;"></div>
-                <div id="queue"></div>
-               </div>
-            </div>
-              <div style="clear:both;"></div>
-            <div id="both"></div>
-            <div style="clear:both;"></div>
-
-            <div class="am-form-group">
-              <label for="user-name" class="am-u-sm-3 am-form-label">子栏目名字/Cate</label>
-              <div class="am-u-sm-9">
-                <input type="text" style="width:400px" id="name" name="Zname" placeholder="请输入栏目名字" required/>
-                <small></small>
-              </div>
-            </div>
-
-          <div class="am-form-group">
-            <label for="user-name" class="am-u-sm-3 am-form-label">型号/model</label>
-              <div class="am-u-sm-9">
-                <input type="text" style="width:400px" id="name" name="model" placeholder="请输入型号" required/>
-                <small></small>
-             </div>
-          </div>
-
-        <div class="am-form-group">
-          <label for="user-name" class="am-u-sm-3 am-form-label">性能/performance</label>
-            <div class="am-u-sm-9">
-              <textarea style="width:400px;height:120px" id="name" name="performance" placeholder="性能描素" required/></textarea>
-              <small></small>
-           </div>
-        </div>
-
-      
-        
-          <div class="am-form-group">
-            <label for="user-email" class="am-u-sm-3 am-form-label">描述/describe</label>
-            <div class="am-u-sm-9">
-              <textarea  id="editor_id" name="PayContent"  name="catedesc"  placeholder="简单描素"   style="width:300px;height:600px;"> <?php echo ($data[0]['catedesc']); ?>  </textarea>
-            </div>
-          </div>
-            <div class="am-form-group">
-              <div class="am-u-sm-9 am-u-sm-push-3">
-                <button type="button" id="button_a"  class="am-btn am-btn-primary">添加</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
     </div>
 
-<!--  底脚 -->
+    <!--  底脚 -->
 
     <footer class="admin-content-footer">
       <hr>
@@ -294,76 +287,68 @@
 </body>
 </html>
 
-<script type="text/javascript">
-    <?php $timestamp = time();?>
-    $(function() {
-      $('#file_upload').uploadifive({
-        'auto'             : false,
-        'checkScript'      : '<?php echo U('Upimg/checkexists');?>',
-        'formData'         : {
-        'timestamp' : '<?php echo $timestamp;?>',
-        'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
-                             },
-        'queueID'          : 'queue',
-        'uploadScript'     : "<?php echo U('Upimg/doPhoto');?>",
-        'onUploadComplete' : function(file, data) {
-         //console.log(data);
-        //alert(data);
-         //console.log(file);
-         //var url =data;
-         console.log(data);
-         
-           $('#both').append("<div class='add'><img  class='img1' src='/uploads/"+data+"'><img class='ico' src='/Public/img/ywrong.png'><input type='hidden' name='img[]' value="+data+"></div>");
-
-             //鼠标经过图片显示小图片
-          $(".add").unbind("mouseover");
-          $(".add").bind("mouseover",function(){
-             $(this).find(".ico").css("display","block");
-          });
-
-
-           //鼠标离开图片不显示显示小图片
-          $(".add").unbind("mouseout");
-          $(".add").bind("mouseout",function(){
-             $(this).find(".ico").css("display","none");
-
-          });
-          $(".ico").unbind("click");
-          $(".ico").bind('click', function(){
-
-             $(this).parent('.add').remove();
-            var img=$(this).prev(".img1").attr('src');
-            var url='<?php echo U('Properties/delImgw');?>';
-          
-            $.ajax({
-                  type:"post",
-                  url:url,
-                  data:{ 'h':img},
-                  dataType:"json",
-                  
-                  success:function(data1){
-                    
-                            
-                    $('.div_tu').css("display","none");                   
-          
-                  }
-      
-      
-                })
-
-
+    <script src="/Public/myjs/UploadPic.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function() {
+            upload("work", "work_image"); //上传证件合影
         });
+        /*
+         * id file input的id
+         * thumb 缩略图id
+         */
+        function upload(id, thumb) {
+            //上传证书
+            var u = new UploadPic();
+            u.init({
+                input: document.getElementById(id),
+                callback: function(base64, fileType) {
+                    console.log(base64);
+                    $("#" + thumb).attr("src", base64);
+                    $("#" + thumb).attr("filetype", fileType);
+                },
+                loading: function() {
+                    //say_error("等待上传...");
+                }
+            });
+        }
+
+        function baocun(){
+            var rl_image =$('#work_image').attr('src');
+            var rl_sort = $('#rl_sort').val();
+            var rl_link=$('#rl_link').val();
 
 
 
-          }
+            if(rl_image=="" || rl_image == null){
+                alert('请上传轮播图');
+                return;
+            }
 
-         
-      });
+            if(rl_sort=="" || rl_sort == null){
+                alert('排序不能为空');
+                return;
+            }
+            if(rl_link=="" || rl_link == null){
+                alert('外部链接不能为空');
+                return;
+            }
 
-    });
-      
 
- 
 
-  </script>
+            var data={'rl_image':rl_image,'rl_sort':rl_sort,'rl_link':rl_link};
+            $.ajax({
+                url:"<?php echo U('rotmap/dorotmap');?>",
+                data:data,
+                type:'post',
+                dataType:"json",
+                success:function(data){
+                    if(data.status){
+                        alert('添加成功');
+                        window.location="<?php echo U('Rotmap/lists');?>";
+                    }else{
+                        alert(data.message);
+                    }
+                }
+            });
+        }
+    </script>

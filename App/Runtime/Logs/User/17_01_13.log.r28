@@ -1,0 +1,2527 @@
+[ 2017-01-13T07:51:19+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000210s ]
+
+[ 2017-01-13T07:53:27+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000176s ]
+
+[ 2017-01-13T07:54:23+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000174s ]
+
+[ 2017-01-13T07:54:40+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi_php/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000038s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000199s ]
+
+[ 2017-01-13T07:54:50+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+
+[ 2017-01-13T07:55:06+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000179s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000034s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000180s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000200s ]
+
+[ 2017-01-13T08:00:37+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000186s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000286s ]
+
+[ 2017-01-13T08:01:30+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000207s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004913s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004950s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000247s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000267s ]
+
+[ 2017-01-13T08:22:57+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000185s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2017-01-13T09:35:23+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000185s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000230s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000248s ]
+
+[ 2017-01-13T09:41:38+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000174s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004983s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000243s ]
+
+[ 2017-01-13T09:45:33+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000177s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004898s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000209s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000228s ]
+
+[ 2017-01-13T09:46:43+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000183s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000227s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000245s ]
+
+[ 2017-01-13T09:46:50+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000257s ]
+
+[ 2017-01-13T09:47:54+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000185s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000263s ]
+
+[ 2017-01-13T09:49:27+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000185s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000237s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000257s ]
+
+[ 2017-01-13T09:50:19+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000185s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000215s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000245s ]
+
+[ 2017-01-13T10:22:28+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000204s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003916s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000277s ]
+
+[ 2017-01-13T10:24:03+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000186s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003603s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000266s ]
+
+[ 2017-01-13T10:25:14+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000186s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000255s ]
+
+[ 2017-01-13T10:31:42+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000178s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004797s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000235s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000254s ]
+
+[ 2017-01-13T10:37:07+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000186s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000257s ]
+
+[ 2017-01-13T10:39:30+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000231s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004983s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000249s ]
+
+[ 2017-01-13T10:40:46+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000202s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004675s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000200s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000227s ]
+
+[ 2017-01-13T10:41:09+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000179s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004794s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000206s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000226s ]
+
+[ 2017-01-13T10:42:25+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000188s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000262s ]
+
+[ 2017-01-13T10:43:51+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000204s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004852s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004873s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000263s ]
+
+[ 2017-01-13T15:06:35+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000185s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000268s ]
+
+[ 2017-01-13T15:06:35+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000233s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000272s ]
+
+[ 2017-01-13T15:06:36+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000184s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005374s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000292s ]
+
+[ 2017-01-13T15:15:00+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000237s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000257s ]
+
+[ 2017-01-13T15:15:23+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007877s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000371s ]
+
+[ 2017-01-13T15:18:51+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000226s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004968s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000265s ]
+
+[ 2017-01-13T15:19:13+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000223s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000247s ]
+
+[ 2017-01-13T15:22:22+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000177s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004857s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000271s ]
+
+[ 2017-01-13T15:23:59+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004765s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004783s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000197s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000215s ]
+
+[ 2017-01-13T15:24:23+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=regcmt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] Undefined index: job /mnt/uui/workspace/www/suzhi/App/User/Controller/RegisterController.class.php 第 39 行.
+
+[ 2017-01-13T15:26:46+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=regcmt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000200s ]
+NOTIC: [8] Undefined index: job /mnt/uui/workspace/www/suzhi/App/User/Controller/RegisterController.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000067s ]
+
+[ 2017-01-13T15:27:20+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=regcmt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000200s ]
+NOTIC: [8] Undefined index: job /mnt/uui/workspace/www/suzhi/App/User/Controller/RegisterController.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000043s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+
+[ 2017-01-13T15:31:00+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=regcmt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: sex /mnt/uui/workspace/www/suzhi/App/User/Controller/RegisterController.class.php 第 38 行.
+NOTIC: [8] Undefined index: job /mnt/uui/workspace/www/suzhi/App/User/Controller/RegisterController.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000016s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000034s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002121s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000066s ]
+
+[ 2017-01-13T15:31:22+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=regcmt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined index: job /mnt/uui/workspace/www/suzhi/App/User/Controller/RegisterController.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000047s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000100s ]
+
+[ 2017-01-13T15:31:56+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=regcmt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000202s ]
+NOTIC: [8] Undefined index: job /mnt/uui/workspace/www/suzhi/App/User/Controller/RegisterController.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+
+[ 2017-01-13T15:32:09+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000228s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000245s ]
+
+[ 2017-01-13T15:32:51+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=regcmt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000079s ]
+
+[ 2017-01-13T15:33:19+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=regcmt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000201s ]
+
+[ 2017-01-13T15:34:05+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=regcmt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000208s ]
+ERR: SQLSTATE[28000] [1045] Access denied for user 'root'@'122.233.161.252' (using password: YES)
+
+[ 2017-01-13T15:34:11+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=regcmt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000227s ]
+ERR: SQLSTATE[28000] [1045] Access denied for user 'root'@'122.233.161.252' (using password: YES)
+
+[ 2017-01-13T15:34:13+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=regcmt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000218s ]
+ERR: SQLSTATE[28000] [1045] Access denied for user 'root'@'122.233.161.252' (using password: YES)
+
+[ 2017-01-13T15:34:37+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=regcmt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000220s ]
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0114s ]
+SQL: UPDATE `sz_code` SET `cod_used`='1' WHERE `cod_phone` = 18563956326 AND `cod_code` = 123123 AND `cod_used` = 0 [ RunTime:0.0141s ]
+
+[ 2017-01-13T15:35:11+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=regcmt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000203s ]
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0130s ]
+SQL: UPDATE `sz_code` SET `cod_used`='1' WHERE `cod_phone` = 18563956326 AND `cod_code` = 123123 AND `cod_used` = 0 [ RunTime:0.0118s ]
+
+[ 2017-01-13T15:35:30+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=regcmt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000220s ]
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0106s ]
+SQL: UPDATE `sz_code` SET `cod_used`='1' WHERE `cod_phone` = 18563956326 AND `cod_code` = 123123 AND `cod_used` = 0 [ RunTime:0.0108s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000037s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002490s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000067s ]
+
+[ 2017-01-13T15:36:04+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=regcmt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000232s ]
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0111s ]
+SQL: UPDATE `sz_code` SET `cod_used`='1' WHERE `cod_phone` = 18253567931 AND `cod_code` = 0 AND `cod_used` = 0 [ RunTime:0.0109s ]
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE `he_phone` = 18253567931 LIMIT 1   [ RunTime:0.0113s ]
+SQL: INSERT INTO `sz_headhunter` (`he_phone`,`he_nickname`,`he_sex`,`he_name`,`he_type`) VALUES ('18253567931','nickname','0','17187829719','2') [ RunTime:0.0170s ]
+
+[ 2017-01-13T15:38:49+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=regcmt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000237s ]
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0084s ]
+SQL: UPDATE `sz_code` SET `cod_used`='1' WHERE `cod_phone` = 18253567931 AND `cod_code` = 0 AND `cod_used` = 0 [ RunTime:0.0104s ]
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE `he_phone` = 18253567931 LIMIT 1   [ RunTime:0.0124s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000038s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002447s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000086s ]
+
+[ 2017-01-13T15:39:12+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=regcmt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000204s ]
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0148s ]
+SQL: UPDATE `sz_code` SET `cod_used`='1' WHERE `cod_phone` = 18563956326 AND `cod_code` = 123123 AND `cod_used` = 0 [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE `he_phone` = 18563956326 LIMIT 1   [ RunTime:0.0140s ]
+SQL: INSERT INTO `sz_headhunter` (`he_phone`,`he_nickname`,`he_sex`,`he_name`,`he_type`) VALUES ('18563956326','nickname','0','17187829719','2') [ RunTime:0.0166s ]
+NOTIC: [8] Undefined variable: module /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 990 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000039s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002416s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000196s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000213s ]
+
+[ 2017-01-13T15:39:37+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=regcmt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000225s ]
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0101s ]
+SQL: UPDATE `sz_code` SET `cod_used`='1' WHERE `cod_phone` = 18563956326 AND `cod_code` = 123123 AND `cod_used` = 0 [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE `he_phone` = 18563956326 LIMIT 1   [ RunTime:0.0104s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000038s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
+
+[ 2017-01-13T15:40:08+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=regcmt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000181s ]
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0115s ]
+SQL: UPDATE `sz_code` SET `cod_used`='1' WHERE `cod_phone` = 18253567938 AND `cod_code` = 123123 AND `cod_used` = 0 [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE `he_phone` = 18253567938 LIMIT 1   [ RunTime:0.0117s ]
+SQL: INSERT INTO `sz_headhunter` (`he_phone`,`he_nickname`,`he_sex`,`he_name`,`he_type`) VALUES ('18253567938','nickname','0','demo','2') [ RunTime:0.0151s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000039s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000181s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000197s ]
+
+[ 2017-01-13T15:40:09+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000236s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000038s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000194s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000213s ]
+
+[ 2017-01-13T15:42:56+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000038s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002208s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000161s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000175s ]
+
+[ 2017-01-13T15:45:32+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000038s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000167s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000182s ]
+
+[ 2017-01-13T16:07:56+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000181s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000196s ]
+
+[ 2017-01-13T16:08:03+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=sendvcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+ERR: 非法操作:sendvcode
+
+[ 2017-01-13T16:09:52+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000047s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000181s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000197s ]
+
+[ 2017-01-13T16:09:59+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=smsvcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+ERR: Think\Controller:tel_not_register方法不存在！
+
+[ 2017-01-13T16:11:50+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=smsvcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE `he_phone` = '18253567931' LIMIT 1   [ RunTime:0.0119s ]
+
+[ 2017-01-13T16:13:18+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000181s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000197s ]
+
+[ 2017-01-13T16:13:26+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=smsvcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE `he_phone` = '18253567931' LIMIT 1   [ RunTime:0.0125s ]
+
+[ 2017-01-13T16:15:10+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002273s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000189s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000206s ]
+
+[ 2017-01-13T16:15:18+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=smsvcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000216s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE `he_phone` = '18253567931' LIMIT 1   [ RunTime:0.0100s ]
+NOTIC: [2] include_once(./CCPRestSmsSDK.php): failed to open stream: No such file or directory /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+NOTIC: [2] include_once(): Failed opening './CCPRestSmsSDK.php' for inclusion (include_path='.:/usr/local/lib/php') /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+NOTIC: [8] Undefined variable: result /mnt/uui/workspace/www/suzhi/App/User/Controller/UserCommonController.class.php 第 94 行.
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0098s ]
+
+[ 2017-01-13T16:15:38+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=smsvcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE `he_phone` = '18253567931' LIMIT 1   [ RunTime:0.0121s ]
+NOTIC: [2] include_once(./CCPRestSmsSDK.php): failed to open stream: No such file or directory /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+NOTIC: [2] include_once(): Failed opening './CCPRestSmsSDK.php' for inclusion (include_path='.:/usr/local/lib/php') /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+NOTIC: [8] Undefined variable: result /mnt/uui/workspace/www/suzhi/App/User/Controller/UserCommonController.class.php 第 94 行.
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0118s ]
+SQL: INSERT INTO `sz_code` (`cod_code`,`cod_phone`,`cod_time`) VALUES ('7949','18253567931','1484295338') [ RunTime:0.0163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2017-01-13T16:16:11+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=smsvcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000204s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE `he_phone` = '18253567931' LIMIT 1   [ RunTime:0.0112s ]
+NOTIC: [2] include_once(./CCPRestSmsSDK.php): failed to open stream: No such file or directory /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+NOTIC: [2] include_once(): Failed opening './CCPRestSmsSDK.php' for inclusion (include_path='.:/usr/local/lib/php') /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+NOTIC: [8] Undefined variable: result /mnt/uui/workspace/www/suzhi/App/User/Controller/UserCommonController.class.php 第 94 行.
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0118s ]
+SQL: INSERT INTO `sz_code` (`cod_code`,`cod_phone`,`cod_time`) VALUES ('1696','18253567931','1484295371') [ RunTime:0.0144s ]
+
+[ 2017-01-13T16:16:56+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=smsvcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000233s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE `he_phone` = '18253567931' LIMIT 1   [ RunTime:0.0130s ]
+NOTIC: [2] include_once(./CCPRestSmsSDK.php): failed to open stream: No such file or directory /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+NOTIC: [2] include_once(): Failed opening './CCPRestSmsSDK.php' for inclusion (include_path='.:/usr/local/lib/php') /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+
+[ 2017-01-13T16:18:12+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=smsvcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE `he_phone` = '18253567931' LIMIT 1   [ RunTime:0.0119s ]
+NOTIC: [2] include_once(./CCPRestSmsSDK.php): failed to open stream: No such file or directory /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+NOTIC: [2] include_once(): Failed opening './CCPRestSmsSDK.php' for inclusion (include_path='.:/usr/local/lib/php') /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+
+[ 2017-01-13T16:18:59+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=smsvcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE `he_phone` = '18253567931' LIMIT 1   [ RunTime:0.0110s ]
+NOTIC: [2] include_once(./CCPRestSmsSDK.php): failed to open stream: No such file or directory /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+NOTIC: [2] include_once(): Failed opening './CCPRestSmsSDK.php' for inclusion (include_path='.:/usr/local/lib/php') /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+
+[ 2017-01-13T16:21:24+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=smsvcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000175s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE `he_phone` = '18253567931' LIMIT 1   [ RunTime:0.0094s ]
+NOTIC: [2] include_once(./CCPRestSmsSDK.php): failed to open stream: No such file or directory /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+NOTIC: [2] include_once(): Failed opening './CCPRestSmsSDK.php' for inclusion (include_path='.:/usr/local/lib/php') /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+
+[ 2017-01-13T16:22:39+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=smsvcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE `he_phone` = '18253567931' LIMIT 1   [ RunTime:0.0088s ]
+NOTIC: [2] include_once(./CCPRestSmsSDK.php): failed to open stream: No such file or directory /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+NOTIC: [2] include_once(): Failed opening './CCPRestSmsSDK.php' for inclusion (include_path='.:/usr/local/lib/php') /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0097s ]
+SQL: INSERT INTO `sz_code` (`cod_code`,`cod_phone`,`cod_time`) VALUES ('912','18253567931','1484295759') [ RunTime:0.0142s ]
+
+[ 2017-01-13T16:22:46+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=smsvcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE `he_phone` = '18253567931' LIMIT 1   [ RunTime:0.0113s ]
+NOTIC: [2] include_once(./CCPRestSmsSDK.php): failed to open stream: No such file or directory /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+NOTIC: [2] include_once(): Failed opening './CCPRestSmsSDK.php' for inclusion (include_path='.:/usr/local/lib/php') /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0115s ]
+SQL: INSERT INTO `sz_code` (`cod_code`,`cod_phone`,`cod_time`) VALUES ('7878','18253567931','1484295766') [ RunTime:0.0214s ]
+
+[ 2017-01-13T16:23:11+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=smsvcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE `he_phone` = '18253567931' LIMIT 1   [ RunTime:0.0129s ]
+NOTIC: [2] include_once(./CCPRestSmsSDK.php): failed to open stream: No such file or directory /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+NOTIC: [2] include_once(): Failed opening './CCPRestSmsSDK.php' for inclusion (include_path='.:/usr/local/lib/php') /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0106s ]
+SQL: INSERT INTO `sz_code` (`cod_code`,`cod_phone`,`cod_time`) VALUES ('3298','18253567931','1484295791') [ RunTime:0.0149s ]
+
+[ 2017-01-13T16:23:23+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0127s ]
+SQL: SELECT `he_id`,`he_type`,`he_phone`,`he_is_delete` FROM `sz_headhunter` WHERE `he_phone` = '18253567931'  [ RunTime:0.0126s ]
+NOTIC: [8] Undefined index: he_is_delete /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 60 行.
+NOTIC: [8] Undefined index: he_type /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 64 行.
+
+[ 2017-01-13T16:27:19+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0117s ]
+SQL: SELECT `he_id`,`he_type`,`he_phone`,`he_is_delete` FROM `sz_headhunter` WHERE `he_phone` = '18253567931'  [ RunTime:0.0112s ]
+NOTIC: [8] Undefined index: he_is_delete /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 60 行.
+NOTIC: [8] Undefined index: he_type /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0104s ]
+SQL: UPDATE `sz_code` SET `cod_used`='1' WHERE `cod_code` = 3298 AND `cod_used` = 0 [ RunTime:0.0136s ]
+NOTIC: [8] Undefined index: he_id /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 88 行.
+
+[ 2017-01-13T16:27:29+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0124s ]
+SQL: SELECT `he_id`,`he_type`,`he_phone`,`he_is_delete` FROM `sz_headhunter` WHERE `he_phone` = '18253567931'  [ RunTime:0.0124s ]
+NOTIC: [8] Undefined index: he_is_delete /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 60 行.
+NOTIC: [8] Undefined index: he_type /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0120s ]
+SQL: UPDATE `sz_code` SET `cod_used`='1' WHERE `cod_code` = 3298 AND `cod_used` = 0 [ RunTime:0.0118s ]
+
+[ 2017-01-13T16:29:21+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000175s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0101s ]
+SQL: SELECT `he_id`,`he_type`,`he_phone`,`he_is_delete` FROM `sz_headhunter` WHERE `he_phone` = '18253567931'  [ RunTime:0.0117s ]
+NOTIC: [8] Undefined index: he_is_delete /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 60 行.
+NOTIC: [8] Undefined index: he_type /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0114s ]
+SQL: UPDATE `sz_code` SET `cod_used`='1' WHERE `cod_code` = 3298 AND `cod_used` = 0 [ RunTime:0.0152s ]
+NOTIC: [8] Undefined index: he_id /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 88 行.
+
+[ 2017-01-13T16:29:27+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002232s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000201s ]
+
+[ 2017-01-13T16:29:54+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=smsvcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE `he_phone` = '18253567931' LIMIT 1   [ RunTime:0.0140s ]
+NOTIC: [2] include_once(./CCPRestSmsSDK.php): failed to open stream: No such file or directory /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+NOTIC: [2] include_once(): Failed opening './CCPRestSmsSDK.php' for inclusion (include_path='.:/usr/local/lib/php') /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0129s ]
+SQL: INSERT INTO `sz_code` (`cod_code`,`cod_phone`,`cod_time`) VALUES ('9224','18253567931','1484296194') [ RunTime:0.0191s ]
+
+[ 2017-01-13T16:30:11+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0118s ]
+SQL: SELECT `he_id`,`he_type`,`he_phone`,`he_is_delete` FROM `sz_headhunter` WHERE `he_phone` = '18253567931'  [ RunTime:0.0118s ]
+NOTIC: [8] Undefined index: he_is_delete /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 60 行.
+NOTIC: [8] Undefined index: he_type /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0116s ]
+SQL: UPDATE `sz_code` SET `cod_used`='1' WHERE `cod_code` = 9224 AND `cod_used` = 0 [ RunTime:0.0129s ]
+NOTIC: [8] Undefined index: he_id /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 88 行.
+
+[ 2017-01-13T16:30:48+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0112s ]
+SQL: SELECT `he_id`,`he_type`,`he_phone`,`he_is_delete` FROM `sz_headhunter` WHERE `he_phone` = '18253567931'  [ RunTime:0.0109s ]
+NOTIC: [8] Undefined index: he_is_delete /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 60 行.
+NOTIC: [8] Undefined index: he_type /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0104s ]
+SQL: UPDATE `sz_code` SET `cod_used`='1' WHERE `cod_code` = 9224 AND `cod_used` = 0 [ RunTime:0.0093s ]
+
+[ 2017-01-13T16:31:07+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000041s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002249s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000178s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000193s ]
+
+[ 2017-01-13T16:31:16+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=smsvcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE `he_phone` = '18253567931' LIMIT 1   [ RunTime:0.0100s ]
+NOTIC: [2] include_once(./CCPRestSmsSDK.php): failed to open stream: No such file or directory /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+NOTIC: [2] include_once(): Failed opening './CCPRestSmsSDK.php' for inclusion (include_path='.:/usr/local/lib/php') /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0118s ]
+SQL: INSERT INTO `sz_code` (`cod_code`,`cod_phone`,`cod_time`) VALUES ('3498','18253567931','1484296276') [ RunTime:0.0143s ]
+
+[ 2017-01-13T16:31:43+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0123s ]
+SQL: SELECT `he_id`,`he_type`,`he_phone`,`he_is_delete` FROM `sz_headhunter` WHERE `he_phone` = '18253567931'  [ RunTime:0.0121s ]
+NOTIC: [8] Undefined index: he_is_delete /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 60 行.
+NOTIC: [8] Undefined index: he_type /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0103s ]
+SQL: UPDATE `sz_code` SET `cod_used`='1' WHERE `cod_code` = 3498 AND `cod_used` = 0 [ RunTime:0.0134s ]
+NOTIC: [8] Undefined index: he_id /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 88 行.
+
+[ 2017-01-13T16:32:04+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0126s ]
+SQL: SELECT `he_id`,`he_type`,`he_phone`,`he_is_delete` FROM `sz_headhunter` WHERE `he_phone` = '18253567931'  [ RunTime:0.0124s ]
+NOTIC: [8] Undefined index: he_is_delete /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 60 行.
+NOTIC: [8] Undefined index: he_type /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0132s ]
+SQL: UPDATE `sz_code` SET `cod_used`='1' WHERE `cod_code` = 3498 AND `cod_used` = 0 [ RunTime:0.0097s ]
+
+[ 2017-01-13T16:32:06+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0129s ]
+SQL: SELECT `he_id`,`he_type`,`he_phone`,`he_is_delete` FROM `sz_headhunter` WHERE `he_phone` = '18253567931'  [ RunTime:0.0117s ]
+NOTIC: [8] Undefined index: he_is_delete /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 60 行.
+NOTIC: [8] Undefined index: he_type /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0114s ]
+SQL: UPDATE `sz_code` SET `cod_used`='1' WHERE `cod_code` = 3498 AND `cod_used` = 0 [ RunTime:0.0110s ]
+
+[ 2017-01-13T16:32:22+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0119s ]
+SQL: SELECT `he_id`,`he_type`,`he_phone`,`he_is_delete` FROM `sz_headhunter` WHERE `he_phone` = '18253567931'  [ RunTime:0.0104s ]
+NOTIC: [8] Undefined index: he_is_delete /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 60 行.
+NOTIC: [8] Undefined index: he_type /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0112s ]
+SQL: UPDATE `sz_code` SET `cod_used`='1' WHERE `cod_code` = 3498 AND `cod_used` = 0 [ RunTime:0.0146s ]
+NOTIC: [8] Undefined index: he_id /mnt/uui/workspace/www/suzhi/App/User/Controller/LoginController.class.php 第 88 行.
+
+[ 2017-01-13T16:32:22+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000203s ]
+
+[ 2017-01-13T16:32:51+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0096s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `sz_headhunter` WHERE ( he_id =  ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `sz_headhunter` WHERE ( he_id =  ) LIMIT 1  
+
+[ 2017-01-13T16:34:59+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+
+[ 2017-01-13T16:36:25+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=smsvcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE `he_phone` = '18253567931' LIMIT 1   [ RunTime:0.0134s ]
+NOTIC: [2] include_once(./CCPRestSmsSDK.php): failed to open stream: No such file or directory /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+NOTIC: [2] include_once(): Failed opening './CCPRestSmsSDK.php' for inclusion (include_path='.:/usr/local/lib/php') /mnt/uui/workspace/www/suzhi/ThinkPHP/Library/Org/Util/Im2.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0102s ]
+SQL: INSERT INTO `sz_code` (`cod_code`,`cod_phone`,`cod_time`) VALUES ('1628','18253567931','1484296585') [ RunTime:0.0147s ]
+
+[ 2017-01-13T16:36:41+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000203s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0124s ]
+SQL: SELECT `he_id`,`he_type`,`he_phone`,`he_is_delete` FROM `sz_headhunter` WHERE `he_phone` = '18253567931' LIMIT 1   [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `sz_code` [ RunTime:0.0118s ]
+SQL: UPDATE `sz_code` SET `cod_used`='1' WHERE `cod_code` = 1628 AND `cod_used` = 0 [ RunTime:0.0153s ]
+
+[ 2017-01-13T16:36:41+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE ( he_id = 123 ) LIMIT 1   [ RunTime:0.0124s ]
+ERR: 模板不存在:./App/User/View/User/index.html
+
+[ 2017-01-13T16:45:14+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE ( he_id = 123 ) LIMIT 1   [ RunTime:0.0124s ]
+ERR: 模板不存在:./App/User/View/User/index.html
+
+[ 2017-01-13T16:47:26+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE ( he_id = 123 ) LIMIT 1   [ RunTime:0.0138s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000041s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002603s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000181s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000197s ]
+
+[ 2017-01-13T16:48:12+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE ( he_id = 123 ) LIMIT 1   [ RunTime:0.0118s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000187s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000203s ]
+
+[ 2017-01-13T16:48:53+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE ( he_id = 123 ) LIMIT 1   [ RunTime:0.0134s ]
+
+[ 2017-01-13T16:56:47+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE ( he_id = 123 ) LIMIT 1   [ RunTime:0.0125s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002659s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002682s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000191s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000207s ]
+
+[ 2017-01-13T16:58:54+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000175s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE ( he_id = 123 ) LIMIT 1   [ RunTime:0.0117s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
+NOTIC: [8] Undefined index: he_image_link /mnt/uui/workspace/www/suzhi/App/Runtime/Cache/User/888bc6f88209354132f9710748dc122c.php 第 25 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002794s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000193s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000209s ]
+
+[ 2017-01-13T16:59:33+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE ( he_id = 123 ) LIMIT 1   [ RunTime:0.0103s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000041s ]
+NOTIC: [8] Undefined index: he_image_link /mnt/uui/workspace/www/suzhi/App/Runtime/Cache/User/888bc6f88209354132f9710748dc122c.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000190s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000207s ]
+
+[ 2017-01-13T17:08:11+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE ( he_id = 123 ) LIMIT 1   [ RunTime:0.0127s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000040s ]
+NOTIC: [8] Undefined index: he_image_link /mnt/uui/workspace/www/suzhi/App/Runtime/Cache/User/888bc6f88209354132f9710748dc122c.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000209s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000225s ]
+
+[ 2017-01-13T17:08:21+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+ERR: 模板不存在:./App/User/View/User/order.html
+
+[ 2017-01-13T17:08:30+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000188s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Undefined variable: module /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2017-01-13T17:08:30+08:00 ] 192.168.3.12 /index.php?m=&&m=User&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000038s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000174s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000190s ]
+
+[ 2017-01-13T17:09:02+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE ( he_id = 123 ) LIMIT 1   [ RunTime:0.0103s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000040s ]
+NOTIC: [8] Undefined index: he_image_link /mnt/uui/workspace/www/suzhi/App/Runtime/Cache/User/888bc6f88209354132f9710748dc122c.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002676s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000173s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000188s ]
+
+[ 2017-01-13T17:09:03+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE ( he_id = 123 ) LIMIT 1   [ RunTime:0.0125s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
+NOTIC: [8] Undefined index: he_image_link /mnt/uui/workspace/www/suzhi/App/Runtime/Cache/User/888bc6f88209354132f9710748dc122c.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000176s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000193s ]
+
+[ 2017-01-13T17:09:05+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE ( he_id = 123 ) LIMIT 1   [ RunTime:0.0093s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000039s ]
+NOTIC: [8] Undefined index: he_image_link /mnt/uui/workspace/www/suzhi/App/Runtime/Cache/User/888bc6f88209354132f9710748dc122c.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002709s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000174s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000188s ]
+
+[ 2017-01-13T17:09:40+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=feedback
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+ERR: 模板不存在:./App/User/View/User/feedback.html
+
+[ 2017-01-13T17:11:07+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=bcmhs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+ERR: 模板不存在:./App/User/View/User/bcmhs.html
+
+[ 2017-01-13T17:11:13+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=bcmhs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+ERR: 模板不存在:./App/User/View/User/bcmhs.html
+
+[ 2017-01-13T17:11:17+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=bcmhs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+ERR: 模板不存在:./App/User/View/User/bcmhs.html
+
+[ 2017-01-13T17:11:40+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE ( he_id = 123 ) LIMIT 1   [ RunTime:0.0111s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000037s ]
+NOTIC: [8] Undefined index: he_image_link /mnt/uui/workspace/www/suzhi/App/Runtime/Cache/User/888bc6f88209354132f9710748dc122c.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000230s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000249s ]
+
+[ 2017-01-13T17:11:42+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=resume
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+ERR: 模板不存在:./App/User/View/User/resume.html
+
+[ 2017-01-13T17:14:25+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=resume
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000175s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000014s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000032s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000200s ]
+
+[ 2017-01-13T17:16:35+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=resume
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000201s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000015s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000035s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000173s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000189s ]
+
+[ 2017-01-13T17:16:40+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=feedback
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+ERR: 模板不存在:./App/User/View/User/feedback.html
+
+[ 2017-01-13T17:16:45+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=bcmhs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+ERR: 模板不存在:./App/User/View/User/bcmhs.html
+
+[ 2017-01-13T17:16:48+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=resume
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000196s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000014s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000032s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001714s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000166s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000182s ]
+
+[ 2017-01-13T17:17:24+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=feedback
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000218s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+ERR: 模板不存在:./App/User/View/User/feedback.html
+
+[ 2017-01-13T17:18:51+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=feedback
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+ERR: 模板不存在:./App/User/View/User/feedback.html
+
+[ 2017-01-13T17:20:59+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000232s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000040s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000196s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000215s ]
+
+[ 2017-01-13T17:22:11+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000015s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000034s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001747s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000167s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000182s ]
+
+[ 2017-01-13T17:22:16+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=resume
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000179s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000204s ]
+
+[ 2017-01-13T17:22:18+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=bcmhs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+ERR: 模板不存在:./App/User/View/User/bcmhs.html
+
+[ 2017-01-13T17:22:22+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=feedback
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+ERR: 模板不存在:./App/User/View/User/feedback.html
+
+[ 2017-01-13T17:22:26+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Undefined variable: module /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2017-01-13T17:22:26+08:00 ] 192.168.3.12 /index.php?m=&&m=User&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000042s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000229s ]
+
+[ 2017-01-13T17:27:35+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE ( he_id = 123 ) LIMIT 1   [ RunTime:0.0121s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000040s ]
+NOTIC: [8] Undefined index: he_image_link /mnt/uui/workspace/www/suzhi/App/Runtime/Cache/User/888bc6f88209354132f9710748dc122c.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000180s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000196s ]
+
+[ 2017-01-13T17:27:36+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000204s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Undefined variable: module /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2017-01-13T17:27:36+08:00 ] 192.168.3.12 /index.php?m=&&m=User&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000201s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002455s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000176s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000192s ]
+
+[ 2017-01-13T17:27:44+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+NOTIC: [8] Undefined variable: module /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2017-01-13T17:27:44+08:00 ] 192.168.3.12 /index.php?m=&&m=User&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000237s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000039s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002265s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000238s ]
+
+[ 2017-01-13T17:30:16+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+
+[ 2017-01-13T17:35:00+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE ( he_id = 123 ) LIMIT 1   [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003150s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000180s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000196s ]
+
+[ 2017-01-13T17:35:54+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE ( he_id = 123 ) LIMIT 1   [ RunTime:0.0114s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+NOTIC: [8] Undefined index: nickname /mnt/uui/workspace/www/suzhi/App/Runtime/Cache/User/997d07f480a2d52a8642542e95f3a08e.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003056s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000237s ]
+
+[ 2017-01-13T17:36:12+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000190s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE ( he_id = 123 ) LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+NOTIC: [8] Undefined index: nickname /mnt/uui/workspace/www/suzhi/App/Runtime/Cache/User/997d07f480a2d52a8642542e95f3a08e.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000190s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000205s ]
+
+[ 2017-01-13T17:36:14+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE ( he_id = 123 ) LIMIT 1   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+NOTIC: [8] Undefined index: nickname /mnt/uui/workspace/www/suzhi/App/Runtime/Cache/User/997d07f480a2d52a8642542e95f3a08e.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000192s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000218s ]
+
+[ 2017-01-13T17:36:29+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000191s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE ( he_id = 123 ) LIMIT 1   [ RunTime:0.0122s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000189s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000205s ]
+
+[ 2017-01-13T17:47:32+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE ( he_id = 123 ) LIMIT 1   [ RunTime:0.0133s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000047s ]
+NOTIC: [8] Undefined index: job /mnt/uui/workspace/www/suzhi/App/Runtime/Cache/User/997d07f480a2d52a8642542e95f3a08e.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000210s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000226s ]
+
+[ 2017-01-13T17:47:52+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE ( he_id = 123 ) LIMIT 1   [ RunTime:0.0122s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+NOTIC: [8] Undefined index: job /mnt/uui/workspace/www/suzhi/App/Runtime/Cache/User/997d07f480a2d52a8642542e95f3a08e.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003498s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000182s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000199s ]
+
+[ 2017-01-13T17:47:58+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE ( he_id = 123 ) LIMIT 1   [ RunTime:0.0129s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+NOTIC: [8] Undefined index: job /mnt/uui/workspace/www/suzhi/App/Runtime/Cache/User/997d07f480a2d52a8642542e95f3a08e.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003212s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000190s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000206s ]
+
+[ 2017-01-13T17:48:26+08:00 ] 192.168.3.12 /index.php?m=User&c=User&a=info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi/ThinkPHP/Common/functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `sz_headhunter` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `sz_headhunter` WHERE ( he_id = 123 ) LIMIT 1   [ RunTime:0.0107s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+NOTIC: [8] Undefined index: job /mnt/uui/workspace/www/suzhi/App/Runtime/Cache/User/997d07f480a2d52a8642542e95f3a08e.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003358s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000194s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000211s ]
+

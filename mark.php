@@ -1,1 +1,3 @@
-adfadfasdfasdfads
+<?php
+var_dump($_SERVER);
+?>

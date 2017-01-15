@@ -47,9 +47,11 @@ class TaskController extends Controller {
         $res=$dbs->where($arr)->find();
         $db=M('poscha');
         $data=$db->where($where)->find();
-        $data['total_liulan']=(int)$data['pos_liuan']+(int)$data['pos_true_liulan'];
+        $data['total_liulan']=(int)$data['pos_liuan']+(int)$data['pos_true_liulan'] + 1;
         $data['total_toudi']=(int)$data['pos_toudi']+(int)$data['pos_true_toudi'];
-        if($res){
+        $array['pos_true_liulan']=$data['pos_true_liulan'] + 1;
+        $sbs=$db->where($where)->save($array);
+        if($res && $sbs){
             $data['ord_id']=$res['ord_id'];
             $this->assign('data',$data);
             $this->display('/task/tast_detail_receive');

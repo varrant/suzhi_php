@@ -1,0 +1,1366 @@
+[ 2017-01-13T07:51:19+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000210s ]
+
+[ 2017-01-13T07:53:27+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000176s ]
+
+[ 2017-01-13T07:54:23+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000174s ]
+
+[ 2017-01-13T07:54:40+08:00 ] 192.168.3.12 /index.php?m=User&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /mnt/uui/workspace/www/suzhi_php/ThinkPHP/Common/functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000038s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000199s ]
+
+[ 2017-01-13T07:54:50+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+
+[ 2017-01-13T07:55:06+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000179s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000034s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000180s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000200s ]
+
+[ 2017-01-13T08:00:37+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000186s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000286s ]
+
+[ 2017-01-13T08:01:30+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000207s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004913s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004950s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000247s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000267s ]
+
+[ 2017-01-13T08:22:57+08:00 ] 192.168.3.12 /index.php?m=User&c=Register&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000185s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2017-01-13T09:38:47+08:00 ] 127.0.0.1 /index.php/user/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2017-01-13T09:40:06+08:00 ] 127.0.0.1 /index.php/user/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T09:40:58+08:00 ] 127.0.0.1 /index.php/user/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_role` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sz_role`  [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.3620s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_is_delete` = 1 AND `pos_isindex` = 2  [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T09:43:08+08:00 ] 127.0.0.1 /index.php/user/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_role` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `sz_role`  [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_is_delete` = 1 AND `pos_isindex` = 2  [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T09:43:12+08:00 ] 127.0.0.1 /index.php/user/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_role` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sz_role`  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_is_delete` = 1 AND `pos_isindex` = 2  [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T09:44:12+08:00 ] 127.0.0.1 /index.php/user/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_role` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_role`  [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_is_delete` = 1 AND `pos_isindex` = 2  [ RunTime:0.0150s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T09:46:18+08:00 ] 127.0.0.1 /index.php/user/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_role` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sz_role`  [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_is_delete` = 1 AND `pos_isindex` = 2  [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T09:46:25+08:00 ] 127.0.0.1 /index.php/user/task/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Task
+
+[ 2017-01-13T09:46:53+08:00 ] 127.0.0.1 /index.php/user/task/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: pos_task_type D:\suzhi\suzhi_php\App\User\Controller\TaskController.class.php 第 14 行.
+SQL: SELECT * FROM `sz_poscha` LIMIT 0,2   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T09:47:02+08:00 ] 127.0.0.1 /index.php?m=User&c=task&a=details&pos_id=56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_poschaid` = 56 AND `ord_headh` = 119 AND `ord_status` = 1 LIMIT 1   [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 56 LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 7 LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 3 LIMIT 1   [ RunTime:0.0120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-13T09:47:31+08:00 ] 127.0.0.1 /index.php?m=User&c=task&a=lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_task_type` = 2 LIMIT 0,2   [ RunTime:0.0150s ]
+
+[ 2017-01-13T09:47:40+08:00 ] 127.0.0.1 /index.php?m=User&c=task&a=lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_task_type` = 3 LIMIT 0,2   [ RunTime:0.0160s ]
+
+[ 2017-01-13T09:47:45+08:00 ] 127.0.0.1 /index.php?m=User&c=task&a=lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.3090s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_task_type` = 2 LIMIT 0,2   [ RunTime:0.0110s ]
+
+[ 2017-01-13T09:48:16+08:00 ] 127.0.0.1 /index.php/user/task/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0150s ]
+NOTIC: [8] Undefined index: pos_task_type D:\suzhi\suzhi_php\App\User\Controller\TaskController.class.php 第 14 行.
+SQL: SELECT * FROM `sz_poscha` LIMIT 0,2   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T09:48:20+08:00 ] 127.0.0.1 /index.php?m=User&c=task&a=lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_task_type` = 2 LIMIT 0,2   [ RunTime:0.0120s ]
+
+[ 2017-01-13T09:48:22+08:00 ] 127.0.0.1 /index.php?m=User&c=task&a=lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_task_type` = 3 LIMIT 0,2   [ RunTime:0.0110s ]
+
+[ 2017-01-13T09:48:28+08:00 ] 127.0.0.1 /index.php?m=User&c=task&a=lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.2670s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_task_type` = 2 LIMIT 0,2   [ RunTime:0.0130s ]
+
+[ 2017-01-13T09:48:29+08:00 ] 127.0.0.1 /index.php?m=User&c=task&a=lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_task_type` = 1 LIMIT 0,2   [ RunTime:0.0110s ]
+
+[ 2017-01-13T09:55:37+08:00 ] 127.0.0.1 /index.php/user/task/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: pos_task_type D:\suzhi\suzhi_php\App\User\Controller\TaskController.class.php 第 14 行.
+SQL: SELECT * FROM `sz_poscha` LIMIT 0,2   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T09:55:42+08:00 ] 127.0.0.1 /index.php?m=User&c=task&a=lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_task_type` = 2 LIMIT 0,2   [ RunTime:0.0110s ]
+
+[ 2017-01-13T09:55:43+08:00 ] 127.0.0.1 /index.php/user/task/details?pos_id=59
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_poschaid` = 59 AND `ord_headh` = 119 AND `ord_status` = 1 LIMIT 1   [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 59 LIMIT 1   [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 7 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 5 LIMIT 1   [ RunTime:0.0110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-13T09:55:47+08:00 ] 127.0.0.1 /index.php?m=User&c=task&a=details&pos_id=56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_poschaid` = 56 AND `ord_headh` = 119 AND `ord_status` = 1 LIMIT 1   [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 56 LIMIT 1   [ RunTime:0.0090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 7 LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 3 LIMIT 1   [ RunTime:0.0100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T09:56:03+08:00 ] 127.0.0.1 /index.php?m=User&c=task&a=details&pos_id=56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_poschaid` = 56 AND `ord_headh` = 119 AND `ord_status` = 1 LIMIT 1   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 56 LIMIT 1   [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 7 LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 3 LIMIT 1   [ RunTime:0.0110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T09:57:38+08:00 ] 127.0.0.1 /index.php/user/task/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0180s ]
+NOTIC: [8] Undefined index: pos_task_type D:\suzhi\suzhi_php\App\User\Controller\TaskController.class.php 第 14 行.
+SQL: SELECT * FROM `sz_poscha` LIMIT 0,2   [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T09:57:39+08:00 ] 127.0.0.1 /index.php?m=User&c=task&a=details&pos_id=56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_poschaid` = 56 AND `ord_headh` = 119 AND `ord_status` = 1 LIMIT 1   [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 56 LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 7 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 3 LIMIT 1   [ RunTime:0.0120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-13T09:58:15+08:00 ] 127.0.0.1 /index.php/user/task/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: pos_task_type D:\suzhi\suzhi_php\App\User\Controller\TaskController.class.php 第 14 行.
+SQL: SELECT * FROM `sz_poscha` LIMIT 0,2   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T09:58:18+08:00 ] 127.0.0.1 /index.php?m=User&c=task&a=details&pos_id=56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.3070s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_poschaid` = 56 AND `ord_headh` = 119 AND `ord_status` = 1 LIMIT 1   [ RunTime:0.9101s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 56 LIMIT 1   [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 7 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 3 LIMIT 1   [ RunTime:0.0120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T09:58:25+08:00 ] 127.0.0.1 /index.php?m=User&c=task&a=details&pos_id=56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_poschaid` = 56 AND `ord_headh` = 119 AND `ord_status` = 1 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 56 LIMIT 1   [ RunTime:0.0150s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 7 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 3 LIMIT 1   [ RunTime:0.0140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T09:58:45+08:00 ] 127.0.0.1 /index.php?m=User&c=task&a=details&pos_id=56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_poschaid` = 56 AND `ord_headh` = 119 AND `ord_status` = 1 LIMIT 1   [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 56 LIMIT 1   [ RunTime:0.0180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 7 LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 3 LIMIT 1   [ RunTime:0.0100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T10:03:36+08:00 ] 127.0.0.1 /index.php/user/task/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: pos_task_type D:\suzhi\suzhi_php\App\User\Controller\TaskController.class.php 第 14 行.
+SQL: SELECT * FROM `sz_poscha` LIMIT 0,2   [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T10:03:37+08:00 ] 127.0.0.1 /index.php?m=User&c=task&a=details&pos_id=56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_poschaid` = 56 AND `ord_headh` = 120 AND `ord_status` = 2 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 56 LIMIT 1   [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 7 LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 3 LIMIT 1   [ RunTime:0.3070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.336019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.336019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T10:03:40+08:00 ] 127.0.0.1 /index.php?m=User&c=task&a=details&pos_id=57
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_poschaid` = 57 AND `ord_headh` = 120 AND `ord_status` = 2 LIMIT 1   [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 57 LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 18 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 1 LIMIT 1   [ RunTime:0.0120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T10:03:43+08:00 ] 127.0.0.1 /index.php?m=User&c=task&a=lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_task_type` = 2 LIMIT 0,2   [ RunTime:0.0100s ]
+
+[ 2017-01-13T10:03:45+08:00 ] 127.0.0.1 /index.php/user/task/details?pos_id=59
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_poschaid` = 59 AND `ord_headh` = 120 AND `ord_status` = 2 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 59 LIMIT 1   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 7 LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 5 LIMIT 1   [ RunTime:0.0120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T10:03:48+08:00 ] 127.0.0.1 /index.php?m=User&c=task&a=details&pos_id=57
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_poschaid` = 57 AND `ord_headh` = 120 AND `ord_status` = 2 LIMIT 1   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 57 LIMIT 1   [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 18 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 1 LIMIT 1   [ RunTime:0.0130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T10:03:51+08:00 ] 127.0.0.1 /index.php?m=User&c=task&a=lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_task_type` = 3 LIMIT 0,2   [ RunTime:0.0110s ]
+
+[ 2017-01-13T10:03:53+08:00 ] 127.0.0.1 /index.php/user/task/details?pos_id=62
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_poschaid` = 62 AND `ord_headh` = 120 AND `ord_status` = 2 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 62 LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 7 LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 4 LIMIT 1   [ RunTime:0.0190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-01-13T10:03:58+08:00 ] 127.0.0.1 /index.php?m=User&c=task&a=details&pos_id=57
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.9071s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_poschaid` = 57 AND `ord_headh` = 120 AND `ord_status` = 2 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 57 LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.0410s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 18 LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 1 LIMIT 1   [ RunTime:0.0100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T10:18:39+08:00 ] 127.0.0.1 /index.php/user/task/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: pos_task_type D:\suzhi\suzhi_php\App\User\Controller\TaskController.class.php 第 14 行.
+SQL: SELECT * FROM `sz_poscha` LIMIT 0,2   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T10:18:41+08:00 ] 127.0.0.1 /index.php/User/task/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_task_type` = 2 LIMIT 0,2   [ RunTime:0.0120s ]
+
+[ 2017-01-13T10:18:43+08:00 ] 127.0.0.1 /index.php/User/task/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_task_type` = 3 LIMIT 0,2   [ RunTime:0.0110s ]
+
+[ 2017-01-13T10:18:45+08:00 ] 127.0.0.1 /index.php/User/task/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.9121s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_task_type` = 1 LIMIT 0,2   [ RunTime:0.0120s ]
+
+[ 2017-01-13T10:18:48+08:00 ] 127.0.0.1 /index.php/user/task/details?pos_id=57
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_poschaid` = 57 AND `ord_headh` = 120 AND `ord_status` = 2 LIMIT 1   [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.3160s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 57 LIMIT 1   [ RunTime:0.9221s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.0460s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 18 LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 1 LIMIT 1   [ RunTime:0.0120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T10:19:26+08:00 ] 127.0.0.1 /index.php/user/task/details?pos_id=57
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_poschaid` = 57 AND `ord_headh` = 120 AND `ord_status` = 2 LIMIT 1   [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 57 LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 18 LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 1 LIMIT 1   [ RunTime:0.0110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T10:22:27+08:00 ] 127.0.0.1 /index.php/user/task/details?pos_id=57
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_poschaid` = 57 AND `ord_headh` = 120 AND `ord_status` = 2 LIMIT 1   [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.3060s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 57 LIMIT 1   [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 18 LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 1 LIMIT 1   [ RunTime:0.0110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T10:23:02+08:00 ] 127.0.0.1 /index.php/user/task/details?pos_id=57
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_poschaid` = 57 AND `ord_headh` = 120 AND `ord_status` = 2 LIMIT 1   [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 57 LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 18 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 1 LIMIT 1   [ RunTime:0.0130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T10:23:09+08:00 ] 127.0.0.1 /index.php/User/task/head_ling.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T10:27:25+08:00 ] 127.0.0.1 /index.php/user/task/details?pos_id=57
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_poschaid` = 57 AND `ord_jobseekerid` = 120 AND `ord_status` = 2 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 57 LIMIT 1   [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 18 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 1 LIMIT 1   [ RunTime:0.0120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-01-13T10:28:51+08:00 ] 127.0.0.1 /index.php/User/task/head_ling.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0110s ]
+SQL: INSERT INTO `sz_orderinfo` (`order_id`,`ord_poschaid`,`ord_jobseekerid`,`ord_status`,`ord_type`,`ord_create_time`) VALUES ('G113745310930206','57','120','2','1','2017-01-13 10:28:51') [ RunTime:0.0170s ]
+
+[ 2017-01-13T10:28:51+08:00 ] 127.0.0.1 /index.php/User/task/head_hasling/ord_id/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_id` = 14 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 57 LIMIT 1   [ RunTime:0.0170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 18 LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 1 LIMIT 1   [ RunTime:0.0120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T10:29:45+08:00 ] 127.0.0.1 /index.php/user/task/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: pos_task_type D:\suzhi\suzhi_php\App\User\Controller\TaskController.class.php 第 14 行.
+SQL: SELECT * FROM `sz_poscha` LIMIT 0,2   [ RunTime:0.0420s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T10:30:03+08:00 ] 127.0.0.1 /index.php/User/task/details/pos_id/56.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_poschaid` = 56 AND `ord_jobseekerid` = 120 AND `ord_status` = 2 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 56 LIMIT 1   [ RunTime:0.3130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.9251s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 7 LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 3 LIMIT 1   [ RunTime:0.3070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.258072s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.258072s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T10:30:15+08:00 ] 127.0.0.1 /index.php/User/task/lists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_task_type` = 2 LIMIT 0,2   [ RunTime:0.0120s ]
+
+[ 2017-01-13T10:30:22+08:00 ] 127.0.0.1 /index.php/user/task/details?pos_id=59
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_poschaid` = 59 AND `ord_jobseekerid` = 120 AND `ord_status` = 2 LIMIT 1   [ RunTime:0.3090s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 59 LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 7 LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 5 LIMIT 1   [ RunTime:4.5153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:4.555261s ]
+INFO: [ view_parse ] --END-- [ RunTime:4.555261s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T10:30:28+08:00 ] 127.0.0.1 /index.php/User/task/head_ling.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0120s ]
+SQL: INSERT INTO `sz_orderinfo` (`order_id`,`ord_poschaid`,`ord_jobseekerid`,`ord_status`,`ord_type`,`ord_create_time`) VALUES ('G113746282915788','59','120','2','1','2017-01-13 10:30:28') [ RunTime:0.0180s ]
+
+[ 2017-01-13T10:30:36+08:00 ] 127.0.0.1 /index.php/User/task/head_hasling/ord_id/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_id` = 15 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:2.1131s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 59 LIMIT 1   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 7 LIMIT 1   [ RunTime:2.1621s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 5 LIMIT 1   [ RunTime:0.0150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:2.202126s ]
+INFO: [ view_parse ] --END-- [ RunTime:2.202126s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T10:31:27+08:00 ] 127.0.0.1 /index.php/user/task/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: pos_task_type D:\suzhi\suzhi_php\App\User\Controller\TaskController.class.php 第 14 行.
+SQL: SELECT * FROM `sz_poscha` LIMIT 0,2   [ RunTime:0.0330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T10:31:37+08:00 ] 127.0.0.1 /index.php/user/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_role` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sz_role`  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_is_delete` = 1 AND `pos_isindex` = 2  [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T10:31:53+08:00 ] 127.0.0.1 /index.php/User/task/details/pos_id/62.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_poschaid` = 62 AND `ord_jobseekerid` = 120 AND `ord_status` = 2 LIMIT 1   [ RunTime:0.3160s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 62 LIMIT 1   [ RunTime:0.0160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 7 LIMIT 1   [ RunTime:0.9121s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 4 LIMIT 1   [ RunTime:0.0140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.951055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.951055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-13T10:32:01+08:00 ] 127.0.0.1 /index.php/User/task/head_ling.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0130s ]
+SQL: INSERT INTO `sz_orderinfo` (`order_id`,`ord_poschaid`,`ord_jobseekerid`,`ord_status`,`ord_type`,`ord_create_time`) VALUES ('G113747203668417','62','120','2','1','2017-01-13 10:32:00') [ RunTime:0.9421s ]
+
+[ 2017-01-13T10:32:10+08:00 ] 127.0.0.1 /index.php/User/task/head_hasling/ord_id/16.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sz_orderinfo` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `sz_orderinfo` WHERE `ord_id` = 16 LIMIT 1   [ RunTime:0.3120s ]
+SQL: SHOW COLUMNS FROM `sz_poscha` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sz_poscha` WHERE `pos_id` = 62 LIMIT 1   [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sz_pos` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 7 LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT * FROM `sz_pos` WHERE `pos_id` = 4 LIMIT 1   [ RunTime:0.0140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

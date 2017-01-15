@@ -17,7 +17,7 @@ class UserController extends CommonController
     {
         $he_id = $this->login_inspect();
         if (empty($he_id)) {
-            $this->display();//未登录状态；
+            $this->display('center1');//未登录状态；
         }
         //用户已经登录，显示用户信息；
         $model_headhunter = M('headhunter');
@@ -33,6 +33,19 @@ class UserController extends CommonController
     /**
      * 订单中心\全部订单
      */
+    public function porder(){
+        $where['ord_headh']=$_SESSION['he_id'];
+        $db=M('orderinfo');
+        $res=$db->where($where)->select();
+        foreach($res as $key => $value){
+            $dbs=M('poscha');
+            $arr['pos_id']=$res[$key]['ord_poschaid'];
+            $res[$key]['poscha']=$dbs->where($arr)->find();
+        }
+        $res = array();
+        $this->assign('data',$res);
+        $this->display('order_center');
+    }
 
     /**
      * 页面：个人信息
@@ -51,8 +64,10 @@ class UserController extends CommonController
         $this->assign('user', $user_data);
         $this->display();
     }
+
     //提交：个人信息
-    public function info(){
+    public function info()
+    {
         $user_id = $this->login_inspect();
         $nickname = $_REQUEST['nickname'];//
         $tel = $_REQUEST['tel'];
@@ -68,7 +83,7 @@ class UserController extends CommonController
         $user_data['he_nickname'] = $nickname;
         $user_data['he_sex'] = $sex;
         $user_data['he_birthday'] = $birthday;
-        $user_data['he_phone']  = $tel;
+        $user_data['he_phone'] = $tel;
         $user_data['he_name'] = $username;
 //        $user_data['he_occupation'] = $job;
         $user_data['he_topdegreee'] = $edu;
@@ -79,7 +94,7 @@ class UserController extends CommonController
         /**
          * 处理头像；
          */
-        if(!empty($_FILES['image']['size'])){
+        if (!empty($_FILES['image']['size'])) {
             $upload = new Upload();
             $upload->savePath = './Public/home/upload';
             $upload_result = $upload->upload($_FILES);
@@ -87,7 +102,7 @@ class UserController extends CommonController
                 $this->error('图片上传失败');
             }
             $user_data['he_image'] = $upload_result['idcardimg']['savepath'] . $upload_result['idcardimg']['savename'];
-        }else{
+        } else {
             $user_data['he_image'] = $_REQUEST['image_prev'];
         }
         /**
@@ -98,7 +113,7 @@ class UserController extends CommonController
             ->where('he_id = ' . $user_id)
             ->save();
 
-        if($success === false){
+        if ($success === false) {
             $this->json_return(1, '修改失败');
         }
 
@@ -146,17 +161,22 @@ class UserController extends CommonController
     public function wthdraw()
     {
         //提交提现申请；
-        $num = $_REQUEST['cash'];//提现金额
+        $num = intval($_REQUEST['he_accounttotal']);//提现金额
         $addtime = time();//提现时间
         $user_id = $this->login_inspect();//提现用户ID
         $model_headhunter = M('headhunter');
         $user_data = $model_headhunter
             ->where('he_id = ' . $user_id)
             ->find();
-        //账户余额检查
-        if ($user_data['he_turn_out_jine'] < $num) {
-            $this->json_return(1, '可转出金额不足');
+//        ($num) < 50 && $this->json_return(1, '提现金额必读大于50');
+//        //账户余额检查
+//        if ($user_data['he_turn_out_jine'] < $num) {
+//            $this->json_return(1, '可转出金额不足');
+//        }
+        if($user_data){
+            $this->json_return(1, '因为您的可转出余额为0，暂无可转出余额。');
         }
+
         /**
          * 开启事物；
          */
@@ -212,49 +232,60 @@ class UserController extends CommonController
 
     /**
      * 提现设置
+     * type：alipay
+     *       bankcard
      */
+    //页面
     public function pexchset()
     {
         $user_id = $this->login_inspect();
+
         //查询显示参数；
-        $model_headhunter = M('headhunter');
+        $model_headhunter = M('withdraw_set');
         $user_data = $model_headhunter
-            ->where('he_id = ' . $user_id)
+            ->where('uid = ' . $user_id)
             ->find();
 
         //提现设置页面；
-        $this->assign('user', $user_data);
+        $this->assign('set', $user_data);
         $this->display();
     }
 
+    //数据保存
     public function exchset($id = 0)
     {
 
         $user_id = $this->login_inspect();//要求登录
-        $type = $_REQUEST['type'];
+        $type = $_POST['type'];
         $account = $_REQUEST['account'];
         $username = $_REQUEST['uname'];
+        $subbranch = $_REQUEST['subbranch'];
+        $bankname = $_REQUEST['bankname'];
 
         //参数检查， todo 更严格的检查；
         if (empty($type)) {
             $this->json_return(1, '请选择提现方式');
         }
 
-        if (empty($type)) {
+        if (empty($account)) {
             $this->json_return(1, '请填写帐号');
         }
 
         if (empty($username)) {
             $this->json_return(1, '请填写真实姓名');
         }
+        //银行下必填参数；
+        $type === 'bankcard' && empty($bankname) && $this->json_return(1, '请填写银行名');
+        $type === 'bankcard' && empty($subbranch) && $this->json_return(1, '请填写支行');
 
         //保存设置信息
         // 一个用户只能有一条设置信息，数据库已对uid列设置唯一；
         $user_data['uname'] = $username;
         $user_data['account'] = $account;
+        $user_data['bankname'] = empty($bankname) ?  '' : $bankname;
+        $user_data['subbranch'] = empty($subbranch) ?  '' : $subbranch;;
         $user_data['type'] = $type;
         $user_data['uid'] = $user_id;
-
         $model_user = M('withdraw_set');
         if (empty($id)) {
             $success = $model_user->data($user_data)->add();
@@ -264,7 +295,7 @@ class UserController extends CommonController
                 ->where(array('uid' => $user_id))
                 ->save();
         }
-        if (!($success !== false && $success > 0)) {
+        if (!($success !== false)) {
             //保存失败；
             $this->json_return(1, '保存失败');
         }

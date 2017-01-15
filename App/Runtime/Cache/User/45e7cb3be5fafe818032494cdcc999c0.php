@@ -58,8 +58,8 @@
 		<div class="detail_list">
 			<ul>
 				<li>
-					<h3>工作描述<img src="/Public/home/images/icon_5.png" width="12" class="on" /></h3>
-					<div class="slide_main">
+					<h3>工作描述<img src="/Public/home/images/icon_6.png" width="12" class="" /></h3>
+					<div class="slide_main" style="display:block;">
 						<ul>
 							<li><?php echo ($data['pos_jobdescription']); ?></li>
 

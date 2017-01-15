@@ -1,9 +1,10 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class TaskController extends Controller {
+class TaskController extends CommonController{
     //猎头的任务列表
     function lists(){
+        $he_id=$this->login_inspect();
         $db=M('poscha');
         //获取页数
         $page = isset($_POST['page']) ? $_POST['page'] : '1';
@@ -36,20 +37,24 @@ class TaskController extends Controller {
     }
     //猎头的任务详情
     function details(){
+        $he_id=$this->login_inspect();
         $where['pos_id']=$_REQUEST['pos_id'];
         //查看订单中该人是否已经领取过该任务
         $dbs=M('orderinfo');
         $arr['ord_poschaid']=$where['pos_id'];
         //猎头的ID不能写死 暂时测试用
-        $arr['ord_headh']=119;
+        $arr['ord_headh']=$he_id;
         $arr['ord_status']=1;
 //        $arr['ord_headh']=$_SESSION['he_id'];
         $res=$dbs->where($arr)->find();
+
         $db=M('poscha');
         $data=$db->where($where)->find();
-        $data['total_liulan']=(int)$data['pos_liuan']+(int)$data['pos_true_liulan'];
+        $data['total_liulan']=(int)$data['pos_liuan']+(int)$data['pos_true_liulan'] + 1;
         $data['total_toudi']=(int)$data['pos_toudi']+(int)$data['pos_true_toudi'];
-        if($res){
+        $array['pos_true_liulan']=$data['pos_true_liulan'] + 1;
+        $sbs=$db->where($where)->save($array);
+        if($res && $sbs){
             $data['ord_id']=$res['ord_id'];
             $this->assign('data',$data);
             $this->display('/task/tast_detail_receive');
@@ -113,6 +118,7 @@ class TaskController extends Controller {
         //获取任务信息
         $dbs=M('poscha');
         $data=$dbs->where($where)->find();
+        $data['he_id']=$_SESSION['he_id'];
         $this->assign('data',$data);
         $this->display('/task/two_code');
 

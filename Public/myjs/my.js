@@ -13,7 +13,6 @@ var dialog = {
 
     //成功弹出框
     success: function(message, url) {
-
         layer.open({
             content: message,
             icon: 1,

@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="/Public/home/assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="/Public/home/css/style.css">
   <link rel="stylesheet" href="/Public/home/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/Public/home/foot/iconfont.css">
+	<link rel="stylesheet" href="/Public/home/css/taskList.css">
   <script src="/Public/home/assets/js/jquery.min.js"></script>
   <script src="/Public/home/assets/js/amazeui.min.js"></script>
   <script src="/Public/home/js/function.js"></script>
@@ -23,9 +25,9 @@
 		<div class="index_list" style="margin-top:0px;">
 			<div class="tast_hd">
 				<ul>
-					<li><a onclick="flclicks(1)">兼职</a></li>
-					<li><a onclick="flclicks(2)">实习</a></li>
-					<li><a onclick="flclicks(3)">全职</a></li>
+					<li ><a onclick="flclicks(1)" id="jz" class="on">兼职</a></li>
+					<li><a onclick="flclicks(2)" id="sx">实习</a></li>
+					<li><a onclick="flclicks(3)" id="qz">全职</a></li>
 				</ul>
 			</div>
 			
@@ -59,6 +61,22 @@
 				</ul>
 				<!--<input type="button" onclick="jjclicks()" value="查看更多">-->
 			</div>
+			<footer class="nav_bottom am-topbar am-topbar-inverse am-topbar-fixed-bottom">
+				<ul>
+					<li  onclick="window.location.href='/index.php?m=user&c=index&a=index'">
+						<div class="img"><i class="iconfont icon-shouyeshouye"></i></div>
+						<div class="title">首页</div>
+					</li>
+					<li class="on" onclick="window.location.href='/index.php?m=user&c=task&a=lists'">
+						<div class="img"><i class="iconfont icon-renwu"></i></div>
+						<div class="title">任务</div>
+					</li>
+					<li onclick="window.location.href='/index.php?m=user&c=User&a=index'">
+						<div class="img"><i class="iconfont icon-wode"></i></div>
+						<div class="title">我的</div>
+					</li>
+				</ul>
+			</footer>
 		</div>
 	</div>
 </body>
@@ -110,6 +128,20 @@
 
 	}
 	function flclicks(id){
+		if(id == 1){
+			$('#jz').addClass('on');
+			$('#sx').removeClass('on');
+			$('#qz').removeClass('on');
+		}else if(id == 2){
+			$('#jz').removeClass('on');
+			$('#sx').addClass('on');
+			$('#qz').removeClass('on');
+		}else{
+			$('#jz').removeClass('on');
+			$('#sx').removeClass('on');
+			$('#qz').addClass('on');
+		}
+
 		//赋值
 		$('#type').val(id);
 		//将页数赋值为1

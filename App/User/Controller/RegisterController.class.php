@@ -39,15 +39,20 @@ class RegisterController extends UserCommonController
         $job = $_REQUEST['job'];
 
         //判断数据是否为空；
-        if (empty($tel) || empty($vcode) || empty($nickname) || empty($username) || empty($sex) || empty($job)) {
-            $this->json_return(1, '缺少必填参数');
+        if (empty($tel)){
+            $this->error('缺少手机号码');
         }
+        empty($vcode) && $this->error('缺少验证码');
+        empty($nickname) && $this->error('缺少昵称');
+        empty($username) && $this->error('缺少用户名');
+        empty($job) && $this->error('请填写职业');
+
+
 
         //手机号码格式检查 todo
         $is_mobile = $this->is_mobile($tel);
-        if (!$is_mobile) {
-            $this->json_return(1, '请输入正确手机号码');
-        }
+        (!$is_mobile) && $this->error('请输入正确手机号码');
+
 
         //验证码检查, 未做过期检查；
         $model_code = M('code');
@@ -57,12 +62,12 @@ class RegisterController extends UserCommonController
         $map_data['cod_used'] = 1;
         $result = $model_code->data($map_data)->where($map_co)->save();
         if (!($result !== false && $result > 0)) {
-            $this->json_return(1, '验证码错误');
+            //$this->error('验证码错误');
         }
 
         //唯一性判断，手机号码唯一；
         if (!$this->tel_not_register($tel)) {
-            $this->json_return(1, '手机号码已经注册');
+            $this->error('手机号码已经注册');
         }
 
         //写入数据；
@@ -76,26 +81,13 @@ class RegisterController extends UserCommonController
         $user_data['he_type'] = 2; //求职者身份；
         $success = $headhunter->data($user_data)->add();
         if (!$success) {
-            $this->json_return(1, '添加用户信息失败');
+            $this->error('添加用户信息失败');
         }
 
-        //显示注册成功页面；
-        $this->json_return(0, '注册成功');
-    }
-
-    /**
-     * 手机号码没有注册；
-     * @param $tel
-     * @return bool
-     */
-    private function tel_not_register($tel)
-    {
-
-        $db_head = M('headhunter');
-        $map_head['he_phone'] = $tel;
-        $db_phone = $db_head->where($map_head)->find();
-
-        return empty($db_phone);
+        //显示注册成功页面；session上线；
+        session('user_id', $success);
+        $this->display();
+        //$this->success('注册成功', U('User/Login/index'));
     }
 
     //////////////////////////////////////////////////////////////////////////////////

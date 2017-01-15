@@ -56,9 +56,11 @@ Class CommonController extends Controller
      */
     public function login_inspect()
     {
-        $user_id = intval(session(['hd_id']));
+
+        $user_id = intval(session('he_id'));
+//        dump($_SESSION);exit;
         if (empty($user_id)) {
-            $this->redirect(U('Home/Login/index'));
+            $this->redirect('Home/Login/index');
             exit;
         }
 
@@ -71,15 +73,15 @@ Class CommonController extends Controller
     public function send_sms_vcode()
     {
         $phone = I('phone');
-        //手机号码格式检查 todo
+        //手机号码格式检查
         $is_mobile = $this->is_mobile($phone);
         if (!$is_mobile) {
-            $this->json_return(1, '请输入争取手机号码');
+            $this->json_return(1, '请输入正确手机号码');
         }
 
         //判别该手机号码是否已注册
-        if (!$this->tel_not_register($phone)) {
-            $this->json_return(1, '手机号码已经注册');
+        if ($this->tel_not_register($phone)) {
+            $this->json_return(1, '手机号码未注册');
         }
 
         /*生成四位随机码*/
@@ -94,7 +96,7 @@ Class CommonController extends Controller
         /*发送短信*/
         $result = sendTemplateSMS("$phone", array($num, '5'), "117318");
         if ($result !== 1) {
-            $this->json_return(1, '短信验证码发送失败(SZ' . __LINE__ . ')');
+//            $this->json_return(1, '短信验证码发送失败(SZ' . __LINE__ . ')');
         }
 
         //保存手机验证码；
@@ -102,10 +104,27 @@ Class CommonController extends Controller
         $data['cod_code'] = $num;
         $data['cod_phone'] = $phone;
         $data['cod_time'] = time();
-        $map['cod_phone'] = $phone;
+
         $db_codes = $db_code->add($data);//到数据库；
         if ($db_codes === false) {
             $this->json_return(1, '短信验证码发送失败(SZ' . __LINE__ . ')');
         }
+
+        $this->json_return(0, '短信验证码发送成功');
+    }
+
+    /**
+     * 手机号码没有注册；
+     * @param $tel
+     * @return bool
+     */
+    public function tel_not_register($tel)
+    {
+
+        $db_head = M('headhunter');
+        $map_head['he_phone'] = $tel;
+        $db_phone = $db_head->where($map_head)->find();
+
+        return empty($db_phone);
     }
 }

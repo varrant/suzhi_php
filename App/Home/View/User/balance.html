@@ -1,4 +1,3 @@
-<!-- 余额提现 -->
 <!doctype html>
 <html class="no-js">
     <head>
@@ -13,141 +12,16 @@
         <link rel="stylesheet" href="/Public/home/assets/css/amazeui.css">
         <link rel="stylesheet" href="/Public/home/assets/css/font-awesome.min.css">
         <link rel="stylesheet" href="/Public/home/css/style.css">
-        <link rel="stylesheet" href="/Public/home/css/myCenterCash.css">
+        <link rel="stylesheet" href="/Public/home/css/common.css">
         <script src="/Public/home/assets/js/jquery.min.js"></script>
-        <script src="/Public/home/assets/js/amazeui.min.js"></script>
-        <script src="/Public/home/js/function.js"></script>
-        <script src="/Public/home/js/date.js"></script>
     </head>
-    <body>
-        <div id="app">
-            <div class="mytopbannerbox">
-                <div class="info">
-                    <div class="name">提现金额</div>
-                    <div class="cashbox">
-                        <div class="sign">¥</div>
-                        <input v-model="mysetModel.csmoney" type="text" value="51">
-                    </div>
-                </div>
-                <div class="info2">
-                    <div id="divallcash">可提现金额<span>102.05</span>元</div>
-                    <div id="whatiscash">冻结金额200.00元 &nbsp;<i class="fa fa-question-circle" aria-hidden="true"></i></div>
-                    <div class="allcash">全部提现</div>
-                </div>
+    <body style="background:#eee;">
+        <div class="main" style="padding-bottom:50px;">
+            <div class="balance_top">
+                <h3>当前余额（元）</h3>
+                <p>{$user.he_accounttotal}</p>
             </div>
-
-            <div class="btn_box" style="margin-top: 304px;">
-                <button class="btn_login_over" id="btn_login" onclick="login()">确认提现</button>
-            </div>
-
-            <!-- 什么是保证金 -->
-            <div class="cashbox2">
-                <div class="cashbg"></div>
-                <div class="contentbox">
-                    <div class="title">什么是保证金</div>
-                    <div class="word">
-                        <span>什么是零钱？</span><br>
-                        零钱是用户在云书APP上的资金，支持支付、提现等功能。<br>
-                        <br>
-                        <span>如何赚取零钱？</span><br>
-                        用户可以通过积分兑换的形式获得零钱。<br>
-                        用户可以通过签到、领取免费教材、商城购买、注册、捐书等行为获得的积分，再通过积分兑换将积分兑换成零钱。<br>
-                        积分兑换零钱的公式为：100积分=1元零钱。<br>
-                        <br>
-                        <span>钱提现</span><br>
-                        若零钱累积到达一定数量，用户可以申请提现。具体积累金额请参见提现页面说明。
-                    </div>
-                </div>
-                <div class="cashbtn" onclick="closecashbox()">×</div>
-            </div>
+            <a href="{:U('pwthdraw')}" class="balance_link">提现<img src="/Public/home/images/icon_3.png" /></a>
         </div>
     </body>
-    <script>
-        //显示什么保证金提示框
-        function whatiscash(w,h,st){
-            console.log(w);
-            $(".cashbox2").attr("style","top:"+st+"px; display:block;");
-            $(".cashbg").attr("style","top:"+st+"px;height:"+h+"px;width:"+w+"px");
-        }
-
-        function closecashbox(){
-            $(".cashbox2").attr("style","display:none;");
-        }
-        $(function() {
-            var $width=$(window).width();
-            var $height=$(window).height();
-            $("#whatiscash").click(function(){
-                whatiscash($width,$height,0);//什么是保证金
-            })
-            $(window).scroll(function() {
-                whatiscash($width,$height,$(this).scrollTop());//什么是保证金
-            });
-
-            //可提现金额全部提现
-            $(".allcash").click(function(){
-                $("#ipt_allcash").val($("#divallcash").find("span").html());
-            })
-        })
-        $(function() {
-            var mySet = new Vue({
-                el: '#app',
-                data: {
-                    mysetModel: {
-                        csmoney: '',
-                        pohone: ''
-                    }
-                },
-                methods:{
-                    myset:function(){
-                        var vm = this;
-                        var phone = getCookie("phone");
-                        if(phone == null || phone == "" || phone == "undefined"){
-                            window.location.href = "login.html";
-                        }else{
-                            vm.mysetModel.pohone = phone;
-                            var csmoney = vm.mysetModel.csmoney；
-
-                 if(csmoney == null || csmoney == ""){
-                     showRemindbox("金额不能为空！");
-                     return;
-                 }
-                            if(csmoney < 50 ){
-                                showRemindbox("金额大于等于50！");
-                                return;
-                            }
-                            $.ajax({
-                                //url: "http://suzhi.hzjuym.com/index.php/home/Poscha/lists",
-                                url: "http://suzhi.hzjuym.com/index.php/Home/Profit/tixianadd",
-                                type: 'POST',
-                                dataType: 'json',
-                                data: vm.mysetModel,
-                                success: function(data) {
-                                    //console.log(data);
-                                    if(data == "ok"){
-                                        showRemindbox("设置支付宝账号成功！");
-                                        setTimeout("window.location.href = 'myCenter.html'",3000);
-                                    }else if(data == "weidengluno"){
-                                        showRemindbox("用户未登录！");
-                                    }else if(data == "yonghuweizhino"){
-                                        showRemindbox("用户不存在！");
-                                    }else if(data == "jineno"){
-                                        showRemindbox("金额错误！");
-                                    }else if(data == "jineno"){
-                                        showRemindbox("金额必须大于等于50！");
-                                    }else{
-                                        showRemindbox("未知错误！");
-                                    }
-
-                                },
-                                error: function(e){
-                                    showRemindbox("连接失败！");
-                                }
-                            })
-                        }
-
-                    }
-                }
-            })
-        })
-    </script>
 </html>

@@ -30,7 +30,8 @@ class LoginController extends CommonController
     }
 
     /**
-     * 发送短信验证码；
+     * 猎头：发送短信验证码；
+     *
      */
     public function smsvcode(){
         $this->send_sms_vcode();
@@ -54,6 +55,7 @@ class LoginController extends CommonController
             ->where($map_he)
             ->field('he_id, he_type,he_phone,he_is_delete')
             ->select();
+        $headhunter_data = $headhunter_data[0];
         if (empty($headhunter_data)) {
             $this->json_return(1, '帐号不存在');
         }
@@ -61,8 +63,8 @@ class LoginController extends CommonController
         if ($headhunter_data['he_is_delete'] === 2) {
             $this->json_return(1, '已封号');
         }
-
-        if (!($headhunter_data['he_type'] === 2)) {
+        //猎头帐号为1；
+        if (!($headhunter_data['he_type'] == 1)) {
             $this->json_return(1, '此帐号不是猎头帐号');
         }
 
@@ -88,7 +90,7 @@ class LoginController extends CommonController
         $_SESSION['phone'] = $phone;//电话；
         $_SESSION['he_id'] = $headhunter_data['he_id'];//表示但前用户已经登录，未登录的用户ID为0；
 
-        $this->json_return(1, '登录成功');
+        $this->json_return(0, '登录成功');
 
     }
 

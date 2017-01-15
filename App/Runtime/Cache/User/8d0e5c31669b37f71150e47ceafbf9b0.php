@@ -26,27 +26,43 @@
         <div id="app">
 
             <!-- 填写手机号步骤 -->
-            <div class="liststep1" style="display: block;">
-                <div class="logo"></div>
-                <div class="ipt_box">
-                    <input type="text" class="ipt_username" v-model="registerModel.phone" placeholder="请输入需要绑定的手机号">
-                </div>
-                <div class="ipt_box">
-                    <input type="text" class="ipt_username" v-model="registerModel.code" placeholder="请输入验证码">
-                    <div class="ipt_sendCode" @click="register($event)">获取验证码</div>
-                </div>
-                <div class="tipsbox">
-                    <div class="ico">
-                        <i class="fa fa-circle-o" aria-hidden="true" id="isYes" onclick="checkYes()"></i>
+            <form method="post" action="<?php echo U('regcmt');?>">
+                <div class="liststep1" style="display: block;">
+                    <div class="logo"></div>
+                    <div class="ipt_box">
+                        <input type="text" class="ipt_username" v-model="registerModel.phone" placeholder="请输入需要绑定的手机号" name="tel"/>
                     </div>
-                    <div class="content">我已经阅读并同意速职用户协议</div>
+                    <div class="ipt_box">
+                        <input type="text" class="ipt_username" v-model="registerModel.code" placeholder="请输入验证码" name="vcode"/>
+                        <div class="ipt_sendCode" @click="register($event)">获取验证码</div>
+                    </div>
+                    <div class="ipt_box">
+                        <input type="text" class="ipt_username" v-model="registerModel.nickname" placeholder="昵称" name="nickname">
+                    </div>
+                    <div class="ipt_box">
+                        <input type="text" class="ipt_username" v-model="registerModel.username" placeholder="姓名" name="username"/>
+                    </div>
+                    <div class="ipt_box">
+                        <input type="radio" class="ipt_username" v-model="registerModel.sexb" placeholder="性别" name="sex" value="0"/>
+                        帅哥
+                        <input type="radio" class="ipt_username" v-model="registerModel.sexg" placeholder="性别" name="sex" value="1"/>
+                        美女
+                    </div>
+                    <div class="ipt_box">
+                        <input type="text" class="ipt_username" v-model="registerModel.job" placeholder="目前职业" name="job" />
+                    </div>
+                    <div class="tipsbox">
+                        <div class="ico">
+                            <i class="fa fa-circle-o" aria-hidden="true" id="isYes" onclick="checkYes()"></i>
+                        </div>
+                        <div class="content">我已经阅读并同意速职用户协议</div>
+                    </div>
+                    <div class="margin_box180"></div>
+                    <div class="btn_box">
+                        <button class="btn_login_out" id="btn_login" @click="register1">下一步</button>
+                    </div>
                 </div>
-                <div class="margin_box180"></div>
-                <div class="btn_box">
-                    <button class="btn_login_out" id="btn_login" @click="register1">下一步</button>
-                </div>
-            </div>
-
+            </form>
             <!-- 上传身份证步骤 -->
             <div class="liststep2" style="display: none;">
                 <div style="margin-top: 50px;"></div>
@@ -287,9 +303,6 @@
             $("#btn_login").attr("class", "btn_login_over");
             $("#btn_login").html("下一步");
         }
-        /*  function login(){
-         showRemindbox("手机号格式错误，请重新输入");
-         }*/
 
         function showRemindbox(content) {
             $("#rb1").slideToggle();
@@ -297,7 +310,7 @@
             $("#rb1").unbind("click");
             $("#rb1").bind("click", function () {
                 $("#rb1").slideToggle();
-            })
+            });
             setTimeout('hideRemindbox()', 2000);
         }
 
@@ -308,13 +321,21 @@
             }
         }
 
-        function checkYes() 
-            else {
+        function checkYes() {
+
+            if ($("#isYes").attr("class").indexOf("fa-check-circleover") > -1) {
+                $("#isYes").addClass("fa-circle-o");
+                $("#isYes").removeClass("fa-check-circle");
+                $("#isYes").removeClass("fa-check-circleover");
+
+            } else {
+
                 $("#isYes").removeClass("fa-circle-o");
                 $("#isYes").addClass("fa-check-circle");
                 $("#isYes").addClass("fa-check-circleover");
-                //同意协议此处应该返回TRUE
+
             }
+
         }
 
         //显示什么保证金提示框
@@ -453,259 +474,246 @@
             });
         });
         var register = new Vue({
-            el: '#app',
-            data: {
-                registerUrl: 'http://suzhi.hzjuym.com/index.php/home/Register/Sensms',
-                registerUrl1: 'http://suzhi.hzjuym.com/index.php/home/Register/Verif',
-                registerUrl2: 'http://suzhi.hzjuym.com/index.php/home/Register/dore2',
-                registerUrl3: 'http://suzhi.hzjuym.com/index.php/home/Register/dore3',
-                registerModel: {
-                    phone: '',
-                    code: '',
-                    he_carid: '',
-                    he_name: '',
-                    he_idimg: '',
-                    he_birthday: '',
-                    he_occupation: '',
-                    he_education: '',
-                    he_school: '',
-                    he_major: '',
-                    he_grade: '',
-                    he_sex: '',
-                    he_nickname: ''
-                }
-            },
-            created: function () ,
-            methods: {
-                register: function (event) {
-                    var vm = this;
-                    var phone = this.registerModel.phone;
-                    var code = this.registerModel.code;
-                    if (phone == "" || phone == null) {
-                        showRemindbox("手机号不能为空！");
-                        return;
-                    } else {
-                        $.ajax({
-                            url: vm.registerUrl,
-                            type: 'POST',
-                            dataType: 'json',
-                            data: vm.registerModel,
-                            success: function (data) {
-                                if (data == 'ok') {
-                                    showRemindbox("短信已发送！");
-                                } else if (data == 'exist') {
-                                    showRemindbox("该手机号已经存在，请重新输入！");
-                                } else if (data == 'no') {
-                                    showRemindbox("该手机号不存在，请重新输入！");
-                                } else if (data == 'error') {
-                                    showRemindbox("发送失败！");
-                                }
+                    el: '#app',
+                    data: {
+                        registerUrl: 'http://suzhi.hzjuym.com/index.php/home/Register/Sensms',
+                        registerUrl1: 'http://suzhi.hzjuym.com/index.php/home/Register/Verif',
+                        registerUrl2: 'http://suzhi.hzjuym.com/index.php/home/Register/dore2',
+                        registerUrl3: 'http://suzhi.hzjuym.com/index.php/home/Register/dore3',
+                        registerModel: {
+                            phone: '',
+                            code: '',
+                            he_carid: '',
+                            he_name: '',
+                            he_idimg: '',
+                            he_birthday: '',
+                            he_occupation: '',
+                            he_education: '',
+                            he_school: '',
+                            he_major: '',
+                            he_grade: '',
+                            he_sex: '',
+                            he_nickname: ''
+                        }
+                    },
+                    created: function () {
+                        var vm = this;
+                    },
+                    methods: {
+                        register: function (event) {
+                            var vm = this;
+                            var phone = this.registerModel.phone;
+                            var code = this.registerModel.code;
+                            if (phone == "" || phone == null) {
+                                showRemindbox("手机号不能为空！");
+                                return;
+                            } else {
+                                $.ajax({
+                                    url: vm.registerUrl,
+                                    type: 'POST',
+                                    dataType: 'json',
+                                    data: vm.registerModel,
+                                    success: function (data) {
+                                        if (data == 'ok') {
+                                            showRemindbox("短信已发送！");
+                                        } else if (data == 'exist') {
+                                            showRemindbox("该手机号已经存在，请重新输入！");
+                                        } else if (data == 'no') {
+                                            showRemindbox("该手机号不存在，请重新输入！");
+                                        } else if (data == 'error') {
+                                            showRemindbox("发送失败！");
+                                        }
 
 
-                            },
-                            error: function (e) {
-                                showRemindbox("连接失败！");
+                                    },
+                                    error: function (e) {
+                                        showRemindbox("连接失败！");
+                                    }
+                                });
                             }
-                        })
-                    }
-                    getcode(event.currentTarget);
-                },
-                register1: function () {
-                    var vm = this;
-                    var phone = this.registerModel.phone;
-                    var code = this.registerModel.code;
-                    if (phone == "" || phone == null) {
-                        showRemindbox("手机号不能为空！");
-                        return;
-                    } else if (code == "" || code == null) {
-                        showRemindbox("验证码不能为空！");
-                        return;
-                    } else {
-                        $.ajax({
-                            url: vm.registerUrl1,
-                            type: 'POST',
-                            dataType: 'json',
-                            data: vm.registerModel,
-                            success: function (data) {
-                                if (data == 'ok') {
-                                    $(".liststep1").attr("style", "display:none;");
-                                    $(".liststep2").attr("style", "display:block;");
-                                } else if (data == 'yorn') {
-                                    showRemindbox("手机号码已存在！");
-                                } else if (data == 'no') {
-                                    showRemindbox("验证码错误");
-                                }
+                            getcode(event.currentTarget);
+                        },
+                        register1: function () {
+                            var vm = this;
+                            var phone = this.registerModel.phone;
+                            var code = this.registerModel.code;
+                            if (phone == "" || phone == null) {
+                                showRemindbox("手机号不能为空！");
+                                return;
+                            } else if (code == "" || code == null) {
+                                showRemindbox("验证码不能为空！");
+                                return;
+                            } else {
+                                $.ajax({
+                                    url: vm.registerUrl1,
+                                    type: 'POST',
+                                    dataType: 'json',
+                                    data: vm.registerModel,
+                                    success: function (data) {
+                                        if (data == 'ok') {
+                                            $(".liststep1").attr("style", "display:none;");
+                                            $(".liststep2").attr("style", "display:block;");
+                                        } else if (data == 'yorn') {
+                                            showRemindbox("手机号码已存在！");
+                                        } else if (data == 'no') {
+                                            showRemindbox("验证码错误");
+                                        }
 
-                            },
-                            error: function (e) {
-                                showRemindbox("连接失败！");
-                            }
-                        })
-                    }
-
-                },
-                register2: function () {
-                    var vm = this;
-                    var he_idimg = $("#he_idimg").val();
-                    var he_carid = this.registerModel.he_carid;
-                    var he_name = this.registerModel.he_name;
-                    if (he_carid == "" || he_carid == null) {
-                        showRemindbox("身份证不能为空！");
-                        return;
-                    } else if (he_name == "" || he_name == null) {
-                        showRemindbox("姓名不能为空！");
-                        return;
-                    } else if (he_idimg == null || he_idimg == "") {
-                        showRemindbox("请上传身份证照片！");
-                        return;
-                    } else {
-                        this.registerModel.he_idimg = he_idimg;
-                        $.ajax({
-                            url: vm.registerUrl2,
-                            type: 'POST',
-                            dataType: 'json',
-                            data: vm.registerModel,
-                            success: function (data) {
-                                if (data == 'ok') {
-                                    vm.registerModel.he_birthday = $("#he_birthday").val();
-                                    vm.registerModel.he_sex = $("#he_sex").val();
-                                    // $("#he_birthday").val(data.he_birthday;);
-                                    // $("#he_sex").val(data.he_sex);
-                                    //$("#he_sex").val(data.he_sex);
-                                    $(".liststep2").attr("style", "display:none;");
-                                    $(".liststep3").attr("style", "display:block;");
-                                }
-
-                            },
-                            error: function (e) {
-                                showRemindbox("连接失败！");
-                            }
-                        })
-                    }
-
-                },
-                register3: function () {
-                    var vm = this;
-
-                    // this.registerModel.he_birthday = $("#he_birthday").val();
-                    // // this.registerModel.he_education = $("#he_education").val();
-                    // this.registerModel.he_sex = $("#he_sex").val();
-                    // this.registerModel.he_grade = $("#he_grade").val();
-                    console.log(vm.registerModel.he_education);
-                    $.ajax({
-                        url: vm.registerUrl3,
-                        type: 'POST',
-                        dataType: 'json',
-                        data: vm.registerModel,
-                        success: function (data) {
-                            if (data == 'ok') {
-                                window.location.href = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx861438b92b0b0ba9&redirect_uri=http%3A%2F%2Fsuzhi.hzjuym.com%2Findex.php%2FHome%2FWxpay%2Findex&response_type=code&scope=snsapi_base&state=123#wechat_redirect";
+                                    },
+                                    error: function (e) {
+                                        showRemindbox("连接失败！");
+                                    }
+                                });
                             }
 
                         },
-                        error: function (e) {
-                            showRemindbox("连接失败！");
-                        }
-                    })
-                },
-                showbox: function (event) {
-                    var vm = this;
-                    // console.log("showbox");
-                    // console.log(event.currentTarget.id);
-                    var id = event.currentTarget.id;
-                    switch (id) {
-                        case "nianji":
-                            title = "可选择年级";
-                            content = "<ul id='answer'>";
-                            // console.log();
-                            var curYear = parseInt((new Date()).Format("yyyy"));
-                            for (var i = curYear; i > (curYear - 10); i--) {
-                                content += "<li><div class='ipt_box2'>" +
-                                "<div class='left'>" + i + "年级</div>" +
-                                "<div class='right'>" +
-                                "<i class='fa fa-angle-right' aria-hidden='true'></i></div>" +
-                                "</div>" +
-                                "<div class='clearbox'></div>" +
-                                "</div></li>";
+                        register2: function () {
+                            var vm = this;
+                            var he_idimg = $("#he_idimg").val();
+                            var he_carid = this.registerModel.he_carid;
+                            var he_name = this.registerModel.he_name;
+                            if (he_carid == "" || he_carid == null) {
+                                showRemindbox("身份证不能为空！");
+                                return;
+                            } else if (he_name == "" || he_name == null) {
+                                showRemindbox("姓名不能为空！");
+                                return;
+                            } else if (he_idimg == null || he_idimg == "") {
+                                showRemindbox("请上传身份证照片！");
+                                return;
+                            } else {
+                                this.registerModel.he_idimg = he_idimg;
+                                $.ajax({
+                                    url: vm.registerUrl2,
+                                    type: 'POST',
+                                    dataType: 'json',
+                                    data: vm.registerModel,
+                                    success: function (data) {
+                                        if (data == 'ok') {
+                                            vm.registerModel.he_birthday = $("#he_birthday").val();
+                                            vm.registerModel.he_sex = $("#he_sex").val();
+                                            // $("#he_birthday").val(data.he_birthday;);
+                                            // $("#he_sex").val(data.he_sex);
+                                            //$("#he_sex").val(data.he_sex);
+                                            $(".liststep2").attr("style", "display:none;");
+                                            $(".liststep3").attr("style", "display:block;");
+                                        }
+
+                                    },
+                                    error: function (e) {
+                                        showRemindbox("连接失败！");
+                                    }
+                                })
                             }
-                            content += "</ul>";
-                            break;
-                        case "xueli":
-                            title = "可选择学历";
-                            content = "<ul id='answer'>";
-                            var arr = "中专、高中、高职（大专）、本科、硕士、博士、博士后（最高）".split("、");
-                            for (var i = 0; i < arr.length; i++) {
-                                content += "<li><div class='ipt_box2'>" +
-                                "<div class='left'>" + arr[i] + "</div>" +
-                                "<div class='right'>" +
-                                "<i class='fa fa-angle-right' aria-hidden='true'></i></div>" +
-                                "</div>" +
-                                "<div class='clearbox'></div>" +
-                                "</div></li>";
-                            }
-                            content += "</ul>";
 
-                            break;
-                    }
-                    console.log(title);
+                        },
+                        register3: function () {
+                            var vm = this;
+                            console.log(vm.registerModel.he_education);
+                            $.ajax({
+                                url: vm.registerUrl3,
+                                type: 'POST',
+                                dataType: 'json',
+                                data: vm.registerModel,
+                                success: function (data) {
+                                    if (data == 'ok') {
+                                        window.location.href = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx861438b92b0b0ba9&redirect_uri=http%3A%2F%2Fsuzhi.hzjuym.com%2Findex.php%2FHome%2FWxpay%2Findex&response_type=code&scope=snsapi_base&state=123#wechat_redirect";
+                                    }
 
-                    var $width2 = $(window).width();
-                    var $height2 = $(window).height();
-
-                    var $yourmodal2 = $('#your-modal');
-                    var $ammodaldialog2 = $(".am-modal-dialog");
-
-                    $yourmodal2.css("height", $height2);
-                    $ammodaldialog2.css("height", $height2);
-                    $yourmodal2.unbind('open.modal.amui');
-                    $yourmodal2.bind('open.modal.amui', function () {
-                        //console.log("打开窗口");
-                        $yourmodal2.find("span").html(title);//设置标题
-                        $yourmodal2.find(".am-modal-bd").html(content);//设置显示内容
-                        $("#answer li").bind("click", function () {
-                            // console.log($(this).find(".left").html());
-                            $("#" + id).find("input").val($(this).find(".left").html());
+                                },
+                                error: function (e) {
+                                    showRemindbox("连接失败！");
+                                }
+                            })
+                        },
+                        showbox: function (event) {
+                            var vm = this;
+                            var id = event.currentTarget.id;
                             switch (id) {
-                                case "xueli":
-                                    vm.registerModel.he_education = $(this).find(".left").html();
-                                    break;
                                 case "nianji":
-                                    vm.registerModel.he_grade = $(this).find(".left").html();
+                                    title = "可选择年级";
+                                    content = "<ul id='answer'>";
+                                    // console.log();
+                                    var curYear = parseInt((new Date()).Format("yyyy"));
+                                    for (var i = curYear; i > (curYear - 10); i--) {
+                                        content += "<li><div class='ipt_box2'>" +
+                                        "<div class='left'>" + i + "年级</div>" +
+                                        "<div class='right'>" +
+                                        "<i class='fa fa-angle-right' aria-hidden='true'></i></div>" +
+                                        "</div>" +
+                                        "<div class='clearbox'></div>" +
+                                        "</div></li>";
+                                    }
+                                    content += "</ul>";
+                                    break;
+                                case "xueli":
+                                    title = "可选择学历";
+                                    content = "<ul id='answer'>";
+                                    var arr = "中专、高中、高职（大专）、本科、硕士、博士、博士后（最高）".split("、");
+                                    for (var i = 0; i < arr.length; i++) {
+                                        content += "<li><div class='ipt_box2'>" +
+                                        "<div class='left'>" + arr[i] + "</div>" +
+                                        "<div class='right'>" +
+                                        "<i class='fa fa-angle-right' aria-hidden='true'></i></div>" +
+                                        "</div>" +
+                                        "<div class='clearbox'></div>" +
+                                        "</div></li>";
+                                    }
+                                    content += "</ul>";
+
                                     break;
                             }
-                            $yourmodal2.modal('close');
-                        })
-                        // console.log($yourmodal.find(".am-modal-bd").html());
-                    });
-                    $yourmodal2.unbind('close.modal.amui');
-                    $yourmodal2.bind('close.modal.amui', function () {
-                        //console.log('关闭了窗口');
-                    });
-                    $yourmodal2.modal("open");
+                            console.log(title);
 
-                    // console.log(content);
-                },
-                showtime()
-        {
-            var vm = this;
-            // $("#doc-datepicker").datepicker({theme:'warning',format: 'yyyy-mm'},'open');
-            // $("#doc-datepicker").datepicker('open', function(event) {
-            //     console.log(event.date.Format("yyyy-MM-dd"));
-            //     $("#doc-datepicker").find("input").val(event.date.Format("yyyy-MM-dd"));
-            //     // $("#he_birthday").val(event.date.Format("yyyy-MM-dd"));
-            // })
-            $('#doc-datepicker').datepicker().unbind('changeDate.datepicker.amui');
-            $('#doc-datepicker').datepicker().
-                    bind('changeDate.datepicker.amui', function (event) {
-                        console.log(event.date.Format("yyyy-MM-dd"));
-                        $("#doc-datepicker").find("input").val(event.date.Format("yyyy-MM-dd"));
-                        vm.registerModel.he_birthday = event.date.Format("yyyy-MM-dd");
-                        // $("#he_birthday").val(event.date.Format("yyyy-MM-dd"));
-                    });
-            $('#doc-datepicker').datepicker('open');
-        }
-        }
-        })
+                            var $width2 = $(window).width();
+                            var $height2 = $(window).height();
+
+                            var $yourmodal2 = $('#your-modal');
+                            var $ammodaldialog2 = $(".am-modal-dialog");
+
+                            $yourmodal2.css("height", $height2);
+                            $ammodaldialog2.css("height", $height2);
+                            $yourmodal2.unbind('open.modal.amui');
+                            $yourmodal2.bind('open.modal.amui', function () {
+                                //console.log("打开窗口");
+                                $yourmodal2.find("span").html(title);//设置标题
+                                $yourmodal2.find(".am-modal-bd").html(content);//设置显示内容
+                                $("#answer li").bind("click", function () {
+                                    // console.log($(this).find(".left").html());
+                                    $("#" + id).find("input").val($(this).find(".left").html());
+                                    switch (id) {
+                                        case "xueli":
+                                            vm.registerModel.he_education = $(this).find(".left").html();
+                                            break;
+                                        case "nianji":
+                                            vm.registerModel.he_grade = $(this).find(".left").html();
+                                            break;
+                                    }
+                                    $yourmodal2.modal('close');
+                                })
+                                // console.log($yourmodal.find(".am-modal-bd").html());
+                            });
+                            $yourmodal2.unbind('close.modal.amui');
+                            $yourmodal2.bind('close.modal.amui', function () {
+                                //console.log('关闭了窗口');
+                            });
+                            $yourmodal2.modal("open");
+
+                            // console.log(content);
+                        },
+                        showtime: function () {
+                            var vm = this;
+                            $('#doc-datepicker').datepicker().unbind('changeDate.datepicker.amui');
+                            $('#doc-datepicker').datepicker().bind('changeDate.datepicker.amui', function (event) {
+                                console.log(event.date.Format("yyyy-MM-dd"));
+                                $("#doc-datepicker").find("input").val(event.date.Format("yyyy-MM-dd"));
+                                vm.registerModel.he_birthday = event.date.Format("yyyy-MM-dd");
+                            });
+                            $('#doc-datepicker').datepicker('open');
+                        }
+                    }
+                })
+                ;
 
 
     </script>

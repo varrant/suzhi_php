@@ -1,0 +1,19 @@
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html class="no-js">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>猎头意见反馈</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="renderer" content="webkit">
+        <link rel="stylesheet" href="/Public/home/css/feedback/feedback.css">
+    </head>
+
+    <body>
+        <div class="feedback">
+            <div class="tel">客服电话：0571-87211611</div>
+            <a href="tel:0571-87211611" class="tel_img"><img src="/Public/home/images/taskdetailicon1.png"></a>
+        </div>
+    </body>
+</html>

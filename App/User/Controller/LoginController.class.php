@@ -52,7 +52,7 @@ class LoginController extends UserCommonController
         $headhunter_data = $model_headhunter
             ->where($map_he)
             ->field('he_id, he_type,he_phone,he_is_delete')
-            ->select();
+            ->find();
         if (empty($headhunter_data)) {
             $this->json_return(1, '帐号不存在');
         }
@@ -61,8 +61,8 @@ class LoginController extends UserCommonController
             $this->json_return(1, '已封号');
         }
 
-        if (!($headhunter_data['he_type'] === 1)) {
-            $this->json_return(1, '此帐号不是求职者帐号');
+        if (($headhunter_data['he_type'] === 1)) {
+            $this->json_return(1, '此帐号不是求职者帐号');//2 为求职者；
         }
 
         /**
@@ -87,7 +87,7 @@ class LoginController extends UserCommonController
         $_SESSION['phone'] = $phone;//电话；
         $_SESSION['user_id'] = $headhunter_data['he_id'];//表示但前用户已经登录，未登录的用户ID为0；
 
-        $this->json_return(1, '登录成功');
+        $this->json_return(0, '登录成功');
 
     }
 
