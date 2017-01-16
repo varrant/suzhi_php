@@ -45,14 +45,28 @@
 		</div>
 	</div>
 	<!--支付方式-->
-	<div class="box_bg" style="display:none;" id="pay_mode">
+	<!--<div class="box_bg" style="display:none;" id="pay_mode">
 		<div class="pay_mode">
-			<h3>选择支付方式 <a href="javascript:void(0);"><img src="images/icon_2.png" width="16" onclick="guanbi()" /></a></h3>
+			<h3>5000元 
+            	<a href="javascript:void(0);"><img src="images/icon_2.png" width="16" onclick="guanbi()" /></a>
+            </h3>
 			<ul>
 				<li class="mode_frist"><a href="javascript:void(0);" style="color:#05cb04;"><img src="images/wechat1.png" width="24" /> 微信支付 <img class="img_1" src="images/icon_3.png" width="7" /></a></li>
-				<li><a href="javascript:void(0);" style="color: #01a9ef;"><img src="images/alipay1.png" width="24" /> 支付宝 <img class="img_1" src="images/icon_3.png" width="7" /></a></li>
 			</ul>
 		</div>
+	</div>-->
+    <div class="box_bg" style="display:none;" id="pay_mode">
+		<div class="pay_style_box">
+        	<h3>5000元</h3>
+            <a href="javascript:void(0);" id="guanbi"><img src="images/icon_2.png" width="16" onclick="guanbi()" /></a>
+            <ul class="pay_style_list">
+            	<li><a href="javascript:void(0);" style="color:#05cb04;">
+                	<img src="images/wechat1.png" width="24" /> 微信支付
+                    <input type="radio" name="pay" checked />
+                </a></li>
+            </ul>
+            <input type="button" value="确认支付5000元" class="pay_bottom" />
+        </div>
 	</div>
 </body>
 </html>
