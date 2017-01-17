@@ -133,3 +133,4 @@ node_modules
 ThinkPHP/Library/Vendor/Weixinpay/cacert/*.pem
 ThinkPHP/Library/Vendor/Weixinpay/cacert/*.p12
 uploads
+App/Runtime
