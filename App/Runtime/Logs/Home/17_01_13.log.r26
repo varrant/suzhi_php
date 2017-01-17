@@ -1,9 +1,0 @@
-[ 2017-01-13T07:50:04+08:00 ] 192.168.3.12 /
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000163s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000182s ]
-ERR: Think\Controller:_initialize方法不存在！
-

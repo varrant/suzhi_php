@@ -33,6 +33,18 @@ class LoginController extends UserCommonController
      * 发送短信验证码；
      */
     public function smsvcode(){
+        //用户已经注册求职者端口；
+        $tel = I('phone');
+        $user_info = $this->get_user_by_tel($tel);
+
+        if(empty($user_info)){
+            $this->json_return(1, '手机号码未注册求职者');
+        }
+
+        if(!($user_info['he_is_delete'] == 1)){
+            $this->json_return(1, '已封号');
+        }
+
         $this->send_sms_vcode();
     }
     /**
@@ -44,28 +56,6 @@ class LoginController extends UserCommonController
         $phone = I('phone');
         $code = I('code');
         /**
-         * 检查帐号状态；
-         * 1.存在；2.状态正常；3.求职者；
-         */
-        $model_headhunter = M('headhunter');
-        $map_he['he_phone'] = $phone;
-        $headhunter_data = $model_headhunter
-            ->where($map_he)
-            ->field('he_id, he_type,he_phone,he_is_delete')
-            ->find();
-        if (empty($headhunter_data)) {
-            $this->json_return(1, '帐号不存在');
-        }
-
-        if ($headhunter_data['he_is_delete'] === 2) {
-            $this->json_return(1, '已封号');
-        }
-
-        if (($headhunter_data['he_type'] === 1)) {
-            $this->json_return(1, '此帐号不是求职者帐号');//2 为求职者；
-        }
-
-        /**
          * 验证码检查；
          */
         $db_co = M('code');
@@ -76,6 +66,23 @@ class LoginController extends UserCommonController
         $code = $db_co->data($code_data)->where($map_co)->save();
         if (!($code !== false && $code > 0)) {
             $this->json_return(1, '验证码错误');
+        }
+
+        /**
+         * 检查帐号状态；
+         * 1.存在；2.状态正常；3.求职者；
+         */
+        $headhunter_data = $this->get_user_by_tel($phone);
+        if (empty($headhunter_data)) {
+            $this->json_return(1, '帐号不存在');
+        }
+
+        if (!($headhunter_data['he_is_delete'] == 1)) {
+            $this->json_return(1, '已封号');
+        }
+
+        if (!($headhunter_data['he_type'] == 2)) {
+            $this->json_return(1, '此帐号不是求职者帐号');//2 为求职者；
         }
 
         /**

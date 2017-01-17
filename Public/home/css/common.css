@@ -120,7 +120,8 @@ h3{margin-bottom:0px;margin-top:5px;}
 .code_title>h3 {font-size: 36px;color: #ff8903;font-weight:normal;margin-bottom:30px;}
 .title_list li{font-size: 13px;font-weight: normal;color: #3f3f3f;margin-bottom:14px;}
 .title_list h3{margin-right:15px;float:left;font-weight: normal;}
-.code_view .code_img{width:148px;height:152px;position:absolute;bottom:87px;left:50%;margin-left:-74px;}
+
+.code_view .code_img{width:148px;height:152px;position:absolute;bottom:130px;left:50%;margin-left:-74px;}
 .code_img p{position:absolute;bottom:-40px;width:100%;text-align:center;font-size:17px;color:#fff;letter-spacing:0.8px;}
 /*****个人中心******/
 .center_top{background:#ff8903;height:126px;}

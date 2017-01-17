@@ -36,7 +36,8 @@ Class CommonController extends Controller
      * @param string $errmsg
      * @param array $data
      */
-    public function json_return($errcode, $errmsg = '', $data = array()){
+    public function json_return($errcode, $errmsg = '', $data = array())
+    {
         $return = array(
             'errcode' => $errcode,
             'errmsg' => $errmsg,
@@ -58,13 +59,27 @@ Class CommonController extends Controller
     {
 
         $user_id = intval(session('he_id'));
-//        dump($_SESSION);exit;
         if (empty($user_id)) {
-            $this->redirect('Home/Login/index');
+            $this->redirect('/Home/Login/index');
             exit;
         }
 
         return $user_id;
+
+        //查询用户信息
+        //MK 无需检查用户信息，在登录时已检查，无需重复检查
+//        $db = M('headhunter');
+//        $where['he_id'] = $user_id;
+//        $where['he_is_delete'] = 1;
+//        $res = $db->where($where)->select();
+//        if (empty($res)) {
+//            $this->redirect('/Home/Login/index');
+//            exit;
+//        } else {
+//            return $user_id;
+//        }
+
+
     }
 
     /**
@@ -80,9 +95,10 @@ Class CommonController extends Controller
         }
 
         //判别该手机号码是否已注册
-        if ($this->tel_not_register($phone)) {
-            $this->json_return(1, '手机号码未注册');
-        }
+        //if ($this->tel_not_register($phone)) {
+        // $this->json_return(1, '手机号码未注册');
+        // }
+
 
         /*生成四位随机码*/
         $num = "";
@@ -123,8 +139,20 @@ Class CommonController extends Controller
 
         $db_head = M('headhunter');
         $map_head['he_phone'] = $tel;
+        $map_head['he_type'] = 1;//猎头
         $db_phone = $db_head->where($map_head)->find();
 
         return empty($db_phone);
+    }
+
+    public function get_user_by_tel($tel)
+    {
+
+        $db_head = M('headhunter');
+        $map_head['he_phone'] = $tel;
+        $map_head['he_type'] = 1;//猎头
+        $db_phone = $db_head->where($map_head)->find();
+
+        return ($db_phone);
     }
 }

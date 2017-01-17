@@ -12,16 +12,17 @@ use Think\Controller;
 class UserController extends UserCommonController
 {
 
+    //private $nologin = array('bcmhs')
     /**
      * 登录检查：如果用户未登录，跳转到登录页面；
      * 登录的依据为：$_SESSION['user_id'] > 0;
      */
     public function _initialize()
     {
-        $user_id = intval(session(['user_id']));
-        if (empty($user_id)) {
-            //$this->redirect(U('User/Login/index'));
-        }
+//        $user_id = intval(session(['user_id']));
+//        if (empty($user_id) && !in_array(ACTION_NAME, $this->nologin)) {
+//            $this->redirect('/User/Login/index');
+//        }
     }
 
     /**
@@ -31,20 +32,21 @@ class UserController extends UserCommonController
     public function index()
     {
         $user_id = session('user_id');
+
         //未登录
         if (empty($user_id)) {
-            $this->show('not_login');
+            $this->redirect('User/Login/index');
         }
+
         /**
          * 已登录
          */
         //显示用户信息
         $model_headhunter = M('headhunter');
         $user_data = $model_headhunter->where('he_id = ' . $user_id)->find();
-        //todo 检查用户状态, 是否存在，是否已经封号，是否已经求职者
-
-        //显示页面；
         $this->assign('user', $user_data);
+
+
         $this->display();
 
     }
@@ -60,9 +62,8 @@ class UserController extends UserCommonController
         //查询页面数据；
         $model_headhunter = M('headhunter');
         $user_data = $model_headhunter->where("he_id = " . $user_id)->find();
-
-        //显示数据；
         $this->assign('user', $user_data);
+
         $this->display();
 
     }
@@ -89,9 +90,11 @@ class UserController extends UserCommonController
     /**
      * 成为猎头
      */
-    public function bcmhs(){
+    public function bcmhs()
+    {
         $this->display();
     }
+
     /**
      * 意见反馈
      * todo

@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="/Public/home/assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="/Public/home/css/style.css">
   <link rel="stylesheet" href="/Public/home/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/Public/home/foot/iconfont.css">
+	<link rel="stylesheet" href="/Public/home/css/taskList.css">
   <script src="/Public/home/assets/js/jquery.min.js"></script>
   <script src="/Public/home/assets/js/amazeui.min.js"></script>
   <script src="/Public/home/js/function.js"></script>
@@ -23,64 +25,179 @@
 		<div class="index_list" style="margin-top:0px;">
 			<div class="tast_hd">
 				<ul>
-					<li><a onclick="fclick(1)">兼职</a></li>
-					<li><a onclick="fclick(2)">实习</a></li>
-					<li><a onclick="fclick(3)">全职</a></li>
+					<li ><a onclick="flclicks(1)" id="jz" class="<?php if($type == 1): ?>on<?php endif; ?>">兼职</a></li>
+					<li><a onclick="flclicks(2)" id="sx" class="<?php if($type == 2): ?>on<?php endif; ?>">实习</a></li>
+					<li><a onclick="flclicks(3)" id="qz" class="<?php if($type == 3): ?>on<?php endif; ?>">全职</a></li>
 				</ul>
 			</div>
 			
 		
 			<div class="list_li">
-				<ul>
-					<li><a href="tast_detail.html">
-						<div class="list_img"><img src="images/alipay3.png" width="100%" /></div>
+				<input type="hidden" id="type" value="">
+				<input type="hidden" id="page" name="page" value="2">
+				<ul id="good_ul">
+					<?php if(is_array($res)): foreach($res as $key=>$v): ?><li><a href="<?php echo U('task/details',array('pos_id'=>$v['pos_id']));?>">
+						<div class="list_img"><img src="<?php echo ($v['pos_img']); ?>" width="100%" /></div>
 						<div class="list_word">
-							<h3><span class="full">全职</span>物流教练员<span class="price">300元</span></h3>
-							<p>此处填写工作简单介绍</p>
+							<h3>
+								<?php if($v['pos_task_type'] == 1){?>
+								<span class="part">兼职</span>
+								<?php }elseif($v['pos_task_type'] == 2){?>
+								<span class="fieldwork">实习</span>
+								<?php }else{?>
+								<span class="full">全职</span>
+								<?php }?>
+								<?php echo ($v['pos_name']); ?><span class="price"><?php echo ($v['pos_brokerage']); ?>/人</span></h3>
+							<p></p>
 							<div class="list_num">
-								<span>需求：10人</span>
+								<span>需求：<?php echo ($v['pos_recruitmun']); ?>人</span>
 								<div class="list_view">
-									<span><img src="images/taskico1.png" />99</span>
-									<span><img src="images/taskico2.png" />99999</span>
+									<span><img src="/Public/home/images/taskico1.png" /><?php echo ($v['total_toudi']); ?></span>
+									<span><img src="/Public/home/images/taskico2.png" /><?php echo ($v['total_liulan']); ?></span>
 								</div>
 							</div>
 						</div></a>
-					</li>
-					<li><a href="tast_detail.html">
-						<div class="list_img"><img src="images/alipay3.png" width="100%" /></div>
-						<div class="list_word">
-							<h3><span class="part">兼职</span>物流教练员<span class="price">300元</span></h3>
-							<p>此处填写工作简单介绍</p>
-							<div class="list_num">
-								<span>需求：10人</span>
-								<div class="list_view">
-									<span><img src="images/taskico1.png" />99</span>
-									<span><img src="images/taskico2.png" />99999</span>
-								</div>
-							</div>
-						</div></a>
-					</li>
-					<li><a href="tast_detail.html">
-						<div class="list_img"><img src="images/alipay3.png" width="100%" /></div>
-						<div class="list_word">
-							<h3><span class="fieldwork">实习</span>物流教练员<span class="price">300元</span></h3>
-							<p>此处填写工作简单介绍</p>
-							<div class="list_num">
-								<span>需求：10人</span>
-								<div class="list_view">
-									<a><img src="images/taskico1.png" />99</a>
-									<a><img src="images/taskico2.png" />99999</a>
-								</div>
-							</div>
-						</div></a>
-					</li>
+					</li><?php endforeach; endif; ?>
 				</ul>
+				<!--<input type="button" onclick="jjclicks()" value="查看更多">-->
 			</div>
 		</div>
-		<!--加载-->
-		<div id="view" style="display:none;">
-			<a href="javascript:void(0);" />查看更多</a>
-		</div>
 	</div>
+	<!--<footer class="nav_bottom am-topbar am-topbar-inverse am-topbar-fixed-bottom">-->
+		  <!--<ul>-->
+			<!--<li onclick="window.location.href='/index.php?m=home&c=index&a=index'">-->
+			  <!--<div class="img"><img src="/Public/home/images/mycenterbottomicon1.png" alt=""></div>-->
+			  <!--<div class="title ">首页</div>-->
+			<!--</li>-->
+			<!--<li onclick="window.location.href='/index.php?m=home&c=task&a=lists'">-->
+			  <!--<div class="img"><img src="/Public/home/images/mycenterbottomicon2over.png" alt=""></div>-->
+			  <!--<div class="title cur">任务</div>-->
+			<!--</li>-->
+			<!--<li onclick="window.location.href='/index.php?m=Home&c=User&a=index'">-->
+			  <!--<div class="img"><img src="/Public/home/images/mycenterbottomicon3.png" alt=""></div>-->
+			  <!--<div class="title">我的</div>-->
+			<!--</li>-->
+		  <!--</ul>-->
+		<!--</footer>-->
+	<footer class="nav_bottom am-topbar am-topbar-inverse am-topbar-fixed-bottom">
+		<ul>
+			<li  onclick="window.location.href='/index.php?m=home&c=index&a=index'">
+				<div class="img"><i class="iconfont icon-shouyeshouye"></i></div>
+				<div class="title">首页</div>
+			</li>
+			<li class="on" onclick="window.location.href='/index.php?m=home&c=task&a=lists'">
+				<div class="img"><i class="iconfont icon-renwu"></i></div>
+				<div class="title">任务</div>
+			</li>
+			<li onclick="window.location.href='/index.php?m=Home&c=User&a=index'">
+				<div class="img"><i class="iconfont icon-wode"></i></div>
+				<div class="title">我的</div>
+			</li>
+		</ul>
+	</footer>
 </body>
 </html>
+<script type="text/javascript">
+
+	function jjclicks(){
+		//获取是否传递参数
+		var id=$('#type').val();
+		//获取页数
+		var page=$('#page').val();
+		var pos_task_type = id;
+
+		var data={'fhtype':'json','pos_task_type':pos_task_type,'page':page};
+		$.ajax({
+			type: "post",
+			url:"<?php echo U('task/lists');?>",
+			data: data,
+			dataType: "json",
+			success: function(data){
+				if(data.data.length > 0){
+					var ghtml='';
+					var shtml='';
+					$.each(data.data,function(index,item){
+						if(item['pos_task_type'] == 1){
+							shtml ="<span class='part'>兼职</span>";
+						}else if(item['pos_task_type'] == 2){
+							shtml ="<span class='fieldwork'>实习</span>";
+						}else{
+							shtml ="<span class='full'>全职</span>";
+						}
+						ghtml +="<li><a href=\"/index.php/home/task/details?pos_id="+item['pos_id']+"\"><div class='list_img'><img src="+item['pos_img']+" width='100%' /></div><div class='list_word'><h3>"+shtml+""+item['pos_name']+"<span class='price'>"+item['pos_brokerage']+"</span></h3><p></p><div class='list_num'><span>需求："+item['pos_recruitmun']+"人</span><div class='list_view'><span><img src='/Public/home/images/taskico1.png' />"+item['total_toudi']+"</span><span><img src='/Public/home/images/taskico2.png' />"+item['total_liulan']+"</span></div></div></div></a></li>";
+
+					});
+
+					if(page >1){
+						$("#good_ul").append(ghtml);
+					}else{
+						$("#good_ul").html(ghtml);
+					}
+						var page1=parseInt(page)+1;
+						$('#page').val(page1);
+
+				}else{
+					//暂无数据 页面没写
+				}
+			}
+		});
+
+	}
+	function flclicks(id){
+		if(id == 1){
+			$('#jz').addClass('on');
+			$('#sx').removeClass('on');
+			$('#qz').removeClass('on');
+		}else if(id == 2){
+			$('#jz').removeClass('on');
+			$('#sx').addClass('on');
+			$('#qz').removeClass('on');
+		}else{
+			$('#jz').removeClass('on');
+			$('#sx').removeClass('on');
+			$('#qz').addClass('on');
+		}
+
+
+
+		//赋值
+		$('#type').val(id);
+		//将页数赋值为1
+		$('#page').val(2);
+		var pos_task_type = id;
+		var data={'fhtype':'json','pos_task_type':pos_task_type};
+		$.ajax({
+			type: "post",
+			url:"<?php echo U('task/lists');?>",
+			data: data,
+			dataType: "json",
+			success: function(data){
+				if(data.data.length > 0){
+					var ghtml='';
+					var shtml='';
+					$.each(data.data,function(index,item){
+						if(item['pos_task_type'] == 1){
+							shtml ="<span class='part'>兼职</span>";
+						}else if(item['pos_task_type'] == 2){
+							shtml ="<span class='fieldwork'>实习</span>";
+						}else{
+							shtml ="<span class='full'>全职</span>";
+						}
+						ghtml +="<li><a href=\"/index.php/home/task/details?pos_id="+item['pos_id']+"\"><div class='list_img'><img src="+item['pos_img']+" width='100%' /></div><div class='list_word'><h3>"+shtml+""+item['pos_name']+"<span class='price'>"+item['pos_brokerage']+"</span></h3><p></p><div class='list_num'><span>需求："+item['pos_recruitmun']+"人</span><div class='list_view'><span><img src='/Public/home/images/taskico1.png' />"+item['total_toudi']+"</span><span><img src='/Public/home/images/taskico2.png' />"+item['total_liulan']+"</span></div></div></div></a></li>";
+
+					});
+						$("#good_ul").html(ghtml);
+				}else{
+					//暂无数据 页面没写
+				}
+			}
+		});
+
+	}
+
+
+
+
+
+
+</script>

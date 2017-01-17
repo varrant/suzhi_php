@@ -26,7 +26,7 @@
         <div id="app">
 
             <!-- 填写手机号步骤 -->
-            <form method="post" action="{:U('regcmt')}">
+            <form method="post" action="{:U('regcmt')}" onsubmit="return regcheck();">
                 <div class="liststep1" style="display: block;">
                     <div class="logo"></div>
                     <div class="ipt_box">
@@ -59,7 +59,11 @@
                     </div>
                     <div class="margin_box180"></div>
                     <div class="btn_box">
-                        <button class="btn_login_out" id="btn_login" @click="register1">下一步</button>
+                        <button class="btn_login_out" id="btn_login" >下一步</button>
+                    </div>
+                    <br/>
+                    <div class="btn_box">
+                        <button class="btn_login_over" onclick="javascript:window.open('{:U('User/Login/index')})'" type="button">已注册，去登录</button>
                     </div>
                 </div>
             </form>
@@ -94,7 +98,7 @@
                 </div>
                 <div style="margin-top: 120px;"></div>
                 <div class="btn_box">
-                    <button class="btn_login_over" id="btn_login" @click="register2">下一步</button>
+                    <button class="btn_login_over" @click="register2">下一步</button>
                 </div>
             </div>
 
@@ -181,7 +185,7 @@
 
                 <div style="background-color: #d8d8d8; padding-top: 120px; padding-bottom: 50px;">
                     <div class="btn_box">
-                        <button class="btn_login_over" id="btn_login" @click="register3">下一步</button>
+                        <button class="btn_login_over" @click="register3">下一步</button>
                     </div>
                 </div>
             </div>
@@ -211,7 +215,7 @@
 
                 <div style="background-color: #d8d8d8; padding-top: 300px; padding-bottom: 80px;">
                     <div class="btn_box">
-                        <button class="btn_login_pay_over" id="btn_login" data-am-modal="{target: '#mypay'}">立即支付</button>
+                        <button class="btn_login_pay_over" data-am-modal="{target: '#mypay'}">立即支付</button>
                     </div>
                 </div>
             </div>
@@ -238,33 +242,33 @@
             </div>
 
             <!-- 支付提示方式 -->
-            <div class="am-modal-actions" id="mypay">
-                <div class="am-modal-actions-group">
-                    <ul class="am-list">
-                        <li class="am-modal-actions-header">选择支付方式
-                            <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close="" style="float: right; line-height: 25px; height: 25px; padding: 0px; font-size: 20px;">×</a>
-                        </li>
-                        <li>
-                            <a href="#" style="color: #05cb04;">
-                                <span>
-                                    <img src="images/wechat1.png" alt="">
-                                </span>
-                                &nbsp;微信支付
-                                <i class="fa fa-angle-right" style="float: right; color: #999999; margin-right: 16px; line-height: 66px;" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" style="color: #01a9ef;">
-                                <span>
-                                    <img src="images/alipay1.png" alt="">
-                                </span>
-                                &nbsp;支付宝
-                                <i class="fa fa-angle-right" style="float: right; color: #999999; margin-right: 16px; line-height: 66px;" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <!--<div class="am-modal-actions" id="mypay">-->
+                <!--<div class="am-modal-actions-group">-->
+                    <!--<ul class="am-list">-->
+                        <!--<li class="am-modal-actions-header">选择支付方式-->
+                            <!--<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close="" style="float: right; line-height: 25px; height: 25px; padding: 0px; font-size: 20px;">×</a>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<a href="#" style="color: #05cb04;">-->
+                                <!--<span>-->
+                                    <!--<img src="images/wechat1.png" alt="">-->
+                                <!--</span>-->
+                                <!--&nbsp;微信支付-->
+                                <!--<i class="fa fa-angle-right" style="float: right; color: #999999; margin-right: 16px; line-height: 66px;" aria-hidden="true"></i>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<a href="#" style="color: #01a9ef;">-->
+                                <!--<span>-->
+                                    <!--<img src="images/alipay1.png" alt="">-->
+                                <!--</span>-->
+                                <!--&nbsp;支付宝-->
+                                <!--<i class="fa fa-angle-right" style="float: right; color: #999999; margin-right: 16px; line-height: 66px;" aria-hidden="true"></i>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
 
             <!-- 什么是保证金 -->
             <div class="cashbox">
@@ -298,6 +302,16 @@
     </body>
     <script src="/Public/home/js/vue.js"></script>
     <script>
+
+        function regcheck(){
+            //检查是否已经同意协议
+            if(!agree_si){
+                showRemindbox('请同意注册协议');
+                return false;
+            }
+            return true;
+        }
+        var agree_si = false;
         function getcode(t) {
             $(t).html("重新发送");
             $("#btn_login").attr("class", "btn_login_over");
@@ -327,13 +341,13 @@
                 $("#isYes").addClass("fa-circle-o");
                 $("#isYes").removeClass("fa-check-circle");
                 $("#isYes").removeClass("fa-check-circleover");
-
+                agree_si = false;
             } else {
 
                 $("#isYes").removeClass("fa-circle-o");
                 $("#isYes").addClass("fa-check-circle");
                 $("#isYes").addClass("fa-check-circleover");
-
+                agree_si = true;
             }
 
         }
@@ -476,7 +490,7 @@
         var register = new Vue({
                     el: '#app',
                     data: {
-                        registerUrl: 'http://suzhi.hzjuym.com/index.php/home/Register/Sensms',
+                        registerUrl: '{:U("User/Register/smsvcode")}',
                         registerUrl1: 'http://suzhi.hzjuym.com/index.php/home/Register/Verif',
                         registerUrl2: 'http://suzhi.hzjuym.com/index.php/home/Register/dore2',
                         registerUrl3: 'http://suzhi.hzjuym.com/index.php/home/Register/dore3',
@@ -514,17 +528,17 @@
                                     dataType: 'json',
                                     data: vm.registerModel,
                                     success: function (data) {
-                                        if (data == 'ok') {
-                                            showRemindbox("短信已发送！");
-                                        } else if (data == 'exist') {
-                                            showRemindbox("该手机号已经存在，请重新输入！");
-                                        } else if (data == 'no') {
-                                            showRemindbox("该手机号不存在，请重新输入！");
-                                        } else if (data == 'error') {
-                                            showRemindbox("发送失败！");
-                                        }
-
-
+                                        showRemindbox(data.errmsg);
+                                        return;
+//                                        if (data == 'ok') {
+//                                            showRemindbox("短信已发送！");
+//                                        } else if (data == 'exist') {
+//                                            showRemindbox("该手机号已经存在，请重新输入！");
+//                                        } else if (data == 'no') {
+//                                            showRemindbox("该手机号不存在，请重新输入！");
+//                                        } else if (data == 'error') {
+//                                            showRemindbox("发送失败！");
+//                                        }
                                     },
                                     error: function (e) {
                                         showRemindbox("连接失败！");
@@ -534,6 +548,11 @@
                             getcode(event.currentTarget);
                         },
                         register1: function () {
+                            //检查是否已经同意协议
+                            if(!agree_si){
+                                showRemindbox('请同意注册协议');
+                                return;
+                            }
                             var vm = this;
                             var phone = this.registerModel.phone;
                             var code = this.registerModel.code;
@@ -544,26 +563,27 @@
                                 showRemindbox("验证码不能为空！");
                                 return;
                             } else {
-                                $.ajax({
-                                    url: vm.registerUrl1,
-                                    type: 'POST',
-                                    dataType: 'json',
-                                    data: vm.registerModel,
-                                    success: function (data) {
-                                        if (data == 'ok') {
-                                            $(".liststep1").attr("style", "display:none;");
-                                            $(".liststep2").attr("style", "display:block;");
-                                        } else if (data == 'yorn') {
-                                            showRemindbox("手机号码已存在！");
-                                        } else if (data == 'no') {
-                                            showRemindbox("验证码错误");
-                                        }
 
-                                    },
-                                    error: function (e) {
-                                        showRemindbox("连接失败！");
-                                    }
-                                });
+//                                $.ajax({
+//                                    url: vm.registerUrl1,
+//                                    type: 'POST',
+//                                    dataType: 'json',
+//                                    data: vm.registerModel,
+//                                    success: function (data) {
+//                                        if (data == 'ok') {
+//                                            $(".liststep1").attr("style", "display:none;");
+//                                            $(".liststep2").attr("style", "display:block;");
+//                                        } else if (data == 'yorn') {
+//                                            showRemindbox("手机号码已存在！");
+//                                        } else if (data == 'no') {
+//                                            showRemindbox("验证码错误");
+//                                        }
+//
+//                                    },
+//                                    error: function (e) {
+//                                        showRemindbox("连接失败！");
+//                                    }
+//                                });
                             }
 
                         },

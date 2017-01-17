@@ -17,7 +17,7 @@ class WxpayController extends CommonController
     public function testpay()
     {
         $oid = time();
-        $price = 1;
+        $price = 0.01;
         $desc = 'Mark Test';
         $nof = "http://test.91suzhi.com/index.php/Home/Wxpay/notify";;
         $json = $this->pay($oid, $price, $desc, $nof);
@@ -38,6 +38,29 @@ class WxpayController extends CommonController
     }
 
     /**
+     * 测试方法；
+     */
+    public function cordertest()
+    {
+        $notifyurl = "http://" . $_SERVER['HTTP_HOST'] . U('Home/Wxpay/notify');
+        $pay_order = M('pay');
+        $data['pay_order'] = createOrderId();
+        $data['pay_he_id'] = $_SESSION['he_id'];
+        $data['pay_price'] = 0.01;//默认500，测试修改为0.01元
+        $data['create_time'] = time();
+        $res = $pay_order->add($data);
+        //如果订单创建成功 就调用支付接口
+        if (!($res !== false && $res > 0)) {
+            $this->error('订单创建失败');
+        }
+        //显示支付页面
+        $pay_param = $this->pay($data['pay_order'], $data['pay_price'], '猎头保证金', $notifyurl);
+        $this->assign('pay_param', $pay_param);
+        //$this->display('home/register/register'); 傻逼
+        $this->display('create_order');
+    }
+
+    /**
      * 注册支付接口；
      */
     public function create_order()
@@ -46,17 +69,18 @@ class WxpayController extends CommonController
         $pay_order = M('pay');
         $data['pay_order'] = createOrderId();
         $data['pay_he_id'] = $_SESSION['he_id'];
-        $data['pay_price'] = 500;
+        $data['pay_price'] = 500;//默认500，测试修改为0.01元
         $data['create_time'] = time();
         $res = $pay_order->add($data);
         //如果订单创建成功 就调用支付接口
-        if ($res !== false && $res > 0) {
-            $pay_param = $this->pay($data['pay_order'], $data['pay_price'], '猎头保证金', $notifyurl);
-            echo $pay_param;
-        } else {
-            echo '创建订单失败';
+        if (!($res !== false && $res > 0)) {
+            $this->error('订单创建失败');
         }
-
+        //显示支付页面
+        $pay_param = $this->pay($data['pay_order'], $data['pay_price'], '猎头保证金', $notifyurl);
+        $this->assign('pay_param', $pay_param);
+        //$this->display('home/register/register'); 傻逼
+        $this->display();
     }
 
     public function pay($out_trade_no, $price, $desc, $notifyurl)
@@ -81,7 +105,7 @@ class WxpayController extends CommonController
         $unifiedOrder->setParameter("openid", $openid);//openid
         $unifiedOrder->setParameter("body", $desc);//商品描述
         $unifiedOrder->setParameter("out_trade_no", $out_trade_no);//商户订单
-        $unifiedOrder->setParameter("total_fee", $price);//总金额 微信的钱1*100等于1
+        $unifiedOrder->setParameter("total_fee", intval($price * 100));//总金额 微信的钱1*100等于1
         $unifiedOrder->setParameter("notify_url", $NOTIFY_URL);//通知地址
         $unifiedOrder->setParameter("trade_type", "JSAPI");//交易类型
         //非必填参数，商户可根据实际情况选填
@@ -107,12 +131,27 @@ class WxpayController extends CommonController
         return $jsApiParameters;
     }
 
-    // 只完成 返回
+    /**
+     * 微新支付回调；
+     */
     public function notify()
     {
 
-        //存储微信的回调
+
+        //获取微信回调
         $xml = $GLOBALS['HTTP_RAW_POST_DATA'];
+
+        //通知微信操作成功；
+        $return =  <<<o
+<xml>
+ <return_code><![CDATA[SUCCESS]]></return_code>
+ <return_msg><![CDATA[OK]]></return_msg>
+</xml>
+o;
+        echo $return;
+        //毁掉记录日志
+        file_put_contents('./wxcallback.log', $xml . PHP_EOL, FILE_APPEND);
+
         $xmlstring = simplexml_load_string($xml, 'SimpleXMLElement', LIBXML_NOCDATA);
         $val = json_decode(json_encode($xmlstring), true);
 
@@ -121,33 +160,29 @@ class WxpayController extends CommonController
          */
         $return_code = $val['result_code'];
         $out_trade_no = $val['out_trade_no'];
+        //error_log($out_trade_no, 1, zhaima . txt);
+
         //修改订单状态；2:已付款
         $model_pay = M('pay');
         $where = array(
             'pay_order' => $out_trade_no
         );
-        $data = array('pay_status'=>2);
-        $success = $model_pay->data($data)->where($out_trade_no)->save();
+        $data = array('pay_status' => 2);
+        $success = $model_pay->data($data)->where($where)->save();
+
         //修改账户状态；
         $pay_info = $model_pay->where($where)->find();
         $he_id = $pay_info['pay_he_id'];
         $model_headerhunter = M('headhunter');
-        $model_headerhunter->data(array('he_is_delete' => 1))->where(array('he_id' => $he_id))->save();
-
-        //通知微信操作成功；
-        echo <<<o
-<xml>
- <return_code><![CDATA[SUCCESS]]></return_code>
- <return_msg><![CDATA[OK]]></return_msg>
-</xml>
-o;
+        $success  = $model_headerhunter->data(array('he_is_delete' => 1))->where(array('he_id' => $he_id))->save();
 
     }
 
     /**
      * 获取openid
      */
-    public function get_openid(){
+    public function get_openid()
+    {
 
         $CODE = $_GET['code'];
         if (empty($CODE)) {

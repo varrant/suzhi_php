@@ -34,7 +34,7 @@
 							<p>地区：<?php
  $where['pos_id']=$v['poscha']['pos_county']; $db=M('pos'); $res=$db->where($where)->find(); echo $res['pos_name']; ?><span>需求：<?=$v['poscha']['pos_recruitmun']?>人</span></p>
 						</div>
-						<span><?=$v['poscha']['pos_brokerage']?>元</span>
+						<span><?=$v['poscha']['pos_brokerage']?></span>
 					</div>
 					<?php if($v['poscha']['pos_online'] == 0){?>
 						<div class="order_center_foot">
@@ -42,7 +42,7 @@
 						</div>
 					<?php }else{?>
 					<div class="order_center_foot">
-						<a href="/index.php/home/task/extend">查看二维码</a>
+						<a href="/index.php/home/task/extend?pos_id=<?=$v['ord_poschaid']?>">查看二维码</a>
 						<a id="<?=$v['ord_id']?>" onclick="receive_task(this)" >取消任务</a>
 					</div>
 						<?php }?>
@@ -60,7 +60,7 @@
 							<p>地区：<?php
  $where['pos_id']=$v['poscha']['pos_county']; $db=M('pos'); $res=$db->where($where)->find(); echo $res['pos_name']; ?><span>需求：<?=$v['poscha']['pos_recruitmun']?>人</span></p>
 						</div>
-						<span><?=$v['poscha']['pos_brokerage']?>元</span>
+						<span><?=$v['poscha']['pos_brokerage']?></span>
 					</div>
 					<?php if($v['poscha']['pos_online'] == 0){?>
 					<div class="order_center_foot">
@@ -108,11 +108,11 @@
 			type:'post',
 			dataType:"json",
 			success:function(data){
-//				if(data.status){
-//					window.history.go(0);
-//				}else{
-//					alert(data.message);
-//				}
+				if(data.status){
+					window.history.go(0);
+				}else{
+					alert(data.message);
+				}
 			}
 		});
 	}

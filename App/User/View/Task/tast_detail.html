@@ -31,7 +31,7 @@
 						<span>全职</span>
 						<?php }?>
 						</h3>
-					<span style=" color: #ff8903;">{$data['pos_salary']}元</span>
+					<span style=" color: #ff8903;">{$data['pos_salary']}</span>
 				</div>
 				<div class="t_adress" style="overflow:hidden;">
 					<h1>地点：<?php
@@ -121,14 +121,26 @@
 		<div class="receive_task_box">
 			<h3>确认报名该任务吗？</h3>
 			<div class="receive_task_link">
-				<a href="javascript:cancel()">取消</a>
-				<a onclick="queren()">确认</a>
+				<a href="javascript:cancel();">取消</a>
+				<a onclick="queren();">确认</a>
 			</div>
 		</div>
 	</div>
+
+    <!--弹框-->
+    <div class="receive_task_bg" id="send_resume" style="display:none;">
+        <div class="receive_task_box">
+            <h3>请投递简历至jianli@suzhi.com</h3>
+            <div class="receive_task_link">
+                <a onclick="send_resume_hide();" style="width: 97%;">确认</a>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
 <script>
+    var jump_url = '';
 	$(function(){
 		$(".detail_list li h3").click(function(){
 			if($(this).find("img").hasClass("on")){
@@ -141,14 +153,29 @@
 				$(this).find("img").addClass("on");
 			}
 		});
-	})
+	});
 	function receive_task(){
 		$("#receive_task_bg").show();
 	}
 	function cancel(){
 		$("#receive_task_bg").hide();
 	}
+
+    function send_resume_show(){
+        $("#send_resume").show();
+    }
+    function send_resume_hide(){
+        $("#send_resume").hide();
+        //
+        reload_url(jump_url);
+    }
+    function reload_url(url){
+        window.location.href=url;
+    }
 	function queren() {
+        //隐藏确认框；
+        cancel();
+
 		var ord_poschaid=$('#ord_poschaid').val();
 		var ord_jobseekerid=$('#ord_jobseekerid').val();
 		var data={'ord_poschaid':ord_poschaid,'ord_jobseekerid':ord_jobseekerid};
@@ -159,13 +186,14 @@
 			dataType:"json",
 			success:function(data){
 				if(data.status){
-					window.location.href=data.url;
+                    //显示发送简历提示；
+                    send_resume_show();
+                    jump_url = data.url;
 				}else{
 					alert(data.message);
 				}
 			}
 		});
-
 	}
 </script>
 

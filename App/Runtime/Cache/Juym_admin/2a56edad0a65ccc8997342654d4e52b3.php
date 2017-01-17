@@ -269,7 +269,7 @@
             <div class="am-form-group">
               <label for="user-email" class="am-u-sm-3 am-form-label">佣金</label>
               <div class="am-u-sm-9">
-                <input type="number" id="pos_brokerage"  placeholder="请输入佣金数量" style="width:52%"/>
+                <input type="text" id="pos_brokerage"  placeholder="请输入佣金数量" style="width:52%"/>
 
               </div>
             </div>
@@ -277,7 +277,7 @@
             <div class="am-form-group">
               <label for="user-email" class="am-u-sm-3 am-form-label">薪资</label>
               <div class="am-u-sm-9">
-                <input type="number" id="pos_salary" placeholder="请输入薪资数目" style="width:52%"/>
+                <input type="text" id="pos_salary" placeholder="请输入薪资数目" style="width:52%"/>
                 
               </div>
             </div>
@@ -526,7 +526,7 @@
         var pos_online=$('#pos_online').val();
 
 
-      if(pos_img=="" || pos_img == null){
+      /*if(pos_img=="" || pos_img == null){
           alert('任务照片不能为空');
           return;
       }
@@ -548,7 +548,7 @@
           return;
       }
       if(pos_worktime=="" || pos_worktime == null){
-          alert('薪资不能为空');
+          alert('工作时间不能为空');
           return;
       }
       if(pos_joptype =="0" ){
@@ -557,7 +557,7 @@
       }
 
       if(pos_salary=="" || pos_salary == null){
-          alert('工作时间不能为空');
+          alert('薪资不能为空');
           return;
       }
       if(pos_hours=="" || pos_hours == null){
@@ -590,7 +590,7 @@
           alert('福利待遇描述不能为空');
           return;
       }
-
+*/
       var data={'pos_img':pos_img,'pos_name':pos_name,'pos_recruitmun':pos_recruitmun,'pos_county':pos_county,'pos_brokerage':pos_brokerage,'pos_salary':pos_salary,'pos_joptype':pos_joptype,'pos_worktime':pos_worktime,'pos_hours':pos_hours,'pos_company_name':pos_company_name,'pos_company_address':pos_company_address,'pos_true_liulan':pos_true_liulan,'pos_true_toudi':pos_true_toudi,'pos_liuan':pos_liuan,'pos_toudi':pos_toudi,'pos_jobdescription':pos_jobdescription,'pos_responsibilities':pos_responsibilities,'pos_welfarebenefits':pos_welfarebenefits,'pos_online':pos_online};
         $.ajax({
             url:"<?php echo U('poscha/doadds_j');?>",

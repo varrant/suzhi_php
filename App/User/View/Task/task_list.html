@@ -25,13 +25,11 @@
 		<div class="index_list" style="margin-top:0px;">
 			<div class="tast_hd">
 				<ul>
-					<li ><a onclick="flclicks(1)" id="jz" class="on">兼职</a></li>
-					<li><a onclick="flclicks(2)" id="sx">实习</a></li>
-					<li><a onclick="flclicks(3)" id="qz">全职</a></li>
+					<li ><a onclick="flclicks(1)" id="jz" class="<if condition='$type eq 1'>on</if>">兼职</a></li>
+					<li><a onclick="flclicks(2)" id="sx" class="<if condition='$type eq 2'>on</if>" >实习</a></li>
+					<li><a onclick="flclicks(3)" id="qz" class="<if condition='$type eq 3'>on</if>">全职</a></li>
 				</ul>
 			</div>
-			
-		
 			<div class="list_li">
 				<input type="hidden" id="type" value="">
 				<input type="hidden" id="page" name="page" value="2">
@@ -48,7 +46,7 @@
 								<?php }else{?>
 								<span class="full">全职</span>
 								<?php }?>
-								{$v['pos_name']}<span class="price">{$v['pos_salary']}元</span></h3>
+								{$v['pos_name']}<span class="price">{$v['pos_salary']}</span></h3>
 							<p></p>
 							<div class="list_num">
 								<span>需求：{$v['pos_recruitmun']}人</span>
@@ -110,7 +108,7 @@
 						}else{
 							shtml ="<span class='full'>全职</span>";
 						}
-						ghtml +="<li><a href=\"/index.php/user/task/details?pos_id="+item['pos_id']+"\"><div class='list_img'><img src="+item['pos_img']+" width='100%' /></div><div class='list_word'><h3>"+shtml+""+item['pos_name']+"<span class='price'>"+item['pos_salary']+"元</span></h3><p></p><div class='list_num'><span>需求："+item['pos_recruitmun']+"人</span><div class='list_view'><span><img src='__PUBLIC__/home/images/taskico1.png' />"+item['total_toudi']+"</span><span><img src='__PUBLIC__/home/images/taskico2.png' />"+item['total_liulan']+"</span></div></div></div></a></li>";
+						ghtml +="<li><a href=\"/index.php/user/task/details?pos_id="+item['pos_id']+"\"><div class='list_img'><img src="+item['pos_img']+" width='100%' /></div><div class='list_word'><h3>"+shtml+""+item['pos_name']+"<span class='price'>"+item['pos_salary']+"</span></h3><p></p><div class='list_num'><span>需求："+item['pos_recruitmun']+"人</span><div class='list_view'><span><img src='__PUBLIC__/home/images/taskico1.png' />"+item['total_toudi']+"</span><span><img src='__PUBLIC__/home/images/taskico2.png' />"+item['total_liulan']+"</span></div></div></div></a></li>";
 
 					});
 
@@ -167,7 +165,7 @@
 						}else{
 							shtml ="<span class='full'>全职</span>";
 						}
-						ghtml +="<li><a href=\"/index.php/user/task/details?pos_id="+item['pos_id']+"\"><div class='list_img'><img src="+item['pos_img']+" width='100%' /></div><div class='list_word'><h3>"+shtml+""+item['pos_name']+"<span class='price'>"+item['pos_salary']+"元</span></h3><p></p><div class='list_num'><span>需求："+item['pos_recruitmun']+"人</span><div class='list_view'><span><img src='__PUBLIC__/home/images/taskico1.png' />"+item['total_toudi']+"</span><span><img src='__PUBLIC__/home/images/taskico2.png' />"+item['total_liulan']+"</span></div></div></div></a></li>";
+						ghtml +="<li><a href=\"/index.php/user/task/details?pos_id="+item['pos_id']+"\"><div class='list_img'><img src="+item['pos_img']+" width='100%' /></div><div class='list_word'><h3>"+shtml+""+item['pos_name']+"<span class='price'>"+item['pos_salary']+"</span></h3><p></p><div class='list_num'><span>需求："+item['pos_recruitmun']+"人</span><div class='list_view'><span><img src='__PUBLIC__/home/images/taskico1.png' />"+item['total_toudi']+"</span><span><img src='__PUBLIC__/home/images/taskico2.png' />"+item['total_liulan']+"</span></div></div></div></a></li>";
 
 					});
 						$("#good_ul").html(ghtml);

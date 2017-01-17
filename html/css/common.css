@@ -167,12 +167,3 @@ h3{margin-bottom:0px;margin-top:0px;}
 
 .nav_bottom li.on{color:#ff8903;}
 
-
-
-/*支付弹框*/
-.pay_style_box{width:270px;position:fixed;left:50%;margin-left:-135px;top:30%;background:#fff;min-height:100px;border-radius:5px;}
-.pay_style_list li{height:45px;border-bottom:1px solid #666;line-height:45px;padding:0 16px;}
-#guanbi{position:absolute;right:10px;top:10px;}
-.pay_style_box h3{height:40px;line-height:40px;text-align:center;border-bottom:1px solid #666;font-size:16px;}
-.pay_style_list input{float:right;margin-top:17px;}
-.pay_bottom{display:block;padding:4px 10px;background:none;border:1px solid #666;margin:10px auto;border-radius:5px;}

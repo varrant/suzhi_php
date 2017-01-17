@@ -31,14 +31,14 @@
 						<span>全职</span>
 						<?php }?>
 						</h3>
-					<span style=" color: #ff8903;"><?php echo ($data['pos_brokerage']); ?>元</span>
+					<span style=" color: #ff8903;"><?php echo ($data['pos_brokerage']); ?></span>
 				</div>
 				<div class="t_adress" style="overflow:hidden;">
 					<h1>地点：<?php
  $where['pos_id']=$data['pos_county']; $db=M('pos'); $res=$db->where($where)->find(); echo $res['pos_name']; ?></h1>
 					<div class="list_view">
-						<span><img src="/Public/home/images/taskico2.png" /><?php echo ($data['total_toudi']); ?></span>
-						<span><img src="/Public/home/images/taskico1.png" /><?php echo ($data['total_liulan']); ?></span>
+						<span><img src="/Public/home/images/taskico2.png" /><?php echo ($data['total_liulan']); ?></span>
+						<span><img src="/Public/home/images/taskico1.png" /><?php echo ($data['total_toudi']); ?></span>
 					</div>
 				</div>
 			</div>
@@ -58,8 +58,8 @@
 		<div class="detail_list">
 			<ul>
 				<li>
-					<h3>工作描述<img src="/Public/home/images/icon_5.png" width="12" class="on" /></h3>
-					<div class="slide_main">
+					<h3>工作描述<img src="/Public/home/images/icon_6.png" width="12" class="" /></h3>
+					<div class="slide_main" style="display:block;">
 						<ul>
 							<li><?php echo ($data['pos_jobdescription']); ?></li>
 
@@ -87,10 +87,9 @@
 			</ul>
 		</div>
 		<!--公司介绍-->
-		<?php $_SESSION['he_id']=119;?>
 		<div class="csompany_introduction">
 			<input type="hidden" id="ord_poschaid" value="<?php echo ($data['pos_id']); ?>">
-			<input type="hidden" id="ord_headh" value="<?=$_SESSION['he_id']?>">
+			<!--<input type="hidden" id="ord_headh" value="<?=$_SESSION['he_id']?>">-->
 			<div class="csompany_introduction_main">
 				
 				<div class="csompany_introduction_word">
@@ -142,8 +141,8 @@
 	}
 	function queren() {
 		var ord_poschaid=$('#ord_poschaid').val();
-		var ord_headh=$('#ord_headh').val();
-		var data={'ord_poschaid':ord_poschaid,'ord_headh':ord_headh};
+//		var ord_headh=$('#ord_headh').val();
+		var data={'ord_poschaid':ord_poschaid};
 		$.ajax({
 			url:"<?php echo U('task/head_ling');?>",
 			data:data,

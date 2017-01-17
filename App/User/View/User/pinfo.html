@@ -18,6 +18,8 @@
         <script src="/Public/home/assets/js/amazeui.min.js"></script>
         <script src="/Public/home/js/function.js"></script>
         <script src="/Public/home/js/date.js"></script>
+        <link rel="stylesheet" type="text/css" href="/Public/home/foot/iconfont.css">
+        <link rel="stylesheet" href="/Public/home/css/common.css">
     </head>
     <body>
         <div class="mytopbannerbox">
@@ -73,7 +75,7 @@
                 <div class="left">性别</div>
                 <div class="right">
                     <div class="ipt_value">
-                        <input type="text" class="inp_username" placeholder="" value="{$user.he_sex}">
+                        <input type="text" class="inp_username" placeholder="" value="<if condition='$user.he_sex eq 1'>女<else/>男</if>">
                         &nbsp;
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
                     </div>
@@ -148,29 +150,44 @@
             </div>
         </div>
 
+        <!--<footer class="nav_bottom am-topbar am-topbar-inverse am-topbar-fixed-bottom">-->
+            <!--<ul>-->
+                <!--<li>-->
+                    <!--<div class="img">-->
+                        <!--<img src="/Public/home/images/mycenterbottomicon1over.png" alt="">-->
+                    <!--</div>-->
+                    <!--<div class="title">首页</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<div class="img">-->
+                        <!--<img src="/Public/home/images/mycenterbottomicon2.png" alt="">-->
+                    <!--</div>-->
+                    <!--<div class="title">任务</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<div class="img">-->
+                        <!--<img src="/Public/home/images/mycenterbottomicon3.png" alt="">-->
+                    <!--</div>-->
+                    <!--<div class="title">我的</div>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</footer>-->
         <footer class="nav_bottom am-topbar am-topbar-inverse am-topbar-fixed-bottom">
             <ul>
-                <li>
-                    <div class="img">
-                        <img src="/Public/home/images/mycenterbottomicon1over.png" alt="">
-                    </div>
-                    <div class="title cur">首页</div>
+                <li  onclick="window.location.href='/index.php?m=user&c=index&a=index'">
+                    <div class="img"><i class="iconfont icon-shouyeshouye"></i></div>
+                    <div class="title">首页</div>
                 </li>
-                <li>
-                    <div class="img">
-                        <img src="/Public/home/images/mycenterbottomicon2.png" alt="">
-                    </div>
+                <li  onclick="window.location.href='/index.php?m=user&c=task&a=lists'">
+                    <div class="img"><i class="iconfont icon-renwu"></i></div>
                     <div class="title">任务</div>
                 </li>
-                <li>
-                    <div class="img">
-                        <img src="/Public/home/images/mycenterbottomicon3.png" alt="">
-                    </div>
+                <li class="on" onclick="window.location.href='/index.php?m=user&c=User&a=index'">
+                    <div class="img"><i class="iconfont icon-wode"></i></div>
                     <div class="title">我的</div>
                 </li>
             </ul>
         </footer>
-
     </body>
     <script>
         $(function () {

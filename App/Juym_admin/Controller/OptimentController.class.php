@@ -9,7 +9,8 @@ class OptimentController extends Controller {
         $map['pos_joptype']=0;
         $map['pos_is_delete']=1;
         $count =$db_pos->where($map)->count();     
-        $Page = new \Think\Page($count,3);
+		
+        $Page = new \Think\Page($count,10);
         $Page->setConfig('prev', '上一页');
         $Page->setConfig('theme', "%UP_PAGE% %FIRST% %END% %LINK_PAGE% %DOWN_PAGE% %TOTAL_ROW%");
         $show = $Page->show();// 分页显示输出
@@ -75,7 +76,7 @@ class OptimentController extends Controller {
         $map['pos_is_delete']=1;
         $data=$db_pos->where($map)->select();
         $count =$db_pos->where($map)->count();     
-        $Page = new \Think\Page($count,3);
+        $Page = new \Think\Page($count,10);
         $Page->setConfig('prev', '上一页');
         $Page->setConfig('theme', "%UP_PAGE% %FIRST% %END% %LINK_PAGE% %DOWN_PAGE% %TOTAL_ROW%");
         $show = $Page->show();// 分页显示输出
@@ -137,7 +138,7 @@ class OptimentController extends Controller {
         $map['pos_is_delete']=1;
         $data=$db_pos->where($map)->select();
         $count =$db_pos->where($map)->count();     
-        $Page = new \Think\Page($count,3);
+        $Page = new \Think\Page($count,10);
         $Page->setConfig('prev', '上一页');
         $Page->setConfig('theme', "%UP_PAGE% %FIRST% %END% %LINK_PAGE% %DOWN_PAGE% %TOTAL_ROW%");
         $show = $Page->show();// 分页显示输出
@@ -201,7 +202,7 @@ class OptimentController extends Controller {
         $map['pos_is_delete']=1;
         $data=$db_pos->where($map)->select();
         $count =$db_pos->where($map)->count();     
-        $Page = new \Think\Page($count,3);
+        $Page = new \Think\Page($count,10);
         $Page->setConfig('prev', '上一页');
         $Page->setConfig('theme', "%UP_PAGE% %FIRST% %END% %LINK_PAGE% %DOWN_PAGE% %TOTAL_ROW%");
         $show = $Page->show();// 分页显示输出

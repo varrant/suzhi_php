@@ -150,22 +150,22 @@
                 <div class="clearbox"></div>
             </div>
         </div>
-        <footer class="nav_bottom am-topbar am-topbar-inverse am-topbar-fixed-bottom">
-            <ul>
-                <li onclick="window.location.href='/index.php?m=home&c=index&a=index'">
-                    <div class="img"><i class="iconfont icon-shouyeshouye"></i></div>
-                    <div class="title">首页</div>
-                </li>
-                <li onclick="window.location.href='/index.php?m=home&c=task&a=lists'">
-                    <div class="img"><i class="iconfont icon-renwu"></i></div>
-                    <div class="title">任务</div>
-                </li>
-                <li class="on"  onclick="window.location.href='/index.php?m=Home&c=User&a=index'">
-                    <div class="img"><i class="iconfont icon-wode"></i></div>
-                    <div class="title">我的</div>
-                </li>
-            </ul>
-        </footer>
+        <!--<footer class="nav_bottom am-topbar am-topbar-inverse am-topbar-fixed-bottom">-->
+            <!--<ul>-->
+                <!--<li onclick="window.location.href='/index.php?m=home&c=index&a=index'">-->
+                    <!--<div class="img"><i class="iconfont icon-shouyeshouye"></i></div>-->
+                    <!--<div class="title">首页</div>-->
+                <!--</li>-->
+                <!--<li onclick="window.location.href='/index.php?m=home&c=task&a=lists'">-->
+                    <!--<div class="img"><i class="iconfont icon-renwu"></i></div>-->
+                    <!--<div class="title">任务</div>-->
+                <!--</li>-->
+                <!--<li class="on"  onclick="window.location.href='/index.php?m=Home&c=User&a=index'">-->
+                    <!--<div class="img"><i class="iconfont icon-wode"></i></div>-->
+                    <!--<div class="title">我的</div>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</footer>-->
 
     </body>
     <script>

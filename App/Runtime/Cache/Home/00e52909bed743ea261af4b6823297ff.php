@@ -57,7 +57,7 @@
 									<?php }else{?>
 									<span class="full">全职</span>
 									<?php }?>
-									<?php echo ($v['pos_name']); ?><span class="price"><?php echo ($v['pos_brokerage']); ?>元</span></h3>
+									<?php echo ($v['pos_name']); ?><span class="price"><?php echo ($v['pos_brokerage']); ?>/人</span></h3>
 								<p></p>
 								<div class="list_num">
 									<span>需求：<?php echo ($v['pos_recruitmun']); ?>人</span>

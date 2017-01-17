@@ -22,7 +22,7 @@
         <div class="main" style="padding-bottom:50px;">
             <div class="center_top">
                 <div class="center_top_head">
-                    <a href="<?php echo U('info');?>">
+                    <a href="<?php echo U('pinfo');?>">
                         <div class="center_img">
                             <img src="/Public/home/images/head1.png" width="100%"/>
                             <!--<img src="<?php echo ($user["he_image_link"]); ?>" width="100%"/>-->

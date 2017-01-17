@@ -2,7 +2,6 @@
 namespace Home\Controller;
 
 use Think\Controller;
-use Think\Upload;
 
 /**
  * 猎头注册；
@@ -16,7 +15,7 @@ class RegisterController extends CommonController
      */
     public function index()
     {
-        $this->display('/register/register');
+        $this->display('register');
     }
 
     /**
@@ -24,6 +23,12 @@ class RegisterController extends CommonController
      */
     public function smsvcode()
     {
+        //检查手机号码是否已经注册猎头
+        $tel = I('phone');
+//        $user_info = $this->get_user_by_tel($tel);
+        if (!$this->tel_not_register($tel)) {
+            $this->json_return(1, '手机号码已经注册猎头');
+        }
         $this->send_sms_vcode();
     }
 
@@ -64,7 +69,7 @@ class RegisterController extends CommonController
 
         //设置第一步骤完成；
         session('reg_step0', 1);
-        session('he_phone',I('phone'));
+        session('he_phone', I('phone'));
 
         //显示实名认证页面；
         $this->json_return(0);
@@ -79,29 +84,29 @@ class RegisterController extends CommonController
         //只有第一步完成,才能保存第二步骤的数据；
         if (session('reg_step0') !== 1) {
             session('');
-            $this->redirect(U('Home/Register/index'));
+            $this->json_return('请完成注册第一步');
         }
         //保存第二步的数据；
         $username = $_REQUEST['he_name'];//用户名；
         $idno = $_REQUEST['he_carid'];//身份证号码；
+        !vaild_idcardnum($idno) && $this->json_return(1, '身份证号码格式错误');
+
         $idcardimg = uploadPic($_REQUEST['he_idimg']);
         $user_data['he_name'] = $username;
         $user_data['he_carid'] = $idno;
         $user_data['he_idimg'] = $idcardimg;
-//        $model_headhunter = M('headhunter');
-//        $he_id = $model_headhunter->data($user_data)->add();
-        if( $user_data['he_name'] == '' || $user_data['he_carid'] == '' ||  $user_data['he_idimg'] ==''){
+
+        if ($user_data['he_name'] == '' || $user_data['he_carid'] == '' || $user_data['he_idimg'] == '') {
             $this->json_return(1, '请填写完整信息');
         }
-//        session('he_id', $he_id);//保存生成的ID;
+
         session('he_name', $user_data['he_name']);
         session('he_carid', $user_data['he_carid']);
         session('he_idimg', $user_data['he_idimg']);
+
         //设置第二步完成；
         session('reg_step1', 1);
 
-        //显示第三步的页面；
-//        $this->display();
         $this->json_return(0);
     }
 
@@ -137,33 +142,33 @@ class RegisterController extends CommonController
 //        session('he_shcool', $user_data['he_shcool']);
 //        session('he_major', $user_data['he_major']);
 //        session('he_grade', $user_data['he_grade']);
-        $user_data['he_phone']=$_SESSION['he_phone'];
+        $user_data['he_phone'] = $_SESSION['he_phone'];
         $user_data['he_name'] = $_SESSION['he_name'];
         $user_data['he_carid'] = $_SESSION['he_carid'];
         $user_data['he_idimg'] = $_SESSION['he_idimg'];
+        $user_data['he_type'] = 1;
         //先设置为封号状态 若支付成功 则改为正常账号
-        $user_data['he_is_delete']=2;
+        $user_data['he_is_delete'] = 2;
         $model_headhunter = M('headhunter');
         $he_id = $model_headhunter->data($user_data)->add();
         //设置第三步完成；
-        session('he_id',$he_id);
+        session('he_id', $he_id);
         session('reg_step2', 1);
 
         //显示第四步界面， 支付界面；
 //        $this->display();
         $this->json_return(0);
     }
+
     /**
      * 注册完成页面；
      */
-    public function regstep4(){
+    public function regstep4()
+    {
         //一二三部完成；
-        if (session('reg_step0') !== 1 || session('reg_step1') !== 1 || session('reg_step2') !== 1 ) {
-            $this->redirect(U('Home/Register/index'));
-        }
-
-        //处理第四步提交的信息；
-        //todo 检查支付是否完成；
+//        if (session('reg_step0') !== 1 || session('reg_step1') !== 1 || session('reg_step2') !== 1) {
+//            $this->redirect('Home/Register/index');
+//        }
 
         //设置第四步完成, 此步骤并无必要；
         session('reg_step3', 1);

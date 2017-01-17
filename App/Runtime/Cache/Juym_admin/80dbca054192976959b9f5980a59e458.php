@@ -131,24 +131,32 @@
       </li>
 
       <li class="admin-parent">
-        <a class="am-cf" data-am-collapse="{target: '#collapse-nav0'}"><span class="am-icon-columns"></span> 企业管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-        <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav0">
-          <li><a href="<?php echo U('Com/lists');?>" class="am-cf"><span class="am-icon-slideshare"></span>企业列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>
-        </ul>
-      </li>
-
-      <li class="admin-parent">
-          <a class="am-cf" data-am-collapse="{target: '#collapse-nav4'}"><span class="am-icon-columns"></span>订单中心<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav4'}"><span class="am-icon-columns"></span>求职者管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
           <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav4">
-              <li><a href="<?php echo U('Order/receive_list');?>" class="am-cf"><span class="am-icon-slideshare"></span>已领取<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+              <li><a href="<?php echo U('Head/qz_lists');?>" class="am-cf"><span class="am-icon-slideshare"></span>求职者列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>
           </ul>
       </li>
+
+      <!--<li class="admin-parent">-->
+        <!--<a class="am-cf" data-am-collapse="{target: '#collapse-nav0'}"><span class="am-icon-columns"></span> 企业管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>-->
+        <!--<ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav0">-->
+          <!--<li><a href="<?php echo U('Com/lists');?>" class="am-cf"><span class="am-icon-slideshare"></span>企业列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>-->
+        <!--</ul>-->
+      <!--</li>-->
+
       <li class="admin-parent">
-        <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-users"></span>管理员管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-        <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav1">
-          <li><a href="<?php echo U('Admin/Index');?>" class="am-cf"><span class="am-icon-child"></span>管理员列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>
-        </ul>
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-columns"></span>订单中心<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav5">
+              <li><a href="<?php echo U('Order/receive_list');?>" class="am-cf"><span class="am-icon-slideshare"></span>已领取<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+              <li><a href="<?php echo U('Order/enlist_list');?>" class="am-cf"><span class="am-icon-slideshare"></span>工作报名<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+          </ul>
       </li>
+      <!--<li class="admin-parent">-->
+        <!--<a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-users"></span>管理员管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>-->
+        <!--<ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav1">-->
+          <!--<li><a href="<?php echo U('Admin/Index');?>" class="am-cf"><span class="am-icon-child"></span>管理员列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>-->
+        <!--</ul>-->
+      <!--</li>-->
 
        <li class="admin-parent">
         <a class="am-cf" data-am-collapse="{target: '#collapse-nav21'}"><span class="am-icon-users"></span>选项管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
@@ -239,7 +247,10 @@
                                         <div class="am-btn-group am-btn-group-xs">
                                             <button type="submit" formmethod="get" formaction="<?php echo U('Poscha/view_s',array(id=>$v['pos_id']));?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span>查看</button>
                                             <button  onclick="ssss(this)" value="<?php echo ($v['pos_id']); ?>" type="button"  class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
-                                            <button type="submit" formmethod="get" formaction="<?php echo U('Orderinfo/lists',array(id=>$v['pos_id']));?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span>订单情况</button>
+                                            <!--<button type="submit" formmethod="get" formaction="<?php echo U('Orderinfo/lists',array(id=>$v['pos_id']));?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span>订单情况</button>-->
+                                            <?php if($v['pos_isindex'] == 1): ?><button   onclick="fclick(this,2)" value="<?php echo ($v['pos_id']); ?>" type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span>首页展示</button>
+                                                <?php else: ?>
+                                                <button  onclick="fclick(this,1)" value="<?php echo ($v['pos_id']); ?>" type="button"  class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span>取消首页展示</button><?php endif; ?>
                                             <!-- <button id="del<?php echo ($v['id']); ?>" type="button" formaction1="<?php echo U('Tem/zshow',array('id'=>$v['pid']));?>" formmethod="get" formaction="<?php echo U('Tem/delZshow',array(id=>$v['id']));?>" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button> -->
                                         </div>
                                     </div>
@@ -328,5 +339,24 @@
                 }
             });
 
+        }
+        function fclick(am,type) {
+            //获取要展示或取消的ID
+            var pos_id =$(am).val();
+            var pos_isindex = type;
+            var data={'pos_id':pos_id,'pos_isindex':pos_isindex};
+            $.ajax({
+                url:"<?php echo U('poscha/edit_s');?>",
+                data:data,
+                type:'post',
+                dataType:"json",
+                success:function(data){
+                    if(data.status){
+                        window.location="<?php echo U('Poscha/lists_s');?>";
+                    }else{
+                        alert(data.message);
+                    }
+                }
+            });
         }
     </script>

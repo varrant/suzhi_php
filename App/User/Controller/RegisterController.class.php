@@ -23,6 +23,13 @@ class RegisterController extends UserCommonController
      * 获取验证码；
      */
     public function smsvcode(){
+        //手机号码必须未注册求职者端
+        //
+        $tel = I('phone');
+        if(!$this->tel_not_register($tel)){
+            $this->json_return(1, '手机号码已经注册');
+        }
+        
         $this->send_sms_vcode();
     }
 
@@ -87,7 +94,7 @@ class RegisterController extends UserCommonController
         //显示注册成功页面；session上线；
         session('user_id', $success);
         $this->display();
-        //$this->success('注册成功', U('User/Login/index'));
+
     }
 
     //////////////////////////////////////////////////////////////////////////////////

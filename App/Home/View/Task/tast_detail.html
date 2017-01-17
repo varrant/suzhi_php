@@ -31,7 +31,7 @@
 						<span>全职</span>
 						<?php }?>
 						</h3>
-					<span style=" color: #ff8903;">{$data['pos_brokerage']}元</span>
+					<span style=" color: #ff8903;">{$data['pos_brokerage']}</span>
 				</div>
 				<div class="t_adress" style="overflow:hidden;">
 					<h1>地点：<?php
@@ -95,10 +95,9 @@
 			</ul>
 		</div>
 		<!--公司介绍-->
-		<?php $_SESSION['he_id']=119;?>
 		<div class="csompany_introduction">
 			<input type="hidden" id="ord_poschaid" value="{$data['pos_id']}">
-			<input type="hidden" id="ord_headh" value="<?=$_SESSION['he_id']?>">
+			<!--<input type="hidden" id="ord_headh" value="<?=$_SESSION['he_id']?>">-->
 			<div class="csompany_introduction_main">
 				
 				<div class="csompany_introduction_word">
@@ -150,8 +149,8 @@
 	}
 	function queren() {
 		var ord_poschaid=$('#ord_poschaid').val();
-		var ord_headh=$('#ord_headh').val();
-		var data={'ord_poschaid':ord_poschaid,'ord_headh':ord_headh};
+//		var ord_headh=$('#ord_headh').val();
+		var data={'ord_poschaid':ord_poschaid};
 		$.ajax({
 			url:"{:U('task/head_ling')}",
 			data:data,

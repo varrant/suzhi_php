@@ -1,6 +1,7 @@
 <?php
 namespace Home\Controller;
 
+use Org\WechatShare;
 use Think\Controller;
 
 /**
@@ -16,6 +17,7 @@ class UserController extends CommonController
     public function index()
     {
         $he_id = $this->login_inspect();
+
         if (empty($he_id)) {
             $this->display('center1');//未登录状态；
         }
@@ -33,17 +35,18 @@ class UserController extends CommonController
     /**
      * 订单中心\全部订单
      */
-    public function porder(){
-        $where['ord_headh']=$_SESSION['he_id'];
-        $db=M('orderinfo');
-        $res=$db->where($where)->select();
-        foreach($res as $key => $value){
-            $dbs=M('poscha');
-            $arr['pos_id']=$res[$key]['ord_poschaid'];
-            $res[$key]['poscha']=$dbs->where($arr)->find();
+    public function porder()
+    {
+        $where['ord_headh'] = $_SESSION['he_id'];
+        $db = M('orderinfo');
+        $res = $db->where($where)->select();
+        foreach ($res as $key => $value) {
+            $dbs = M('poscha');
+            $arr['pos_id'] = $res[$key]['ord_poschaid'];
+            $res[$key]['poscha'] = $dbs->where($arr)->find();
         }
-        $res = array();
-        $this->assign('data',$res);
+
+        $this->assign('data', $res);
         $this->display('order_center');
     }
 
@@ -173,8 +176,16 @@ class UserController extends CommonController
 //        if ($user_data['he_turn_out_jine'] < $num) {
 //            $this->json_return(1, '可转出金额不足');
 //        }
-        if($user_data){
-            $this->json_return(1, '因为您的可转出余额为0，暂无可转出余额。');
+        //是否已经填写账户
+        $model_draw_set = M('withdraw_set');
+        $drwset  = $model_draw_set->where(array('uid'=>$user_id))->find();
+        //print_r($drwset);exit;
+        if(empty($drwset['type'])){
+            $this->json_return(1, '请添加提现账户。');
+        }
+        //余额检查
+        if ($user_data['he_turn_out_jine'] < $num) {
+            $this->json_return(1, '可转出余额不足。');
         }
 
         /**
@@ -212,12 +223,18 @@ class UserController extends CommonController
 
     /**
      * 推荐有奖
+     * /mnt/sshfs/Public/image
      */
     public function recom()
     {
 
         $uid = $this->login_inspect();
+        //分享参数
 
+        $jssdk = new WechatShare('wx861438b92b0b0ba9', 'b6099da3b28fc9572ed2084819e2c7cc');
+        $signPackage = $jssdk->GetSignPackage();
+        $this->assign('signPackage', $signPackage);
+        $this->assign('jumpurl', 'http://' . $_SERVER['HTTP_HOST'] . U('User/User/bcmhs'));
         $this->assign('uid', $uid);//分享时附加的分享人的ID
         $this->display();
     }
@@ -249,6 +266,7 @@ class UserController extends CommonController
         //提现设置页面；
         $this->assign('set', $user_data);
         $this->display();
+
     }
 
     //数据保存
@@ -282,8 +300,8 @@ class UserController extends CommonController
         // 一个用户只能有一条设置信息，数据库已对uid列设置唯一；
         $user_data['uname'] = $username;
         $user_data['account'] = $account;
-        $user_data['bankname'] = empty($bankname) ?  '' : $bankname;
-        $user_data['subbranch'] = empty($subbranch) ?  '' : $subbranch;;
+        $user_data['bankname'] = empty($bankname) ? '' : $bankname;
+        $user_data['subbranch'] = empty($subbranch) ? '' : $subbranch;;
         $user_data['type'] = $type;
         $user_data['uid'] = $user_id;
         $model_user = M('withdraw_set');

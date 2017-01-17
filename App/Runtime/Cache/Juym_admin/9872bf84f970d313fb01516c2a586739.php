@@ -122,20 +122,41 @@
           <li><a href="<?php echo U('Poscha/lists_q');?>" class="am-cf"><span class="am-icon-slideshare"></span>全职列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>
         </ul>
       </li>
-      
+
       <li class="admin-parent">
-        <a class="am-cf" data-am-collapse="{target: '#collapse-nav0'}"><span class="am-icon-columns"></span> 企业管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-        <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav0">
-          <li><a href="<?php echo U('Com/lists');?>" class="am-cf"><span class="am-icon-slideshare"></span>企业列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>
-        </ul>
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav3'}"><span class="am-icon-columns"></span> 猎头管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav3">
+              <li><a href="<?php echo U('Head/lists');?>" class="am-cf"><span class="am-icon-slideshare"></span>猎头列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+          </ul>
       </li>
 
       <li class="admin-parent">
-        <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-users"></span>管理员管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-        <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav1">
-          <li><a href="<?php echo U('Admin/Index');?>" class="am-cf"><span class="am-icon-child"></span>管理员列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>
-        </ul>
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav4'}"><span class="am-icon-columns"></span>求职者管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav4">
+              <li><a href="<?php echo U('Head/qz_lists');?>" class="am-cf"><span class="am-icon-slideshare"></span>求职者列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+          </ul>
       </li>
+
+      <!--<li class="admin-parent">-->
+        <!--<a class="am-cf" data-am-collapse="{target: '#collapse-nav0'}"><span class="am-icon-columns"></span> 企业管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>-->
+        <!--<ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav0">-->
+          <!--<li><a href="<?php echo U('Com/lists');?>" class="am-cf"><span class="am-icon-slideshare"></span>企业列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>-->
+        <!--</ul>-->
+      <!--</li>-->
+
+      <li class="admin-parent">
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-columns"></span>订单中心<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav5">
+              <li><a href="<?php echo U('Order/receive_list');?>" class="am-cf"><span class="am-icon-slideshare"></span>已领取<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+              <li><a href="<?php echo U('Order/enlist_list');?>" class="am-cf"><span class="am-icon-slideshare"></span>工作报名<span class="am-icon-star am-fr am-margin-right "></span></a></li>
+          </ul>
+      </li>
+      <!--<li class="admin-parent">-->
+        <!--<a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-users"></span>管理员管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>-->
+        <!--<ul class="am-list am-collapse admin-sidebar-sub " id="collapse-nav1">-->
+          <!--<li><a href="<?php echo U('Admin/Index');?>" class="am-cf"><span class="am-icon-child"></span>管理员列表<span class="am-icon-star am-fr am-margin-right "></span></a></li>-->
+        <!--</ul>-->
+      <!--</li>-->
 
        <li class="admin-parent">
         <a class="am-cf" data-am-collapse="{target: '#collapse-nav21'}"><span class="am-icon-users"></span>选项管理<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
@@ -248,7 +269,7 @@
                     <div class="am-form-group">
                         <label for="user-email" class="am-u-sm-3 am-form-label">佣金</label>
                         <div class="am-u-sm-9">
-                            <input type="number" id="pos_brokerage"  placeholder="请输入佣金数量" style="width:52%"/>
+                            <input type="text" id="pos_brokerage"  placeholder="请输入佣金数量" style="width:52%"/>
 
                         </div>
                     </div>
@@ -256,7 +277,7 @@
                     <div class="am-form-group">
                         <label for="user-email" class="am-u-sm-3 am-form-label">薪资</label>
                         <div class="am-u-sm-9">
-                            <input type="number" id="pos_salary" placeholder="请输入薪资数目" style="width:52%"/>
+                            <input type="text" id="pos_salary" placeholder="请输入薪资数目" style="width:52%"/>
 
                         </div>
                     </div>
@@ -268,7 +289,7 @@
                             <select id="pos_joptype" class="" name="posjoptype" style="width:52%">
                                 <option value="0">请选择工作类型</option>
                                 <?php
- $posdb=M('pos'); $map['pos_joptype']=2; $map['pos_is_delete']=1; $posdata=$posdb->where($map)->select(); foreach($posdata as $k=>$ma){ echo "<option value=".$ma['pos_id'].">".$ma['pos_name']."</option>"; } ?>
+ $posdb=M('pos'); $map['pos_joptype']=1; $map['pos_is_delete']=1; $posdata=$posdb->where($map)->select(); foreach($posdata as $k=>$ma){ echo "<option value=".$ma['pos_id'].">".$ma['pos_name']."</option>"; } ?>
                             </select>
                         </div>
                     </div>
@@ -382,6 +403,7 @@
                     <div class="am-form-group">
                         <div class="am-u-sm-9 am-u-sm-push-3">
                             <button type="button" onclick="baocun()" class="am-btn am-btn-primary">保存</button>
+                            <button type="button" onclick="history.go(-1)" class="am-btn am-btn-primary">取消</button>
                         </div>
                     </div>
                 </div>
@@ -504,7 +526,7 @@
             var pos_online=$('#pos_online').val();
 
 
-            if(pos_img=="" || pos_img == null){
+            /*if(pos_img=="" || pos_img == null){
                 alert('任务照片不能为空');
                 return;
             }
@@ -568,7 +590,7 @@
                 alert('福利待遇描述不能为空');
                 return;
             }
-
+*/
             var data={'pos_img':pos_img,'pos_name':pos_name,'pos_recruitmun':pos_recruitmun,'pos_county':pos_county,'pos_brokerage':pos_brokerage,'pos_salary':pos_salary,'pos_joptype':pos_joptype,'pos_worktime':pos_worktime,'pos_hours':pos_hours,'pos_company_name':pos_company_name,'pos_company_address':pos_company_address,'pos_true_liulan':pos_true_liulan,'pos_true_toudi':pos_true_toudi,'pos_liuan':pos_liuan,'pos_toudi':pos_toudi,'pos_jobdescription':pos_jobdescription,'pos_responsibilities':pos_responsibilities,'pos_welfarebenefits':pos_welfarebenefits,'pos_online':pos_online};
             $.ajax({
                 url:"<?php echo U('poscha/doadds_s');?>",

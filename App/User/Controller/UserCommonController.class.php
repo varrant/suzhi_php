@@ -55,12 +55,23 @@ class UserCommonController extends Controller
     public function login_inspect()
     {
         $user_id = intval(session('user_id'));
-        if (empty($user_id)) {
-            $this->redirect(U('User/Login/index'));
+//        dump($_SESSION);exit;
+        if (empty($user_id) ) {
+            $this->redirect('/User/Login/index');
             exit;
+        }else{
+            $db=M('headhunter');
+            $where['he_id']=$user_id;
+            $where['he_is_delete']=1;
+            $res=$db->where($where)->select();
+            if(empty($res)){
+                $this->redirect('/User/Login/index');
+                exit;
+            }else{
+                return $user_id;
+            }
         }
-
-        return $user_id;
+        
     }
 
     /**
@@ -72,13 +83,13 @@ class UserCommonController extends Controller
         //手机号码格式检查 todo
         $is_mobile = $this->is_mobile($phone);
         if (!$is_mobile) {
-            $this->json_return(1, '请输入争取手机号码');
+            $this->json_return(1, '请输入正确手机号码');
         }
 
         //未注册不发送；
-        if ($this->tel_not_register($phone)) {
-            $this->json_return(1, '手机号码未注册');
-        }
+//        if ($this->tel_not_register($phone)) {
+//            $this->json_return(1, '手机号码未注册');
+//        }
 
         /*生成四位随机码*/
         $num = "";
@@ -120,9 +131,19 @@ class UserCommonController extends Controller
 
         $db_head = M('headhunter');
         $map_head['he_phone'] = $tel;
+        $map_head['he_type'] = 2;//求职者；
         $db_phone = $db_head->where($map_head)->find();
 
         return empty($db_phone);
+    }
+
+    public function get_user_by_tel($tel){
+        $db_head = M('headhunter');
+        $map_head['he_phone'] = $tel;
+        $map_head['he_type'] = 2;//求职者；
+        $db_phone = $db_head->where($map_head)->find();
+
+        return ($db_phone);
     }
 
 }
